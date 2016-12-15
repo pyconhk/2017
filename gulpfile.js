@@ -40,22 +40,21 @@ gulp.task('css', 'Build ./assets/scss/*.scss into ./public', () => {
 
 gulp.task('page', 'Build ./assets/pages/*.jinja into HTML files', () => {
   const {readdirSync} = require('fs');
-  const templates = readdirSync('./assets/templates');
   const {Environment, FileSystemLoader} = require('nunjucks');
   const env = new Environment([
     new FileSystemLoader('assets/pages', {watch: !PRODUCTION}),
-    new FileSystemLoader('assets/templates', {watch: !PRODUCTION})
+    new FileSystemLoader('assets/layouts', {watch: !PRODUCTION})
   ]);
 
   return gulp.src('assets/pages/**/*.jinja')
-    .pipe(require('gulp-nunjucks').compile({templates}, {env}))
+    .pipe(require('gulp-nunjucks').compile({}, {env}))
     .pipe(require('gulp-htmlmin')({
       collapseWhitespace: true
     }))
     .pipe(require('gulp-rename')({
       extname: '.html'
     }))
-    .on('error', log)
+    .on('error', util.log)
     .pipe(gulp.dest('public'));
 });
 
@@ -63,7 +62,13 @@ gulp.task('server', 'Start a webpack-dev-server for the project at http://localh
   const compiler = webpack(config.dev);
   const server = new WebpackDevServer(compiler, {
     hot: true,
-    contentBase: './public'
+    contentBase: './public',
+    proxy: {
+      '/2017': {
+        target: 'http://localhost:8080',
+        pathRewrite: {'^/2017': ''}
+      }
+    }
   });
 
   server.listen(8080);
@@ -96,7 +101,8 @@ gulp.task('watch:css', false, () => {
 
 gulp.task('watch:page', false, () => {
   return gulp.watch([
-    './assets/pages/**/*.jinja'
+    './assets/pages/**/*.jinja',
+    './assets/layouts/**/*.jinja'
   ], ['page']);
 });
 
