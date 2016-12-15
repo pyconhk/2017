@@ -22,7 +22,7 @@ const base = {
   devtool: 'source-map',
   output: {
     path: `${__dirname}/public/js`,
-    publicPath: '/js',
+    publicPath: '/2017/js/',
     filename: '[name].js'
   },
   resolve: {
