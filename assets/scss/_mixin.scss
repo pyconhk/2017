@@ -1,0 +1,5 @@
+@mixin header-style($font-size) {
+  font-size: $font-size;
+  line-height: 110%;
+  margin: ($font-size / 2) 0 ($font-size / 2.5) 0;
+}
