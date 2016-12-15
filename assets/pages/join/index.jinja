@@ -1,0 +1,41 @@
+{% extends "app.jinja" %}
+
+{% block style %}
+    <style>
+        #join img {width: 100%;}
+        .row {margin-bottom: 0;}
+        .col {padding: 0 !important;}
+        #content {
+            position: absolute;
+            margin-left: 13%;
+            margin-top: 10%;
+            z-index: 10;
+            text-align: center;
+        }
+        .s10 img {height: 400px;}
+        .btn {font-weight: bold}
+        h1 {border-radius: 3px; padding:5px;}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div id="join" class="container">
+        <div id="content">
+            <h1 class="blue-theme yellow-theme-text">We want you to be one of us</h1>
+            <a href="https://goo.gl/forms/Od4UsKXLJPLGmDMv2" target="_blank" class="btn sharp">Join Us</a>
+        </div>
+        <div class="row">
+            <div class="col s10 push-s1">
+                <img src="/2017/images/join/pic1.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s5 push-s1">
+                <img src="/2017/images/join/pic2.jpg">
+            </div>
+            <div class="col s5 push-s1">
+                <img src="/2017/images/join/pic3.jpg">
+            </div>
+        </div>
+    </div>
+{% endblock %}
