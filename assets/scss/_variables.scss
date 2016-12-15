@@ -21,6 +21,11 @@ $h4-fontsize: 2.28rem !default;
 $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1rem !default;
 
+// Depth
+$shadow-key-umbra-opacity:      0.2 !default;
+$shadow-key-penumbra-opacity:   0.14 !default;
+$shadow-ambient-shadow-opacity: 0.12 !default;
+
 // Grid
 $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
