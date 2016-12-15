@@ -13,7 +13,8 @@
 </head>
 <body>
 {% include "navbar.jinja" %}
-{% block content %}{% endblock %}
+<main>{% block content %}{% endblock %}</main>
+{% include "footer.jinja" %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js" defer></script>
 <script src="/2017/js/app.js" defer></script>
