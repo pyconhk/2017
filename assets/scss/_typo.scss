@@ -33,3 +33,8 @@ h6 { @include header-style($h6-fontsize);}
 em { font-style: italic; }
 strong { font-weight: 500; }
 small { font-size: 75%; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
