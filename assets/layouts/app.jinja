@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Hong Kong Open Source Conference 2017 // 香港開源年會 2017</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/2017/app.css" rel="stylesheet" >
+    <link href="/favicon.ico" rel="icon">
+    {% block style %}{% endblock %}
+</head>
+<body>
+{% include "navbar.jinja" %}
+<main>{% block content %}{% endblock %}</main>
+{% include "footer.jinja" %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js" defer></script>
+<script src="/2017/js/app.js" defer></script>
+</body>
+</html>

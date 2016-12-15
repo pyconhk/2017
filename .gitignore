@@ -1,0 +1,10 @@
+node_modules
+.yarnclean
+
+*.log
+
+*.swp
+
+/.idea/
+
+webpack.json

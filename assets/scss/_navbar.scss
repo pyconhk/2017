@@ -1,0 +1,56 @@
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+
+  font-size: 20px;
+  min-height: 64px;
+  width: 100%;
+
+  background-color: $theme-blue;
+  color: $theme-yellow;
+
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(.35,0,.25,1);
+  transition-timing-function: cubic-bezier(.35,0,.25,1);
+  -webkit-transition-property: background-color, fill, color;
+  transition-property: background-color, fill, color;
+
+  .nav-wrapper {
+    @extend .container;
+    letter-spacing: 0.005em;
+    box-sizing: border-box;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    height: 64px;
+    max-height: 64px;
+    padding: 0 16px;
+  }
+
+  a {
+    color: $theme-yellow;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  ul {
+    margin: 0;
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
+
+    li {
+      transition: background-color 0.3s;
+      float: left;
+    }
+  }
+}

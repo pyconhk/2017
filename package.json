@@ -1,0 +1,41 @@
+{
+  "name": "404busters-page",
+  "version": "1.0.0",
+  "description": "Website of 404 busters",
+  "scripts": {
+    "build": "NODE_ENV=production ./node_modules/.bin/gulp build",
+    "dev": "./node_modules/.bin/gulp dev",
+    "help": "./node_modules/.bin/gulp help",
+    "watch": "./node_modules/.bin/gulp watch",
+    "test": "echo 'No Test here'"
+  },
+  "repository": {
+    "url": "git+https://github.com/404busters/404busters.github.io",
+    "type": "git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.2.2",
+    "gulp-help": "^1.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.0",
+    "gulp-nunjucks": "^2.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-util": "^3.0.7",
+    "nunjucks": "^3.0.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^1.1.1"
+  },
+  "dependencies": {},
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
