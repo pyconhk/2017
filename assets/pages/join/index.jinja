@@ -15,6 +15,13 @@
         .s10 img {height: 400px;}
         .btn {font-weight: bold}
         h1 {border-radius: 3px; padding:5px;}
+        @media only screen and (max-width: 600px) {
+            h1 {font-size: 1.2em;}
+            .s10 img {height:auto;}
+        }
+        @media only screen and (min-width: 601px) and (max-width: 1200px) {
+            #content {width: 50%;}
+        }
     </style>
 {% endblock %}
 
