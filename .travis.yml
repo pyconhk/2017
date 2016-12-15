@@ -1,22 +1,32 @@
 language: node_js
+
 sudo: false
+
 cache: yarn
+
 node_js:
-- '6'
+  - '6'
+
 env:
   global:
-  - CXX=g++-4.8
-  - AUTO_BUILD=true
-  - secure: I0/U5G28aJGTSaQ4406mJDR6BjmnIEoINlxqjLZ+z6FQIQ8FpGzhOyiVtN6vG8oBFBw/HBJ/g/Ls5qlTSBJVrddkWFVbecI4u3Xq8xWgmI0N/3PyIQWneT01qi63JCNeHUeQpn9B1HHulHR1hFzLSYIxCN7j8RoZhlms/20NGy4THYJEXiKwRyuyWmsvcO3jXFoGN8LF3R5JZvAi2IK8WUsGU/MO8IvbhZptcXf28W9pm4qP6SGAmCGRBDKGMhYrmjSyu/EoM7nIgmGQsZr5DSQWBsoMmp2vP7SDqoEZup3pFxx7Pd1pv9LunuYWeAVJvwlPJ9S+X7x+7ekLe+QWw6qqFrN7Y2DdZckiCwRQahrgbYscKtTTU7yd4IzWiUYH4Y+TL+J6t18tIc+lgkma+RjQ2MbqbEyw7scqFw8ghz+dHZn3mGecTK60ZA0hzm9hD0qrnp6xjBZ/C9TP57Sump/Z3BU9nTuJmrd3a0ijyZgy5YzxO6f6Wgs7FTDXZN4U4Tju6GDLkkpbX34XIR6JO05sLfsNeXUixYk/lwri5iZFna3/KqOzXK9Xj58S714GeirHwxaWtFrYYrRGOnumClv62FHkkJPUtKfnZKieEpX0S0jl8sBnzxizo3ShxJ7RYnnWvJeM/5p7CkpCTPffVH4OBlanPMZ1HGJdSFg9TOQ=
+    - CXX=g++-4.8
+    - AUTO_BUILD=true
+    - secure: I0/U5G28aJGTSaQ4406mJDR6BjmnIEoINlxqjLZ+z6FQIQ8FpGzhOyiVtN6vG8oBFBw/HBJ/g/Ls5qlTSBJVrddkWFVbecI4u3Xq8xWgmI0N/3PyIQWneT01qi63JCNeHUeQpn9B1HHulHR1hFzLSYIxCN7j8RoZhlms/20NGy4THYJEXiKwRyuyWmsvcO3jXFoGN8LF3R5JZvAi2IK8WUsGU/MO8IvbhZptcXf28W9pm4qP6SGAmCGRBDKGMhYrmjSyu/EoM7nIgmGQsZr5DSQWBsoMmp2vP7SDqoEZup3pFxx7Pd1pv9LunuYWeAVJvwlPJ9S+X7x+7ekLe+QWw6qqFrN7Y2DdZckiCwRQahrgbYscKtTTU7yd4IzWiUYH4Y+TL+J6t18tIc+lgkma+RjQ2MbqbEyw7scqFw8ghz+dHZn3mGecTK60ZA0hzm9hD0qrnp6xjBZ/C9TP57Sump/Z3BU9nTuJmrd3a0ijyZgy5YzxO6f6Wgs7FTDXZN4U4Tju6GDLkkpbX34XIR6JO05sLfsNeXUixYk/lwri5iZFna3/KqOzXK9Xj58S714GeirHwxaWtFrYYrRGOnumClv62FHkkJPUtKfnZKieEpX0S0jl8sBnzxizo3ShxJ7RYnnWvJeM/5p7CkpCTPffVH4OBlanPMZ1HGJdSFg9TOQ=
+
 addons:
   apt:
+    sources:
+    - ubuntu-toolchain-r-test
     packages:
-    - g++-4.8
+      - gcc-4.8
+      - g++-4.8
+
 install:
-- yarn install --verbose --ignore-optional --pure-lockfile
-- yarn global add gulp
+  - yarn install --verbose --ignore-optional --pure-lockfile
+  - yarn global add gulp
+
 script:
-- NODE_ENV=production yarn build
-- NODE_ENV=production yarn test
+  - NODE_ENV=production yarn build
+  - NODE_ENV=production yarn test
 after_success:
-- test $AUTO_BUILD == 'true' && bash deploy.sh
+  - test $AUTO_BUILD == 'true' && bash deploy.sh
