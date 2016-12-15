@@ -1,0 +1,13 @@
+footer.page-footer {
+  padding-top: 20px;
+  background-color: $theme-blue;
+
+  .footer-copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(51, 51, 51, .08);
+    font-weight: 300;
+  }
+}
