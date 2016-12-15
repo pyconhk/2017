@@ -35,5 +35,9 @@
     padding: 16px;
     padding-top: 0 !important;
     display: block;
+    font-size: 16px;
+    > * {
+      font-size: 1.6em;
+    }
   }
 }
