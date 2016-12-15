@@ -6,7 +6,8 @@
     "build": "NODE_ENV=production ./node_modules/.bin/gulp build",
     "dev": "./node_modules/.bin/gulp dev",
     "help": "./node_modules/.bin/gulp help",
-    "watch": "./node_modules/.bin/gulp watch"
+    "watch": "./node_modules/.bin/gulp watch",
+    "test": "echo 'No Test here'"
   },
   "repository": {
     "url": "git+https://github.com/404busters/404busters.github.io",
