@@ -1,0 +1,39 @@
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  @extend .depth-1;
+  .title {
+    padding: 24px 16px 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    .title-text {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+    }
+  }
+
+  .content {
+    padding: 16px;
+    padding-top: 0 !important;
+    display: block;
+  }
+}
