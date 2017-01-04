@@ -1,3 +1,4 @@
 'use strict';
 
-require('fs').readdirSync().forEach((file) => require(`./${file}`));
+require('fs').readdirSync('./gulp')
+  .forEach((file) => require(`./gulp/${file}`));
