@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Website of 404 busters",
   "scripts": {
-    "build": "NODE_ENV=production ./node_modules/.bin/gulp build",
+    "build": "gulp build",
     "dev": "gulp dev",
+    "server": "gulp server",
     "help": "gulp help",
-    "watch": "gulp watch",
     "test": "flow check"
   },
   "repository": {

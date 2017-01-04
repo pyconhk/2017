@@ -4,7 +4,7 @@
 const gulp = require('gulp-help')(require('gulp'));
 const util = require('gulp-util');
 
-gulp.task('page', 'Build ./assets/pages/*.jinja into HTML files', () => {
+gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
   const {Environment, FileSystemLoader} = require('nunjucks');
   const env = new Environment([
     new FileSystemLoader('assets/pages', {watch: true}),

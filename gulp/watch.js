@@ -8,11 +8,11 @@ gulp.task('watch:css', false, () => {
   ], ['dev:css']);
 });
 
-gulp.task('watch:page', false, () => {
+gulp.task('watch:html', false, () => {
   return gulp.watch([
     './assets/pages/**/*.jinja',
     './assets/layouts/**/*.jinja'
-  ], ['dev:page']);
+  ], ['dev:html']);
 });
 
 gulp.task('watch:image', false, () => {
@@ -22,4 +22,4 @@ gulp.task('watch:image', false, () => {
 });
 
 gulp.task('watch', 'Monitor and rebuild images, pages and css files.',
-  ['watch:image', 'watch:page', 'watch:css']);
+  ['watch:image', 'watch:html', 'watch:css']);
