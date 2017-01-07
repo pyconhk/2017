@@ -1,5 +1,6 @@
 {
-  "name": "404busters-page",
+  "name": "hkoscon-2017",
+  "private": true,
   "version": "1.0.0",
   "description": "Website of 404 busters",
   "scripts": {
@@ -10,24 +11,24 @@
     "test": "flow check"
   },
   "repository": {
-    "url": "git+https://github.com/404busters/404busters.github.io",
+    "url": "git+https://github.com/hkoscon/2017",
     "type": "git"
   },
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
-    "babel-core": "^6.20.0",
-    "babel-loader": "^6.2.9",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
     "babel-plugin-syntax-flow": "^6.18.0",
     "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
     "flow-bin": "^0.37.4",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.2.2",
+    "gulp-clean-css": "^2.3.2",
     "gulp-help": "^1.6.1",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.1.0",
-    "gulp-nunjucks": "^2.3.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-nunjucks": "^3.0.0",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
@@ -35,6 +36,6 @@
     "nunjucks": "^3.0.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
-    "webpack-merge": "^1.1.1"
+    "webpack-merge": "^2.3.1"
   }
 }
