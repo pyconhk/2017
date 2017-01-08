@@ -35,6 +35,7 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-util": "^3.0.7",
     "nunjucks": "^3.0.0",
+    "postcss-merge-longhand": "^2.0.1",
     "postcss-merge-rules": "^2.0.11",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",

@@ -3457,6 +3457,12 @@ plur@^2.0.0:
   dependencies:
     irregular-plurals "^1.0.0"
 
+postcss-merge-longhand@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-merge-longhand/-/postcss-merge-longhand-2.0.1.tgz#ff59b5dec6d586ce2cea183138f55c5876fa9cdc"
+  dependencies:
+    postcss "^5.0.4"
+
 postcss-merge-rules@^2.0.11:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-2.0.11.tgz#c5d7c8de5056a7377aea0dff2fd83f92cafb9b8a"
