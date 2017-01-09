@@ -7,7 +7,9 @@ const imagemin = require('gulp-imagemin');
 
 gulp.task('image', 'Build imagemin version of ./assets/images/**/* into ./public/images', () => {
   return gulp.src('./assets/images/**/*.*')
-    .pipe(imagemin())
+    .pipe(imagemin({
+      progreesive: true
+    }))
     .on('error', util.log)
     .pipe(gulp.dest('public/images'));
 });
