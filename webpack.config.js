@@ -15,6 +15,7 @@ const base = {
     new AggressiveMergingPlugin()
   ],
   externals: {
+    jquery: 'jQuery'
   },
   entry: {
     app: ['./assets/js/app'],
