@@ -1,0 +1,15 @@
+.side-nav {
+  .logo {
+    text-align: center;
+    margin: 5rem;
+
+    > a:hover {
+      background-color: transparent;
+    }
+
+    img {
+      width: auto;
+      height: 5rem;
+    }
+  }
+}
