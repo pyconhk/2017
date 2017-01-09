@@ -1,6 +1,8 @@
 'use strict';
-const $ = require('jquery');
+import $ from 'jquery';
+
 require('./hammer');
+
 const methods = {
   init(options) {
     const defaults = {
