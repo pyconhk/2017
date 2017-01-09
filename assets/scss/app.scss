@@ -6,13 +6,16 @@
 @import "typo";
 @import "global";
 
-@import "materialize/grid";
-@import "materialize/material-icons";
-@import "materialize/footer";
-
 @import "depth";
-@import "navbar";
+//@import "navbar";
 @import "elements/button";
 @import "elements/card";
 @import "elements/parallex";
 @import "elements/google-form";
+
+@import "materialize/color";
+@import "materialize/variables";
+@import "materialize/grid";
+@import "materialize/material-icons";
+@import "materialize/footer";
+@import "materialize/navbar";
