@@ -13,9 +13,6 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
 
   return gulp.src('assets/pages/**/*.jinja')
     .pipe(require('gulp-nunjucks').compile({}, {env}))
-    .pipe(require('gulp-htmlmin')({
-      collapseWhitespace: true
-    }))
     .pipe(require('gulp-rename')({
       extname: '.html'
     }))
