@@ -6,27 +6,13 @@
   @extend .depth-1;
   .title {
     padding: 24px 16px 16px;
-    display: -webkit-box;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     flex-direction: row;
 
     .title-text {
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
       flex: 1;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
       flex-direction: column;
-      display: -webkit-box;
-      display: -webkit-flex;
       display: flex;
     }
   }
@@ -37,7 +23,15 @@
     display: block;
     font-size: 16px;
     > * {
-      font-size: 1.6em;
+      font-size: 1.5em;
+    }
+    p {
+      margin: 0.8em 0;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
 }
