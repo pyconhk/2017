@@ -13,7 +13,10 @@ gulp.task('server', 'Start a webpack-dev-server for the project at http://localh
     proxy: {
       '/2017': {
         target: 'http://localhost:8080',
-        pathRewrite: {'^/2017': ''}
+        pathRewrite: {
+          '^/2017': '',
+          '^/2017/js': ''
+        }
       }
     }
   });
