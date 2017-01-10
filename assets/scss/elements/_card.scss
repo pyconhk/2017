@@ -34,4 +34,20 @@
       }
     }
   }
+
+  .image {
+    position: relative;
+    img {
+      width: auto;
+      max-height: 300px;
+      margin: 1rem auto;
+      display: block;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
 }
