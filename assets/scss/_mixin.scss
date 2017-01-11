@@ -9,12 +9,6 @@
   $offset-x-2, $offset-y-2, $blur-radius-2, $spread-radius-2,
   $offset-x-3, $offset-y-3, $blur-radius-3, $spread-radius-3
 ) {
-  -webkit-box-shadow: $offset-x-1 $offset-y-1 $blur-radius-1 $spread-radius-1 rgba(0, 0, 0, $shadow-key-umbra-opacity),
-                      $offset-x-2 $offset-y-2 $blur-radius-2 $spread-radius-2 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                      $offset-x-3 $offset-y-3 $blur-radius-3 $spread-radius-3 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
-  -moz-box-shadow: $offset-x-1 $offset-y-1 $blur-radius-1 $spread-radius-1 rgba(0, 0, 0, $shadow-key-umbra-opacity),
-                   $offset-x-2 $offset-y-2 $blur-radius-2 $spread-radius-2 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
-                   $offset-x-3 $offset-y-3 $blur-radius-3 $spread-radius-3 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
   box-shadow: $offset-x-1 $offset-y-1 $blur-radius-1 $spread-radius-1 rgba(0, 0, 0, $shadow-key-umbra-opacity),
               $offset-x-2 $offset-y-2 $blur-radius-2 $spread-radius-2 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
               $offset-x-3 $offset-y-3 $blur-radius-3 $spread-radius-3 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);

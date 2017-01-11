@@ -15,9 +15,13 @@ const base = {
     new AggressiveMergingPlugin()
   ],
   externals: {
+    jquery: 'jQuery',
+    hammerjs: 'Hammer',
+    'node-waves': 'Waves'
   },
   entry: {
     app: ['./assets/js/app'],
+    venue: ['./assets/js/venue']
   },
   devtool: 'source-map',
   output: {
@@ -32,7 +36,8 @@ const base = {
   module: {
     loaders: [
       {test: /\.js$/, loader: 'babel'},
-      {test: /worker\.js$/, loader: 'worker'}
+      {test: /worker\.js$/, loader: 'worker'},
+      {test: /\.jsx$/, loaders: ['babel']}
     ]
   },
   worker: {
@@ -50,6 +55,14 @@ const dev = merge.smart({
   entry: {
     app: [
       'webpack-dev-server/client?http://localhost:8080/'
+    ],
+    venue: [
+      'webpack-dev-server/client?http://localhost:8080/'
+    ]
+  },
+  module: {
+    loaders: [
+      {test: /\.jsx$/, loaders: ['react-hot']}
     ]
   }
 }, base);
