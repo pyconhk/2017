@@ -22,7 +22,6 @@ const base = {
   entry: {
     app: ['./assets/js/app'],
     venue: ['./assets/js/venue'],
-    ga: './assets/js/ga'
   },
   devtool: 'source-map',
   output: {
