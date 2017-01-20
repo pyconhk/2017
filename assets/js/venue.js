@@ -1,14 +1,15 @@
+//@flow
 /* globals google */
-var mapDiv = document.getElementById('map');
+const mapDiv = document.getElementById('map');
 google.maps.event.addDomListener(window, 'load', function () {
-  var lat = 22.2595221, lng = 114.1318008;
-  var center = new google.maps.LatLng(lat, lng);
-  var map = new google.maps.Map(mapDiv, {
+  const lat = 22.2595221, lng = 114.1318008;
+  const center = new google.maps.LatLng(lat, lng);
+  const map = new google.maps.Map(mapDiv, {
     zoom: 17,
     center: center
   });
 
-  var marker = new google.maps.Marker({
+  const marker = new google.maps.Marker({
     map: map,
     visible: false,
     // Define the place with a location, and a query string.
@@ -19,7 +20,7 @@ google.maps.event.addDomListener(window, 'load', function () {
   });
 
   // Construct a new InfoWindow
-  var infoWindow = new google.maps.InfoWindow({
+  const infoWindow = new google.maps.InfoWindow({
     content: [
       '<div id="map-infowindow">',
       '<a class="address address-en" ',
