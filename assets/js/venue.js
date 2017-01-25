@@ -2,6 +2,7 @@
 /* globals google */
 const mapDiv = document.getElementById('map');
 google.maps.event.addDomListener(window, 'load', function () {
+  if (!mapDiv) return;
   const lat = 22.2595221, lng = 114.1318008;
   const center = new google.maps.LatLng(lat, lng);
   const map = new google.maps.Map(mapDiv, {
@@ -26,7 +27,7 @@ google.maps.event.addDomListener(window, 'load', function () {
       '<a class="address address-en" ',
       'title="Open Cyberport 3 Core E with Google Map" ',
       'href="https://www.google.com.hk/maps/place/Cyberport+3+Core+E,+Telegraph+Bay/" ',
-      'target="_blank">HKOSCon 2016 Venue</a>',
+      'target="_blank">HKOSCon 2017 Venue</a>',
       '</div>'
     ].join('')
   });
