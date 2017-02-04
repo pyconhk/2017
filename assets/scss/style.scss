@@ -1,0 +1,13 @@
+
+.card {
+  .content {
+    ul {
+      > li {
+        a.link {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
