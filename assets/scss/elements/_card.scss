@@ -27,21 +27,13 @@
     }
     p {
       margin: 0.8em 0;
+    }
 
-      a.link {
-        cursor: pointer;
-        text-decoration: underline;
-      }
+    a.link {
+      cursor: pointer;
+      text-decoration: underline;
     }
-    
-    ul {
-      > li {
-        a.link {
-          cursor: pointer;
-          text-decoration: underline;
-        }
-      }
-    }
+
   }
 
   .image {
