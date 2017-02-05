@@ -33,6 +33,15 @@
         text-decoration: underline;
       }
     }
+    
+    ul {
+      > li {
+        a.link {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .image {
