@@ -5,6 +5,7 @@ nav {
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-line-height-mobile;
+  z-index: 1;
 
   a {
     color: $navbar-font-color;
