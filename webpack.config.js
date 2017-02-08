@@ -1,8 +1,6 @@
 'use strict';
 
 const UglifyPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
-const OccurenceOrderPlugin = require('webpack/lib/optimize/OccurrenceOrderPlugin');
-const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
 const AggressiveMergingPlugin = require('webpack/lib/optimize/AggressiveMergingPlugin');
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
 
@@ -10,8 +8,6 @@ const merge = require('webpack-merge');
 
 const base = {
   plugins: [
-    new OccurenceOrderPlugin(),
-    new DedupePlugin(),
     new AggressiveMergingPlugin()
   ],
   externals: {
@@ -30,21 +26,13 @@ const base = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js'],
-    fallback: ['node_modules']
+    extensions: ['.js']
   },
   module: {
-    loaders: [
-      {test: /\.js$/, loader: 'babel'},
-      {test: /worker\.js$/, loader: 'worker'},
-      {test: /\.jsx$/, loaders: ['babel']}
+    rules: [
+      {test: /\.js$/, use: ['babel-loader']},
+      {test: /\.jsx$/, use: ['babel-loader']}
     ]
-  },
-  worker: {
-    output: {
-      filename: 'worker.js',
-      chunkFilename: '[id].worker.js'
-    }
   }
 };
 
@@ -62,14 +50,17 @@ const dev = merge.smart({
   },
   module: {
     loaders: [
-      {test: /\.jsx$/, loaders: ['react-hot']}
+      {test: /\.jsx$/, use:['react-hot']}
     ]
   }
 }, base);
 
 const production = merge.smart({
   plugins: [
-    new UglifyPlugin({minimize: true}),
+    new UglifyPlugin({
+      minimize: true,
+      sourceMap: true
+    })
   ]
 }, base);
 
