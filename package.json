@@ -2,7 +2,7 @@
   "name": "hkoscon-2017",
   "private": true,
   "version": "1.0.0",
-  "description": "Website of 404 busters",
+  "description": "Website of HKOSCon 2017",
   "scripts": {
     "build": "gulp build",
     "dev": "gulp dev",
@@ -39,8 +39,8 @@
     "postcss-merge-longhand": "^2.0.1",
     "postcss-merge-rules": "^2.0.11",
     "react-hot-loader": "^1.3.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0",
     "webpack-merge": "^2.3.1"
   },
   "dependencies": {
