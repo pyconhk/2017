@@ -3,7 +3,7 @@
   border-right: 1px solid $collapsible-border-color;
   border-left: 1px solid $collapsible-border-color;
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  @extend .depth-1;
+  @extend .z-depth-1;
 }
 
 .collapsible-header {
@@ -30,11 +30,7 @@
   display: none;
   border-bottom: 1px solid $collapsible-border-color;
   box-sizing: border-box;
-
-  p {
-    margin: 0;
-    padding: 2rem;
-  }
+  padding: 2rem;
 }
 
 // sideNav collapsible styling
@@ -65,7 +61,7 @@
 
     li a {
       padding: 0 (7.5px + $sidenav-padding)
-      0 (15px + $sidenav-padding);
+               0 (15px + $sidenav-padding);
     }
   }
 

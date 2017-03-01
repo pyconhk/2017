@@ -16,7 +16,7 @@
   backface-visibility: hidden;
   transform: translateX(-105%);
 
-  @extend .depth-1;
+  @extend .z-depth-1;
 
   // Right Align
   &.right-aligned {
@@ -42,10 +42,10 @@
     color: $sidenav-font-color;
     display: block;
     font-size: $sidenav-font-size;
-    font-weight: 500;
+    //font-weight: 500;
     height: $sidenav-item-height;
     line-height: $sidenav-line-height;
-    padding: 0 ($sidenav-padding * 2);
+    padding: 0 $sidenav-padding;
 
     &:hover { background-color: rgba(0,0,0,.05);}
 
