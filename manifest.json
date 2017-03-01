@@ -1,35 +1,24 @@
 {
-  "background_color": "#294454",
+  "manifest_version": 2,
+  "name": "Hong Kong Open Source Conference 2017",
+  "version": "0.1",
+  "version_name": "v0.1",
   "default_locale": "en",
   "description": "Hong Kong Open Source Conference is a annual international open source conference in Hong Kong. It is aimed to demonstrate the use of open source software technology, open hardware technology and latest development in the world.",
-  "developer": {
-    "name": "HKOSCon 2017",
-    "url": "http://hkoscon.org/2017/"
+  "icons": {
+    "48": "https://hkoscon.org/logo.png"
   },
-  "display": "standalone",
-  "gcm_sender_id": "103953800507",
-  "icons": [{
-    "src": "https://hkoscon.org/logo.png",
-    "type": "images/png"
-  }],
-  "manifest_version": 2,
-  "name": "HKOSCon Dashboard",
-  "short_name": "HKOSCon Dashboard",
-  "start_url": "/dashbaord",
-  "theme_color": "#F3CB02",
+  "author": "Open Source Hong Kong",
+  "short_name": "HKOSCon 2017",
+  "homepage_url": "http://hkoscon.org/2017/",
   "web_accessible_resources": [
-     "/2017/public/about/*.html"
-    ,"/2017/public/cfp/*.html"
-    ,"/2017/public/images/*.png"
-    ,"/2017/public/images/*.ico"
-    ,"/2017/public/images/*.jpg"
-    ,"/2017/public/images/cfp/*.jpg"
-    ,"/2017/public/images/join/*.jpg"
-    ,"/2017/public/join/*.html"
-    ,"/2017/public/venue/*.html"
-    ,"/2017/public/app.css"
-    ,"/2017/public/app.css.map"
-    ,"/2017/public/index.html"
-  ],
-  "version": "0.1"
+     "/2017/about/*.html"
+    ,"/2017/images/*.png"
+    ,"/2017/images/*.ico"
+    ,"/2017/images/*.jpg"
+    ,"/2017/venue/*.html"
+    ,"/2017/app.css"
+    ,"/2017/app.css.map"
+    ,"/2017/index.html"
+  ]
 }
