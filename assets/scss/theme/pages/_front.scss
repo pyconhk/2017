@@ -7,10 +7,11 @@
     .banner-content {
       height: 100%;
       padding: 10vh 0 0;
-      background-color: rgba(0,0,0,0.3);
+      //background-color: rgba(0,0,0,0.3);
     }
     height: 100vh;
     min-height: 750px;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center 64px;
     @media #{$medium-and-down} {
@@ -39,6 +40,27 @@
         height: 4vh;
       }
     }
+    .contacts {
+      color: #FFF;
+      text-align: center;
+      font-size: 3vh;
+      ul {
+        list-style-type: none;
+        li {
+          display: inline;
+          padding: 0;
+          a {
+            display: inline-block;
+            margin: .5em;
+            transition: color .5s;
+            padding: .5em;
+            &:hover{
+              color: $theme-yellow;
+            }
+          }
+        }
+      }
+    }
   }
   #banner-logo {
     padding: 0;
@@ -53,6 +75,17 @@
     .logo-text {
       position: relative;
       margin-left: -10000px;
+    }
+  }
+
+  #introduction {
+    text-align: center;
+    font-size: 3vh;
+    color: #FFF;
+    padding: 5vh 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    p:nth-child(2) {
+      color: $theme-yellow;
     }
   }
 }
