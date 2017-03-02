@@ -1,0 +1,58 @@
+.page-front {
+  nav .brand-logo {
+    display: none;
+  }
+  #banner {
+    position: relative;
+    .banner-content {
+      height: 100%;
+      padding: 10vh 0 0;
+      background-color: rgba(0,0,0,0.3);
+    }
+    height: 100vh;
+    min-height: 750px;
+    background-attachment: fixed;
+    background-position: center 64px;
+    @media #{$medium-and-down} {
+      background-position: center 56px;
+    }
+    .tagline {
+      color: #FFF;
+      text-align: center;
+      font-size: 4vh;
+      .date {
+        font-size: 1em;
+      }
+      .slogan {
+        font-size: 1.2em;
+        color: $theme-yellow;
+      }
+      text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+    .actions {
+      margin-top: 1.5em;
+      text-align: center;
+      .btn {
+        color: #000;
+        font-size: 2vh;
+        line-height: 4vh;
+        height: 4vh;
+      }
+    }
+  }
+  #banner-logo {
+    padding: 0;
+    margin: 5vh auto 0;
+    width: 40vh;
+    height: 40vh;
+    background-color: #213b46;
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .logo-text {
+      position: relative;
+      margin-left: -10000px;
+    }
+  }
+}
