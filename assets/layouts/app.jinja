@@ -20,7 +20,7 @@
     <link href="/2017/manifest.json" rel="manifest">
     {% block style %}{% endblock %}
 </head>
-<body>
+<body class="{{ pageID }}">
 {% include "navbar.jinja" %}
 <main>{% block content %}{% endblock %}</main>
 {% include "footer.jinja" %}
