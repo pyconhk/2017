@@ -2,7 +2,10 @@
 'use strict';
 
 const gulp = require('gulp-help')(require('gulp'));
+const data = require('gulp-data');
 const util = require('gulp-util');
+const path = require('path');
+const htmldata = require('./includes/html-data');
 
 gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files', () => {
   const {Environment, FileSystemLoader} = require('nunjucks');
@@ -12,6 +15,18 @@ gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files
   ]);
 
   return gulp.src('assets/pages/**/*.jinja')
+    .pipe(data(function(file) {
+      const pagePath = htmldata.getPagePath(file.path);
+      const pageID = htmldata.genPageID(pagePath);
+      util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
+        pagePath,
+        pageID,
+      });
+      return {
+        pagePath,
+        pageID,
+      };
+    }))
     .pipe(require('gulp-nunjucks').compile({}, {env}))
     .pipe(require('gulp-htmlmin')({
       collapseWhitespace: true

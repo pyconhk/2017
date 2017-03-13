@@ -5,32 +5,11 @@ const gulp = require('gulp-help')(require('gulp'));
 const data = require('gulp-data');
 const util = require('gulp-util');
 const path = require('path');
-const nunjucks = require('gulp-nunjucks');
-
-// base path for the application
-const basepath = path.dirname(__dirname);
-const assetpath = basepath + '/assets/pages';
+const htmldata = require('./includes/html-data');
 
 function swallowError (error) {
   util.log(`Failed on '${util.colors.cyan('dev:html')}': ${error.toString()}`);
   this.emit('end')
-}
-
-function genPageID(pagePath) {
-  if (pagePath === 'index') {
-    return 'page-front';
-  }
-  return 'page--' + pagePath
-    .replace('/', '--')
-    .replace('.', '-')
-    .replace(/--index$/, '');
-}
-
-function getPagePath(filepath) {
-  return filepath
-    .replace(assetpath, '')
-    .replace(/\.jinja$/, '')
-    .replace(/^\//, '');
 }
 
 gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
@@ -42,8 +21,8 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
 
   return gulp.src('assets/pages/**/*.jinja')
     .pipe(data(function(file) {
-      const pagePath = getPagePath(file.path);
-      const pageID = genPageID(pagePath);
+      const pagePath = htmldata.getPagePath(file.path);
+      const pageID = htmldata.genPageID(pagePath);
       util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
         pagePath,
         pageID,
@@ -53,7 +32,7 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
         pageID,
       };
     }))
-    .pipe(nunjucks.compile({}, {env}).on('error', swallowError))
+    .pipe(require('gulp-nunjucks').compile({}, {env}).on('error', swallowError))
     .pipe(require('gulp-rename')({
       extname: '.html'
     }))
