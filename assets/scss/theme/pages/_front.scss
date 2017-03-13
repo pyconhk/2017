@@ -22,8 +22,22 @@
       color: #FFF;
       text-align: center;
       font-size: 4vh;
-      .date {
-        font-size: 1em;
+      .date-location {
+        font-size: .8em;
+        .date, .location {
+          display: inline-block;
+          margin: 0 .2em;
+          &::before{
+            @extend .fa;
+            margin-right: .3em;
+          }
+        }
+        .date::before {
+          content: "\f073";
+        }
+        .location::before {
+          content: "\f041";
+        }
       }
       .slogan {
         font-size: 1.2em;
