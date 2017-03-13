@@ -260,6 +260,14 @@
           font-weight: bold;
         }
       }
+      .check-list {
+        li:before {
+          @extend .fa;
+          content: "\f00c";
+          margin-right: .5em;
+          color: #0A0;
+        }
+      }
       .btn {
         color: #000;
       }
@@ -269,6 +277,9 @@
       border: solid 2px #F35;
       @extend .z-depth-4;
       h3, .price {
+        color: #F35;
+      }
+      .description {
         color: #F35;
       }
     }
