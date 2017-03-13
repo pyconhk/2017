@@ -11,6 +11,11 @@ const nunjucks = require('gulp-nunjucks');
 const basepath = path.dirname(__dirname);
 const assetpath = basepath + '/assets/pages';
 
+function swallowError (error) {
+  util.log(`Failed on '${util.colors.cyan('dev:html')}': ${error.toString()}`);
+  this.emit('end')
+}
+
 function genPageID(pagePath) {
   if (pagePath === 'index') {
     return 'page-front';
@@ -48,10 +53,10 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
         pageID,
       };
     }))
-    .pipe(nunjucks.compile({}, {env}))
+    .pipe(nunjucks.compile({}, {env}).on('error', swallowError))
     .pipe(require('gulp-rename')({
       extname: '.html'
     }))
-    .on('error', util.log)
+    .on('error', swallowError)
     .pipe(gulp.dest('public'));
 });
