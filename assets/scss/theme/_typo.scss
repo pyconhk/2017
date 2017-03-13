@@ -1,6 +1,6 @@
 html, body, :root {
   font-family: $english-font, $chinese-font, sans-serif;
-  font-size: 1.6em;
+  //font-size: 1.6em;
   line-height: 1.5;
   font-weight: normal;
   color: $off-black;
@@ -23,12 +23,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
 }
 
-h1 { @include header-style($h1-fontsize);}
-h2 { @include header-style($h2-fontsize);}
-h3 { @include header-style($h3-fontsize);}
-h4 { @include header-style($h4-fontsize);}
-h5 { @include header-style($h5-fontsize);}
-h6 { @include header-style($h6-fontsize);}
+h1 { @include header-style(2rem);}
+h2 { @include header-style(1.6rem);}
+h3 { @include header-style(1.4rem);}
+h4 { @include header-style(1.3rem);}
+h5 { @include header-style(1.2rem);}
+h6 { @include header-style(1.1rem);}
 
 em { font-style: italic; }
 strong { font-weight: 700; }
