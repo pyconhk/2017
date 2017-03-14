@@ -20,18 +20,7 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
   ]);
 
   return gulp.src('assets/pages/**/*.jinja')
-    .pipe(data(function(file) {
-      const pagePath = htmldata.getPagePath(file.path);
-      const pageID = htmldata.genPageID(pagePath);
-      util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
-        pagePath,
-        pageID,
-      });
-      return {
-        pagePath,
-        pageID,
-      };
-    }))
+    .pipe(data(htmldata.fileData))
     .pipe(require('gulp-nunjucks').compile({}, {env}).on('error', swallowError))
     .pipe(require('gulp-rename')({
       extname: '.html'
