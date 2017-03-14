@@ -83,7 +83,7 @@
     width: 40vh;
     height: 40vh;
     background-color: #213b46;
-    background-image: url('../images/logo.png');
+    background-image: url('./images/logo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -139,11 +139,11 @@
         width: 60px;
       }
       .day-1 .title-wrapper {
-        background-image: url('../images/theme-business-day.jpg');
+        background-image: url('./images/theme-business-day.jpg');
         background-position: top;
       }
       .day-2 .title-wrapper {
-        background-image: url('../images/theme-community-day.jpg');
+        background-image: url('./images/theme-community-day.jpg');
         background-position: bottom;
       }
 
