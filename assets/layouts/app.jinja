@@ -8,16 +8,16 @@
     <meta name="author" content="Hong Kong Open Source Conference 2017" />
     <meta property="og:site_name" content="Hong Kong Open Source Conference 2017" />
     <meta property="og:title" content="{% block title %}Hong Kong Open Source Conference 2017{% endblock %}" />
-    <meta property="og:url" content="{% block og_url %}http://hkoscon.org/2017/{% endblock %}" />
-    <meta property="og:image" content="{% block og_image %}http://file.hkoscon.org/og/2017.png{% endblock %}" />
-    <meta property="og:type" content="{% block og_type %}article{% endblock %}" />
-    <meta property="og:description" content="{% block og_desc %}Hong Kong Open Source Conference 2017 HKOSCon (2017.06.09-10) is a annual international open source conference in Hong Kong. It is aimed to demonstrate the use of open source software technology, open hardware technology and latest development in the world.{% endblock %}" />
-    <title>Hong Kong Open Source Conference 2017 // 香港開源年會 2017</title>
+    <meta property="og:url" content="{% block og_url %}{{ data.site.og.url }}{% endblock %}" />
+    <meta property="og:image" content="{% block og_image %}{{ data.site.og.image }}{% endblock %}" />
+    <meta property="og:type" content="{% block og_type %}{{ data.site.og.type }}{% endblock %}" />
+    <meta property="og:description" content="{% block og_desc %}{{ data.site.og.description }}{% endblock %}" />
+    <title>{{ data.site.name }}</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="/2017/app.css" rel="stylesheet" >
-    <link href="/favicon.ico" rel="icon">
-    <link href="/2017/manifest.json" rel="manifest">
+    <link href="{{ data.site.basePath }}/app.css" rel="stylesheet" >
+    <link href="{{ data.site.basePath }}/images/favicon.ico" rel="icon">
+    <link href="{{ data.site.basePath }}/manifest.json" rel="manifest">
     {% block style %}{% endblock %}
 </head>
 <body class="{{ pageID }}">
@@ -31,7 +31,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.4.2/parallax.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.js" defer></script>
 <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-<script src="/2017/js/app.js" defer></script>
+<script src="{{ data.site.basePath }}/js/app.js" defer></script>
 <script src="https://hkoscon.org/ga.js" defer async></script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 {% block script %}{% endblock %}
