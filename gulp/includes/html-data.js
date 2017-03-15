@@ -18,7 +18,6 @@ function fileData(file) {
   const pageID = genPageID(pagePath);
   const data = requireyml(basepath + '/assets/data');
   util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
-    data,
     pagePath,
     pageID,
   });
