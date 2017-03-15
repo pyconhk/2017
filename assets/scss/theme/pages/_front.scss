@@ -91,6 +91,9 @@
       position: relative;
       margin-left: -10000px;
     }
+    @extend .circle;
+    @extend .z-depth-2;
+    border: solid 1px rgba(150, 150, 150, .5);
   }
 
   #introduction {
