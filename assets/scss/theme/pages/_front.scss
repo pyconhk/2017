@@ -278,6 +278,10 @@
         }
       }
       .check-list {
+        padding-left: 1em;
+        li {
+          text-align: left;
+        }
         li:before {
           @extend .fa;
           content: "\f00c";
