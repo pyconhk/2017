@@ -1,5 +1,6 @@
 'use strict';
 
+const webpack = require('webpack');
 const UglifyPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const AggressiveMergingPlugin = require('webpack/lib/optimize/AggressiveMergingPlugin');
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
@@ -8,7 +9,10 @@ const merge = require('webpack-merge');
 
 const base = {
   plugins: [
-    new AggressiveMergingPlugin()
+    new AggressiveMergingPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(require('./assets/config/firebase.json'))
+    })
   ],
   externals: {
     jquery: 'jQuery',
