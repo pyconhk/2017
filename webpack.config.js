@@ -17,7 +17,8 @@ const base = {
   externals: {
     jquery: 'jQuery',
     hammerjs: 'Hammer',
-    'node-waves': 'Waves'
+    'node-waves': 'Waves',
+    'firebase': 'firebase'
   },
   entry: {
     app: ['./assets/js/app'],
