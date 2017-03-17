@@ -15,6 +15,11 @@ const facebookAuth = function() {
   firebase.auth().signInWithRedirect(provider);
 }
 
+const twitterAuth = function() {
+  const provider = new firebase.auth.TwitterAuthProvider();
+  firebase.auth().signInWithRedirect(provider);  
+}
+
 const signout = function() {
   firebase.auth().signOut();
 }
