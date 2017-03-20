@@ -326,10 +326,14 @@
         text-align: justify;
       }
     }
+    .btn {
+      color: #000;
+    }
+
     .patron-types {
       display: flex;
       width: 80%;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 10vh auto;
       display: block;
       display: flex;
@@ -363,6 +367,9 @@
             font-weight: bold;
           }
         }
+        .description {
+          font-size: 0.8em;
+        }
         .check-list {
           padding-left: 1em;
           li {
@@ -375,9 +382,6 @@
             margin-right: .5em;
             color: #0A0;
           }
-        }
-        .btn {
-          color: #000;
         }
       }
     }

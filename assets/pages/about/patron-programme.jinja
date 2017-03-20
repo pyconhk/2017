@@ -1,0 +1,135 @@
+{% extends "app.jinja" %}
+
+{% block content %}
+    <div class="theme-area">
+        <div class="content">
+            <div class="container">
+                <h1>Patron Programme</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+
+          <p>
+            The Patrons programme is designed to provide funding assistance to selected applicants to attend
+            Hong Kong OpenSource Conference 2017. The Hong Kong OpenSource Conference 2017 Programme
+            Committee is now seeking donations to support our Patrons Programme 2017.
+          </p>
+
+          <h3 id="overview">Overview</h3>
+
+          <p>
+            Hong Kong OpenSource Conference provides financial support to selected individuals from the local
+            universities &amp; schools in Hong Kong to attend Hong Kong OpenSource Conference.
+            The purpose of the Hong Kong OpenSource Conference Patrons Programme is to give opportunities to
+            students access to our region’s premier Open Source event. The human networking is an extremely
+            important component for growing Open Source development in the city, with the Hong Kong
+            OpenSource Conference Fellows gaining valuable opportunities to meet developers from all around the
+            world. This is in addition to the technologies and skills learnt or enhanced during the Hong Kong
+            OpenSource Conference Workshops and the Conference itself.
+          </p>
+
+          <p>
+            The award is open to anyone who is nominated by the Hong Kong OpenSource Conference committees.
+            Selected fellows will have an opportunity to network with seniors in the industry, learn first-hand about
+            Hong Kong OpenSource Conference and its related activities, and return home with new insights to aid
+            them in their academic and professional development.
+          </p>
+
+          <p>
+            Hong Kong OpenSource Conference has an open call for applicants through the conference website or
+            other promotion channels. The Patrons Committee will conduct ongoing evaluations of the applicants
+            and make their selections based on certain criteria including applicant background and applicant&#39;s desire
+            to continue to participate in Hong Kong OpenSource Conference. Women are especially encouraged to
+            apply.
+          </p>
+
+          <p>
+            The Patrons Award which is granted to successful applicants (Fellows) covers the conference registration
+            and related expense associated with attending Hong Kong OpenSource Conference. There are 2 tiers of
+            donation, $2,500 and $1,200. Donator will be recognized in our event brochure.
+            Donation will be made to Hong Kong Creative Open Technology Association (HKCOTA)**, host of
+            HKOSCon. If your total annual charity donation exceeds HK$100, your contributions to HKCOTA are tax-
+            deductible as per the Inland Revenue Ordinance. HKCOTA provides receipts for all donations.
+            Interested parties can submit their application in
+            <a href="{{ data.site.ticketURL }}">Hong Kong OpenSource Conference Registration</a> page.
+          </p>
+
+          <em class="footnote">
+            ** Hong Kong Creative Open Technology Association (HKCOTA) is a non-profit tax-exempt organization /
+            charity (Reg.# 91/12580) in Hong Kong founded in 2014. The aim of the HKCOTA is to promote Open
+            Standards, Free and Open Source Software, Open Hardware, Free Culture Works, Open Content and
+            Creative Commons.
+          </em>
+
+          <div class="patron-types">
+
+            <div class="patron-type">
+              <h3>Basic</h3>
+              <div class="price">
+                <span class="currency">HK$</span><span class="amount">1,200</span>
+              </div>
+              <div class="check-list">
+                <ul>
+                  <li>Support Local Students and Educators</li>
+                  <li>Community Organizer Meeting on Day 1
+                  (requires pre-registration)</li>
+                </ul>
+              </div>
+              <div class="action">
+                <a class="btn btn-default" target="_blank" href="{{ data.site.patronURL }}">Donate Now</a>
+              </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="patron-type">
+              <h3>Higher Level</h3>
+              <div class="price">
+                <span class="currency">HK$</span><span class="amount">2,500</span>
+              </div>
+              <div class="check-list">
+                <ul>
+                  <li>Support Local Students and Educators</li>
+                  <li>Community Organizer Meeting on Day 1<br/>
+                  (requires pre-registration)</li>
+                </ul>
+              </div>
+              <div class="action">
+                <a class="btn btn-default" target="_blank" href="{{ data.site.patronURL }}">Donate Now</a>
+              </div>
+            </div>
+
+          </div>
+
+          <h2 id="apply">Apply for a Fellowship</h2>
+
+          <h3>Fellows Eligibility</h3>
+
+          <p>Applicants should be actively involved in Internet development in any of the following capacities:</p>
+
+          <ul>
+            <li>Student who studies in Technology related subject from local tertiary or secondary institutes</li>
+            <li>Student has been studying STEM related subject over a year</li>
+            <li>Educators and trainers</li>
+          </ul>
+
+          <h3>Selection Criteria</h3>
+
+          <ul class="checklist">
+            <li>Residency in and Citizenship of Hong Kong</li>
+            <li>Demonstration of ability to share what is learned with classmates and peers</li>
+            <li>Women are encouraged in apply</li>
+          </ul>
+
+          <p>
+            Interested parties can email to <a href="mailto:conference@opensource.hk?subject=Apply for a Fellowship">conference at opensource.hk</a>
+            with subject line as ‘Apply for a Fellowship’,
+            together with their contact details. Our committee will contact you shortly for the details of application.
+          </p>
+
+        </div>
+
+    </div>
+{% endblock %}
