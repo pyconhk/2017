@@ -1,6 +1,6 @@
 name:      "Hong Kong Open Source Conference 2017 // 香港開源年會 2017"
 slogan:    "Embracing Open Source's Success"
-ticketURL: "http://eventbrite.com/#"
+ticketURL: "https://hkoscon2017.eventbrite.com/?aff=website"
 baseURL:   "http://hkoscon.org/2017/"
 basePath:  "/2017"
 og:
