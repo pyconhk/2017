@@ -7,11 +7,24 @@ const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlug
 
 const merge = require('webpack-merge');
 
+var firebaseConfig = {};
+try {
+  firebaseConfig = require('./assets/config/firebase.json');
+} catch (ex) {
+  firebaseConfig = {
+    apiKey: "<API_KEY>",
+    authDomain: "<PROJECT_ID>.firebaseapp.com",
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+    storageBucket: "<BUCKET>.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  }
+}
+
 const base = {
   plugins: [
     new AggressiveMergingPlugin(),
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(require('./assets/config/firebase.json'))
+      'process.env': JSON.stringify(firebaseConfig)
     })
   ],
   externals: {
