@@ -23,7 +23,9 @@
               <span class="logo-text">Hong Kong Open Source Conference 2017</span>
             </h1>
             <div class="actions">
-              <a class="waves-effect waves-light z-depth-2 btn" target="_blank" href="{{ data.site.ticketURL }}">Get Early Bird Ticket</a>
+              <a class="waves-effect waves-light z-depth-2 btn"
+                href="{{ data.site.ticketURL | appendURL | withGA('earlybird_ticket', 'frontpage_top') | execAppend }}"
+                target="_blank">Get Early Bird Ticket</a>
             </div>
             <div class="contacts">
               <ul>
@@ -135,7 +137,9 @@
               <p>Grab yours!</p>
             </div>
             <div class="action">
-              <a class="btn btn-default" target="_blank" href="{{ data.site.ticketURL }}">Buy Now</a>
+              <a class="btn btn-default"
+                href="{{ data.site.ticketURL | appendURL | withGA('earlybird_ticket', 'frontpage_tickets') | execAppend }}"
+                target="_blank">Buy Now</a>
             </div>
           </div>
           <div class="separator"></div>
@@ -156,7 +160,9 @@
               <p></p>
             </div>
             <div class="action">
-              <span class="btn btn-default" target="_blank" href="{{ data.site.ticketURL }}">Buy Now</span>
+              <a class="btn btn-default"
+                href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'frontpage_tickets') | execAppend }}"
+                target="_blank">Buy Now</a>
             </div>
           </div>
           <div class="separator"></div>
@@ -178,7 +184,9 @@
               <!-- TODO: write me -->
             </div>
             <div class="action">
-              <a class="btn btn-default" target="_blank" href="{{ data.site.ticketURL }}">Buy Now</a>
+              <a class="btn btn-default"
+                href="{{ data.site.ticketURL | appendURL | withGA('weekend_ticket', 'frontpage_tickets') | execAppend }}"
+                target="_blank">Buy Now</a>
             </div>
           </div>
           <div class="separator"></div>
@@ -201,7 +209,9 @@
               <p>Requires student ID and proofs during admission.</p>
             </div>
             <div class="action">
-              <a class="btn btn-default" target="_blank" href="{{ data.site.ticketURL }}">Buy Now</a>
+              <a class="btn btn-default"
+                href="{{ data.site.ticketURL | appendURL | withGA('student_ticket', 'frontpage_tickets') | execAppend }}"
+                target="_blank">Buy Now</a>
             </div>
           </div>
         </div>
@@ -215,7 +225,8 @@
         <div class="description">
             <p>
                 Provides financial support to selected individuals from
-                universities &amp; schools in Hong Kong to attend Hong Kong OpenSource Conference.
+                universities &amp; schools in Hong Kong to attend
+                Hong Kong Open Source Conference.
             </p>
             <p>
                 <a class="btn" href="./about/patron-programme.html">Learn more about it</a>.
@@ -224,38 +235,44 @@
         <div class="patron-types">
 
           <div class="patron-type">
-            <h3>Basic</h3>
+            <h3>Tier 1</h3>
             <div class="price">
               <span class="currency">HK$</span><span class="amount">1,200</span>
             </div>
             <div class="check-list">
               <ul>
                 <li>Support Local Students and Educators</li>
+                <li>Atrribution on HKOSCon 2017 Brochure</li>
                 <li>Community Organizer Meeting on Day 1
                 (requires pre-registration)</li>
               </ul>
             </div>
             <div class="action">
-              <a class="btn btn-default" target="_blank" href="{{ data.site.patronURL }}">Donate Now</a>
+              <a class="btn btn-default"
+                href="{{ data.site.patronURL | appendURL | withGA('tier_1', 'frontpage_patrons') | execAppend }}"
+                target="_blank">Donate Now</a>
             </div>
           </div>
 
           <div class="separator"></div>
 
           <div class="patron-type">
-            <h3>Higher Level</h3>
+            <h3>Tier 2</h3>
             <div class="price">
               <span class="currency">HK$</span><span class="amount">2,500</span>
             </div>
             <div class="check-list">
               <ul>
                 <li>Support Local Students and Educators</li>
+                <li>Atrribution on HKOSCon 2017 Brochure</li>
                 <li>Community Organizer Meeting on Day 1<br/>
                 (requires pre-registration)</li>
               </ul>
             </div>
             <div class="action">
-              <a class="btn btn-default" target="_blank" href="{{ data.site.patronURL }}">Donate Now</a>
+              <a class="btn btn-default"
+                href="{{ data.site.patronURL | appendURL | withGA('tier_2', 'frontpage_patrons') | execAppend }}"
+                target="_blank">Donate Now</a>
             </div>
           </div>
 
@@ -267,10 +284,11 @@
               <span class="currency">HK$</span><span class="amount">0.00</span>
             </div>
             <div class="description">
-              <p>Provide funding assistance to selected applicants to attend HKOSCon 2017.</p>
+              <p>Selected applicants only.</p>
+              <p>Recive funding assistance to attend HKOSCon 2017.</p>
             </div>
             <div class="action">
-              <a class="btn btn-default" href="./about/patron-programme.html#apply">Learn more</a>.
+              <a class="btn btn-default" href="./about/patron-programme.html#apply">Learn more</a>
             </div>
           </div>
 

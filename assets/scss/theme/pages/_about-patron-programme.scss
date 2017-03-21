@@ -36,7 +36,8 @@
       }
 
       h3 {
-        font-size: 1.4em;
+        font-size: 1.6em;
+        color: #000;
       }
       .price {
         vertical-align: text-top;
@@ -46,8 +47,12 @@
         }
       }
       .check-list {
-        padding-left: 1em;
+        ul {
+          list-style-type: none;
+          padding-left: 1em;
+        }
         li {
+          list-style-type: none;
           text-align: left;
           font-size: 0.8em;
         }

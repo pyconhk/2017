@@ -66,38 +66,44 @@
           <div class="patron-types">
 
             <div class="patron-type">
-              <h3>Basic</h3>
+              <h3>Tier 1</h3>
               <div class="price">
                 <span class="currency">HK$</span><span class="amount">1,200</span>
               </div>
               <div class="check-list">
                 <ul>
                   <li>Support Local Students and Educators</li>
+                  <li>Atrribution on HKOSCon 2017 Brochure</li>
                   <li>Community Organizer Meeting on Day 1
                   (requires pre-registration)</li>
                 </ul>
               </div>
               <div class="action">
-                <a class="btn btn-default" target="_blank" href="{{ data.site.patronURL }}">Donate Now</a>
+                <a class="btn btn-default"
+                  href="{{ data.site.patronURL | appendURL | withGA('tier_1', 'about_patrons') | execAppend }}"
+                  target="_blank">Donate Now</a>
               </div>
             </div>
 
             <div class="separator"></div>
 
             <div class="patron-type">
-              <h3>Higher Level</h3>
+              <h3>Tier 2</h3>
               <div class="price">
                 <span class="currency">HK$</span><span class="amount">2,500</span>
               </div>
               <div class="check-list">
                 <ul>
                   <li>Support Local Students and Educators</li>
+                  <li>Atrribution on HKOSCon 2017 Brochure</li>
                   <li>Community Organizer Meeting on Day 1<br/>
                   (requires pre-registration)</li>
                 </ul>
               </div>
               <div class="action">
-                <a class="btn btn-default" target="_blank" href="{{ data.site.patronURL }}">Donate Now</a>
+                <a class="btn btn-default"
+                  href="{{ data.site.patronURL | appendURL | withGA('tier_2', 'about_patrons') | execAppend }}"
+                  target="_blank">Donate Now</a>
               </div>
             </div>
 
