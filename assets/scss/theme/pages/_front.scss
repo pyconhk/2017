@@ -16,7 +16,7 @@
     background-position: center 64px;
     @media #{$medium-and-down} {
       min-height: 0;
-      background-position: center 56px;
+      background-position: center top;
     }
     .tagline {
       color: #FFF;
