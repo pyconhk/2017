@@ -1,0 +1,40 @@
+html, body, :root {
+  font-family: $english-font, $chinese-font, sans-serif;
+  //font-size: 1.6em;
+  line-height: 1.5;
+  font-weight: normal;
+  color: $off-black;
+
+  @media only screen and (min-width: 0) {
+    font-size: 12px;
+  }
+
+  @media only screen and (min-width: $medium-screen) {
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    font-size: 20px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h1 { @include header-style(2rem);}
+h2 { @include header-style(1.6rem);}
+h3 { @include header-style(1.4rem);}
+h4 { @include header-style(1.3rem);}
+h5 { @include header-style(1.2rem);}
+h6 { @include header-style(1.1rem);}
+
+em { font-style: italic; }
+strong { font-weight: 700; }
+small { font-size: 75%; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
