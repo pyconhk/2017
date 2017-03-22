@@ -32,6 +32,7 @@ const base = {
   },
   entry: {
     app: ['./assets/js/app'],
+    timetable: ['./assets/js/timetable'],
     venue: ['./assets/js/venue'],
   },
   devtool: 'source-map',
@@ -57,6 +58,9 @@ const dev = merge.smart({
   ],
   entry: {
     app: [
+      'webpack-dev-server/client?http://localhost:8080/'
+    ],
+    timetable: [
       'webpack-dev-server/client?http://localhost:8080/'
     ],
     venue: [

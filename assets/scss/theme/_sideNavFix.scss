@@ -1,0 +1,36 @@
+/**
+ * sideNavFix
+ * fix minor sideNav issues
+ */
+.side-nav {
+  .logo {
+    text-align: center;
+    margin: 5rem;
+
+    > a:hover {
+      background-color: transparent;
+    }
+
+    img {
+      width: auto;
+      height: 5rem;
+    }
+  }
+
+  .link > a {
+    padding-left: 16px;
+    line-height: inherit;
+    height: inherit;
+  }
+
+  .collapsible-body {
+    padding: 0;
+  }
+  .collapsible > li > a.collapsible-header::after {
+    content: '▾';
+    float: right;
+  }
+  .bold {
+    font-weight: 500;
+  }
+}
