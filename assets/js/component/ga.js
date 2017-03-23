@@ -27,7 +27,8 @@ if (location.hostname == 'localhost') {
 }
 
 // to track normal outbound links
-const trackLinkOutbound = function(url) {
+const trackLinkOutbound = function(evt) {
+  const url = this.href;
   console.debug('[GA debug] trackLinkOutbound', url);
   ga('send', 'event', 'outbound', 'click', url, {
     'transport': 'beacon',
