@@ -10,20 +10,42 @@ $('.collapsible').collapsible();
 
 (function () {
 
-  // ensure GA is here
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  // refined ga with local debug
+  if (location.hostname == 'localhost') {
+    // dummy ga tracker for debug in localhost
+    window.ga = function() {
+      if (typeof arguments[0] === 'function') {
+        const tracker = {
+          get: function(name) {
+            return 'debug:' + name;
+          }
+        }
+        window.setTimeout(arguments[0](tracker), 500);
+      } else if (arguments[0] === 'send') {
+        const args = Array.from(arguments);
+        const [type, category, action, label, value] = args;
+        console.debug(`[GA local debug] sending event "${type}", "${category}", "${action}", "${label}", "${value}"`);
+      }
+    };
+  } else {
+    // adapt Google Analytics async pattern
+    // create placeholder before GA is loaded
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  }
 
   // to track normal outbound links
-  const trackTicketOutbound = function(url) {
+  const trackLinkOutbound = function(url) {
+    console.debug('[GA debug] trackLinkOutbound', url);
     ga('send', 'event', 'outbound', 'click', url, {
       'transport': 'beacon',
       'hitCallback': function(){document.location = url;}
     });
   }
 
-  // to track Eventbrite links
-  const trackEventbriteOutbound = function(category, action, label, value){
+  // to track links
+  const trackEvent = function(category, action, label, value){
     return function () {
+      console.debug(`[GA debug] track event "${category}", "${action}", "${label}", "${value}"`);
       ga('send', 'event', category, action, label, value);
     }
   }
@@ -39,17 +61,25 @@ $('.collapsible').collapsible();
       if (link.hostname.match(/^(.+?\.|)eventbrite\.com/)) {
 
         // rewrite links to add cross domain tracking
-        link.search = link.search + '_eboga=' + clientID;
+        link.search = (link.search === '') ?
+          '?_eboga=' + clientID : link.search + '&_eboga=' + clientID;
 
         // track outbound link
-        const category = $link.data('category');
-        const action   = $link.data('action');
-        const label    = $link.data('label');
-        const value    = $link.data('value');
+        let category = $link.data('ga-category');
+        let action   = $link.data('ga-action');
+        let label    = $link.data('ga-label');
+        let value    = $link.data('ga-value');
         if ((typeof category != 'undefined') & (category != '')
           && (typeof action != 'undefined') && (action != '')) {
-          this.onClick = trackEventbriteOutbound(category, action, label, value);
+          link.onclick = trackEvent(category, action, label, value);
         }
+      } else if (link.href.match(/^mailto:/)) {
+        // track clicking of the email link
+        let email = link.href.substring(7);
+        link.onclick = trackEvent('outbound', 'click', 'email', email);
+      } else if (!link.href.match(window.location.hostname)) {
+        // track other outbound link, as long as it is not an internal linfk
+        link.onclick = trackLinkOutbound;
       }
     });
   });
