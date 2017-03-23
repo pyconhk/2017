@@ -1,0 +1,13 @@
+.page--sponsor {
+  .theme-area {
+    background-image: url('./images/page-sponsor-theme.png');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @extend .document-content;
+
+  .sponsor-type {
+    @extend .z-depth-2;
+  }
+}
