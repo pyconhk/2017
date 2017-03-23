@@ -80,6 +80,10 @@
               </div>
               <div class="action">
                 <a class="btn btn-default"
+                  data-ga-category="patron-outbound"
+                  data-ga-action="click"
+                  data-ga-label="patrons"
+                  data-ga-value="tier 1"
                   href="{{ data.site.patronURL | appendURL | withGA('tier_1', 'about_patrons') | execAppend }}"
                   target="_blank">Donate Now</a>
               </div>
@@ -102,6 +106,10 @@
               </div>
               <div class="action">
                 <a class="btn btn-default"
+                  data-ga-category="patron-outbound"
+                  data-ga-action="click"
+                  data-ga-label="patrons"
+                  data-ga-value="tier 2"
                   href="{{ data.site.patronURL | appendURL | withGA('tier_2', 'about_patrons') | execAppend }}"
                   target="_blank">Donate Now</a>
               </div>
