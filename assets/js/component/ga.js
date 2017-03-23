@@ -8,16 +8,24 @@ if (location.hostname == 'localhost') {
   console.debug('[GA local debug] override localhost `ga` function');
   window.ga = function() {
     if (typeof arguments[0] === 'function') {
-      const tracker = {
+      let tracker = {
         get: function(name) {
           return 'debug:' + name;
         }
       }
       window.setTimeout(arguments[0](tracker), 500);
+    } else if (arguments[0] === 'create') {
+      let args = Array.from(arguments);
+      let [cmd, type, trackingID] = args;
+      console.debug(`[GA local debug] ${type} "${trackingID}"`);
     } else if (arguments[0] === 'send') {
-      const args = Array.from(arguments);
-      const [type, category, action, label, value] = args;
-      console.debug(`[GA local debug] sending event "${type}", "${category}", "${action}", "${label}", "${value}"`);
+      let args = Array.from(arguments);
+      let [cmd, type, category, action, label, value] = args;
+      if (type === 'pageview') {
+        console.debug(`[GA local debug] sending ${type}`);
+      } else {
+        console.debug(`[GA local debug] sending ${type}`, args.slice(2));
+      }
     }
   };
 } else {
