@@ -12,7 +12,7 @@ gulp.task('dev:css', 'Build development version ./assets/scss/*.scss into ./publ
   return gulp.src('./assets/scss/*.scss')
     .on('error', util.log)
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('public'));

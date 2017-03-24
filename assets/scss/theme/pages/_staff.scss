@@ -1,0 +1,11 @@
+html, body, :root {
+  @media only screen and (min-width: $large-screen) {
+    font-size: 18px;
+  }
+}
+
+.page--about--staff {
+  .collapsible-body {
+    padding: 1.5rem;
+  }
+}

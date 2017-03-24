@@ -1,0 +1,13 @@
+{% extends "app.jinja" %}
+
+{% block content %}
+<div class="container">
+  <div id="timetable">
+    <span class="loading">Loading...</span>
+  </div>
+</div>
+
+<script>
+var timetableControl = timetable(document.getElementById('timetable'));
+</script>
+{% endblock %}
