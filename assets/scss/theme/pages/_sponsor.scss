@@ -11,7 +11,14 @@
     .sponsor-type {
       @extend .z-depth-2;
       p.logo {
-        margin: 2em 0 1em;
+        margin: 2em 0 1em 1em;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .description {
+        padding-bottom: 2em;
       }
     }
    }
