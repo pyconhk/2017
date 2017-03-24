@@ -7,7 +7,12 @@
 
   @extend .document-content;
 
-  .sponsor-type {
-    @extend .z-depth-2;
-  }
+  .sponsor-types {
+    .sponsor-type {
+      @extend .z-depth-2;
+      p.logo {
+        margin: 2em 0 1em;
+      }
+    }
+   }
 }
