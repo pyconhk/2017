@@ -4,6 +4,7 @@ import $ from 'jquery';
 
 require('./component/sidebar');
 require('./component/collapsible');
+require('./component/ga');
 
 $('[data-activates]').sideNav();
 $('.collapsible').collapsible();
