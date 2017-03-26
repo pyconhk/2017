@@ -8,8 +8,19 @@
   @extend .document-content;
 
   .sponsor-types {
+    width: 90%;
+    max-width: 1080px;
+    @media #{$small-and-down} {
+      width: 100%;
+      display: block;
+    }
+    .btn {
+      color: #000;
+    }
     .sponsor-type {
+      background-color: rgba(255,255,255,.9);
       @extend .z-depth-2;
+      padding: 1em 1em 2em 1em;
       p.logo {
         margin: 2em 0 1em 1em;
         img {
@@ -17,8 +28,10 @@
           height: 100%;
         }
       }
-      .description {
-        padding-bottom: 2em;
+
+      h3 {
+        font-size: 1.6em;
+        color: #000;
       }
     }
    }
