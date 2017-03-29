@@ -33,6 +33,12 @@
         font-size: 1.6em;
         color: #000;
       }
+
+      @media #{$small-and-down} {
+        .description div {
+          text-align: center;
+        }
+      }
     }
    }
 }
