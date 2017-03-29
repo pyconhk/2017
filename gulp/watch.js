@@ -21,5 +21,12 @@ gulp.task('watch:image', false, () => {
   ], ['image']);
 });
 
+gulp.task('watch:data', false, () => {
+  return gulp.watch([
+    './assets/data/**/*.yml',
+    './manifest.json',
+  ], ['data'])
+});
+
 gulp.task('watch', 'Monitor and rebuild images, pages and css files.',
   ['watch:image', 'watch:html', 'watch:css']);
