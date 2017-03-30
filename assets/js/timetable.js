@@ -4,8 +4,7 @@
 
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { reducer } from './timetable/Store';
+import store from './store';
 import Timetable from './timetable/containers/Timetable';
 
 /**
@@ -13,7 +12,7 @@ import Timetable from './timetable/containers/Timetable';
  * @param {mixed} obj object to test
  * @return {bool} if obj is an HTMLElement
  */
-function _isDOM(obj:Object):boolean {
+function _isDOM(obj: HTMLElement | Object): boolean {
   try {
     //Using W3 DOM2 (works for FF, Opera and Chrom)
     return obj instanceof HTMLElement;
@@ -21,9 +20,9 @@ function _isDOM(obj:Object):boolean {
     //Browsers not supporting W3 DOM2 don't have HTMLElement and
     //an exception is thrown and we end up here. Testing some
     //properties that all elements have. (works on IE7)
-    return (typeof obj==="object") &&
-      (obj.nodeType===1) && (typeof obj.style === "object") &&
-      (typeof obj.ownerDocument ==="object");
+    return (typeof obj === 'object') &&
+      (obj.nodeType === 1) && (typeof obj.style === 'object') &&
+      (typeof obj.ownerDocument === 'object');
   }
 }
 
@@ -32,15 +31,12 @@ function _isDOM(obj:Object):boolean {
  * @param {object} element HTMLElement to render to
  * @return {object} object with control function
  */
-function timetable(element:Object):Object {
+function timetable(element: HTMLElement): Object {
 
   // if element is not a valid DOM object
   if (!_isDOM(element)) {
-    throw "timetable requires DOM element as argument 1";
+    throw new Error('timetable requires DOM element as argument 1');
   }
-
-  // create store
-  const store = createStore(reducer);
 
   ReactDOM.render(
     <Provider store={store}>
@@ -50,12 +46,12 @@ function timetable(element:Object):Object {
   );
 
   // return control object
-  const control = {
+  return {
+
   };
-  return control;
 }
 
 // export as global function
-if (typeof window != "undefined") {
+if (typeof window !== 'undefined') {
   window.timetable = timetable;
 }
