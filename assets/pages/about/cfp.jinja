@@ -23,7 +23,10 @@
           <ul class="cpf-results">
             {% for result in data.cfp.results %}
               <li class="link">
-                <a href="{{result.url}}" target="_blank">{{ result.title }} ({{result.speaker}})</a>
+                <a href="{{result.url}}" target="_blank">
+                  {{ result.title }} ({{result.speaker}})
+                  {% if result.remark %} ({{ result.remark }}) {% endif %}
+                </a>
               </li>
             {% endfor %}
           </ul> <!-- cpf-results -->
