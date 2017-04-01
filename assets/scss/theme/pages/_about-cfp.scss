@@ -1,0 +1,25 @@
+.page--about--cfp {
+  .theme-area {
+    background-image: url('./images/page-cfp-results-theme.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  @extend .document-content;
+
+  .link {
+    a {
+      text-decoration: none;
+      color: #337ab7
+    }
+  }
+
+  .cpf-results {
+    width: 90%;
+    max-width: 1080px;
+    @media #{$small-and-down} {
+      width: 100%;
+      display: block;
+    }
+   }
+}
