@@ -1,5 +1,5 @@
 sponsor_types:
-  - name:     "Gold"
+  - name:     "Gold Sponsor"
     sponsors:
       - id:   "gandi"
         name: "Gandi.net"
