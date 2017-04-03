@@ -5,17 +5,17 @@ results:
       speaker:  "Dietrich Ayala"
       remark:   "Mozilla"
       url:      "#"
-      cfp:      false
+      cfp:      true
   -   title:    "Reproducible builds: Fulfilling the original promise of free software"
       speaker:  "Chris Lamb"
       remark:   "Debian"
       url:      "#"
-      cfp:      false
+      cfp:      true
   -   title:    "Building a career in Open Source"
       speaker:  "Vaishali Thakkar"
       remark:   "India"
       url:      "#"
-      cfp:      false
+      cfp:      true
   -   title:    "Open CV in Raspberry PI with Camera"
       speaker:  "Kazuhiko Inaba"
       remark:   "Japan"
@@ -24,12 +24,12 @@ results:
   -   title:    "Tips in setting up OpenStack from scratch"
       speaker:  "Vinnson Lee"
       url:      "#"
-      cfp:      false
+      cfp:      true
   -   title:    "Let's Rust! System programming is awesome again!"
       speaker:  "Karl Lam"
       remark:   "OneSky"
       url:      "#"
-      cfp:      false
+      cfp:      true
   -   title:    "One Year of Rust Microkernel Development"
       speaker:  "Wei Tang"
       url:      "#"
@@ -38,4 +38,4 @@ results:
       speaker:  "Vigneshwer Dhinakaran"
       remark:   "India"
       url:      "#"
-      cfp:      false
+      cfp:      true
