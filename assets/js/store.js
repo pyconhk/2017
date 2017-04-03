@@ -6,9 +6,11 @@ import reducers from './reducers';
 
 const initialState = {
   user: {},
-  topics: {},
-  venues: {},
-  sessions: {},
+  timetable: {
+    topics: {},
+    venues: {},
+    sessions: {},
+  },
 };
 
 const middlewares = applyMiddleware(logger);
