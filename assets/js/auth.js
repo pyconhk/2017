@@ -1,35 +1,44 @@
 import firebase from './firebase';
+import store from './store';
+import { userSignIn, userNotAuth } from './action';
 
-const githubAuth = function() {
-  const provider = new firebase.auth.GithubAuthProvider();
+function firebaseSignIn(provider) {
   firebase.auth().signInWithRedirect(provider);
 }
 
-const googleAuth = function() {
+export function githubAuth() {
+  firebaseSignIn(new firebase.auth.GithubAuthProvider());
+}
+
+export function googleAuth() {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithRedirect(provider);
 }
 
-const facebookAuth = function() {
+export function facebookAuth() {
   const provider = new firebase.auth.FacebookAuthProvider();
   firebase.auth().signInWithRedirect(provider);
 }
 
-const twitterAuth = function() {
+export function twitterAuth() {
   const provider = new firebase.auth.TwitterAuthProvider();
   firebase.auth().signInWithRedirect(provider);  
 }
 
-const signout = function() {
-  firebase.auth().signOut();
+export function signOut() {
+  firebase.auth().signOut().then(() => {
+    store.dispatch(userNotAuth());
+  });
 }
 
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     // User is signed in.
     console.log (`${user} is signed in.`);
+    store.dispatch(userSignIn(user));
   } else {
     // No user is signed in.
-    console.log (`not sign in.`);
+    console.log ('Not sign in.');
+    store.dispatch(userNotAuth());
   }
 });
