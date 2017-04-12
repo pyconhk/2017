@@ -9,7 +9,9 @@
     </div>
     <div class="col m9 description">
         <h3>{{sponsor.name}}</h3>
-        <p>{{sponsor.description}}</p>
+        {% for desc in sponsor.description %}
+          <p>{{desc}}</p>
+          {% endfor %}
         <div>
           <a class="waves-effect waves-light btn" target="_blank"
               href="{{sponsor.links.url}}" role="button">
