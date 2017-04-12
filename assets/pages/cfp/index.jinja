@@ -21,12 +21,12 @@
           </p>
           <p>Here is the list of the accepted CFP topics:</p>
           <ul class="cpf-results">
-            {% for result in data.topics.results %}
-              {% if result.cfp %}
+            {% for topic in data.topics.topics %}
+              {% if topic.cfp %}
                 <li class="link">
-                  <a href="{{result.url}}" target="_blank">
-                    {{ result.title }} ({{result.speaker}})
-                    {% if result.remark %} ({{ result.remark }}) {% endif %}
+                  <a href="{{topic.url}}" target="_blank">
+                    {{ topic.title }} ({{topic.speaker}})
+                    {% if topic.remark %} ({{ topic.remark }}) {% endif %}
                   </a>
                 </li>
               {% endif %}
