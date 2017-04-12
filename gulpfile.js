@@ -1,4 +1,5 @@
 'use strict';
 
 require('fs').readdirSync('./gulp')
-  .forEach((file) => require(`./gulp/${file}`));
+  .forEach((file) =>
+    (file.match(/^[a-z][\w\-]+\.js$/)) ? require(`./gulp/${file}`) : null);

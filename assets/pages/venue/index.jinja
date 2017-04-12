@@ -7,7 +7,7 @@
 
 {% block script %}
     <script src="http://maps.googleapis.com/maps/api/js?signed_in=true&language=en-GB&key=AIzaSyAcfOIRBkjKYl6ryd-HqoJvoaOva7E1Al4" defer></script>
-    <script src="/2017/js/venue.js" defer></script>
+    <script src="{{ data.site.basePath }}/js/venue.js" defer></script>
 {% endblock %}
 
 {% block content %}
@@ -31,19 +31,19 @@
                         <ul class="browser-default">
                             <li>
                                 30X Central (via Pok Fu Lam, Wah Fu)
-                                <a href="https://file.hkoscon.org/download/30x.pdf">
+                                <a href="https://file.hkoscon.org/download/30x.pdf" target="_blank">
                                     Detail
                                 </a>
                             </li>
                             <li>
                                 73 Stanley (via Repulse Bay, Wong Chuk Hang, Aberdeen, Wah Fu)
-                                <a href="https://file.hkoscon.org/download/73.pdf">
+                                <a href="https://file.hkoscon.org/download/73.pdf" target="_blank">
                                     Detail
                                 </a>
                             </li>
                             <li>
                                 970 So Uk Estate (via Sham Shui Po, Prince Edward, Mong Kok, Yau Ma Tei, Jordan)
-                                <a href="https://file.hkoscon.org/download/970.pdf">
+                                <a href="https://file.hkoscon.org/download/970.pdf" target="_blank">
                                     Detail
                                 </a>
                             </li>

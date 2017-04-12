@@ -1,22 +1,38 @@
 'use strict';
 
+require('dotenv').load();
+
+const webpack = require('webpack');
 const UglifyPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const AggressiveMergingPlugin = require('webpack/lib/optimize/AggressiveMergingPlugin');
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
 
 const merge = require('webpack-merge');
 
+const firebaseConfig = {
+  FIREBASE_API_KEY: process.env.FIREBASE_API_KEY || '<API_KEY>',
+  FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN || '<PROJECT_ID>.firebaseapp.com',
+  FIREBASE_DATEBASE_URL: process.env.FIREBASE_DATEBASE_URL || 'https://<DATABASE_NAME>.firebaseio.com',
+  FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET || '<BUCKET>.appspot.com',
+  FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID || '<SENDER_ID>',
+};
+
 const base = {
   plugins: [
-    new AggressiveMergingPlugin()
+    new AggressiveMergingPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(firebaseConfig)
+    })
   ],
   externals: {
     jquery: 'jQuery',
     hammerjs: 'Hammer',
-    'node-waves': 'Waves'
+    'node-waves': 'Waves',
+    'firebase': 'firebase'
   },
   entry: {
     app: ['./assets/js/app'],
+    timetable: ['./assets/js/timetable'],
     venue: ['./assets/js/venue'],
   },
   devtool: 'source-map',
@@ -42,6 +58,9 @@ const dev = merge.smart({
   ],
   entry: {
     app: [
+      'webpack-dev-server/client?http://localhost:8080/'
+    ],
+    timetable: [
       'webpack-dev-server/client?http://localhost:8080/'
     ],
     venue: [

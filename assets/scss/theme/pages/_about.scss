@@ -1,0 +1,28 @@
+.page--about {
+  h2 {
+    @media #{$medium-and-down} {
+      text-align: center;
+    }
+  }
+
+  a:hover, a:active, a:focus {
+    outline: none;
+  }
+  .card {
+    .logo-wrapper {
+      height: 350px;
+      img {
+        max-height: 300px;
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: auto;
+      }
+    }
+    .content {
+      font-size: 1.3em;
+      height: 4em;
+    }
+  }
+}

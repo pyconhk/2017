@@ -1,6 +1,5 @@
-<nav>
-    <div class="nav-wrapper container">
-        <a href="/2017/" class="brand-logo yellow-theme-text">HKOSCon 2017</a>
+<div class="navbar-fixed">
+    <nav>
         <ul class="left">
             <li>
                 <a href="#" data-activates="sidebar" class="button-collapse show-on-large">
@@ -8,37 +7,47 @@
                 </a>
             </li>
         </ul>
-    </div>
-</nav>
+        <div class="nav-wrapper container">
+            <a href="{{ data.site.basePath }}/" class="brand-logo">HKOSCon 2017</a>
+        </div>
+    </nav>
+</div>
 
 <ul id="sidebar" class="side-nav">
     <li class="logo">
-        <a href="/2017">
-            <img src="/2017/images/favicon.png">
+        <a href="{{ data.site.basePath }}/">
+            <img src="{{ data.site.basePath }}/images/favicon.png" alt="HKOSCon">
         </a>
     </li>
     <li class="no-padding">
     <ul class="collapsible collapsible-accordion">
         <li>
-            <a href="#" class="waves-effect collapsible-header">About</a>
+            <a href="#" class="bold waves-effect collapsible-header">About</a>
             <ul class="collapsible-body">
-                <li><a href="/2017/about/">Organizers</a></li>
-                <li><a href="/2017/about/coc.html">Code Of Conduct</a></li>
-                <li><a href="/2017/about/staff.html">Staff</a></li>
-            </ul>
-        </li>
-        <li class="link">
-            <a href="/2017/venue/">Venue</a>
-        </li>
-        <li>
-            <a href="#" class="waves-effect collapsible-header">Archive</a>
-            <ul class="collapsible-body">
-                <li><a href="https://2016.opensource.hk/" target="_blank">HKOSCon 2016</a></li>
-                <li><a href="https://2015.opensource.hk/" target="_blank">HKOSCon 2015</a></li>
-                <li><a href="https://2014.opensource.hk/" target="_blank">HKOSCon 2014</a></li>
-                <li><a href="https://2013.opensource.hk/" target="_blank">HKOSCon 2013</a></li>
+                <li><a href="{{ data.site.basePath }}/about/">Organizers</a></li>
+                <li><a href="{{ data.site.basePath }}/about/coc.html">Code Of Conduct</a></li>
+                <li><a href="{{ data.site.basePath }}/about/staff.html">Staff</a></li>
+                <li><a href="{{ data.site.basePath }}/about/patron-programme.html">Patron Programme</a></li>
+                <li><a href="{{ data.site.basePath }}/about/cfp.html">Call For Proposals Results</a></li>
             </ul>
         </li>
     </ul>
+    </li>
+    <li class="bold"><a class="waves-effect waves-teal" href="{{ data.site.basePath }}/sponsor/">Sponsor</a></li>
+    <li class="bold"><a class="waves-effect waves-teal" href="{{ data.site.basePath }}/venue/">Venue</a></li>
+    <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+            <li>
+                <a href="#" class="bold waves-effect collapsible-header">Archive</a>
+                <div class="collapsible-body">
+                    <ul>
+                        <li><a href="https://2016.opensource.hk/" target="_blank">HKOSCon 2016</a></li>
+                        <li><a href="https://2015.opensource.hk/" target="_blank">HKOSCon 2015</a></li>
+                        <li><a href="https://2014.opensource.hk/" target="_blank">HKOSCon 2014</a></li>
+                        <li><a href="https://2013.opensource.hk/" target="_blank">HKOSCon 2013</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </li>
 </ul>

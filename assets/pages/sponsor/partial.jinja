@@ -1,0 +1,23 @@
+<div class="sponsor-type">
+  <div class="row">
+    <div class="col m3">
+      <p class="logo">
+        <a href="{{sponsor.logos.url}}" title="{{sponsor.logos.title}}" target="_blank">
+          <img src="{{sponsor.logos.img}}" alt="{{sponsor.logos.alt}}">
+        </a>
+      </p>
+    </div>
+    <div class="col m9 description">
+        <h3>{{sponsor.name}}</h3>
+        {% for desc in sponsor.description %}
+          <p>{{desc}}</p>
+          {% endfor %}
+        <div>
+          <a class="waves-effect waves-light btn" target="_blank"
+              href="{{sponsor.links.url}}" role="button">
+              {{sponsor.links.text}}
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
