@@ -11,18 +11,15 @@ export function githubAuth() {
 }
 
 export function googleAuth() {
-  const provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().signInWithRedirect(provider);
+  firebaseSignIn(new firebase.auth.GoogleAuthProvider());
 }
 
 export function facebookAuth() {
-  const provider = new firebase.auth.FacebookAuthProvider();
-  firebase.auth().signInWithRedirect(provider);
+  firebaseSignIn(new firebase.auth.FacebookAuthProvider());
 }
 
 export function twitterAuth() {
-  const provider = new firebase.auth.TwitterAuthProvider();
-  firebase.auth().signInWithRedirect(provider);  
+  firebaseSignIn(new firebase.auth.TwitterAuthProvider());
 }
 
 export function signOut() {
