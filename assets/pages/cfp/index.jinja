@@ -1,0 +1,52 @@
+{% extends "app.jinja" %}
+
+{% block content %}
+    <div class="theme-area">
+        <div class="content">
+            <div class="container">
+                <h1>Call For Proposals Results</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+          <h3>CFP Results are Here!</h3>
+          <p>We are pleased to announce the CFP results. We have received
+            <strong>{{data.topics.num_submissions}}</strong> submissions
+            before our deadline {{data.topics.deadline}}. The volunteers in our
+            Program Committee had a hard time to shortlist them to fit in
+            <span class="link">
+              <a href="/schedule" target="_blank">our agenda.</a>
+            </span>
+          </p>
+          <p>Here is the list of the accepted CFP topics:</p>
+          <ul class="cpf-results">
+            {% for topic in data.topics.topics %}
+              {% if topic.cfp %}
+                <li class="link">
+                  <a href="{{topic.url}}" target="_blank">
+                    {{ topic.title }} ({{topic.speaker}})
+                    {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul> <!-- cpf-results -->
+          <p></p>
+          <p>If your topic is not selected, don't worry. You may still share your topic in our <b>Unconference Session</b> at
+            <span class="link"><a href="/schedule/#day-2" target="_blank"> of Day 2 (Saturday)</a></span>.
+          </p>
+          <p class="link">Get your ticket
+            <a href="{{data.site.ticketURL}}" target="_blank">here</a> :-)
+          </p>
+          <h2>More Information</h2>
+          <p class="link">We're constantly updating our Facebook. Please subscribe our
+            <a href="https://www.facebook.com/hkoscon/" target="_blank">Facebook Page</a>
+            for more updates.
+          </p>
+          <p class="link">For enquiry/any special requests, please feel free to contact us at
+            <a href="mailto:conference@opensource.hk">conference@opensource.hk</a>
+          </p>
+      </div> <!-- content -->
+    </div> <!-- container -->
+{% endblock %}

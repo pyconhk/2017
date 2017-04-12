@@ -14,59 +14,26 @@
           <p>We would like to thank the following sponsors for their support.</p>
 
           <div class="sponsor-types">
-            <h3>Gold</h3>
-            <div class="sponsor-type">
-              <div class="row">
-                <div class="col m3">
-                  <p class="logo">
-                    <a href="http://gandi.net" title="Gandi.net" target="_blank">
-                      <img src="//file.hkoscon.org/sponsor/gandi.jpg" alt="Gandi.net logo">
-                    </a>
-                  </p>
+            {% for types in data.sponsor.sponsor_types %}
+              <h3>{{ types.name }}</h3>
+              {% for sponsor in types.sponsors %}
+                {% if sponsor.grantedPerm %}
+                  {% include "sponsor/partial.jinja" %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+
+            {% if data.sponsor.patrons | length > 0 %}
+              <h3>{{ data.sponsor.patron_name }}</h3>
+              <div class="sponsor-type">
+                <ul>
+                {% for patron in data.sponsor.patrons %}
+                  <li>{{patron.name}}</li>
+                {% endfor %}
+                </ul>
                 </div>
-                <div class="col m9 description">
-                    <h3>Gandi.net</h3>
-                    <p>
-                      Gandi is the No Bullshit™ domain name registrar and hosting provider.
-                      Created in France in 1999, Gandi is now present in 3 continents,with offices
-                      in Paris, San Francisco, Luxembourg,and Taipei. We position ourselves as the
-                      next port of call for those who want to create an online presence, right after
-                      Internet access providers, since domain names are the firststep in creating
-                      your own piece of the Internet.
-                    </p>
-                    <div>
-                      <a class="waves-effect waves-light btn" target="_blank" href="https://www.gandi.net/" role="button">Gandi.net Website</a>
-                    </div>
-                </div>
-              </div>
-            </div> <!-- gold -->
-            <h3>Prize Sponsor</h3>
-            <div class="sponsor-type">
-              <div class="row">
-                <div class="col m3">
-                  <p class="logo">
-                    <a href="https://www.jetbrains.com/" title="JetBrains" target="_blank">
-                      <img src="//file.hkoscon.org/sponsor/jetbrains.jpg" alt="JetBrains logo">
-                    </a>
-                  </p>
-                </div>
-                <div class="col m9 description">
-                    <h3>JetBrains</h3>
-                    <p>
-                      JetBrains PyCharm is the intelligent Python IDE for Professional Developers
-                      providing a complete set of tools for productive Python, Web and Scientific
-                      development. PyCharm comes in two editions. The free and open-source PyCharm
-                      Community Edition is perfect for pure Python and scientific development.
-                      PyCharm Professional Edition is designed for professional Python and Web
-                      developers.
-                    </p>
-                    <div>
-                      <a class="waves-effect waves-light btn" target="_blank"
-                      href="https://www.jetbrains.com/" role="button">JetBrains Website</a>
-                    </div>
-                </div>
-              </div>
-            </div> <!-- general -->
+              {% endif %}
+            </div>
           </div> <!-- sponsor-types -->
       </div> <!-- content -->
     </div> <!-- container -->
