@@ -1,11 +1,19 @@
 //@flow
 
 'use strict';
-
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Timetable from './timetable/containers/Timetable';
+import authSubscribe from './subscribe/auth';
+
+require('./component/modal');
+authSubscribe();
+
+store.subscribe(authSubscribe);
+
+$('#signin-modal').modal();
 
 /**
  * _isDOM

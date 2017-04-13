@@ -1,8 +1,6 @@
 'use strict';
 
 import $ from 'jquery';
-import store from './store';
-import authSubscribe from './subscribe/auth';
 
 require('./component/sidebar');
 require('./component/collapsible');
@@ -17,8 +15,3 @@ require.ensure(['node-waves'], () => {
   Waves.init();
 });
 
-authSubscribe();
-
-store.subscribe(authSubscribe);
-
-$('#signin-modal').modal();

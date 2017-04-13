@@ -6,8 +6,8 @@
     <span class="loading">Loading...</span>
   </div>
 </div>
+{% endblock %}
 
-<script>
-var timetableControl = timetable(document.getElementById('timetable'));
-</script>
+{% block script %}
+  <script src="{{ data.site.basePath }}/js/timetable.js" defer></script>
 {% endblock %}
