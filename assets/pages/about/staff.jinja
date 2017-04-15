@@ -1,5 +1,9 @@
 {% extends "app.jinja" %}
 
+{% block script %}
+    <script src="{{ data.site.basePath }}/js/staff.js" defer></script>
+{% endblock %}
+
 {% block content %}
     <div class="container">
         <h3>Staff</h3>
@@ -98,6 +102,7 @@
                     <ul class="collection">
                         <li class="collection-item">Mr. Koala Yeung (Team Lead)</li>
                         <li class="collection-item">Ms. Connie Leung</li>
+                        <li class="collection-item">{{ getEmail("cleung334@gmail.com") }}</li>
                         <li class="collection-item">Mr. Tony Yip</li>
                     </ul>
                 </div>
