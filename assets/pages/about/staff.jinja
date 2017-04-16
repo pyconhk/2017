@@ -1,8 +1,4 @@
-{% extends "app.jinja" %}
-
-{% block script %}
-    <script src="{{ data.site.basePath }}/js/staff.js" defer></script>
-{% endblock %}
+{% extends "app.jinja" %}]
 
 {% block content %}
     <div class="container">
@@ -14,8 +10,8 @@
               <div class="collapsible-body">
                   <ul class="collection">
                       {% for member in team.members %}
-                      <li class="collection-item" data-email="{{member.email}}">
-                          <img src="" alt="{{member.name}}" class="avatar" >
+                      <li class="collection-item">
+                          <img src="{{ member.email | gravatar }}" alt="{{member.name}}" class="avatar" >
                           {{ member.name }} {% if member.teamlead %} (Team Lead) {% endif %}
                       </li>
                       {% endfor %}

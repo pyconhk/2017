@@ -33,8 +33,7 @@ const base = {
   entry: {
     app: ['./assets/js/app'],
     timetable: ['./assets/js/timetable'],
-    venue: ['./assets/js/venue'],
-    staff: ['./assets/js/staff-gravatar']
+    venue: ['./assets/js/venue']
   },
   devtool: 'source-map',
   output: {
