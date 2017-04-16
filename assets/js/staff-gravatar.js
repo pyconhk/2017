@@ -5,7 +5,7 @@ import gravatar from 'gravatar';
 export function getImageUrl(email) {
 
   const option = {
-    s: '100',
+    s: '80',
     d: 'identicon',
     r: 'pg',
   };
