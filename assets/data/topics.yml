@@ -462,7 +462,7 @@ topics:
           interface. Audience will learn the concepts and mechanisms of 3D
           digital modeling and 3D animation principles. Blender would be used
           to demonstrate the underlying concepts.
-      lang: "zh"
+      lang: "zh.yue"
       lang_slide: "en"
       type: "talk"
       cfp: false
@@ -478,6 +478,9 @@ topics:
           夠扮演前置翻譯程式的角色，藉由字典檔案的比對，減輕翻譯者保持字彙一致的壓力，而能專
           注於語意的正確與敘述的通順。除了由英語翻譯為漢語的功能之外，在不同的漢語翻譯之間互
           轉也是程式的設計目標。
+      lang: "zh.tw"
+      lang_slide: "zh"
+      type: "talk"
       cfp:  false
   -   title: ZMQ multiplex between golang coroutine and python thread
       id: zmq-multiplex-between-golang-coroutine-and-python-thread
@@ -495,6 +498,9 @@ topics:
           consumed all python thread in thread pool very easily. We implement
           a bidirectional and multiplexing transport, so we can reduce overhead
           and reuse blocked workers.
+      lang: "en_zh"
+      lang: "en"
+      type: "talk"
       cfp: false
   -   title:  "Pentest fun with metasploit framework II"
       id: "pentest-fun-with-metasploit-framework-ii"
@@ -512,6 +518,9 @@ topics:
           (mainly command line interface) would take place. Though it is not
           necessary, it is encouraged that participant would bring their own
           laptop to follow the demo if they wish to.
+      lang: "en"
+      lang_slide: "en"
+      type: "talk"
       cfp: false
   -   title:  "Waiting too long for Excel's VLOOKUP? Use SQLite for simple data analysis!"
       id: "use-sqlite-for-simple-data-analysis"
@@ -547,6 +556,9 @@ topics:
           Requirements
         - >
           Bring your own laptop (it can be Windows, Mac or Linux)
+      lang: "en"
+      lang_slide: "en"
+      type: "workshop"
       cfp: false
   -   title:  "AWS Cloud Lab (革新雲端電腦房)"
       id: "aws-cloud-lab"
