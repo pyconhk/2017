@@ -24,8 +24,9 @@
             {% for topic in data.topics.topics %}
               {% if topic.cfp %}
                 <li class="link">
+                  {% set speaker = data.speakers[topic.speaker] %}
                   <a href="{{topic.url}}" target="_blank">
-                    {{ topic.title }} ({{topic.speaker}})
+                    {{ topic.title }} ({{speaker.name}})
                     {% if topic.remark %} ({{ topic.remark }}) {% endif %}
                   </a>
                 </li>
