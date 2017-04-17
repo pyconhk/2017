@@ -1,49 +1,186 @@
 num_submissions: "51"
 deadline: 2017/02/28 23:00 (GMT+8)
 topics:
+  -   title:    "The deep dive in-and-out of MySQL Group Replication"
+      id:       "the-deep-dive-in-and-out-of-mysql-group-replication"
+      speaker:  "ivan-ma"
+      remark:   "MySQL"
+      url:      "#"
+      description:
+        - >
+          High Available Database Architecture is so important.  It is more than
+          just the HA but also scalable design to the demand.   MySQL Group
+          Replication is one of the key features in MySQL 5.7 (since the
+          release of 5.7.17).   The session will share the setup of MySQL Group
+          Replication together with the MySQL InnoDB Cluster, in which the MySQL
+          Shell, MySQL Router + MySQL Group Replication architecture go together
+          to form a scalable and reliable db infrastructure to your
+          application(s).
+      cfp:      true
+  -   title:  "What's New in MySQL 8.0"
+      id:     "whats-new-in-mysql-8.0"
+      speaker:  "ryusuke-kajiyama"
+      remark: "MySQL"
+      url:  "#"
+      description:
+        - >
+          In this session learn about the new features in MySQL 8.0 Development
+          Milestone Release, including the new transactional data dictionary,
+          SQL roles, new character sets and collations, and much more.
+      cfp:      true
   -   title:    "Preparing for the App-ocalypse: The Web in the Age of Physical Computing"
       id:       "preparing-for-the-app-ocalypse-the-web-in-the-age-of-physical-computing"
       speaker:  "dietrich-ayala"
       remark:   "Mozilla"
       url:      "#"
+      description:
+        - >
+          Ubiquitous physical computing is here, blurring what is digital and
+          real in our daily experience. Join me for an interactive tour of how
+          to create digital+physical experiences on the web with IoT, AR, VR
+          and other emerging technologies.
       cfp:      true
   -   title:    "Reproducible builds: Fulfilling the original promise of free software"
       id:       "reproducible-builds-fulfilling-the-original-promise-of-free-software"
       speaker:  "chris-lamb"
       remark:   "Debian"
       url:      "#"
+      description:
+        - >
+          Whilst anyone can inspect the source code of free software for
+          malicious flaws, most Linux distributions provide binary
+          (or "compiled") packages to end users.
+
+        - >
+          The motivation behind "reproducible" builds is to allow verification
+          that no flaws have been introduced during this compilation process by
+          promising identical binary packages are always generated from a
+          given source.
+
+        - >
+          This prevents against the installation of backdoor-introducing malware
+          on developers' machines - an attacker would need to simultaneously
+          infect or blackmail all developers attempting to reproduce the build.
+
+        - >
+          This talk will focus heavily on how exactly software can fail to be
+          reproducible, the tools, tests & specifications we have written to
+          fix & diagnose issues, as well as the many amusing "fails" in
+          upstream's code that have been unearthed by this process. In addition,
+          you will learn what to avoid in your own software as well as the
+          future efforts in the Reproducible Builds arena.
       cfp:      true
   -   title:    "Building a career in Open Source"
       id:       "building-a-career-in-open-source"
       speaker:  "vaishali-thakkar"
       remark:   "India"
       url:      "#"
+      description: ""
       cfp:      true
   -   title:    "Open CV in Raspberry PI with Camera"
       id:       "open-cv-in-raspberry-pi-with-camera"
       speaker:  "kazuhiko-inaba"
       remark:   "Japan"
       url:      "#"
+      description:
+        - >
+          This topic is about  Open CV in Raspberry PI 3 with Camera. I would
+          like to explain about this module how to install and use , and show
+          some demo from  the standard of the point of the view in performance
+          for making robots like an eye's function we can use.
       cfp:      false
   -   title:    "Tips in setting up OpenStack from scratch"
       id:       "tips-in-setting-up-openstack-from-scratch"
       speaker:  "vinnson-lee"
       url:      "#"
+      description:
+        - >
+          We will show you some tips about how to setup OpenStack platform, and
+          bring you our experience in setting up private cloud for commercial
+          use, with hints on consideration of architecture, HA and network
+          design.
       cfp:      true
   -   title:    "Let's Rust! System programming is awesome again!"
       id:       "lets-rust-system-programming-is-awesome-again"
       speaker:  "karl-lam"
       remark:   "OneSky"
       url:      "#"
+      description:
+        - >
+          Usually we have to choose between performance, safety, and development
+          speed. We have C/C++, Java, and bunch of scripting languages.
+
+        - >
+          Then here comes to the Rust: a programming language brought by Mozilla
+          and the community.
+
+        - >
+          This topic will introduce Rust by showing the ownership concept,
+          modern syntax and examples of concurrency approach.
       cfp:      true
   -   title:    "One Year of Rust Microkernel Development"
       id:       "one-year-of-rust-microkernel-development"
       speaker:  "wei-tang"
       url:      "#"
+      description:
+        - >
+          This talk discusses about my experience in working on Rux
+          (https://github.com/sorpaas/rux), a hobbist microkernel project in
+          Rust. It is nearly complete and features a capability-based system
+          similar to seL4. More will be focused on how to roll out your own
+          kernel project based on Rux.
       cfp:      false
   -   title:    "Building Artificial Intelligence Units in Rust"
       id:       "building-artificial-intelligence-units-in-rust"
       speaker:  "vigneshwer-dhinakaran"
       remark:   "India"
       url:      "#"
-      cfp:      true
+      description:
+        - >
+          General Description
+        - >
+          Rust is great for building mathematical models and AI which is the
+          talk of the hour and a great emerging domain is based on mathematics
+          which can crunch realtime data to provide human level insights which
+          helps in making logical decisions.
+        - >
+          There are already many crates in rust which provide AI units which
+          help in implementing deep learning and reinforcement learning systems
+          and algorithms.
+        - >
+          Proposals basically deep dives into such implementations in rust and
+          covers the benchmarks of performance of the rust crates with the
+          industrial grade libraries such as tensor flow and caffe. The Talk
+          touches upon the major problems in the industrial grade libraries and
+          how rust can help in avoiding them.
+        - >
+          Demos of few mathematical models to perform prediction tasks and how
+          to start off development of models from scratch in rust will be
+          demonstrated.
+
+        - >
+          Session Content
+        - >
+          Introduction to AI
+        - >
+          Current AI crates
+        - >
+          Demo on Male and female detector
+        - >
+          Template for mathematical model building
+        - >
+          Benchmarks of Rust Crates
+        - >
+          Areas of improvements and rust unique offerings
+
+        - >
+          Key Takeaways
+        - >
+          Learn to build your first machine learning program in rust
+        - >
+          Template for creating mathematical implementation from scratch
+        - >
+          Benchmarks of rust ML crates
+        - >
+          Learn the different benchmark parameters
+      cfp: true
