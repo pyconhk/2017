@@ -3,106 +3,22 @@
 {% block content %}
     <div class="container">
         <h3>Staff</h3>
-
         <ul class="collapsible popout" data-collapsible="expandable">
-            <li>
-                <div class="collapsible-header active">Conference Chairman</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Mr. Sammy Fung
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Design</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Mr. Nicholas Yau (Team Lead)
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Finance</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Dr. Haggen So (Team Lead)
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Marketing</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Mr. Calvin Tsang (Team Lead)
-                        </li>
-                        <li class="collection-item">Ms. Fiona Lam</li>
-                        <li class="collection-item">Ms. Clara Lin</li>
-                        <li class="collection-item">Ms. Wing Yan Tang</li>
-                        <li class="collection-item">Mr. Tony Yip</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Operation</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Mr. Nicholas Yau (Team Lead)</li>
-                        <li class="collection-item">Mr. Peter Chung</li>
-                        <li class="collection-item">Ms. Connie Leung</li>
-                        <li class="collection-item">Ms. Sana Siu</li>
-                        <li class="collection-item">Mr. Dick Tang</li>
-                        <li class="collection-item">Ms. Claire Wong</li>
-                        <li class="collection-item">Mr. Koala Yeung</li>
-                        <li class="collection-item">Mr. Tony Yip</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Program</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Mr. Sammy Fung (Team Lead)</li>
-                        <li class="collection-item">Ms. Connie Leung</li>
-                        <li class="collection-item">Mr. Dick Tang</li>
-                        <li class="collection-item">Mr. Calvin Tsang</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Record</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Mr. Henry Law (Team Lead)</li>
-                        <li class="collection-item">Mr. Joe Chan</li>
-                        <li class="collection-item">Mr. Sam Chiuck</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Web</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Mr. Koala Yeung (Team Lead)</li>
-                        <li class="collection-item">Ms. Connie Leung</li>
-                        <li class="collection-item">Mr. Tony Yip</li>
-                    </ul>
-                </div>
-            </li>
-
+          {% for team in data.staff.teams %}
+          <li>
+              <div class="collapsible-header active">{{team.name}}</div>
+              <div class="collapsible-body">
+                  <ul class="collection">
+                      {% for member in team.members %}
+                      <li class="collection-item">
+                          <img src="{{ member.email | gravatar }}" alt="{{member.name}}" class="avatar" >
+                          {{ member.name }} {% if member.teamlead %} (Team Lead) {% endif %}
+                      </li>
+                      {% endfor %}
+                  </ul>
+              </div>
+          </li>
+          {% endfor %}
         </ul>
     </div>
 {% endblock %}

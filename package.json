@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "gravatar": "1.6.0",
     "hammerjs": "^2.0.8",
     "jquery": "2",
     "node-waves": "^0.7.5",
