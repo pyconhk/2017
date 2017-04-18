@@ -4,7 +4,7 @@ const gravatar = require('gravatar');
 
 function getImageUrl(email) {
   const option = {
-    s: '80',
+    s: '50',
     d: 'identicon',
     r: 'pg',
   };
