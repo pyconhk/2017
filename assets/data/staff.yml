@@ -11,6 +11,7 @@ teams:
     members:
       - name: Dr. Haggen So
         teamlead: true
+        github: lbrabbit
   - name: Marketing
     members:
       - name: Mr. Calvin Tsang
@@ -30,9 +31,12 @@ teams:
         email: cleung334@gmail.com
       - name: Ms. Sana Siu
       - name: Mr. Dick Tang
+        github: dictcp
       - name: Ms. Claire Wong
       - name: Mr. Koala Yeung
+        github: yookoala
       - name: Mr. Tony Yip
+        email: tony@opensource.hk
   - name: Program
     members:
       - name: Mr. Sammy Fung
@@ -40,6 +44,7 @@ teams:
       - name: Ms. Connie Leung
         email: cleung334@gmail.com
       - name: Mr. Dick Tang
+        github: dictcp
       - name: Mr. Calvin Tsang
   - name: Record
     members:
@@ -51,6 +56,7 @@ teams:
     members:
       - name: Mr. Koala Yeung
         teamlead: true
+        github: yookoala
       - name: Ms. Connie Leung
         email: cleung334@gmail.com
       - name: Mr. Tony Yip

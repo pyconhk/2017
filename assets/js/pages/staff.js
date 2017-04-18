@@ -5,6 +5,22 @@ const yaml = require('js-yaml');
 
 /* globals fetch */
 
+function getAvatarImage(member) {
+  if (!member.email && member.fallback) {
+    return member.fallback;
+  }
+
+  if (!member.email && member.github) {
+    return `https://github.com/${member.github}.png`;
+  }
+
+  return gravatar.url(member.email, {
+    s: '80',
+    d: 'mm',
+    r: 'g',
+  });
+}
+
 fetch('/2017/data/staff.yml')
   .then((response) => {
     if (response.status === 200) {
@@ -24,13 +40,9 @@ fetch('/2017/data/staff.yml')
         const memberName = member.name.replace(/([\s]+)/g, '\\$1').replace('.', '');
         const teamName = name.replace(/(\s+)/g, '\\$1');
         const selector = `[data-team=${teamName}][data-name=${memberName}]`;
-        const src = gravatar.url(member.email, {
-          s: '80',
-          d: 'mm',
-          r: 'g',
-        });
+        const src = getAvatarImage(member)
         const image = document.createElement('img');
-        image.setAttribute('src', member.fallback ? member.fallback : src);
+        image.setAttribute('src', src);
         image.setAttribute('alt', `${member.name} icon`);
         image.classList.add('avatar');
         const root = document.querySelector(selector);
