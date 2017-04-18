@@ -3,22 +3,26 @@
 {% block content %}
     <div class="container">
         <h3>Staff</h3>
-        <ul class="collapsible popout" data-collapsible="expandable">
-          {% for team in data.staff.teams %}
-          <li>
-              <div class="collapsible-header active">{{team.name}}</div>
-              <div class="collapsible-body">
-                  <ul class="collection">
-                      {% for member in team.members %}
-                      <li class="collection-item">
-                          <img src="{{ member.email | gravatar }}" alt="{{member.name}}" class="avatar" >
-                          {{ member.name }} {% if member.teamlead %} (Team Lead) {% endif %}
-                      </li>
-                      {% endfor %}
-                  </ul>
-              </div>
-          </li>
-          {% endfor %}
-        </ul>
+        {% for team in data.staff.teams %}
+            <div class="staff-team">
+                <h4>{{ team.name }}</h4>
+                <div>
+                    {% for member in team.members %}
+                        <div class="staff">
+                            <div data-name="{{ member.name | replace('.', '') }}" data-team="{{ team.name }}" data-role="staff"></div>
+                            <div>
+                                {{ member.name }}
+                                {% if member.teamlead %} * {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        <small>*Team Lead</small>
     </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ data.site.basePath }}/js/staff.js" defer async></script>
 {% endblock %}

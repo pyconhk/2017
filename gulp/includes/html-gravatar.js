@@ -2,13 +2,18 @@
 
 const gravatar = require('gravatar');
 
-function getImageUrl(email) {
+function getImageUrl(email, fallback) {
   const option = {
     s: '50',
-    d: 'identicon',
+    d: 'mm',
     r: 'pg',
   };
-  return gravatar.url (email, option);
+
+  if (fallback && typeof fallback === 'string') {
+    option.d = encodeURI(fallback);
+  }
+
+  return gravatar.url(email, option);
 }
 
 /**
@@ -23,4 +28,4 @@ function addFilters(env) {
 module.exports = {
   addFilters,
   getImageUrl
-}
+};
