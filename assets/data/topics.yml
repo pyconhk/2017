@@ -17,7 +17,7 @@ topics:
           Shell, MySQL Router + MySQL Group Replication architecture go together
           to form a scalable and reliable db infrastructure to your
           application(s).
-      lang: "en"
+      lang: "zh.yue"
       lang_slide: "en"
       type: "talk"
       cfp:      true
@@ -96,7 +96,7 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp:      true
+      cfp:      false
   -   title:    "Open CV in Raspberry PI with Camera"
       id:       "open-cv-in-raspberry-pi-with-camera"
       speaker:
@@ -112,7 +112,7 @@ topics:
       lang: "en"
       lang_slide: "ja_JP"
       type: "talk"
-      cfp:      false
+      cfp:      true
   -   title:    "Tips in setting up OpenStack from scratch"
       id:       "tips-in-setting-up-openstack-from-scratch"
       speaker:
@@ -165,7 +165,7 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp:      false
+      cfp:      true
   -   title:    "Building Artificial Intelligence Units in Rust"
       id:       "building-artificial-intelligence-units-in-rust"
       speaker:
@@ -241,12 +241,12 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp:      false
+      cfp:      true
   -   title:  "A War of File Format -- Why We Select ODF in Taiwan"
       id: "a-war-of-file-format-why-we-select-odf-in-taiwan"
       speaker:
         - "franklin-weng"
-      remark: ""
+      remark: "Taiwan"
       url:    "#"
       description:
         - >
@@ -259,12 +259,12 @@ topics:
       lang: "en_zh"
       lang_slide: "en"
       type: "talk"
-      cfp:    false
+      cfp:    true
   -   title:  "PIME - 用 Python 和 JavaScript 快速開發 Windows 的中文輸入法"
       id: "PIME"
       speaker:
         - "pcman"
-      remark: ""
+      remark: "Taiwan"
       url:  "#"
       description:
         - >
@@ -277,7 +277,7 @@ topics:
       lang: "zh.tw"
       lang_slide: "zh"
       type: "talk"
-      cfp:  false
+      cfp:  true
   -   title:  "ezgo for HK：自由的學習系統，本地的楷書字型。"
       id: "ezgo-for-hk"
       speaker:
@@ -297,7 +297,7 @@ topics:
       lang: "zh.tw"
       lang_slide: "zh"
       type: "talk"
-      cfp:  false
+      cfp:  true
   -   title:  "This year in #rstats"
       id: "this-year-in-rstats"
       speaker:
@@ -311,7 +311,7 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp:  false
+      cfp:  true
   -   title:  "Harnessing social media with R"
       id: "harnessing-social-media-with-r"
       speaker:
@@ -338,12 +338,12 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp:  false
+      cfp:  true
   -   title:  "A Security State of Mind: Continuous Security for DevOps with Kubernetes"
       id:   "a-security-state-of-mind-continuous-security-for-devops-with-kubernetes"
       speaker:
         - "chris-van-tuin"
-      remark: ""
+      remark: "Redhat"
       url:  "#"
       description:
         - >
@@ -375,13 +375,13 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp:  false
+      cfp:  true
   -   title:  "Build a cross-platform game in Haxe"
       id: "build-a-cross-platofrm-game-in-haxe"
       speaker:
         - "andy-li"
         - "kevin-leung"
-      remark: "Workshop"
+      remark: "Haxe Foundation"
       url:  "#"
       description:
         - >
@@ -396,13 +396,13 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "workshop"
-      cfp:  false
+      cfp:  true
   -   title:  "Getting into the virtual world with WebVR/A-Frame"
       id: "getting-into-the-virtual-world-with-web-vr"
       speaker:
         - "andy-li"
         - "parvani-ng"
-      remark: "Workshop"
+      remark: ""
       url:  "#"
       description:
         - >
@@ -418,12 +418,12 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "workshop"
-      cfp:  false
+      cfp:  true
   -   title: "Building web app with open source serverless technology"
       id: "building-web-app-with-open-source-serverless-technology"
       speaker:
         - "david-ng"
-      remark: "Workshop, Oursky"
+      remark: "Oursky"
       url:  "#"
       description:
         - >
@@ -432,12 +432,12 @@ topics:
       lang: "zh.yue"
       lang_slide: "en"
       type: "workshop"
-      cfp:  false
+      cfp:  true
   -   title: "1000 days of Mozilla Community Space in Taipei"
       id: "1000-days-of-mozilla-community-space-in-taipei"
       speaker:
         - "irvin-chen"
-      remark: ""
+      remark: "Taiwan"
       url: "#"
       description:
         - >
@@ -449,7 +449,7 @@ topics:
       lang: "zh.tw"
       lang_slide: "en"
       type: "talk"
-      cfp: false
+      cfp: true
   -   title:  Blender Interface and 3D-CGI concepts
       id: blender-interface-and-3d-cgi-concepts
       speaker:
@@ -465,12 +465,12 @@ topics:
       lang: "zh.yue"
       lang_slide: "en"
       type: "talk"
-      cfp: false
+      cfp: true
   -   title:  軟體訊息本地化前置翻譯工具
       id: 軟體訊息本地化前置翻譯工具
       speaker:
         - bluebat
-      remark: ""
+      remark: "Taiwan"
       url:  "#"
       description:
         - >
@@ -481,7 +481,7 @@ topics:
       lang: "zh.tw"
       lang_slide: "zh"
       type: "talk"
-      cfp:  false
+      cfp:  true
   -   title: ZMQ multiplex between golang coroutine and python thread
       id: zmq-multiplex-between-golang-coroutine-and-python-thread
       speaker:
@@ -498,10 +498,10 @@ topics:
           consumed all python thread in thread pool very easily. We implement
           a bidirectional and multiplexing transport, so we can reduce overhead
           and reuse blocked workers.
-      lang: "en_zh"
+      lang: "zh.yue"
       lang: "en"
       type: "talk"
-      cfp: false
+      cfp: true
   -   title:  "Pentest fun with metasploit framework II"
       id: "pentest-fun-with-metasploit-framework-ii"
       speaker:
@@ -521,12 +521,12 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "talk"
-      cfp: false
+      cfp: true
   -   title:  "Waiting too long for Excel's VLOOKUP? Use SQLite for simple data analysis!"
       id: "use-sqlite-for-simple-data-analysis"
       speaker:
         - "amanda-lam"
-      remark: "Workshop"
+      remark: ""
       url:  "#"
       description:
         - >
@@ -559,7 +559,7 @@ topics:
       lang: "en"
       lang_slide: "en"
       type: "workshop"
-      cfp: false
+      cfp: true
   -   title:  "AWS Cloud Lab (革新雲端電腦房)"
       id: "aws-cloud-lab"
       speaker:
@@ -576,7 +576,10 @@ topics:
           This project won 香港資訊及通訊科技獎2015:最佳學生發明（大專及大學）金獎
           Gold Award - Hong Kong ICT Awards 2015: Best Student Invention
           (College & Undergraduates) Award.
-      cfp:  false
+      lang: "zh.yue"
+      lang-slide: "en"
+      type: "talk"
+      cfp:  true
   -   title:  "Why BASH?"
       id: "why-bash"
       speaker:
@@ -590,12 +593,15 @@ topics:
           developers still use this scripting language to play with ideas and
           write new tools. I'll present some of the most powerful features of
           the language, and will help you getting started with it.
-      cfp: false
+      lang: "en"
+      lang_slide: "en"
+      type: "talk"
+      cfp: true
   -   title:  "沒有 Powerpoint 的簡報世界"
       id: "libreoffice-impress"
       speaker:
         - "franklin-weng"
-      remark: ""
+      remark: "Taiwan"
       url: "#"
       description:
         - >
@@ -606,4 +612,7 @@ topics:
           試著在網路搜尋 Presentation tools 你將會發現原來簡報的工具還有更多的選擇，
           試著選擇 LibreOffice 裡的 Impress 你將會發現，原來簡報設計可以如此的純粹，
           原來一份令人驚豔的簡報關鍵不在 PowerPoint，而是令人  Impressive 的創意。
-      cfp: false
+      lang: "zh.tw"
+      lang-slide: "zh"
+      type: "talk"
+      cfp: true
