@@ -298,6 +298,17 @@ topics:
       lang_slide: "zh"
       type: "talk"
       cfp:  true
+  -   title:  Free Hong Kong Kai Font
+      id: "free-hong-kong-font"
+      speaker:
+          - "kingman-leung"
+      remark: ""
+      url: "#"
+      description:  ""
+      lang: "zh.yue"
+      lang_slide: "zh"
+      type: talk
+      cfp:  true
   -   title:  "This year in #rstats"
       id: "this-year-in-rstats"
       speaker:
