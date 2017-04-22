@@ -635,3 +635,24 @@ topics:
       lang-slide:  zh
       type:  talk
       cfp: true
+  -   title:   JavaScript fuzzing in Mozilla, 2017
+      id:  javascript-fuzzling-in-mozilla-2017
+      speaker:
+        -  gary-kwong
+      remark:  Mozilla
+      url:  #
+      description:
+        - >
+          In Mozilla Firefox, the JavaScript engine (SpiderMonkey) is an
+          important component of the Gecko platform. In this presentation,
+          Senior Security Engineer Gary Kwong will describe how fuzzing is
+          leveraged in the Mozilla development workflow for the JavaScript
+          engine. He will talk about various fuzzing tools (e.g. jsfunfuzz)
+          for such engines. The potential pitfalls of this approach and
+          conditions under which fuzzing can be most effective will also be
+          discussed. Finally, Gary will speak about plans for the future of
+          some of these tools.
+      lang:  en
+      lang-slide: en
+      type:  talk
+      cfp: true
