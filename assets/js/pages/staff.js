@@ -14,6 +14,14 @@ function getAvatarImage(member) {
     return `https://github.com/${member.github}.png`;
   }
 
+  if (!member.email && member.fb) {
+    return `https://graph.facebook.com/${member.fb}/picture?width=160&height=160`;
+  }
+
+  if (!member.email && member.twitter) {
+    return `https://twitter.com/${member.twitter}/profile_image?size=bigger`
+  }
+
   return gravatar.url(member.email, {
     s: '80',
     d: 'mm',
