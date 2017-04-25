@@ -6,7 +6,6 @@ topics:
       speaker:
         - ivan-ma
       remark:   MySQL
-      url:      #
       description:
         - >
           High Available Database Architecture is so important.  It is more than
@@ -31,7 +30,6 @@ topics:
       speaker:
         - ryusuke-kajiyama
       remark: MySQL
-      url:  #
       description:
         - >
           In this session learn about the new features in MySQL 8.0 Development
@@ -52,7 +50,6 @@ topics:
       speaker:
         - dietrich-ayala
       remark:   Mozilla
-      url:      #
       description:
         - >
           Ubiquitous physical computing is here, blurring what is digital and
@@ -73,7 +70,6 @@ topics:
       speaker:
         -  chris-lamb
       remark:   Debian
-      url:      #
       description:
         - >
           Whilst anyone can inspect the source code of free software for
@@ -111,7 +107,6 @@ topics:
       speaker:
         -   vaishali-thakkar
       remark:   India
-      url:      #
       description:
       lang: en
       lang_slide: en
@@ -126,7 +121,6 @@ topics:
       speaker:
         - kazuhiko-inaba
       remark:   Japan
-      url:      #
       description:
         - >
           This topic is about  Open CV in Raspberry PI 3 with Camera. I would
@@ -145,7 +139,6 @@ topics:
       id:       tips-in-setting-up-openstack-from-scratch
       speaker:
         - vinnson-lee
-      url:  #
       description:
         - >
           We will show you some tips about how to setup OpenStack platform, and
@@ -165,7 +158,6 @@ topics:
       speaker:
         - karl-lam
       remark:   OneSky
-      url:      #
       description:
         - >
           Usually we have to choose between performance, safety, and development
@@ -190,7 +182,6 @@ topics:
       id:       one-year-of-rust-microkernel-development
       speaker:
         - wei-tang
-      url:      #
       description:
         - >
           This talk discusses about my experience in working on Rux
@@ -211,7 +202,6 @@ topics:
       speaker:
         - vigneshwer-dhinakaran
       remark:   India
-      url:      #
       description:
         - >
           General Description
@@ -273,7 +263,6 @@ topics:
       speaker:
         - josh-rich
       remark:    Elasticsearch
-      url:       #
       description:
         - >
           In this talk, I'll give a whirlwind tour of how to get various common
@@ -296,7 +285,6 @@ topics:
       speaker:
         -  franklin-weng
       remark:  Taiwan
-      url:     #
       description:
         - >
           Since 2015 Taiwan launched a three-year project, asking users in
@@ -319,7 +307,6 @@ topics:
       speaker:
         -  pcman
       remark:  Taiwan
-      url:   #
       description:
         - >
           Open source 的中文輸入 framework 在Linux下選擇很多，但在 Windows 上則相對缺乏，
@@ -344,7 +331,6 @@ topics:
         -  franklin-weng
         -  kingman-leung
       remark:
-      url:     #
       description:
         - >
           ezgo 是由台灣所發起的一項計畫，將 Linux 系統客製化，加入許多值得推廣的自由軟體、
@@ -366,7 +352,6 @@ topics:
       speaker:
           -  kingman-leung
       remark:
-      url:  #
       description:
       lang:  zh.yue
       lang_slide:  zh
@@ -382,7 +367,6 @@ topics:
       speaker:
           -  hong-kong-r-user-group
       remark:
-      url:   #
       description:
         - >
           Demonstrate some fascinating stuffs that you can do now with #rstats,
@@ -400,7 +384,6 @@ topics:
       speaker:
         -  lushi-chen
       remark:
-      url:  #
       description:
         - >
           Studying satisfaction with life can assist evaluation of the effect
@@ -432,7 +415,6 @@ topics:
       speaker:
         -  chris-van-tuin
       remark:  Redhat
-      url:   #
       description:
         - >
           With the rise of DevOps, containers are at the brink of becoming a
@@ -474,7 +456,6 @@ topics:
         -  andy-li
         -  kevin-leung
       remark:  Haxe Foundation
-      url:   #
       description:
         - >
           The Haxe programming language is well known for its wide range of
@@ -500,7 +481,6 @@ topics:
         -  andy-li
         -  parvani-ng
       remark:
-      url:   #
       description:
         - >
           Let’s get started in Virtual Reality with A-Frame, which is an open
@@ -525,7 +505,6 @@ topics:
       speaker:
         -  david-ng
       remark:  Oursky
-      url:   #
       description:
         - >
           Short workshop on building web app with JavaScript and HTML5 that has
@@ -543,7 +522,6 @@ topics:
       speaker:
         -  irvin-chen
       remark:  Taiwan
-      url:  #
       description:
         - >
           Volunteers of MozTW had already running Mozilla Community Space Taipei
@@ -564,7 +542,6 @@ topics:
       speaker:
         -  anny-leung
       remark:
-      url:   #
       description:
         - >
           This session will share the basic 3D-CGI architecture and Blender
@@ -584,7 +561,6 @@ topics:
       speaker:
         - bluebat
       remark:  Taiwan
-      url:   #
       description:
         - >
           翻譯軟體訊息與翻譯一般文件的需求差異，是造成本地化工作困難的原因之一。本工具希望能
@@ -604,7 +580,6 @@ topics:
       speaker:
         - rick-mak
       remark:  Oursky
-      url:   #
       description:
         - >
           We use ZMQ as RPC transport between golang coroutine and python
@@ -628,7 +603,6 @@ topics:
       speaker:
         -  hayden-chung
       remark:
-      url:   #
       description:
         - >
           This talk would be covering a quick recap of why we need penetration
@@ -652,7 +626,6 @@ topics:
       speaker:
         -  amanda-lam
       remark:
-      url:   #
       description:
         - >
           Excel formulas can be quite slow when you're processing data files
@@ -694,7 +667,6 @@ topics:
       speaker:
         -  cyrus-wong
       remark:
-      url:   #
       description:
         - >
           AWS Cloud Lab is aims to facilitate educators using AWS in their
@@ -718,7 +690,6 @@ topics:
       speaker:
         -  daniel-chcouri
       remark:  MeteorSpark
-      url:   #
       description:
         - >
           When Linus Torvalds set down to write git it was Bash that he first
@@ -739,7 +710,6 @@ topics:
       speaker:
         -  franklin-weng
       remark:  Taiwan
-      url:  #
       description:
         - >
           你認識的簡報軟體只有 PowerPoint 嗎? 思考一下，全世界公認的簡報大師 Steve Jobs
@@ -762,7 +732,6 @@ topics:
       speaker:
         -  gary-kwong
       remark:  Mozilla
-      url:  #
       description:
         - >
           In Mozilla Firefox, the JavaScript engine (SpiderMonkey) is an
