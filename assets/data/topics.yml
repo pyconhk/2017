@@ -21,6 +21,11 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: true
+      sponsor: MySQL
+      venue: ""
+      start: ""
+      end: ""
   -   title:  What's New in MySQL 8.0
       id:     whats-new-in-mysql-8.0
       speaker:
@@ -36,6 +41,11 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: true
+      sponsor: MySQL
+      venue: ""
+      start: ""
+      end: ""
   -   title:  >-
                 Preparing for the App-ocalypse: The Web in the Age of Physical Computing
       id:       preparing-for-the-app-ocalypse-the-web-in-the-age-of-physical-computing
@@ -53,6 +63,10 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  >-
                 Reproducible builds: Fulfilling the original promise of free software
       id:       reproducible-builds-fulfilling-the-original-promise-of-free-software
@@ -88,6 +102,10 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    Building a career in Open Source
       id:       building-a-career-in-open-source
       speaker:
@@ -99,6 +117,10 @@ topics:
       lang_slide: en
       type: talk
       cfp:      false
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    Open CV in Raspberry PI with Camera
       id:       open-cv-in-raspberry-pi-with-camera
       speaker:
@@ -115,6 +137,10 @@ topics:
       lang_slide: ja_JP
       type: talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    Tips in setting up OpenStack from scratch
       id:       tips-in-setting-up-openstack-from-scratch
       speaker:
@@ -130,6 +156,10 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    Let's Rust! System programming is awesome again!
       id:       lets-rust-system-programming-is-awesome-again
       speaker:
@@ -152,6 +182,10 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    One Year of Rust Microkernel Development
       id:       one-year-of-rust-microkernel-development
       speaker:
@@ -168,6 +202,10 @@ topics:
       lang_slide: en
       type: talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    Building Artificial Intelligence Units in Rust
       id:       building-artificial-intelligence-units-in-rust
       speaker:
@@ -226,6 +264,10 @@ topics:
       lang_slide: en
       type: talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:    Data In, Elasticsearch Out
       id:       data-in-elasticsearch-out
       speaker:
@@ -244,6 +286,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp:      true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   >-
             A War of File Format -- Why We Select ODF in Taiwan
       id:  a-war-of-file-format-why-we-select-odf-in-taiwan
@@ -263,6 +309,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp:    true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   >-
                 PIME - 用 Python 和 JavaScript 快速開發 Windows 的中文輸入法
       id:  PIME
@@ -282,6 +332,10 @@ topics:
       lang_slide:  zh
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   >-
             ezgo for HK：自由的學習系統，本地的楷書字型。
       id:  ezgo-for-hk
@@ -303,6 +357,10 @@ topics:
       lang_slide:  zh
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  Free Hong Kong Kai Font
       id:  free-hong-kong-font
       speaker:
@@ -314,6 +372,10 @@ topics:
       lang_slide:  zh
       type: talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   >-
             This year in #rstats
       id:  this-year-in-rstats
@@ -329,6 +391,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   Harnessing social media with R
       id:  harnessing-social-media-with-r
       speaker:
@@ -356,6 +422,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  >-
             A Security State of Mind: Continuous Security for DevOps with Kubernetes
       id:    a-security-state-of-mind-continuous-security-for-devops-with-kubernetes
@@ -394,6 +464,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   Build a cross-platform game in Haxe
       id:  build-a-cross-platofrm-game-in-haxe
       speaker:
@@ -415,6 +489,10 @@ topics:
       lang_slide:  en
       type:  workshop
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   >-
             Getting into the virtual world with WebVR/A-Frame
       id:  getting-into-the-virtual-world-with-web-vr
@@ -438,6 +516,10 @@ topics:
       lang_slide:  en
       type:  workshop
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  Building web app with open source serverless technology
       id:  building-web-app-with-open-source-serverless-technology
       speaker:
@@ -452,6 +534,10 @@ topics:
       lang_slide:  en
       type:  workshop
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  1000 days of Mozilla Community Space in Taipei
       id:  1000-days-of-mozilla-community-space-in-taipei
       speaker:
@@ -469,6 +555,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  Blender Interface and 3D-CGI concepts
       id: blender-interface-and-3d-cgi-concepts
       speaker:
@@ -485,6 +575,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:  軟體訊息本地化前置翻譯工具
       id: 軟體訊息本地化前置翻譯工具
       speaker:
@@ -501,6 +595,10 @@ topics:
       lang_slide:  zh
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title: ZMQ multiplex between golang coroutine and python thread
       id: zmq-multiplex-between-golang-coroutine-and-python-thread
       speaker:
@@ -521,6 +619,10 @@ topics:
       lang:  en
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   Pentest fun with metasploit framework II
       id:  pentest-fun-with-metasploit-framework-ii
       speaker:
@@ -541,6 +643,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   Waiting too long for Excel's VLOOKUP? Use SQLite for simple data analysis!
       id:  use-sqlite-for-simple-data-analysis
       speaker:
@@ -579,6 +685,10 @@ topics:
       lang_slide:  en
       type:  workshop
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   AWS Cloud Lab (革新雲端電腦房)
       id:  aws-cloud-lab
       speaker:
@@ -599,6 +709,10 @@ topics:
       lang-slide:  en
       type:  talk
       cfp:  true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   Why BASH?
       id:  why-bash
       speaker:
@@ -616,6 +730,10 @@ topics:
       lang_slide:  en
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   沒有 Powerpoint 的簡報世界
       id:  libreoffice-impress
       speaker:
@@ -635,6 +753,10 @@ topics:
       lang-slide:  zh
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
   -   title:   JavaScript fuzzing in Mozilla, 2017
       id:  javascript-fuzzling-in-mozilla-2017
       speaker:
@@ -656,3 +778,7 @@ topics:
       lang-slide: en
       type:  talk
       cfp: true
+      isSponsorTopic: false
+      venue: ""
+      start: ""
+      end: ""
