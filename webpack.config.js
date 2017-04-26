@@ -10,19 +10,19 @@ const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlug
 const merge = require('webpack-merge');
 
 const firebaseConfig = {
-  FIREBASE_API_KEY: process.env.FIREBASE_API_KEY || '<API_KEY>',
-  FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN || '<PROJECT_ID>.firebaseapp.com',
-  FIREBASE_DATEBASE_URL: process.env.FIREBASE_DATEBASE_URL || 'https://<DATABASE_NAME>.firebaseio.com',
-  FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET || '<BUCKET>.appspot.com',
-  FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID || '<SENDER_ID>',
+  FIREBASE_API_KEY: JSON.stringify(process.env.FIREBASE_API_KEY || '<API_KEY>'),
+  FIREBASE_AUTH_DOMAIN: JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN || '<PROJECT_ID>.firebaseapp.com'),
+  FIREBASE_DATEBASE_URL: JSON.stringify(process.env.FIREBASE_DATEBASE_URL || 'https://<DATABASE_NAME>.firebaseio.com'),
+  FIREBASE_STORAGE_BUCKET: JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET || '<BUCKET>.appspot.com'),
+  FIREBASE_MESSAGING_SENDER_ID: JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID || '<SENDER_ID>'),
 };
 
 const base = {
   plugins: [
     new AggressiveMergingPlugin(),
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(firebaseConfig)
-    })
+      'process.env': firebaseConfig
+    }),
   ],
   externals: {
     jquery: 'jQuery',
