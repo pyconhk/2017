@@ -7,7 +7,6 @@ const util = require('gulp-util');
 const path = require('path');
 const htmldata = require('./includes/html-data');
 const htmlurl = require('./includes/html-url-append');
-const htmlgravatar = require('./includes/html-gravatar');
 
 gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files', () => {
   const {Environment, FileSystemLoader} = require('nunjucks');
@@ -16,7 +15,6 @@ gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files
     new FileSystemLoader('assets/layouts')
   ]);
   htmlurl.addFilters(env);
-  htmlgravatar.addFilters(env);
 
   return gulp.src('assets/pages/**/*.jinja')
     .pipe(data(htmldata.fileData))
