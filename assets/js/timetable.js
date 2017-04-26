@@ -62,5 +62,5 @@ function timetable(element: HTMLElement): Object {
 
 // export as global function
 if (typeof window !== 'undefined') {
-  window.timetable = timetable;
+  timetable(document.getElementById('timetable'))
 }
