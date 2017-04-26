@@ -60,7 +60,9 @@ function timetable(element: HTMLElement): Object {
   };
 }
 
+const mount = document.getElementById('timetable');
+
 // export as global function
-if (typeof window !== 'undefined') {
-  timetable(document.getElementById('timetable'))
+if (typeof window !== 'undefined' && mount) {
+  timetable(mount);
 }
