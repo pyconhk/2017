@@ -2,7 +2,11 @@ import $ from 'jquery';
 import store from '../store';
 import { signOut, twitterAuth, facebookAuth, googleAuth, githubAuth } from '../auth';
 
-const element = document.getElementById('auth');
+const root = document.querySelector('.right > li');
+const element = document.createElement('button');
+element.classList.add('btn', 'waves-effect', 'waves-light');
+element.setAttribute('id', 'auth');
+root.appendChild(element);
 
 const google = document.querySelector('[provider=google]');
 const facebook = document.querySelector('[provider=facebook]');
