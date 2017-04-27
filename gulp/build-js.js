@@ -1,4 +1,5 @@
-//@flow
+// @flow
+
 'use strict';
 
 const fs = require('fs');
@@ -18,7 +19,7 @@ gulp.task('build:js', 'Build javascript bundle into ./public/js/app.js', (cb) =>
         assets: true,
         chunks: true,
         chunkModules: true,
-        modules: true
+        modules: true,
       }));
       fs.writeFile('./webpack.json', JSON.stringify(stats.toJson('verbose')));
     }

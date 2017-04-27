@@ -21,69 +21,71 @@ const base = {
   plugins: [
     new AggressiveMergingPlugin(),
     new webpack.DefinePlugin({
-      'process.env': firebaseConfig
+      'process.env': firebaseConfig,
     }),
   ],
   externals: {
     jquery: 'jQuery',
     hammerjs: 'Hammer',
     'node-waves': 'Waves',
-    'firebase': 'firebase'
+    firebase: 'firebase',
   },
   entry: {
     app: ['./assets/js/app'],
     timetable: ['./assets/js/timetable'],
     venue: ['./assets/js/venue'],
-    staff: ['./assets/js/pages/staff']
+    staff: ['./assets/js/pages/staff'],
   },
   devtool: 'source-map',
   output: {
     path: `${__dirname}/public/js`,
     publicPath: '/2017/js/',
-    filename: '[name].js'
+    filename: '[name].js',
   },
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js'],
   },
   module: {
     rules: [
-      {test: /\.js$/, use: ['babel-loader']},
-      {test: /\.jsx$/, use: ['babel-loader']}
-    ]
-  }
+      { test: /\.js$/, use: ['babel-loader'] },
+      { test: /\.jsx$/, use: ['babel-loader'] },
+    ],
+  },
 };
 
 const dev = merge.smart({
   plugins: [
-    new HotModuleReplacementPlugin()
+    new HotModuleReplacementPlugin(),
   ],
   entry: {
     app: [
-      'webpack-dev-server/client?http://localhost:8080/'
+      'webpack-dev-server/client?http://localhost:8080/',
     ],
     timetable: [
-      'webpack-dev-server/client?http://localhost:8080/'
+      'webpack-dev-server/client?http://localhost:8080/',
     ],
     venue: [
-      'webpack-dev-server/client?http://localhost:8080/'
-    ]
+      'webpack-dev-server/client?http://localhost:8080/',
+    ],
   },
   module: {
     loaders: [
-      {test: /\.jsx$/, use:['react-hot']}
-    ]
-  }
+      { test: /\.jsx$/, use: ['react-hot'] },
+    ],
+  },
 }, base);
 
 const production = merge.smart({
   plugins: [
     new UglifyPlugin({
       minimize: true,
-      sourceMap: true
-    })
-  ]
+      sourceMap: true,
+    }),
+  ],
 }, base);
 
 module.exports = {
-  base, dev, production
+  base,
+  dev,
+  production,
 };

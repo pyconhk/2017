@@ -2,31 +2,11 @@
 
 const util = require('gulp-util');
 const path = require('path');
-const requireyml = require('require-yml')
+const requireyml = require('require-yml');
 
 // base path for the application
 const basepath = path.dirname(path.dirname(__dirname));
-const pagespath = basepath + '/assets/pages';
-
-/**
- * fileData
- * @param {Object} file object from gulp pipeline
- * @return {Object} object of template data
- */
-function fileData(file) {
-  const pagePath = getPagePath(file.path);
-  const pageID = genPageID(pagePath);
-  const data = requireyml(basepath + '/assets/data');
-  util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
-    pagePath,
-    pageID,
-  });
-  return {
-    data,
-    pagePath,
-    pageID,
-  };
-}
+const pagespath = `${basepath}/assets/pages`;
 
 /**
  * genPageID
@@ -37,10 +17,10 @@ function genPageID(pagePath) {
   if (pagePath === 'index') {
     return 'page-front';
   }
-  return 'page--' + pagePath
+  return `page--${pagePath
     .replace('/', '--')
     .replace('.', '-')
-    .replace(/--index$/, '');
+    .replace(/--index$/, '')}`;
 }
 
 /**
@@ -55,8 +35,28 @@ function getPagePath(filepath) {
     .replace(/^\//, '');
 }
 
+/**
+ * fileData
+ * @param {Object} file object from gulp pipeline
+ * @return {Object} object of template data
+ */
+function fileData(file) {
+  const pagePath = getPagePath(file.path);
+  const pageID = genPageID(pagePath);
+  const data = requireyml(`${basepath}/assets/data`);
+  util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
+    pagePath,
+    pageID,
+  });
+  return {
+    data,
+    pagePath,
+    pageID,
+  };
+}
+
 module.exports = {
   fileData,
   genPageID,
   getPagePath,
-}
+};

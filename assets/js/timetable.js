@@ -1,4 +1,4 @@
-//@flow
+// @flow
 
 'use strict';
 
@@ -8,19 +8,21 @@ import { Provider } from 'react-redux';
 import store from './store';
 import Timetable from './timetable/containers/Timetable';
 
+/* globals HTMLElement, window */
+
 /**
- * _isDOM
+ * isDOM
  * @param {mixed} obj object to test
  * @return {bool} if obj is an HTMLElement
  */
-function _isDOM(obj: HTMLElement | Object): boolean {
+function isDOM(obj: HTMLElement | Object): boolean {
   try {
-    //Using W3 DOM2 (works for FF, Opera and Chrom)
+    // Using W3 DOM2 (works for FF, Opera and Chrom)
     return obj instanceof HTMLElement;
-  } catch(e) {
-    //Browsers not supporting W3 DOM2 don't have HTMLElement and
-    //an exception is thrown and we end up here. Testing some
-    //properties that all elements have. (works on IE7)
+  } catch (e) {
+    // Browsers not supporting W3 DOM2 don't have HTMLElement and
+    // an exception is thrown and we end up here. Testing some
+    // properties that all elements have. (works on IE7)
     return (typeof obj === 'object') &&
       (obj.nodeType === 1) && (typeof obj.style === 'object') &&
       (typeof obj.ownerDocument === 'object');
@@ -33,9 +35,8 @@ function _isDOM(obj: HTMLElement | Object): boolean {
  * @return {object} object with control function
  */
 function timetable(element: HTMLElement): Object {
-
   // if element is not a valid DOM object
-  if (!_isDOM(element)) {
+  if (!isDOM(element)) {
     throw new Error('timetable requires DOM element as argument 1');
   }
 

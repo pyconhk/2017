@@ -22,7 +22,7 @@ export function facebookAuth() {
 
 export function twitterAuth() {
   const provider = new firebase.auth.TwitterAuthProvider();
-  firebase.auth().signInWithRedirect(provider);  
+  firebase.auth().signInWithRedirect(provider);
 }
 
 export function signOut() {
@@ -34,11 +34,11 @@ export function signOut() {
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     // User is signed in.
-    console.log (`${user} is signed in.`);
+    console.log(`${user} is signed in.`);
     store.dispatch(userSignIn(user));
   } else {
     // No user is signed in.
-    console.log ('Not sign in.');
+    console.log('Not sign in.');
     store.dispatch(userNotAuth());
   }
 });
