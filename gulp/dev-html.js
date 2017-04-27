@@ -7,6 +7,7 @@ const util = require('gulp-util');
 const path = require('path');
 const htmldata = require('./includes/html-data');
 const htmlurl = require('./includes/html-url-append');
+const htmltopic = require('./includes/html-topic');
 
 function swallowError (error) {
   util.log(`Failed on '${util.colors.cyan('dev:html')}': ${error.toString()}`);
@@ -20,6 +21,7 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
     new FileSystemLoader('assets/layouts', {watch: true})
   ]);
   htmlurl.addFilters(env);
+  htmltopic.addFilters(env);
 
   return gulp.src('assets/pages/**/*.jinja')
     .pipe(data(htmldata.fileData))
