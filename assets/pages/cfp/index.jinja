@@ -25,9 +25,10 @@
               {% if topic.cfp %}
                 <li class="link">
                   <a href="{{topic.url}}" target="_blank">
-                    {{ topic.title }} ({{topic.speaker}})
-                    {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                    {{ topic.title }}
                   </a>
+                  ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
+                  {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
                 </li>
               {% endif %}
             {% endfor %}
