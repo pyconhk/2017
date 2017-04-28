@@ -17,7 +17,7 @@ sponsor_types:
         logos:
           title:  Cyberport
           alt:    Cyberport logo
-          img:    //file.hkoscon.org/sponsor/cyberport.jpg
+          img:    https://file.hkoscon.org/sponsor/cyberport.jpg
           url:    https://www.cyberport.hk/en/
         links:
           text:     Cyberport Website
@@ -37,17 +37,17 @@ sponsor_types:
             access providers, since domain names are the firststep in
             creating your own piece of the Internet.
         logos:
-          title:  "Gandi.net"
-          alt:    "Gandi.net logo"
-          img:    "//file.hkoscon.org/sponsor/gandi.jpg"
-          url:    "https://www.gandi.net/"
+          title:  Gandi.net
+          alt:    Gandi.net logo
+          img:    https://file.hkoscon.org/sponsor/gandi.jpg
+          url:    https://www.gandi.net/
         links:
-          text:     "Gandi.net Website"
-          url:      "https://www.gandi.net/"
-  - name:     "Silver Sponsor"
+          text:     Gandi.net Website
+          url:      https://www.gandi.net/
+  - name:     Silver Sponsor
     sponsors:
-      - id:   "MySQL"
-        name: "MySQL"
+      - id:   MySQL
+        name: MySQL
         grantedPerm: true
         description:
           - >
@@ -78,17 +78,17 @@ sponsor_types:
             mobile and embedded applications.
 
         logos:
-          title:  "MySQL"
-          alt:    "MySQL logo"
-          img:    "//file.hkoscon.org/sponsor/mysql.png"
-          url:    "https://www.mysql.com/"
+          title:  MySQL
+          alt:    MySQL logo
+          img:    https://file.hkoscon.org/sponsor/mysql.png
+          url:    https://www.mysql.com/
         links:
-          text:     "MySQL Website"
-          url:      "https://www.mysql.com/"
-  - name:     "Prize Sponsor"
+          text:     MySQL Website
+          url:      https://www.mysql.com/
+  - name:     Prize Sponsor
     sponsors:
-      - id:   "jetbrains"
-        name: "JetBrains"
+      - id:   jetbrains
+        name: JetBrains
         grantedPerm: true
         description:
           - >
@@ -100,11 +100,11 @@ sponsor_types:
             PyCharm Professional Edition is designed for professional Python
             and Web developers.
         logos:
-          title:  "JetBrains"
-          alt:    "JetBrains logo"
-          img:    "//file.hkoscon.org/sponsor/jetbrains.jpg"
-          url:    "https://www.jetbrains.com/"
+          title:  JetBrains
+          alt:    JetBrains logo
+          img:    https://file.hkoscon.org/sponsor/jetbrains.jpg
+          url:    https://www.jetbrains.com/
         links:
-          text:     "JetBrains Website"
-          url:      "https://www.gandi.net/"
-patron_name: "Patrons"
+          text:     JetBrains Website
+          url:      https://www.gandi.net/
+patron_name: Patrons
