@@ -65,7 +65,7 @@ josh-rich:
   nationality:  Australia
   social:
     nickname: Josh
-    github: https://github.com/joshuar/
+    github: joshuar
   company:
     name: Elastic
     url:  https://www.elastic.co/
@@ -87,7 +87,7 @@ chris-lamb:
   nationality:  United Kingdom
   social:
     nickname: Chris
-    github: https://github.com/lamby/
+    github: lamby
     blog: https://chris-lamb.co.uk/blog
   community:
     name: Debian
@@ -110,7 +110,7 @@ dietrich-ayala:
   nationality:  United States
   social:
     nickname: Dietrich
-    github: http://github.com/autonome/
+    github: autonome
   company:
     name: Mozilla
     url:  https://www.mozilla.org/
@@ -127,7 +127,7 @@ franklin-weng:
   nationality:  Taiwan
   social:
     nickname: Franklin
-    github: https://github.com/fweng322/
+    github: fweng322
   community:
     name: LibreOffice (representation); KDE, ezgo (participating)
   company:
@@ -187,7 +187,7 @@ hong-kong-r-user-group:
   nationality: Hong Kong
   social:
     nickname: Hong Kong R User Group
-    github: https://github.com/hkrusers
+    github: hkrusers
   community:
     name: Hong Kong R User Group
     url: https://www.facebook.com/groups/hkrusers/
@@ -210,7 +210,7 @@ lushi-chen:
   nationality: Hong Kong
   social:
     nickname: Lucia
-    github: https://github.com/luciasalar/FB_ML
+    github: luciasalar
   portrait: ""
   hkoscon-sponsored: false
 
@@ -232,7 +232,7 @@ chris-van-tuin:
   nationality:  United States
   social:
     nickname: Chris
-    github: https://github.com/cvantuin
+    github: cvantuin
   company:
     name: Red hat
     url:  https://www.redhat.com/
@@ -257,7 +257,7 @@ andy-li:
   nationality:  Hong Kong
   social:
     name: Andy
-    url:  https://github.com/andyli
+    url:  andyli
     blog: https://blog.onthewings.net/
   portrait: ""
   hkoscon-sponsored: false
@@ -299,11 +299,9 @@ karl-lam:
       A Vegan, Free software enthusiast, DevOps engineer from bare metal to cloud.
   residence: Hong Kong
   nationality: Hong Kong
-  portrait: ""
-  hkoscon-sponsored: false
   social:
     nickname: Karl
-    github: http://github.com/karlvlam
+    github: karlvlam
   portrait: ""
   hkoscon-sponsored: false
 
@@ -318,7 +316,7 @@ wei-tang:
   nationality: Hong Kong
   social:
     nickname: Wei Tang
-    github: github.com/sorpaas
+    github: sorpaas
     blog: https://that.world/en/
   portrait: ""
   hkoscon-sponsored: false
@@ -334,7 +332,7 @@ david-ng:
   nationality: Hong Kong
   social:
     nickname: skygeario
-    github: https://github.com/skygeario
+    github: skygeario
     blog: https://code.oursky.com/
   portrait: ""
   hkoscon-sponsored: false
@@ -354,7 +352,7 @@ irvin-chen:
   nationality: Taiwan
   social:
     nickname: Irvin
-    github: https://github.com/irvin
+    github: irvin
   community:
     name: MozTW
     url:  https://moztw.org
@@ -404,7 +402,7 @@ bluebat:
   nationality: Hong Kong
   social:
     nickname: 趙惟倫
-    github: https://github.com/bluebat
+    github: bluebat
   portrait: ""
   hkoscon-sponsored: false
 
@@ -419,7 +417,7 @@ rick-mak:
   nationality: Hong Kong
   social:
     nickname: Nick
-    github: https://github.com/rickmak
+    github: rickmak
   company:
     name: Oursky
     url:  http://oursky.com/
@@ -439,7 +437,7 @@ hayden-chung:
   nationality: Hong Kong
   social:
     nickname: Hayden
-    github: https://github.com/fhoshino
+    github: fhoshino
     blog: https://about.me/fubukihoshino
   portrait: ""
   hkoscon-sponsored: false
@@ -456,7 +454,7 @@ amanda-lam:
   nationality: Hong Kong
   social:
     nickname: Amanda
-    github: https://github.com/amandalam
+    github: amandalam
     blog: http://dadablog.net/
 
 vinnson-lee:
@@ -488,7 +486,7 @@ cyrus-wong:
   nationality: Hong Kong
   social:
     nickname: Cyrus
-    github: https://github.com/wongcyrus/AWSCloudLab
+    github: wongcyrus
   portrait: male
   hkoscon-sponsored: false
 
@@ -503,7 +501,7 @@ daniel-chcouri:
   nationality: Israel
   social:
     nickname: Daniel
-    github: https://github.com/theosp
+    github: theosp
   company:
     name: MeteorSpark
     url: http://www.meteorspark.com/
@@ -532,7 +530,7 @@ vigneshwer-dhinakaran:
   nationality: India
   social:
     nickname: Vigneshwer
-    github: https://github.com/dvigneshwer/
+    github: dvigneshwer
     blog: https://dvigneshwer.wordpress.com/
   portrait: ""
   hkoscon-sponsored: false
@@ -540,10 +538,14 @@ vigneshwer-dhinakaran:
 vaishali-thakkar:
   name: Vaishali Thakkar
   gender: female
-  residence: ""
-  nationality: ""
+  residence: India
+  nationality: India
+  social:
+    nickname: Vaishali
+    github: vthakkar1994
+    blog: http://vaishalithakkar.in/
   portrait: ""
-  hkoscon-sponsored: true
+  hkoscon-sponsored: false
 
 gary-kwong:
   name: Gary Kwong
@@ -555,11 +557,45 @@ gary-kwong:
       rigorously test SpiderMonkey - the JavaScript engine of the Gecko
       platform on which Mozilla Firefox is based. Gary is passionate about human
       languages and breaking things in general.
-
   residence: United States
   nationality: Singapore
   social:
     nickname: gkw
-    github: https://github.com/nth10sd/
+    github: nth10sd
+  portrait: ""
+  hkoscon-sponsored: false
+
+thomas-kuiper:
+  name: Thomas Kuiper
+  gender: male
+  description:
+    - >
+      Thomas Kuiper, the General Manager of the Asia subsidiary of the domain
+      name registrar Gandi is originally from Germany. He worked on embedded
+      systems and content management systems for companies in Taiwan and Europe
+      before he set himself to the task to start Gandi's Asia business unit.
+      Gandi (abbreviation for "Gestion et Attribution des Noms de Domaine sur Internet"
+      in French or "Management and Allocation of Domain Names on the Internet"
+      in English) is a company tha provides domain name registration and
+      management in addition to Internet hosting infrastructure and related
+      services. The company has its head office in Paris and offices in San
+      Francisco, Luxembourg and Taipei to serve its customers around the clock.
+      Gandi was among the first European domain name registrars to offer ".COM"
+      and ".NET" and now manages over 2 million domain names with accreditation
+      for over 700 different domain name extensions for its customers, placing
+      Gandi among the top domain name registrars worldwide.
+  residence: Taiwan
+  social:
+    nickname: gandi
+    github: Gandi
+  portrait: ""
+  hkoscon-sponsored: false
+
+dennis-chen:
+  name: Dennis Chen
+  gender: male
+  description: ""
+  residence: Taiwan
+  nationality: Taiwan
   portrait: ""
   hkoscon-sponsored: false
