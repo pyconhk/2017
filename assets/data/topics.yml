@@ -1,6 +1,26 @@
 num_submissions:  51
 deadline: 2017/02/28 23:00 (GMT+8)
 topics:
+  -   title:    Gandi's LiveDNS and new gTLD's
+      id:       live-dns-new-gTLD
+      speaker:
+        - thomas-kuiper
+      remark:   Gandi
+      description:
+        - >
+          LiveDNS is Gandi's new DNS platform which includes an REST API and
+          makes its easy for developers to updates their zones in real time
+          with a few HTTP calls. This talk will give an introduction to the
+          service and also update the audience on recently delegated top level
+          domain names.
+      lang: en
+      lang_slide: en
+      type: keynote
+      cfp:      true
+      isSponsorTopic: true
+      sponsor: gandi
+      level: Beginners
+      requirement: ""
   -   title:    The deep dive in-and-out of MySQL Group Replication
       id:       mysql-group-replication
       speaker:
@@ -22,11 +42,11 @@ topics:
       cfp:      true
       isSponsorTopic: true
       sponsor: MySQL
-      venue: ""
-      start: >-
-        2016-06-09T15:35:00+0800
-      end: >-
-        2016-06-09T16:05:00+0800
+      level: Intermediate
+      requirement:
+          - >
+            As long as you are the application developers, you need a DB.  As
+            long as you care about your data, you need a reliable DB.
   -   title:  What's New in MySQL 8.0
       id:     whats-new-in-mysql-8.0
       speaker:
@@ -43,9 +63,8 @@ topics:
       cfp:      true
       isSponsorTopic: true
       sponsor: MySQL
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Basic knowledge of database
   -   title:  >-
                 Preparing for the App-ocalypse: The Web in the Age of Physical Computing
       id:       preparing-for-the-app-ocalypse-the-web-in-the-age-of-physical-computing
@@ -63,9 +82,10 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:
+        >-
+          Front-end web technology stack: HTML, CSS and JavaScript.
   -   title:  >-
                 Reproducible builds: Fulfilling the original promise of free software
       id:       reproducible-builds-fulfilling-the-original-promise-of-free-software
@@ -77,18 +97,15 @@ topics:
           Whilst anyone can inspect the source code of free software for
           malicious flaws, most Linux distributions provide binary
           (or "compiled") packages to end users.
-
         - >
           The motivation behind "reproducible" builds is to allow verification
           that no flaws have been introduced during this compilation process by
           promising identical binary packages are always generated from a
           given source.
-
         - >
           This prevents against the installation of backdoor-introducing malware
           on developers' machines - an attacker would need to simultaneously
           infect or blackmail all developers attempting to reproduce the build.
-
         - >
           This talk will focus heavily on how exactly software can fail to be
           reproducible, the tools, tests & specifications we have written to
@@ -101,23 +118,23 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:
+          Very little. The difference between source code and binary code, the
+          existence of hackers, etc.
   -   title:    Building a career in Open Source
       id:       building-a-career-in-open-source
       speaker:
         -   vaishali-thakkar
       remark:   India
-      description:
+      description: ""
       lang: en
       lang_slide: en
       type: talk
-      cfp:      false
+      cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title:    Open CV in Raspberry PI with Camera
       id:       open-cv-in-raspberry-pi-with-camera
       speaker:
@@ -134,9 +151,10 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:
+        Anyone is OK, and  beginner also, cause I explain in the process of
+        programming about open CV
   -   title:    Tips in setting up OpenStack from scratch
       id:       tips-in-setting-up-openstack-from-scratch
       speaker:
@@ -152,9 +170,8 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Concept on virtualization (VMWare, Juju, KVM)
   -   title:    Let's Rust! System programming is awesome again!
       id:       lets-rust-system-programming-is-awesome-again
       speaker:
@@ -164,11 +181,9 @@ topics:
         - >
           Usually we have to choose between performance, safety, and development
           speed. We have C/C++, Java, and bunch of scripting languages.
-
         - >
           Then here comes to the Rust: a programming language brought by Mozilla
           and the community.
-
         - >
           This topic will introduce Rust by showing the ownership concept,
           modern syntax and examples of concurrency approach.
@@ -177,9 +192,8 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level:  Intermediate
+      requirement: Basic programming experience.
   -   title:    One Year of Rust Microkernel Development
       id:       one-year-of-rust-microkernel-development
       speaker:
@@ -196,9 +210,8 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Understand basic programming and concepts of kernel/operating system.
   -   title:    Building Artificial Intelligence Units in Rust
       id:       building-artificial-intelligence-units-in-rust
       speaker:
@@ -226,7 +239,6 @@ topics:
           Demos of few mathematical models to perform prediction tasks and how
           to start off development of models from scratch in rust will be
           demonstrated.
-
         - >
           Session Content
         - >
@@ -241,7 +253,6 @@ topics:
           Benchmarks of Rust Crates
         - >
           Areas of improvements and rust unique offerings
-
         - >
           Key Takeaways
         - >
@@ -257,9 +268,14 @@ topics:
       type: talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:
+        - >
+          Any experience with coding in any language is good enough and people
+          interested to know about parallelism.
+        - >
+          Experience with rust language is big plus but not compulsory as the
+          session will cover the core concepts.
   -   title:    Data In, Elasticsearch Out
       id:       data-in-elasticsearch-out
       speaker:
@@ -278,9 +294,12 @@ topics:
       type:  talk
       cfp:      true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:  >-
+          Audience members should have a basic familiarity of command-line
+          tools and networking basics as well as data formats like JSON and XML.
+          Knowledge or experience in using Elasticsearch, Logstash or Beats
+          will be beneficial.
   -   title:   >-
             A War of File Format -- Why We Select ODF in Taiwan
       id:  a-war-of-file-format-why-we-select-odf-in-taiwan
@@ -300,9 +319,8 @@ topics:
       type:  talk
       cfp:    true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level:  Beginners
+      requirement: ""
   -   title:   >-
                 PIME - 用 Python 和 JavaScript 快速開發 Windows 的中文輸入法
       id:  PIME
@@ -322,9 +340,8 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level:  Intermediate
+      requirement: Some contents are advanced level.
   -   title:   >-
             ezgo for HK：自由的學習系統，本地的楷書字型。
       id:  ezgo-for-hk
@@ -332,7 +349,7 @@ topics:
         -  eric-sun
         -  franklin-weng
         -  kingman-leung
-      remark:
+      remark: ""
       description:
         - >
           ezgo 是由台灣所發起的一項計畫，將 Linux 系統客製化，加入許多值得推廣的自由軟體、
@@ -346,29 +363,27 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level:  Beginners
+      requirement:  ""
   -   title:  Free Hong Kong Kai Font
       id:  free-hong-kong-font
       speaker:
           -  kingman-leung
-      remark:
+      remark: ""
       description:
       lang:  zh.yue
       lang_slide:  zh
       type: talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title:   >-
             This year in #rstats
       id:  this-year-in-rstats
       speaker:
           -  hong-kong-r-user-group
-      remark:
+      remark: ""
       description:
         - >
           Demonstrate some fascinating stuffs that you can do now with #rstats,
@@ -378,14 +393,13 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Data science, Machine Learning, Data visualization
   -   title:   Harnessing social media with R
       id:  harnessing-social-media-with-r
       speaker:
         -  lushi-chen
-      remark:
+      remark: ""
       description:
         - >
           Studying satisfaction with life can assist evaluation of the effect
@@ -408,12 +422,12 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Advanced
+      requirement:
+          This talk is recommended for audience who have basic NLP and machine learning skills
   -   title:  >-
             A Security State of Mind: Continuous Security for DevOps with Kubernetes
-      id:    a-security-state-of-mind-continuous-security-for-devops-with-kubernetes
+      id:   a-security-state-of-mind-continuous-security-for-devops-with-kubernetes
       speaker:
         -  chris-van-tuin
       remark:  Redhat
@@ -424,22 +438,17 @@ topics:
           for the business. When it comes to adopting containers in the enterprise,
           Security is the highest adoption barrier. Is your organization ready to
           address the security risks with containers for your DevOps environment?
-
         - >
           In this presentation, you'll learn about:
         - >
-          The underlying technologies for Containers based DevOps including
-          Kubernetes
+            - The underlying technologies for Containers based DevOps including Kubernetes
+            - The top security risks with containers and how to manage theses risks
+              at scale for Container Images, Builds, Registry, Deployment, Hosts,
+              Network, Storage, API, Monitoring/Logging, Federation.
         - >
-          The top security risks with containers and how to manage theses risks
-          at scale for Container Images, Builds, Registry, Deployment, Hosts,
-          Network, Storage, API, Monitoring/Logging, Federation.
-        - >
-          How to make your Container workflow more secure without slowing down
-          DevOps
-        - >
-          Automating security vulnerability management and compliance checking
-          for container images
+            - How to make your Container workflow more secure without slowing down DevOps
+            - Automating security vulnerability management and compliance checking for
+              container images
         - >
           Also, a demo of Kubernetes managing container image lifecycle,
           automating container security scans, and deployment strategies for
@@ -449,9 +458,8 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title:   Build a cross-platform game in Haxe
       id:  build-a-cross-platofrm-game-in-haxe
       speaker:
@@ -473,16 +481,24 @@ topics:
       type:  workshop
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:
+        - >
+          Participants should have programming experience with at least one
+          programming language. Proficiency with JavaScript, Java, or C# is
+          ideal, but experience with other languages such as C/C++, Python,
+          or Ruby is also sufficient. Participants should have some familiarity
+          using the command line.
+
+          Participants should bring their own laptop computer, with either
+          Windows, Mac, or Linux installed.
   -   title:   >-
             Getting into the virtual world with WebVR/A-Frame
       id:  getting-into-the-virtual-world-with-web-vr
       speaker:
         -  andy-li
         -  parvani-ng
-      remark:
+      remark: ""
       description:
         - >
           Let’s get started in Virtual Reality with A-Frame, which is an open
@@ -499,9 +515,16 @@ topics:
       type:  workshop
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement:
+        - >
+          Participants should bring their own laptop computer, with either
+          Windows, Mac, or Linux installed. Some HTML/JS coding skill would be
+          great, but not necessary.
+
+          Some limited amount of Google Cardboard will be lended for testing.
+          The VR application can be developed and used without Google Cardboard
+          or any other VR hardware.
   -   title:  Building web app with open source serverless technology
       id:  building-web-app-with-open-source-serverless-technology
       speaker:
@@ -516,9 +539,10 @@ topics:
       type:  workshop
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement:
+        Basic HTML5 and JavaScript Web front-end knowledge; Experience on
+        building web application will definitely help.
   -   title:  1000 days of Mozilla Community Space in Taipei
       id:  1000-days-of-mozilla-community-space-in-taipei
       speaker:
@@ -536,14 +560,13 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title:  Blender Interface and 3D-CGI concepts
       id: blender-interface-and-3d-cgi-concepts
       speaker:
         -  anny-leung
-      remark:
+      remark: ""
       description:
         - >
           This session will share the basic 3D-CGI architecture and Blender
@@ -555,11 +578,10 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title:  軟體訊息本地化前置翻譯工具
-      id: 軟體訊息本地化前置翻譯工具
+      id: msgchi
       speaker:
         - bluebat
       remark:  Taiwan
@@ -574,9 +596,8 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title: ZMQ multiplex between golang coroutine and python thread
       id: zmq-multiplex-between-golang-coroutine-and-python-thread
       speaker:
@@ -597,14 +618,13 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Knowledge of Golang, Python, HTTP, PRC
   -   title:   Pentest fun with metasploit framework II
       id:  pentest-fun-with-metasploit-framework-ii
       speaker:
         -  hayden-chung
-      remark:
+      remark: ""
       description:
         - >
           This talk would be covering a quick recap of why we need penetration
@@ -620,14 +640,13 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Basic *nix commands, interest in information security
   -   title:   Waiting too long for Excel's VLOOKUP? Use SQLite for simple data analysis!
       id:  use-sqlite-for-simple-data-analysis
       speaker:
         -  amanda-lam
-      remark:
+      remark: ""
       description:
         - >
           Excel formulas can be quite slow when you're processing data files
@@ -648,27 +667,22 @@ topics:
         - >
           Who should attend this workshop?
         - >
-          If you're frustrated with the slow performance of Excel formulas
-          when dealing with large datasets in your daily work
+            - If you're frustrated with the slow performance of Excel formulas
+            when dealing with large datasets in your daily work
         - >
-          No coding experience is required
-        - >
-          Requirements
-        - >
-          Bring your own laptop (it can be Windows, Mac or Linux)
+            - No coding experience is required
       lang:  en
       lang_slide:  en
       type:  workshop
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: Bring your own laptop (it can be Windows, Mac or Linux)
   -   title:   AWS Cloud Lab (革新雲端電腦房)
       id:  aws-cloud-lab
       speaker:
         -  cyrus-wong
-      remark:
+      remark: ""
       description:
         - >
           AWS Cloud Lab is aims to facilitate educators using AWS in their
@@ -684,9 +698,8 @@ topics:
       type:  talk
       cfp:  true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Basic knowledge in AWS i.e.  EC2, Lambda, and CloudFormation
   -   title:   Why BASH?
       id:  why-bash
       speaker:
@@ -704,9 +717,8 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Intermediate
+      requirement: Basic programming and Linux command line skills
   -   title:   沒有 Powerpoint 的簡報世界
       id:  libreoffice-impress
       speaker:
@@ -717,7 +729,7 @@ topics:
           你認識的簡報軟體只有 PowerPoint 嗎? 思考一下，全世界公認的簡報大師 Steve Jobs
           是用 PowerPoint 做簡報的嗎? 你覺得全世界最知名的 TED 演講網站，有哪一份簡報非
           PowerPoint 不可?
-        - >
+
           試著在網路搜尋 Presentation tools 你將會發現原來簡報的工具還有更多的選擇，
           試著選擇 LibreOffice 裡的 Impress 你將會發現，原來簡報設計可以如此的純粹，
           原來一份令人驚豔的簡報關鍵不在 PowerPoint，而是令人  Impressive 的創意。
@@ -726,9 +738,8 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Beginners
+      requirement: ""
   -   title:   JavaScript fuzzing in Mozilla, 2017
       id:  javascript-fuzzling-in-mozilla-2017
       speaker:
@@ -750,6 +761,18 @@ topics:
       type:  talk
       cfp: true
       isSponsorTopic: false
-      venue: ""
-      start: ""
-      end: ""
+      level: Advanced
+      requirement: Be able to understand fuzzing (random black box testing)
+  -   title:   Open Street Map
+      id:  open-street-map
+      speaker:
+        -  dennis-chen
+      remark:  ""
+      description: ""
+      lang:  zh.tw
+      lang-slide: zh
+      type:  talk
+      cfp: true
+      isSponsorTopic: false
+      level: Intermediate
+      requirement: ""
