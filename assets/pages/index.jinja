@@ -23,13 +23,19 @@
               <span class="logo-text">Hong Kong Open Source Conference 2017</span>
             </h1>
             <div class="actions">
-              <a class="waves-effect waves-light z-depth-2 btn"
-                data-ga-category="front-top-outbound"
-                data-ga-action="click"
-                data-ga-label="ticket"
-                data-ga-value="earlybird ticket"
-                href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'frontpage_top') | execAppend }}"
-                target="_blank">Get Ticket</a>
+              <ul>
+                <li>
+                  <a class="waves-effect waves-light z-depth-2 btn"
+                  data-ga-category="front-top-outbound"
+                  data-ga-action="click"
+                  data-ga-label="ticket"
+                  data-ga-value="earlybird ticket"
+                  href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'frontpage_top') | execAppend }}"
+                  target="_blank">Get Ticket</a>
+                </li>
+                <li>
+                  <a class="btn" href="./cfp/index.html" target="_blank">Check out the talks</a>
+                </li>
             </div>
             <div class="contacts">
               <ul>
@@ -234,7 +240,11 @@
             </div>
           </div>
         </div>
-    </div></div>
+      </div>
+      <div id="cfp">
+        <a class="btn" href="./cfp/index.html" target="_blank">Check out the talks</a>
+      </div>
+    </div>
 
     <div id="patron-programme">
         <div class="title">
