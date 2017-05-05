@@ -36,7 +36,7 @@
 
         {% if topic.requirement %}
         <dt>Requirement</dt>
-        <dd>{{ topic.requirement | truncate(400) }}</dd>
+        <dd>{{ topic.requirement | truncate(400, true) }}</dd>
         {% endif %}
 
       </dl>
@@ -59,7 +59,7 @@
       {% endif %}
 
       <div class="description">
-        {{ topic.description | truncate(400) }}
+        {{ topic.description | join(' ') | truncate(400, true) }}
       </div>
 
       {% if topic.isSponsorTopic and topic.sponsor %}
@@ -82,13 +82,19 @@
       <div class="quick-info {% if speaker.portrait %}thumbnail{% endif %}">
         {% if speaker.portrait %}
         <div class="portrait">
-          <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}">
+          <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}" title="{{ speaker.name }}"> 
         </div>
         {% endif %}
         {% if speaker.social.github or speaker.social.blog %}
         <div class="social">
           {% if speaker.social.github %}
           <a title="Github of {{ speaker.name }}" href="https://www.github.com/{{ speaker.social.github }}" target="_blank">
+            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            Github of {{ speaker.name }}
+          </a>
+          {% endif %}   
+          {% if speaker.social.project_github %}
+          <a title="Github of {{ speaker.name }}" href="{{ speaker.social.project_github }}" target="_blank">
             <i class="fa fa-github fa-2x" aria-hidden="true"></i>
             Github of {{ speaker.name }}
           </a>
@@ -145,7 +151,7 @@
 
       <h3>Biography</h3>
       {% for d in speaker.description %}
-      <p>{{ d }}</p>
+      <p>{{ d | safe }}</p>
       {% endfor %}
     </div>
     <!-- TODO: add social links (e.g. github) -->

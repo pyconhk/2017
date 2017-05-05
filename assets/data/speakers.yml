@@ -92,7 +92,7 @@ chris-lamb:
   community:
     name: Debian
     url: https://www.debian.org/
-  portrait: ""
+  portrait: https://file.hkoscon.org/speakers/2017/chris.lamb.png
   hkoscon-sponsored: false
 
 dietrich-ayala:
@@ -174,7 +174,7 @@ kingman-leung:
       香港註冊社工，主職長者服務，2000年帶領長者開發開放源碼「筆順五碼」中文輸入法，再於近年帶長者開發開放授權的「自由香港字型」計劃
   residence: Hong Kong
   nationality: Hong Kong
-  portrait: ""
+  portrait: https://file.hkoscon.org/speakers/2017/kingman.leung.jpg
   hkoscon-sponsored: false
 
 hong-kong-r-user-group:
@@ -256,10 +256,10 @@ andy-li:
   residence:  Hong Kong
   nationality:  Hong Kong
   social:
-    name: Andy
-    url:  andyli
+    nickname: Andy
+    github:  andyli
     blog: https://blog.onthewings.net/
-  portrait: ""
+  portrait: https://file.hkoscon.org/speakers/2017/andy.li.png
   hkoscon-sponsored: false
 
 kevin-leung:
@@ -388,7 +388,7 @@ anny-leung:
   nationality:  Hong Kong
   social:
     blog: http://osmmhk.weebly.com/
-  portrait: ""
+  portrait: https://file.hkoscon.org/speakers/2017/ann.leung.png
   hkoscon-sponsored: false
 bluebat:
   name: 趙惟倫
@@ -403,7 +403,7 @@ bluebat:
   social:
     nickname: 趙惟倫
     github: bluebat
-  portrait: ""
+  portrait: https://file.hkoscon.org/speakers/2017/bluebat.png
   hkoscon-sponsored: false
 
 rick-mak:
@@ -449,9 +449,11 @@ amanda-lam:
     - >
       Product Owner @ SEEK Asia (jobsDB + JobStreet) | Diversity Advocate |
       HKPUG Podcaster | Youtuber | Jolla & Sailfish OS fans
-      http://about.me/amandalam
+    - >
+      <a href="http://about.me/amandalam" target="_blank">http://about.me/amandalam</a>
   residence: Hong Kong
   nationality: Hong Kong
+  portrait: https://file.hkoscon.org/speakers/2017/amanda.lam.jpg
   social:
     nickname: Amanda
     github: amandalam
@@ -538,12 +540,21 @@ vigneshwer-dhinakaran:
 vaishali-thakkar:
   name: Vaishali Thakkar
   gender: female
+  description:
+    - >
+      Vaishali Thakkar is working as a Linux Kernel engineer at Oracle. She 
+      works on various parts of the Linux Kernel like memory management, 
+      security and debugging tools [mainly Coccinelle]. She has previously 
+      worked as a Linux kernel intern in Outreachy program. She is also 
+      associated with various open source internship programs and groups 
+      [Outreachy, GSoC, GCI, Bangalore kernel meetup, LinuxChix India etc] 
+      as a mentor, co-organizer or volunteer. Her area of interest includes 
+      embedded systems, operating systems, security and computer architecture.
   residence: India
   nationality: India
   social:
-    nickname: Vaishali
-    github: vthakkar1994
-    blog: http://vaishalithakkar.in/
+    project_github: https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?qt=grep&q=vaishali
+    blog: http://vaishalitproject_hakkar.in/
   portrait: ""
   hkoscon-sponsored: false
 
@@ -597,5 +608,5 @@ dennis-chen:
   description: ""
   residence: Taiwan
   nationality: Taiwan
-  portrait: ""
+  portrait: https://file.hkoscon.org/speakers/2017/dennis.chen.jpg
   hkoscon-sponsored: false

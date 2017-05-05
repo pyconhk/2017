@@ -127,7 +127,20 @@ topics:
       speaker:
         -   vaishali-thakkar
       remark:   India
-      description: ""
+      description:
+        - >
+          Nowadays when almost all major companies are using, supporting and 
+          contributing to the Free and Open Source Software (FOSS), there are 
+          lots of jobs available for the people with FOSS background. As a paid, 
+          full-time FOSS contributor Vaishali Thakkar has built her career 
+          around by contributing in one of the biggest open source project 
+          Linux Kernel]. In this talk, she aims to talk about giving an 
+          overview of valuable ways to contribute and how they relate to 
+          building a career in FOSS. She will also focus on some of the 
+          benefits of working in open source communities which are beyond money, 
+          including [but not limited to] how it leads to opportunities to travel, 
+          collaborate with different people around the world and satisfaction of 
+          working on big and interesting FOSS projects.
       lang: en
       lang_slide: en
       type: talk
