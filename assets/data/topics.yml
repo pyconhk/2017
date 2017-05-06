@@ -814,7 +814,7 @@ topics:
       lang:  zh.tw
       lang-slide: zh
       type:  talk
-      cfp: true
+      cfp: false
       isSponsorTopic: false
       level: Intermediate
       requirement: ""
