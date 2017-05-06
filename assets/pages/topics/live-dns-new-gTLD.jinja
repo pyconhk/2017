@@ -9,27 +9,32 @@
 {% block og_desc %}{{ topic.description | join (' ') | truncate(300, true) }}{% endblock %}
 {% block og_url %}{{ data.site.basePath }}/topics/{{ topic.id }}{% endblock %}
 
-{% block before_title %}
-<div class="topic-type-name">{{ topic.type | capitalize }}</div>
-{% endblock %}
-{% block title %}{{ topic.title }}{% endblock %}
-
-{% block description %}
-<div class="page-topic-header">
-  <p>By <span class="name">{{ speaker.name }}</span>{% if speaker.social.nickname %} <span class="nickname">({{ speaker.social.nickname }})</span>{% endif %}</p>
-  <p>{{ topic.description | join (' ') | truncate(400, true) }}</p>
-</div>
-{% endblock %}
-
 {% block content %}
+
+<div class="container">
+  <div class="topic-type-name">{{ topic.type | capitalize }}</div>
+  <h1>{{ topic.title }}</h1>
+
+  <div class="page-topic-header">
+    <p>By <span class="name">{{ speaker.name }}</span>{% if speaker.social.nickname %} <span class="nickname">({{ speaker.social.nickname }})</span>{% endif %}</p>
+  </div>
+</div>
+
 <div class="page-topic container">
 
   <div class="row">
-    <div class="col-md-8 topic">
+    <div class="col m8 topic">
 
       <h2 class="visible-md visible-lg">Details</h2>
 
       <dl class="datasheet">
+
+        {% if topic.venue %}
+        <dt>Location</dt>
+        <dd>
+          {{ data.venues[topic.venue].name }}
+        </dd>
+        {% endif %}
 
         <dt>Language</dt>
         <dd>{{ lang.name }}{% if topic.lang_slide %} (with {{ lang_slide.name }} Slides){% endif %}</dd>
@@ -59,7 +64,9 @@
       {% endif %}
 
       <div class="description">
-        {{ topic.description | join(' ') | truncate(400, true) }}
+        {% for d in topic.description %}
+        <p>{{ d | safe }}</p>
+        {% endfor %}
       </div>
 
       {% if topic.isSponsorTopic and topic.sponsor %}
@@ -71,21 +78,21 @@
       {% endif %}
 
     </div>
-    <div class="col-md-4 speaker">
+    <div class="col m4 speaker">
 
       <h2>
         <span class="name">{{ speaker.name }}</span>
         {% if speaker.social.nickname %}<span class="nickname">{{ speaker.social.nickname }}</span>{% endif %}
       </h2>
 
-      {% if speaker.social.github or speaker.social.blog or speaker.portrait %}
+      {% if speaker.social.github or speaker.social.blog or speaker.portrait or speaker.social.twitter or speaker.social.facebook %} 
       <div class="quick-info {% if speaker.portrait %}thumbnail{% endif %}">
         {% if speaker.portrait %}
         <div class="portrait">
           <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}" title="{{ speaker.name }}"> 
         </div>
         {% endif %}
-        {% if speaker.social.github or speaker.social.blog %}
+        {% if speaker.social.github or speaker.social.blog or speaker.social.twitter or speaker.social.facebook %}
         <div class="social">
           {% if speaker.social.github %}
           <a title="Github of {{ speaker.name }}" href="https://www.github.com/{{ speaker.social.github }}" target="_blank">
@@ -94,15 +101,27 @@
           </a>
           {% endif %}   
           {% if speaker.social.project_github %}
-          <a title="Github of {{ speaker.name }}" href="{{ speaker.social.project_github }}" target="_blank">
+          <a title="Github of {% if speaker.social.project_name %}{{ speaker.social.project_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.project_github }}" target="_blank">
             <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            Github of {{ speaker.name }}
+            Github of {% if speaker.social.project_name %}{{ speaker.social.project_name }}{% else %}{{ speaker.name }}{% endif %}
           </a>
           {% endif %}
           {% if speaker.social.blog %}
-          <a title="Blog of {{ speaker.name }}" href="{{ speaker.social.blog }}" target="_blank">
+          <a title="Blog of {% if speaker.social.blog_name %}{{ speaker.social.blog_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.blog }}" target="_blank">
             <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
-            Blog of {{ speaker.name }}
+            Blog of {% if speaker.social.blog_name %}{{ speaker.social.blog_name }}{% else %}{{ speaker.name }}{% endif %}
+          </a>
+          {% endif %}
+          {% if speaker.social.twitter %}
+          <a title="Twitter of {{ speaker.name }}" href="{{ speaker.social.twitter }}" target="_blank">
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+            Twitter of {{ speaker.name }}
+          </a>
+          {% endif %}
+          {% if speaker.social.facebook %}
+          <a title="Facebook of {{ speaker.name }}" href="{{ speaker.social.facebook }}" target="_blank">
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            Facebook of {{ speaker.name }}
           </a>
           {% endif %}
         </div>
