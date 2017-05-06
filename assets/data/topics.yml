@@ -21,6 +21,7 @@ topics:
       sponsor: gandi
       level: Beginners
       requirement: ""
+      venue: function-room
   -   title:    The deep dive in-and-out of MySQL Group Replication
       id:       mysql-group-replication
       speaker:
@@ -47,6 +48,7 @@ topics:
           - >
             As long as you are the application developers, you need a DB.  As
             long as you care about your data, you need a reliable DB.
+      venue: training-theatre
   -   title:  What's New in MySQL 8.0
       id:     whats-new-in-mysql-8.0
       speaker:
@@ -65,6 +67,7 @@ topics:
       sponsor: MySQL
       level: Intermediate
       requirement: Basic knowledge of database
+      venue: function-room
   -   title:  >-
                 Preparing for the App-ocalypse: The Web in the Age of Physical Computing
       id:       preparing-for-the-app-ocalypse-the-web-in-the-age-of-physical-computing
@@ -79,13 +82,14 @@ topics:
           and other emerging technologies.
       lang: en
       lang_slide: en
-      type: talk
+      type: keynote
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
       requirement:
         >-
           Front-end web technology stack: HTML, CSS and JavaScript.
+      venue: function-room
   -   title:  >-
                 Reproducible builds: Fulfilling the original promise of free software
       id:       reproducible-builds-fulfilling-the-original-promise-of-free-software
@@ -122,6 +126,7 @@ topics:
       requirement:
           Very little. The difference between source code and binary code, the
           existence of hackers, etc.
+      venue: function-room
   -   title:    Building a career in Open Source
       id:       building-a-career-in-open-source
       speaker:
@@ -148,6 +153,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: function-room
   -   title:    Open CV in Raspberry PI with Camera
       id:       open-cv-in-raspberry-pi-with-camera
       speaker:
@@ -159,8 +165,8 @@ topics:
           like to explain about this module how to install and use , and show
           some demo from  the standard of the point of the view in performance
           for making robots like an eye's function we can use.
-      lang: en
-      lang_slide: ja_JP
+      lang: en_US/zh_CN/zh_TW/ja_JP
+      lang_slide: en_US/zh_CN/zh_TW/ja_JP
       type: talk
       cfp:      true
       isSponsorTopic: false
@@ -168,6 +174,7 @@ topics:
       requirement:
         Anyone is OK, and  beginner also, cause I explain in the process of
         programming about open CV
+      venue: function-room  
   -   title:    Tips in setting up OpenStack from scratch
       id:       tips-in-setting-up-openstack-from-scratch
       speaker:
@@ -178,13 +185,14 @@ topics:
           bring you our experience in setting up private cloud for commercial
           use, with hints on consideration of architecture, HA and network
           design.
-      lang: en_zh
+      lang: en_US/zh_CN/zh_TW/ja_JP
       lang_slide: en
       type: talk
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
       requirement: Concept on virtualization (VMWare, Juju, KVM)
+      venue: function-room
   -   title:    Let's Rust! System programming is awesome again!
       id:       lets-rust-system-programming-is-awesome-again
       speaker:
@@ -207,6 +215,7 @@ topics:
       isSponsorTopic: false
       level:  Intermediate
       requirement: Basic programming experience.
+      venue: training-theatre
   -   title:    One Year of Rust Microkernel Development
       id:       one-year-of-rust-microkernel-development
       speaker:
@@ -225,6 +234,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: Understand basic programming and concepts of kernel/operating system.
+      venue: training-theatre
   -   title:    Building Artificial Intelligence Units in Rust
       id:       building-artificial-intelligence-units-in-rust
       speaker:
@@ -232,50 +242,46 @@ topics:
       remark:   India
       description:
         - >
-          General Description
-        - >
+          <h3>General Description</h3>
+          <p>
           Rust is great for building mathematical models and AI which is the
           talk of the hour and a great emerging domain is based on mathematics
           which can crunch realtime data to provide human level insights which
           helps in making logical decisions.
-        - >
+          </p>
+          <p>
           There are already many crates in rust which provide AI units which
           help in implementing deep learning and reinforcement learning systems
           and algorithms.
-        - >
+          </p>
+          <p>
           Proposals basically deep dives into such implementations in rust and
           covers the benchmarks of performance of the rust crates with the
           industrial grade libraries such as tensor flow and caffe. The Talk
           touches upon the major problems in the industrial grade libraries and
           how rust can help in avoiding them.
-        - >
+          </p>
+          <p>
           Demos of few mathematical models to perform prediction tasks and how
           to start off development of models from scratch in rust will be
           demonstrated.
-        - >
-          Session Content
-        - >
-          Introduction to AI
-        - >
-          Current AI crates
-        - >
-          Demo on Male and female detector
-        - >
-          Template for mathematical model building
-        - >
-          Benchmarks of Rust Crates
-        - >
-          Areas of improvements and rust unique offerings
-        - >
-          Key Takeaways
-        - >
-          Learn to build your first machine learning program in rust
-        - >
-          Template for creating mathematical implementation from scratch
-        - >
-          Benchmarks of rust ML crates
-        - >
-          Learn the different benchmark parameters
+          </p>
+          <h3>Session Content</h3>
+          <ul>
+          <li>Introduction to AI</li>
+          <li>Current AI crates</li>
+          <li>Demo on Male and female detector</li>
+          <li>Template for mathematical model building</li>
+          <li>Benchmarks of Rust Crates</li>
+          Areas of improvements and rust unique offerings</li>
+          </ul>
+          <h3>Key Takeaways</h3>
+          <ul>
+          <li>Learn to build your first machine learning program in rust</li>
+          <li>Template for creating mathematical implementation from scratch</li>
+          <li>Benchmarks of rust ML crates</li>
+          <li>Learn the different benchmark parameters</li>
+          </ul>
       lang: en
       lang_slide: en
       type: talk
@@ -285,10 +291,9 @@ topics:
       requirement:
         - >
           Any experience with coding in any language is good enough and people
-          interested to know about parallelism.
-        - >
-          Experience with rust language is big plus but not compulsory as the
-          session will cover the core concepts.
+          interested to know about parallelism. Experience with rust language 
+          is big plus but not compulsory as the session will cover the core concepts.
+      venue: training-theatre
   -   title:    Data In, Elasticsearch Out
       id:       data-in-elasticsearch-out
       speaker:
@@ -313,6 +318,7 @@ topics:
           tools and networking basics as well as data formats like JSON and XML.
           Knowledge or experience in using Elasticsearch, Logstash or Beats
           will be beneficial.
+      venue: function-room
   -   title:   >-
             A War of File Format -- Why We Select ODF in Taiwan
       id:  a-war-of-file-format-why-we-select-odf-in-taiwan
@@ -334,6 +340,7 @@ topics:
       isSponsorTopic: false
       level:  Beginners
       requirement: ""
+      venue: function-room
   -   title:   >-
                 PIME - 用 Python 和 JavaScript 快速開發 Windows 的中文輸入法
       id:  PIME
@@ -355,6 +362,7 @@ topics:
       isSponsorTopic: false
       level:  Intermediate
       requirement: Some contents are advanced level.
+      venue: function-room
   -   title:   >-
             ezgo for HK：自由的學習系統，本地的楷書字型。
       id:  ezgo-for-hk
@@ -378,12 +386,15 @@ topics:
       isSponsorTopic: false
       level:  Beginners
       requirement:  ""
+      venue: training-room-2
   -   title:  Free Hong Kong Kai Font
       id:  free-hong-kong-font
       speaker:
           -  kingman-leung
       remark: ""
-      description:
+      description: 
+        - >
+          Free Hong kong Kai Font for education
       lang:  zh.yue
       lang_slide:  zh
       type: talk
@@ -391,11 +402,12 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: training-room-2
   -   title:   >-
             This year in #rstats
       id:  this-year-in-rstats
       speaker:
-          -  hong-kong-r-user-group
+          -  hkrug
       remark: ""
       description:
         - >
@@ -408,6 +420,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: Data science, Machine Learning, Data visualization
+      venue: function-room
   -   title:   Harnessing social media with R
       id:  harnessing-social-media-with-r
       speaker:
@@ -438,6 +451,7 @@ topics:
       level: Advanced
       requirement:
           This talk is recommended for audience who have basic NLP and machine learning skills
+      venue: function-room
   -   title:  >-
             A Security State of Mind: Continuous Security for DevOps with Kubernetes
       id:   a-security-state-of-mind-continuous-security-for-devops-with-kubernetes
@@ -473,6 +487,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: function-room
   -   title:   Build a cross-platform game in Haxe
       id:  build-a-cross-platofrm-game-in-haxe
       speaker:
@@ -505,6 +520,7 @@ topics:
 
           Participants should bring their own laptop computer, with either
           Windows, Mac, or Linux installed.
+      venue: training-room-1
   -   title:   >-
             Getting into the virtual world with WebVR/A-Frame
       id:  getting-into-the-virtual-world-with-web-vr
@@ -538,6 +554,7 @@ topics:
           Some limited amount of Google Cardboard will be lended for testing.
           The VR application can be developed and used without Google Cardboard
           or any other VR hardware.
+      venue: training-room-1
   -   title:  Building web app with open source serverless technology
       id:  building-web-app-with-open-source-serverless-technology
       speaker:
@@ -546,16 +563,17 @@ topics:
       description:
         - >
           Short workshop on building web app with JavaScript and HTML5 that has
-          cloud features in a serverless approach。
+          cloud features in a serverless approach.
       lang:  zh.yue
       lang_slide:  en
       type:  workshop
       cfp:  true
       isSponsorTopic: false
       level: Intermediate
-      requirement:
+      requirement: >-
         Basic HTML5 and JavaScript Web front-end knowledge; Experience on
         building web application will definitely help.
+      venue: training-room-1
   -   title:  1000 days of Mozilla Community Space in Taipei
       id:  1000-days-of-mozilla-community-space-in-taipei
       speaker:
@@ -575,6 +593,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: training-theatre
   -   title:  Blender Interface and 3D-CGI concepts
       id: blender-interface-and-3d-cgi-concepts
       speaker:
@@ -593,6 +612,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: training-room-2
   -   title:  軟體訊息本地化前置翻譯工具
       id: msgchi
       speaker:
@@ -611,6 +631,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: training-room-2
   -   title: ZMQ multiplex between golang coroutine and python thread
       id: zmq-multiplex-between-golang-coroutine-and-python-thread
       speaker:
@@ -633,6 +654,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: Knowledge of Golang, Python, HTTP, PRC
+      venue: training-theatre
   -   title:   Pentest fun with metasploit framework II
       id:  pentest-fun-with-metasploit-framework-ii
       speaker:
@@ -680,10 +702,12 @@ topics:
         - >
           Who should attend this workshop?
         - >
-            - If you're frustrated with the slow performance of Excel formulas
+            <ul>
+            <li>- If you're frustrated with the slow performance of Excel formulas
             when dealing with large datasets in your daily work
-        - >
-            - No coding experience is required
+            </li>
+            <li>- No coding experience is required</li>
+            </ul>
       lang:  en
       lang_slide:  en
       type:  workshop
@@ -691,6 +715,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: Bring your own laptop (it can be Windows, Mac or Linux)
+      venue: training-room-3
   -   title:   AWS Cloud Lab (革新雲端電腦房)
       id:  aws-cloud-lab
       speaker:
@@ -713,6 +738,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: Basic knowledge in AWS i.e.  EC2, Lambda, and CloudFormation
+      venue: training-room-2
   -   title:   Why BASH?
       id:  why-bash
       speaker:
@@ -732,6 +758,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: Basic programming and Linux command line skills
+      venue: training-room-2
   -   title:   沒有 Powerpoint 的簡報世界
       id:  libreoffice-impress
       speaker:
@@ -742,7 +769,7 @@ topics:
           你認識的簡報軟體只有 PowerPoint 嗎? 思考一下，全世界公認的簡報大師 Steve Jobs
           是用 PowerPoint 做簡報的嗎? 你覺得全世界最知名的 TED 演講網站，有哪一份簡報非
           PowerPoint 不可?
-
+        - >
           試著在網路搜尋 Presentation tools 你將會發現原來簡報的工具還有更多的選擇，
           試著選擇 LibreOffice 裡的 Impress 你將會發現，原來簡報設計可以如此的純粹，
           原來一份令人驚豔的簡報關鍵不在 PowerPoint，而是令人  Impressive 的創意。
@@ -753,6 +780,7 @@ topics:
       isSponsorTopic: false
       level: Beginners
       requirement: ""
+      venue: training-room-2
   -   title:   JavaScript fuzzing in Mozilla, 2017
       id:  javascript-fuzzling-in-mozilla-2017
       speaker:
@@ -776,6 +804,7 @@ topics:
       isSponsorTopic: false
       level: Advanced
       requirement: Be able to understand fuzzing (random black box testing)
+      venue: training-theatre
   -   title:   Open Street Map
       id:  open-street-map
       speaker:
@@ -789,3 +818,4 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: ""
+      venue: training-room-2
