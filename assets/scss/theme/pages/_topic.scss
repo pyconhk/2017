@@ -59,6 +59,12 @@
             text-align: right;
           }
         }
+        
+        @media #{$small-and-down} {
+          .description div {
+            text-align: center;
+          }
+        }
       }
   }
 
