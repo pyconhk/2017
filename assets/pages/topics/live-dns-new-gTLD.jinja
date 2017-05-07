@@ -1,6 +1,6 @@
 {% extends "app.jinja" %}
 
-{% set topic = data.topics.topics[0] %}
+{% set topic = data.topics.topics[2] %}
 {% set speaker = data.speakers[topic.speaker[0]] %}
 {% set lang = data.langs[topic.lang] %}
 {% set lang_slide = data.langs[topic.lang_slide] %}
@@ -13,14 +13,13 @@
 
 <div class="container">
   <div class="topic-type-name">{{ topic.type | capitalize }}</div>
-  <h1>{{ topic.title }}</h1>
-
+  <div class="dark-section"><h1>{{ topic.title }}</h1></div>
   <div class="page-topic-header">
     <p>By <span class="name">{{ speaker.name }}</span>{% if speaker.social.nickname %} <span class="nickname">({{ speaker.social.nickname }})</span>{% endif %}</p>
   </div>
 </div>
 
-<div class="page-topic container">
+<div class="container">
 
   <div class="row">
     <div class="col m8 topic">
