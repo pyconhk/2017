@@ -12,12 +12,17 @@
     <meta property="og:image" content="{% block og_image %}{{ data.site.og.image }}{% endblock %}" />
     <meta property="og:type" content="{% block og_type %}{{ data.site.og.type }}{% endblock %}" />
     <meta property="og:description" content="{% block og_desc %}{{ data.site.og.description }}{% endblock %}" />
+    <meta property="theme-color" content="{{ data.site.og.themeColor }}" />
     <title>{{ data.site.name }}</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ data.site.basePath }}/app.css" rel="stylesheet" >
     <link href="{{ data.site.basePath }}/images/favicon.ico" rel="icon">
     <link href="{{ data.site.basePath }}/manifest.json" rel="manifest">
+    <link rel="icon" sizes="48x48" href="https://hkoscon.org/logo.png">
+    <link rel="icon" sizes="96x96" href="https://hkoscon.org/logo.png">
+    <link rel="icon" sizes="144x144" href="https://hkoscon.org/logo.png">
+    <link rel="icon" sizes="192x192" href="https://hkoscon.org/logo.png">
     {% block style %}{% endblock %}
 </head>
 <body class="{{ pageID }}">
