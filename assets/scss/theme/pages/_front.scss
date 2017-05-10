@@ -48,11 +48,17 @@
     .actions {
       margin-top: 1.5em;
       text-align: center;
-      .btn {
-        color: #000;
-        font-size: 2vh;
-        line-height: 4vh;
-        height: 4vh;
+      ul {
+        list-style-type: none;
+        li {
+          margin: 0.5em;
+          .btn {
+            color: #000;
+            font-size: 2vh;
+            line-height: 4vh;
+            height: 4vh;
+          }
+        }
       }
     }
     .contacts {
@@ -428,6 +434,14 @@
           overflow: hidden;
         }
       }
+    }
+  }
+
+  #cfp {
+    padding: 0 0 1em 0;
+    text-align: center;
+    .btn {
+      color: #000;
     }
   }
 }
