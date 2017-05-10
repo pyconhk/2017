@@ -84,43 +84,38 @@
         {% if speaker.social.nickname %}<span class="nickname">{{ speaker.social.nickname }}</span>{% endif %}
       </h2>
 
-      {% if speaker.social.github or speaker.social.blog or speaker.portrait or speaker.social.twitter or speaker.social.facebook %} 
+      {% if speaker.social.github or speaker.social.blog or speaker.portrait or speaker.social.twitter or speaker.social.facebook %}
       <div class="quick-info {% if speaker.portrait %}thumbnail{% endif %}">
         {% if speaker.portrait %}
         <div class="portrait">
-          <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}" title="{{ speaker.name }}"> 
+          <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}" title="{{ speaker.name }}">
         </div>
         {% endif %}
         {% if speaker.social.github or speaker.social.blog or speaker.social.twitter or speaker.social.facebook %}
         <div class="social">
           {% if speaker.social.github %}
           <a title="Github of {{ speaker.name }}" href="https://www.github.com/{{ speaker.social.github }}" target="_blank">
-            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            Github of {{ speaker.name }}
+            <i class="fa fa-github fa-icon" aria-hidden="true"></i>
           </a>
-          {% endif %}   
+          {% endif %}
           {% if speaker.social.project_github %}
           <a title="Github of {% if speaker.social.project_name %}{{ speaker.social.project_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.project_github }}" target="_blank">
-            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            Github of {% if speaker.social.project_name %}{{ speaker.social.project_name }}{% else %}{{ speaker.name }}{% endif %}
+            <i class="fa fa-github fa-icon" aria-hidden="true"></i>
           </a>
           {% endif %}
           {% if speaker.social.blog %}
           <a title="Blog of {% if speaker.social.blog_name %}{{ speaker.social.blog_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.blog }}" target="_blank">
-            <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
-            Blog of {% if speaker.social.blog_name %}{{ speaker.social.blog_name }}{% else %}{{ speaker.name }}{% endif %}
+            <i class="fa fa-globe fa-icon" aria-hidden="true"></i>
           </a>
           {% endif %}
           {% if speaker.social.twitter %}
           <a title="Twitter of {{ speaker.name }}" href="{{ speaker.social.twitter }}" target="_blank">
-            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-            Twitter of {{ speaker.name }}
+            <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>
           </a>
           {% endif %}
           {% if speaker.social.facebook %}
           <a title="Facebook of {{ speaker.name }}" href="{{ speaker.social.facebook }}" target="_blank">
-            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-            Facebook of {{ speaker.name }}
+            <i class="fa fa-facebook fa-icon" aria-hidden="true"></i>
           </a>
           {% endif %}
         </div>
