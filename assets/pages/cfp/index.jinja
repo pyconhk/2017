@@ -24,7 +24,7 @@
             {% for topic in data.topics.topics %}
               {% if topic.cfp %}
                 <li class="link">
-                  <a href="#" target="_blank">
+                  <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
                     {{ topic.title }}
                   </a>
                   ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
