@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ "$TRAVIS_PULL_REQUEST" != "false" ] || [ "$TRAVIS_BRANCH" != "master" ]; then
+if [ "$TRAVIS_PULL_REQUEST" != "false" ] || ([ "$TRAVIS_BRANCH" != "master" ] && [ "$TRAVIS_BRANCH" != "beta" ]); then
     exit 0
 fi
 
