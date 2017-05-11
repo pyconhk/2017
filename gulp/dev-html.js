@@ -7,6 +7,8 @@ const util = require('gulp-util');
 const path = require('path');
 const htmldata = require('./includes/html-data');
 const htmlurl = require('./includes/html-url-append');
+
+// $FlowFixMe
 const requireyml = require('require-yml');
 
 // base path
