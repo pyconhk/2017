@@ -70,8 +70,14 @@
       {% if topic.isSponsorTopic and topic.sponsor %}
       <div class="sponsor-wrapper">
         <h2>Sponsored by</h2>
-        {% set sponsor = data.sponsor.sponsor_types[1].sponsors[0] %}
-        {% include 'sponsor/partial.jinja' %}
+        {% for st in data.sponsor.sponsor_types %}
+          {% for sp in st.sponsors %}
+            {% if sp.id === topic.sponsor %}
+              {% set sponsor = sp %}
+              {% include 'sponsor/partial.jinja' %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
       </div>
       {% endif %}
 
