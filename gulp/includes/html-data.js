@@ -13,19 +13,24 @@ const pagespath = basepath + '/assets/pages';
  * @param {Object} file object from gulp pipeline
  * @return {Object} object of template data
  */
-function fileData(file) {
-  const pagePath = getPagePath(file.path);
-  const pageID = genPageID(pagePath);
-  const data = requireyml(basepath + '/assets/data');
-  util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
-    pagePath,
-    pageID,
-  });
-  return {
-    data,
-    pagePath,
-    pageID,
-  };
+function fileData(extraData={}) {
+  return function (file) {
+    const pagePath = getPagePath(file.path);
+    const pageID = genPageID(pagePath);
+    const data = requireyml(basepath + '/assets/data');
+    const output = Object.assign(
+      {
+        data,
+        pagePath,
+        pageID,
+      },
+      extraData
+    );
+    util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
+      pageID: output.pageID,
+    });
+    return output;
+  }
 }
 
 /**
