@@ -1,0 +1,109 @@
+<div id="speaker-{{speakerid}}" class="speaker row">
+
+  <div class="col l2 m3 s12">
+    <div class="portrait">
+      {% if speaker.portrait %}
+        <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}" title="{{ speaker.name }}" />
+      {% else %}
+        <img src="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?s=300&d=mm&r=g" title="{{ speaker.name }}" />
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="col l10 m9 s12">
+
+    <h3>
+      <span class="name">{{ speaker.name }}</span>
+      {% if speaker.social.nickname %}<span class="nickname">{{ speaker.social.nickname }}</span>{% endif %}
+    </h3>
+
+    <div class="datasheet">
+
+      {% if speaker.social.github or speaker.social.blog or speaker.portrait or speaker.social.twitter or speaker.social.facebook %}
+      <div class="quick-info {% if speaker.portrait %}thumbnail{% endif %}">
+        {% if speaker.social.github or speaker.social.blog or speaker.social.twitter or speaker.social.facebook %}
+        <div class="social">
+          {% if speaker.social.github %}
+          <a title="Github of {{ speaker.name }}" href="https://www.github.com/{{ speaker.social.github }}" target="_blank">
+            <i class="fa fa-github fa-icon" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+          {% if speaker.social.project_github %}
+          <a title="Github of {% if speaker.social.project_name %}{{ speaker.social.project_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.project_github }}" target="_blank">
+            <i class="fa fa-github fa-icon" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+          {% if speaker.social.blog %}
+          <a title="Blog of {% if speaker.social.blog_name %}{{ speaker.social.blog_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.blog }}" target="_blank">
+            <i class="fa fa-globe fa-icon" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+          {% if speaker.social.twitter %}
+          <a title="Twitter of {{ speaker.name }}" href="{{ speaker.social.twitter }}" target="_blank">
+            <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+          {% if speaker.social.facebook %}
+          <a title="Facebook of {{ speaker.name }}" href="{{ speaker.social.facebook }}" target="_blank">
+            <i class="fa fa-facebook fa-icon" aria-hidden="true"></i>
+          </a>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <div class="description">
+        {% for d in speaker.description %}
+        <p>{{ d | safe }}</p>
+        {% endfor %}
+      </div><!--/.description-->
+
+      <div class="nationality">
+        {% if speaker.nationality %}
+          {{ speaker.nationality }}
+          {% if speaker.residence and (speaker.residence != speaker.nationality)%}
+            (lives in {{ speaker.residence }})
+          {% endif %}
+        {% endif %}
+      </div><!--/.nationality-->
+
+      <div class="affiliations">
+
+        {% if speaker.community %}
+        <div class="community">
+          {% if speaker.community.url %}
+            <a href="{{ speaker.community.url }}" target="_blank">{{ speaker.community.name }}</a>
+          {% else %}
+            {{ speaker.community.name }}
+          {% endif %}
+        </div>
+        {% endif %}
+
+        {% if speaker.company %}
+        <div class="company">
+          {% if speaker.company.url %}
+          <a href="{{ speaker.company.url }}" target="_blank">{{ speaker.company.name }}</a>
+          {% else %}
+          {{ speaker.company.name }}
+          {% endif %}
+        </div>
+        {% endif %}
+
+        {% if speaker.affiliation %}
+        <div class="other-affiliations">
+          {% if speaker.affiliation.url %}
+          <a href="{{ speaker.affiliation.url }}" target="_blank">{{ speaker.affiliation.name }}</a>
+          {% else %}
+          {{ speaker.affiliation.name }}
+          {% endif %}
+        </div>
+        {% endif %}
+
+      </div><!--/.affiliations-->
+
+    </div>
+
+  </div>
+
+</div><!--/.speaker-->

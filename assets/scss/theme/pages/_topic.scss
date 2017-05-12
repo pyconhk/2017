@@ -1,3 +1,98 @@
+.topic-page-header {
+
+  margin-top: 4em;
+
+  .dark-section {
+    h1 {
+      color: $theme-blue;
+    }
+  }
+
+  .page-topic-header {
+    a {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
+
+  .topic-type-name {
+    position: relative;
+    font-size: 1.5em
+  }
+
+}
+
+.topic-page {
+
+  .speakers, .sponsor-wrapper{
+    margin: 2em 0;
+  }
+
+  .sponsor-wrapper {
+    h2 {
+      margin: 0 0 1em;
+    }
+  }
+
+  .speakers {
+    h2 {
+      margin: 0 0 1em;
+      padding: 0 0.5em;
+    }
+  }
+
+  .speaker {
+    display: block;
+    clear: both;
+    padding: 2em 0;
+    margin: 1em 1em;
+    @extend .card;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+
+      .name {
+        display: block;
+      }
+      .nickname {
+        color: rgba(0, 0, 0, .4);
+        font-size: 0.8em;
+        font-weight: normal;
+        margin-top: 0.3em;
+      }
+    }
+
+    .portrait {
+      padding: 0.5em;
+      text-align: center;
+      img {
+        @extend .responsive-img;
+        @extend .circle;
+        @extend .z-depth-1;
+      }
+    }
+
+    .quick-info {
+      margin: 0.5em 0 0;
+      font-size: 1.5em;
+    }
+
+    &:target {
+      background-color: #FFE;
+      @extend .z-depth-3;
+    }
+  }
+
+  .sponsor {
+    display: block;
+    clear: both;
+    padding: 2em 0;
+    @extend .card;
+  }
+}
+
+/*
 .topic-page {
 
   .dark-section {
@@ -170,3 +265,4 @@
   color: #fff;
   padding-left: 5px;
 }
+*/
