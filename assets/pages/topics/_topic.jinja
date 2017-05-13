@@ -9,19 +9,23 @@
 
 {% block content %}
 
-<div class="container topic-page-header">
-  <h1 class="topic-type-name">{{ topic.type | capitalize }}</h1>
-  <div class="dark-section"><h1>{{ topic.title }}</h1></div>
-  <div class="page-topic-header">
-    <p>{{ topic | concatSpeakerNames(data.speakers) | safe }}</p>
+<div class="theme-area"><div class="content">
+  <div class="container">
+    <div class="title">
+      <div class="title-type">{{ topic.type | capitalize }}</div>
+      <h1>{{ topic.title }}</h1>
+      <div class="title-speakers">
+        <p>{{ topic | concatSpeakerNames(data.speakers) | safe }}</p>
+      </div>
+    </div>
   </div>
-</div><!--/.topic-page-header-->
+</div></div><!--/.content--><!--/.theme-area-->
 
-<div class="container topic-page">
+<div class="container">
 
   <div class="row">
 
-    <div class="col m12">
+    <div class="col m12 topic-details">
 
       <div class="description">
         {% for d in topic.description %}
@@ -31,21 +35,26 @@
 
       {% if topic.venue %}
       <div class="location">
+        <i class="fa fa-map-signs" aria-hidden="true"></i>
         {{ data.venues[topic.venue].name }}
       </div>
       {% endif %}
 
       <div class="language">
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
         {{ lang.name }}{% if topic.lang_slide %} ({{ lang_slide.name }} Slides){% endif %}
       </div>
 
       {% if topic.level %}
       <div class="level">
         {% if topic.level == "Beginners" %}
+          <i class="fa fa-users" aria-hidden="true"></i>
           For General Public
         {% elseif topic.level == "Intermediate" %}
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
           For Coders and Tech Audiences with General Knowledge and Skills.
         {% elseif topic.level == "Advanced" %}
+          <i class="fa fa-rocket" aria-hidden="true"></i>
           For Advanced Coders &amp; Tech Audiences.
         {% endif %}
       </div>
@@ -53,10 +62,10 @@
 
       {% if topic.requirement %}
       <div class="requirement">
+        <i class="fa fa-star" aria-hidden="true"></i>
         {{ topic.requirement | truncate(400, true) }}
       </div>
       {% endif %}
-
 
     </div>
 

@@ -54,6 +54,15 @@
     }
   }
 
+  .topic-details {
+    .fa {
+      margin-right: 0.5em;
+    }
+    .location, .language, .level {
+      margin: 0.5em 0;
+    }
+  }
+
   .speakers {
     h2 {
       margin: 0 0 1em;
@@ -111,177 +120,3 @@
     @extend .card;
   }
 }
-/*
-.topic-page {
-
-  .dark-section {
-    h1 {
-      color: #F3CB02;
-      margin: 1em 0 .5em;
-    }
-  }
-
-  .topic {
-
-    .datasheet {
-      display: block;
-      overflow: auto;
-      margin-top: 1em;
-      dt {
-        display: block;
-        float: left;
-        width: 160px;
-      }
-      dd {
-        display: block;
-        margin-left: 160px;
-        margin-bottom: 0.5em;
-      }
-    }
-    .progress {
-      height: 40px;
-      width: 95%;
-      .progress-bar {
-        line-height: 40px;
-      }
-    }
-    .sponsor-wrapper {
-      margin-top: 4em;
-      padding-top: 2em;
-      border-top: 1px solid #ddd;
-    }
-    .sponsor-type {
-        .logos {
-          display: block;
-          width: 100%;
-          .logo {
-            img {
-              max-width: 30%;
-              max-height: 13em;
-            }
-          }
-          margin-bottom: 1.5em;
-        }
-        .description {
-          display: block;
-          width: 100%;
-          .name {
-            display: none;
-          }
-          .links {
-            margin: 1em 0;
-            text-align: right;
-          }
-        }
-
-        @media #{$small-and-down} {
-          .description div {
-            text-align: center;
-          }
-        }
-      }
-  }
-
-  .speaker {
-    h2 {
-      .name {
-        display: block;
-      }
-      .nickname {
-        color: rgba(0, 0, 0, .4);
-        font-size: 0.8em;
-        font-weight: normal;
-        margin-top: 0.3em;
-      }
-    }
-    .quick-info {
-      display: block;
-      position: relative;
-      width: 70%;
-      min-height: 2em;
-
-      img {
-        width: 100%;
-      }
-
-      &.thumbnail .social {
-        padding: 8px 6px 4px;
-        margin-top: 4px;
-        border-top: solid 1px rgba(0, 0, 0, 0.2);
-      }
-
-      .social {
-        text-align: left;
-        background-color: rgba(255, 255, 255, 0.8);
-        a {
-          text-decoration: none;
-          color: inherit;
-          :hover {
-            color: rgba(0, 0, 0, 0.6);
-          }
-        }
-        .fa-icon {
-          font-size: 28pt;
-        }
-      }
-    }
-    @media #{$medium-and-down} {
-      .quick-info {
-        width: 100%;
-        .social {
-          text-align: center;
-          .fa-icon {
-            font-size: 40pt;
-          }
-        }
-      }
-    }
-    .datasheet {
-      display: block;
-      overflow: auto;
-      margin-top: 1em;
-      dt {
-        display: block;
-        float: left;
-        width: 30%;
-      }
-      dd {
-        display: block;
-        margin-left: 30%;
-      }
-    }
-  }
-
-}
-
-.page-topic-header {
-  a {
-    text-decoration: underline;
-    color: inherit;
-  }
-}
-
-.topic-type-name {
-    position: relative;
-    top: 1.5em;
-    font-size: 1.5em
-}
-
-.progress-bar-success {
-  background-color: #5cb85c;
-  color: #fff;
-  padding-left: 5px;
-}
-
-.progress-bar-info {
-  background-color: #5bc0de;
-  color: #fff;
-  padding-left: 5px;
-}
-
-.progress-bar-warning  {
-  background-color: #f0ad4e;
-  color: #fff;
-  padding-left: 5px;
-}
-*/
