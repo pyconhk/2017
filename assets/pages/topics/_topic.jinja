@@ -1,6 +1,5 @@
 {% extends "app.jinja" %}
 
-{% set speaker = data.speakers[topic.speaker[0]] %}
 {% set lang = data.langs[topic.lang] %}
 {% set lang_slide = data.langs[topic.lang_slide] %}
 
@@ -10,164 +9,92 @@
 
 {% block content %}
 
-<div class="container topic-page">
-  <div class="topic-type-name">{{ topic.type | capitalize }}</div>
-  <div class="dark-section"><h1>{{ topic.title }}</h1></div>
-  <div class="page-topic-header">
-    <p>By <span class="name">{{ speaker.name }}</span>{% if speaker.social.nickname %} <span class="nickname">({{ speaker.social.nickname }})</span>{% endif %}</p>
+<div class="theme-area"><div class="content">
+  <div class="container">
+    <div class="title">
+      <div class="title-type">{{ topic.type | capitalize }}</div>
+      <h1>{{ topic.title }}</h1>
+      <div class="title-speakers">
+        <p>{{ topic | concatSpeakerNames(data.speakers) | safe }}</p>
+      </div>
+    </div>
   </div>
-</div>
+</div></div><!--/.content--><!--/.theme-area-->
 
-<div class="container topic-page">
+<div class="container">
 
   <div class="row">
-    <div class="col m8 topic">
 
-      <h2 class="visible-md visible-lg">Details</h2>
-
-      <dl class="datasheet">
-
-        {% if topic.venue %}
-        <dt>Location</dt>
-        <dd>
-          {{ data.venues[topic.venue].name }}
-        </dd>
-        {% endif %}
-
-        <dt>Language</dt>
-        <dd>{{ lang.name }}{% if topic.lang_slide %} (with {{ lang_slide.name }} Slides){% endif %}</dd>
-
-        {% if topic.requirement %}
-        <dt>Requirement</dt>
-        <dd>{{ topic.requirement | truncate(400, true) }}</dd>
-        {% endif %}
-
-      </dl>
-      {% if topic.level %}
-      <div class="progress">
-        {% if topic.level == "Beginners" %}
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="3" style="width: 33%;">
-          Beginners
-        </div>
-        {% elseif topic.level == "Intermediate" %}
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="3" style="width: 66%;">
-          Intermediate
-        </div>
-        {% elseif topic.level == "Advanced" %}
-        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="3" style="width: 100%;">
-          Advanced
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
+    <div class="col m12 topic-details">
 
       <div class="description">
         {% for d in topic.description %}
         <p>{{ d | safe }}</p>
         {% endfor %}
+      </div><!--/.description-->
+
+      {% if topic.venue %}
+      <div class="location">
+        <i class="fa fa-map-signs" aria-hidden="true"></i>
+        {{ data.venues[topic.venue].name }}
+      </div>
+      {% endif %}
+
+      <div class="language">
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        {{ lang.name }}{% if topic.lang_slide %} ({{ lang_slide.name }} Slides){% endif %}
       </div>
 
-      {% if topic.isSponsorTopic and topic.sponsor %}
-      <div class="sponsor-wrapper">
-        <h2>Sponsored by</h2>
-        {% set sponsor = data.sponsor.sponsor_types[1].sponsors[0] %}
-        {% include 'sponsor/partial.jinja' %}
+      {% if topic.level %}
+      <div class="level">
+        {% if topic.level == "Beginners" %}
+          <i class="fa fa-users" aria-hidden="true"></i>
+          For General Public
+        {% elseif topic.level == "Intermediate" %}
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          For Coders and Tech Audiences with General Knowledge and Skills.
+        {% elseif topic.level == "Advanced" %}
+          <i class="fa fa-rocket" aria-hidden="true"></i>
+          For Advanced Coders &amp; Tech Audiences.
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if topic.requirement %}
+      <div class="requirement">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        {{ topic.requirement | truncate(400, true) }}
       </div>
       {% endif %}
 
     </div>
-    <div class="col m4 speaker">
 
-      <h2>
-        <span class="name">{{ speaker.name }}</span>
-        {% if speaker.social.nickname %}<span class="nickname">{{ speaker.social.nickname }}</span>{% endif %}
-      </h2>
+  </div>
+  <div class="row">
 
-      {% if speaker.social.github or speaker.social.blog or speaker.portrait or speaker.social.twitter or speaker.social.facebook %}
-      <div class="quick-info {% if speaker.portrait %}thumbnail{% endif %}">
-        {% if speaker.portrait %}
-        <div class="portrait">
-          <img src="{{ speaker.portrait }}" alt="Photo of {{ speaker.name }}" title="{{ speaker.name }}">
-        </div>
-        {% endif %}
-        {% if speaker.social.github or speaker.social.blog or speaker.social.twitter or speaker.social.facebook %}
-        <div class="social">
-          {% if speaker.social.github %}
-          <a title="Github of {{ speaker.name }}" href="https://www.github.com/{{ speaker.social.github }}" target="_blank">
-            <i class="fa fa-github fa-icon" aria-hidden="true"></i>
-          </a>
-          {% endif %}
-          {% if speaker.social.project_github %}
-          <a title="Github of {% if speaker.social.project_name %}{{ speaker.social.project_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.project_github }}" target="_blank">
-            <i class="fa fa-github fa-icon" aria-hidden="true"></i>
-          </a>
-          {% endif %}
-          {% if speaker.social.blog %}
-          <a title="Blog of {% if speaker.social.blog_name %}{{ speaker.social.blog_name }}{% else %}{{ speaker.name }}{% endif %}" href="{{ speaker.social.blog }}" target="_blank">
-            <i class="fa fa-globe fa-icon" aria-hidden="true"></i>
-          </a>
-          {% endif %}
-          {% if speaker.social.twitter %}
-          <a title="Twitter of {{ speaker.name }}" href="{{ speaker.social.twitter }}" target="_blank">
-            <i class="fa fa-twitter fa-icon" aria-hidden="true"></i>
-          </a>
-          {% endif %}
-          {% if speaker.social.facebook %}
-          <a title="Facebook of {{ speaker.name }}" href="{{ speaker.social.facebook }}" target="_blank">
-            <i class="fa fa-facebook fa-icon" aria-hidden="true"></i>
-          </a>
-          {% endif %}
-        </div>
-        {% endif %}
-      </div>
-      {% endif %}
-
-      <dl class="datasheet">
-        {% if speaker.nationality %}
-        <dt>Origin</dt>
-        <dd>{{ speaker.nationality }}</dd>
-        {% endif %}
-        {% if speaker.residence and (speaker.residence != speaker.nationality)%}
-        <dt>Residence</dt>
-        <dd>{{ speaker.residence }}</dd>
-        {% endif %}
-
-        {% if speaker.community %}
-        <dt>Community</dt>
-        {% if speaker.community.url %}
-        <dd><a href="{{ speaker.community.url }}" target="_blank">{{ speaker.community.name }}</a></dd>
-        {% else %}
-        <dd>{{ speaker.community.name }}</dd>
-        {% endif %}
-        {% endif %}
-
-        {% if speaker.company %}
-        <dt>Company</dt>
-        {% if speaker.company.url %}
-        <dd><a href="{{ speaker.company.url }}" target="_blank">{{ speaker.company.name }}</a></dd>
-        {% else %}
-        <dd>{{ speaker.company.name }}</dd>
-        {% endif %}
-        {% endif %}
-
-        {% if speaker.affiliation %}
-        <dt>Affiliation</dt>
-        {% if speaker.affiliation.url %}
-        <dd><a href="{{ speaker.affiliation.url }}" target="_blank">{{ speaker.affiliation.name }}</a></dd>
-        {% else %}
-        <dd>{{ speaker.affiliation.name }}</dd>
-        {% endif %}
-        {% endif %}
-
-      </dl>
-
-      <h3>Biography</h3>
-      {% for d in speaker.description %}
-      <p>{{ d | safe }}</p>
+    <div class="speakers">
+      <h2>{% if (topic.speaker.length > 1) %}Speakers{% else %}Speaker{% endif %}</h2>
+      {% for speakerid in topic.speaker %}
+        {% set speaker = data.speakers[speakerid] %}
+        {% include 'topics/_speaker.jinja' %}
       {% endfor %}
     </div>
-    <!-- TODO: add social links (e.g. github) -->
+
+    {% if topic.isSponsorTopic and topic.sponsor %}
+    <div class="sponsor-wrapper col m12">
+      <h2>Sponsored by</h2>
+      {% for st in data.sponsor.sponsor_types %}
+        {% for sp in st.sponsors %}
+          {% if sp.id === topic.sponsor %}
+            {% set sponsor = sp %}
+            {% include 'topics/_sponsor.jinja' %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
   </div>
 
-</div>
+</div><!--/.topic-page-->
 {% endblock %}

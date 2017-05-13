@@ -7,6 +7,7 @@ const util = require('gulp-util');
 const path = require('path');
 const htmldata = require('./includes/html-data');
 const htmlurl = require('./includes/html-url-append');
+const htmltopic = require('./includes/html-topic');
 
 // $FlowFixMe
 const requireyml = require('require-yml');
@@ -33,6 +34,7 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
     new FileSystemLoader('assets/layouts', {watch: true})
   ]);
   htmlurl.addFilters(env);
+  htmltopic.addFilters(env);
 
   gulp.src([
     'assets/pages/**/*.jinja',
@@ -50,7 +52,7 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
 
   for (let topic of assetData.topics.topics) {
     util.log(`Generate: '/topics/${util.colors.magenta(topic.id)}/index.html'`);
-    var pageID = 'page--topics--' + topic.id;
+    var pageID = 'page--topics--topic page--topics--' + topic.id;
     gulp.src(`assets/pages/topics/_topic.jinja`)
       .pipe(data(htmldata.fileData({
         topic,
