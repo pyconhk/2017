@@ -1,28 +1,48 @@
-.topic-page-header {
+.page--topics--topic {
+  .theme-area {
+    background-image: url('./images/page-cfp-results-theme.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    margin-bottom: 1.5em;
 
-  margin-top: 4em;
+    .content {
+      padding-top: 10vh;
+      height: auto;
 
-  .dark-section {
-    h1 {
-      color: $theme-blue;
+      .title {
+        color: #DDD;
+        padding-bottom: 1em;
+        h1 {
+          position: relative;
+          top: 0;
+          color: $theme-yellow;
+          margin: 0.2em 0;
+        }
+        p {
+          margin: 0;
+        }
+        @media #{$small-and-down} {
+          font-size: 1em;
+          h1 {
+            font-size: 1.5em;
+          }
+        }
+        @media #{$medium-and-up} {
+          font-size: 1.3em;
+          h1 {
+            font-size: 1.5em;
+          }
+        }
+        @media #{$large-and-up} {
+          font-size: 1.5em;
+          h1 {
+            font-size: 1.5em;
+          }
+        }
+      }
     }
   }
-
-  .page-topic-header {
-    a {
-      text-decoration: underline;
-      color: inherit;
-    }
-  }
-
-  .topic-type-name {
-    position: relative;
-    font-size: 1.5em
-  }
-
-}
-
-.topic-page {
 
   .speakers, .sponsor-wrapper{
     margin: 2em 0;
@@ -91,7 +111,6 @@
     @extend .card;
   }
 }
-
 /*
 .topic-page {
 
