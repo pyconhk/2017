@@ -5,21 +5,12 @@ function addFilters(env) {
 }
 
 function concatSpeakerNames(topic, speakers) {
-  var speakerNames = '';
-  for (var i = 0; i < topic.speaker.length; i++) {
-    var speakerId = topic.speaker[i];
+  return topic.speaker.map(function (speakerId, index) {
     var speaker = speakers[speakerId];
-    if (speaker && speaker.name) {
-      speakerNames += `<span class="name">${speaker.name}</span>`;      
-      if (speaker.social && speaker.social.nickname) {
-        speakerNames += `&nbsp;<span class="nickname">(${speaker.social.nickname})</span>`; 
-      }  
-      if (i !== topic.speaker.length - 1) {
-          speakerNames += ',&nbsp;'
-      }
-    }
-  }
-  return `By ${speakerNames}`;
+    var nickname = (speaker.social && speaker.social.nickname) ? ` <span class="nickname">(${speaker.social.nickname})</span>` : '';
+    //return `<a href="#speaker-${speakerId}" class="name">${speaker.name}</a>${nickname}`;
+    return `<a href="#speaker-${speakerId}" class="name">${speaker.name}</a>`;
+  }).join(', ');
 }
 
 module.exports = {
