@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
-import Timetable from './timetable/containers/Timetable';
+import Timetable from './timetable/container/Timetable';
 import authSubscribe from './subscribe/auth';
 
 import loadData from './timetable/fetch';

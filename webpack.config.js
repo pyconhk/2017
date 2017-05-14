@@ -43,7 +43,7 @@ const base = {
     filename: '[name].js',
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
