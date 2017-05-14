@@ -9,8 +9,5 @@
 {% endblock %}
 
 {% block script %}
-<script src="{{ data.site.basePath }}/js/timetable.js"></script>
-<script>
-var timetableControl = timetable(document.getElementById('timetable'));
-</script>
+  <script src="{{ data.site.basePath }}/js/timetable.js" defer></script>
 {% endblock %}

@@ -5,7 +5,7 @@ import { logger } from './middleware';
 import reducers from './reducers';
 
 const initialState = {
-  user: {},
+  user: null,
   timetable: {
     topics: {},
     venues: {},

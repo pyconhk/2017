@@ -1,12 +1,20 @@
 // @flow
 
 'use strict';
-
+import $ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Timetable from './timetable/containers/Timetable';
+import authSubscribe from './subscribe/auth';
+
+require('./component/modal');
+authSubscribe();
+
+store.subscribe(authSubscribe);
+
+$('#signin-modal').modal();
 
 /* globals HTMLElement, window */
 
@@ -53,7 +61,9 @@ function timetable(element: HTMLElement): Object {
   };
 }
 
+const mount = document.getElementById('timetable');
+
 // export as global function
-if (typeof window !== 'undefined') {
-  window.timetable = timetable;
+if (typeof window !== 'undefined' && mount) {
+  timetable(mount);
 }
