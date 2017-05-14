@@ -1,9 +1,6 @@
-// @flow
-
-import type { Store } from 'redux';
 
 // eslint-disable-next-line import/prefer-default-export
-export const logger = (store: Store) => (next: Function) => (action: Object) => {
+export const logger = store => (next: Function) => (action: Object) => {
   console.log('dispatching', action);
   const result = next(action);
   console.log('next state', store.getState());

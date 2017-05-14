@@ -7,4 +7,6 @@ public
 
 [libs]
 flow/global
+flow-typed/npm
+
 [options]
