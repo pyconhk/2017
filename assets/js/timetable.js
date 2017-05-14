@@ -1,6 +1,7 @@
 // @flow
 
 'use strict';
+
 import $ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -10,13 +11,14 @@ import Timetable from './timetable/containers/Timetable';
 import authSubscribe from './subscribe/auth';
 
 require('./component/modal');
+
 authSubscribe();
 
 store.subscribe(authSubscribe);
 
 $('#signin-modal').modal();
 
-/* globals HTMLElement, window */
+/* globals HTMLElement, window, document */
 
 /**
  * isDOM

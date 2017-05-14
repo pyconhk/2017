@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+/* eslint-disable */
 let _stack = 0;
 let _lastID = 0;
 const _generateID = function() {

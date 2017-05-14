@@ -1,5 +1,6 @@
 // @flow
 
+import type { User } from './reducers/user';
 import firebase from './firebase';
 import store from './store';
 import { userSignIn, userNotAuth } from './action';
@@ -31,10 +32,10 @@ export function signOut() {
   });
 }
 
-firebase.auth().onAuthStateChanged((user) => {
+firebase.auth().onAuthStateChanged((user: ?User) => {
   if (user) {
     // User is signed in.
-    console.log(`${user} is signed in.`);
+    console.log(`${user.displayName} is signed in.`);
     store.dispatch(userSignIn(user));
   } else {
     // No user is signed in.

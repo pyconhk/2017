@@ -1,3 +1,5 @@
+// @flow
+
 'use strict';
 
 import { createStore, applyMiddleware } from 'redux';

@@ -1,12 +1,8 @@
 // @flow
 
-'use strict';
+import type { User } from './reducers/user';
 
 export const USER_SIGN_IN = 'USER_SIGN_IN';
-
-export type User = {
-  displayName: string,
-};
 
 export function userSignIn(user: User) {
   return {

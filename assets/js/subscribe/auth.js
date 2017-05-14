@@ -1,22 +1,36 @@
+// @flow
+
 import $ from 'jquery';
 import store from '../store';
 import { signOut, twitterAuth, facebookAuth, googleAuth, githubAuth } from '../auth';
+
+/* globals document */
 
 const root = document.querySelector('.right > li');
 const element = document.createElement('button');
 element.classList.add('btn', 'waves-effect', 'waves-light');
 element.setAttribute('id', 'auth');
-root.appendChild(element);
+if (root !== null) {
+  root.appendChild(element);
+}
 
 const google = document.querySelector('[provider=google]');
 const facebook = document.querySelector('[provider=facebook]');
 const github = document.querySelector('[provider=github]');
 const twitter = document.querySelector('[provider=twitter]');
 
-google.addEventListener('click', googleAuth);
-facebook.addEventListener('click', facebookAuth);
-github.addEventListener('click', githubAuth);
-twitter.addEventListener('click', twitterAuth);
+if (google !== null) {
+  google.addEventListener('click', googleAuth);
+}
+if (facebook !== null) {
+  facebook.addEventListener('click', facebookAuth);
+}
+if (github !== null) {
+  github.addEventListener('click', githubAuth);
+}
+if (twitter !== null) {
+  twitter.addEventListener('click', twitterAuth);
+}
 
 export default function listener() {
   const { user } = store.getState();

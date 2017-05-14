@@ -1,5 +1,9 @@
+// @flow
+
 'use strict';
 
-export default function (state = { sessions: {}, topics: {}, venues: {} }) {
+type TimetableState = { sessions: Object, topics: Object, venues: Object };
+
+export default function (state: TimetableState = { sessions: {}, topics: {}, venues: {} } ) {
   return state;
 }

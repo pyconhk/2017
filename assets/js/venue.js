@@ -1,5 +1,7 @@
 // @flow
+
 /* globals google, document, window */
+
 const mapDiv = document.getElementById('map');
 google.maps.event.addDomListener(window, 'load', () => {
   if (!mapDiv) return;
