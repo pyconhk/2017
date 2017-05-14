@@ -3,6 +3,7 @@
 import {
   IMPORT_SESSIONS,
   IMPORT_LANGS,
+  IMPORT_SPEAKERS,
 } from '../action';
 
 type TimetableState = {
@@ -28,6 +29,13 @@ export default function (state: TimetableState = { sessions: {}, topics: {}, ven
       const { sessions, ...others} = state;
       return {
         sessions: action.sessions,
+        ...others,
+      };
+    }
+    case IMPORT_SPEAKERS: {
+      const { speakers, ...others } = state;
+      return {
+        speakers: action.speakers,
         ...others,
       };
     }
