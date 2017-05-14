@@ -46,7 +46,7 @@ function isDOM(obj: HTMLElement | Object): boolean {
  * @param {object} element HTMLElement to render to
  * @return {object} object with control function
  */
-function timetable(element: HTMLElement): Object {
+function timetable(element: HTMLElement) {
   // if element is not a valid DOM object
   if (!isDOM(element)) {
     throw new Error('timetable requires DOM element as argument 1');
@@ -58,11 +58,6 @@ function timetable(element: HTMLElement): Object {
     </Provider>,
     element
   );
-
-  // return control object
-  return {
-
-  };
 }
 
 const mount = document.getElementById('timetable');

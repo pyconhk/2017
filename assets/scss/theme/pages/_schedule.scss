@@ -8,6 +8,14 @@
       font-size: 20pt;
     }
   }
+
+  .session-grid, .topic-grid {
+    background-color: rgba(0, 0, 0, 0.10);
+
+    small {
+      color: $theme-blue;
+    }
+  }
 }
 
 $day-title-height: 1.5em;
@@ -87,23 +95,4 @@ $day-title-padding: 50px;
 
 .day-1 {
   grid-template-rows: minmax(80px,auto) repeat(13, minmax(80px,auto));
-}
-
-#timetable {
-  thead {
-    top: calc(1.5em + 80px);
-    background-color: #FFF;
-    z-index: 0;
-  }
-  tbody {
-    td {
-      border: solid 1px #EEE;
-      &:nth-child(1) {
-        border-width: 1px 1px 1px 0;
-      }
-      &:nth-last-child(1) {
-        border-width: 1px 0 1px 1px;
-      }
-    }
-  }
 }

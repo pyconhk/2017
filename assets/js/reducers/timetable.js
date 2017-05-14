@@ -10,7 +10,7 @@ import {
   IMPORT_TIMESLOTS,
 } from '../action';
 
-type TimetableState = {
+export type TimetableState = {
   sessions: Object,
   topics: Object,
   venues: Object,

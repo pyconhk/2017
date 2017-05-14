@@ -12,15 +12,57 @@
 #     venue:     "venue key, in venues.yml"
 
 day-1:
-  -
-    name:      "Registration"
-    timeStart: "2017-06-09T09:15:00+0800"
-    timeEnd:   "2017-06-09T09:15:00+0800"
-    venue:     "reception"
+  - name: Registration
+    timeslot: slot-1
+    venue: reception
+  - name: Opening Ceremony
+    timeslot: slot-2
+    venue: function-room
+  - name: 45-min Keynote - Gandi's LiveDNS and new gTLD's (Gandi)
+    timeslot: slot-3
+    venue: function-room
+    topic: live-dns-new-gTLD
+  - name: 45-min Keynote - TBC (IBM)
+    timeslot: slot-4
+    venue: function-room
+  - name: 30-min Talk - TBC
+    timeslot: slot-5
+    venue: function-room
+  - name: Lunch Network
+    timeslot: slot-6
+    venue: sea-view-concourse
+  - name: 30-min Talk
+    timeslot: slot-7
+    venue: function-room
+    topic: whats-new-in-mysql-8.0
+  - name: "70-min Meeting: Global F/OSS Community Meeting (English) (open to public)"
+    timeslot: slot-7
+    venue: training-theatre
+    row: 2
+  - name: 30-min Talk - TBC (Microsoft)
+    timeslot: slot-8
+    venue: function-room
+  - name: Afternoon Network
+    timeslot: slot-tea
+    venue: sea-view-concourse
+  - name: 30-min Talk
+    timeslot: slot-9
+    venue: function-room
+    topic: a-war-of-file-format-why-we-select-odf-in-taiwan
+  - name: "70-min Meeting: Local F/OSS Community Meeting (Cantonese) (open to public)"
+    timeslot: slot-9
+    venue: training-theatre
+    row: 2
+  - name: 30-min Talk
+    timeslot: slot-10
+    venue: function-room
+    topic: tips-in-setting-up-openstack-from-scratch
+  - name: End Of Day
+    timeslot: slot-11
+
 
 day-2:
-  -
-    name:      "Registration"
+  - name:      "Registration"
     timeStart: "2017-06-10T09:15:00+0800"
     timeEnd:   "2017-06-10T09:15:00+0800"
     venue:     "reception"
