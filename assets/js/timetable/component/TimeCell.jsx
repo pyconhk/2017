@@ -12,5 +12,5 @@ type Props = {
 export default function TimeCell(props: Props) {
   const start = moment(props.start).format('HH:mm');
   const end = moment(props.end).format('HH:mm');
-  return <GridCell>{start} - {end}</GridCell>;
+  return <GridCell className="time-grid">{start} - {end}</GridCell>;
 }

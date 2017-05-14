@@ -10,11 +10,16 @@
   }
 
   .session-grid, .topic-grid {
-    background-color: rgba(0, 0, 0, 0.10);
+    //background-color: $theme-blue;
+    //color: $theme-yellow;
 
     small {
-      color: $theme-blue;
+      color: lighten($theme-blue, 20%);
     }
+  }
+
+  .time-grid {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 
