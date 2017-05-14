@@ -23,4 +23,4 @@ gulp.task('watch:data', false, () => gulp.watch([
 ], ['data']));
 
 gulp.task('watch', 'Monitor and rebuild images, pages and css files.',
-  ['watch:image', 'watch:html', 'watch:css']);
+  ['watch:image', 'watch:html', 'watch:css', 'watch:data']);
