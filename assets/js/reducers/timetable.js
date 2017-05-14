@@ -7,6 +7,7 @@ import {
   IMPORT_VENUES,
   IMPORT_TOPICS,
   IMPORT_SPONSORS,
+  IMPORT_TIMESLOTS,
 } from '../action';
 
 type TimetableState = {
@@ -16,10 +17,11 @@ type TimetableState = {
   langs: Object,
   speakers: Object,
   sponsors: Object,
+  timeslots: Object,
 };
 
 
-export default function (state: TimetableState = { sessions: {}, topics: {}, venues: {}, langs: {}, speakers: {}, sponsors: {} }, action: Object) {
+export default function (state: TimetableState = { timeslots: {}, sessions: {}, topics: {}, venues: {}, langs: {}, speakers: {}, sponsors: {} }, action: Object) {
   switch (action.type) {
     case IMPORT_LANGS: {
       const { langs, ...others } = state;
@@ -60,6 +62,13 @@ export default function (state: TimetableState = { sessions: {}, topics: {}, ven
       const { topics, ...others } = state;
       return {
         topics: action.topics,
+        ...others,
+      };
+    }
+    case IMPORT_TIMESLOTS: {
+      const { timeslots, ...others } = state;
+      return {
+        timeslots: action.timeslots,
         ...others,
       };
     }

@@ -5,6 +5,7 @@ import {
   importSponsors,
   importTopics,
   importVenues,
+  importTimeslots,
 } from '../../action';
 
 import fetchData from './yaml';
@@ -16,6 +17,7 @@ const urls = {
   sponsor: importSponsors,
   topics: importTopics,
   venues: importVenues,
+  timeslots: importTimeslots,
 };
 
 export default function loadData(store) {

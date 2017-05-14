@@ -63,3 +63,11 @@ export function importVenues(venues: Object) {
     type: IMPORT_VENUES,
   };
 }
+
+export const IMPORT_TIMESLOTS = 'IMPORT_TIMESLOT';
+export function importTimeslots(timeslots: Object) {
+  return {
+    timeslots,
+    type: IMPORT_TIMESLOTS,
+  };
+}
