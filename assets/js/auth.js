@@ -1,3 +1,5 @@
+// @flow
+
 import firebase from './firebase';
 import store from './store';
 import { userSignIn, userNotAuth } from './action';

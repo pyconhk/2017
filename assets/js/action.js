@@ -1,7 +1,14 @@
+// @flow
+
 'use strict';
 
 export const USER_SIGN_IN = 'USER_SIGN_IN';
-export function userSignIn(user) {
+
+export type User = {
+  displayName: string,
+};
+
+export function userSignIn(user: User) {
   return {
     user,
     type: USER_SIGN_IN,
