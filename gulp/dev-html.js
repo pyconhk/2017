@@ -24,8 +24,8 @@ function swallowError(error) {
 function swallowTopicRenderError(topic) {
   return function (error) {
     util.log(`Failed on '${util.colors.cyan('dev:html')}' ('${topic.id}'): ${error.toString()}`);
-    this.emit('end')
-  }
+    this.emit('end');
+  };
 }
 
 gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
@@ -42,19 +42,19 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
     '!assets/pages/**/_*.jinja',
   ])
     .pipe(data(htmldata.fileData()))
-    .pipe(require('gulp-nunjucks').compile({}, {env}).on('error', swallowError))
+    .pipe(require('gulp-nunjucks').compile({}, { env }).on('error', swallowError))
     .pipe(require('gulp-rename')({
-      extname: '.html'
+      extname: '.html',
     }))
     .on('error', swallowError)
     .pipe(gulp.dest('public'));
 
-  let assetData = requireyml(basepath + '/assets/data');
+  const assetData = requireyml(`${basepath}/assets/data`);
 
-  for (let topic of assetData.topics.topics) {
+  for (const topic of assetData.topics.topics) {
     util.log(`Generate: '/topics/${util.colors.magenta(topic.id)}/index.html'`);
-    var pageID = 'page--topics--topic page--topics--' + topic.id;
-    gulp.src(`assets/pages/topics/_topic.jinja`)
+    const pageID = `page--topics--topic page--topics--${topic.id}`;
+    gulp.src('assets/pages/topics/_topic.jinja')
       .pipe(data(htmldata.fileData({
         topic,
         pageID,
@@ -70,5 +70,4 @@ gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
       .on('error', util.log)
       .pipe(gulp.dest('public/topics'));
   }
-
 });
