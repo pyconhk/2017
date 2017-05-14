@@ -9,7 +9,7 @@ type Props = {
 }
 
 function mapStateToProps(state: State, ownProps: Props) {
-  const venue = state.timetable.venues[ownProps.id]
+  const venue = state.timetable.venues[ownProps.id];
   return {
     name: venue.name,
   };
