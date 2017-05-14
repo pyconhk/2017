@@ -10,7 +10,7 @@ type Props = {
 }
 
 export default function TimeCell(props: Props) {
-  const start = moment(props.start).format('HH:mm');
-  const end = moment(props.end).format('HH:mm');
+  const start = moment(props.start).tz('Asia/Hong_Kong').format('HH:mm');
+  const end = moment(props.end).tz('Asia/Hong_Kong').format('HH:mm');
   return <GridCell className="time-grid">{start} - {end}</GridCell>;
 }
