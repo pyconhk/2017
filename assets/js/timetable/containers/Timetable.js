@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+// @flow
 
-export default class Timetable extends Component {
-  render() {
-    return <div>
+import React from 'react';
+
+export default function Timetable() {
+  return (
+    <div>
       Hello Timetable
-    </div>;
-  }
- }
+    </div>
+  );
+}

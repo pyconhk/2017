@@ -1,10 +1,10 @@
-//@flow
+// @flow
+
 'use strict';
 
 const gulp = require('gulp-help')(require('gulp'));
 const data = require('gulp-data');
 const util = require('gulp-util');
-const path = require('path');
 const htmldata = require('./includes/html-data');
 const htmlurl = require('./includes/html-url-append');
 const htmltopic = require('./includes/html-topic');
@@ -24,10 +24,10 @@ function swallowTopicRenderError(topic) {
 }
 
 gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files', () => {
-  const {Environment, FileSystemLoader} = require('nunjucks');
+  const { Environment, FileSystemLoader } = require('nunjucks');
   const env = new Environment([
     new FileSystemLoader('assets/pages'),
-    new FileSystemLoader('assets/layouts')
+    new FileSystemLoader('assets/layouts'),
   ]);
   htmlurl.addFilters(env);
   htmltopic.addFilters(env);
@@ -39,10 +39,10 @@ gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files
     .pipe(data(htmldata.fileData()))
     .pipe(require('gulp-nunjucks').compile({}, {env}))
     .pipe(require('gulp-htmlmin')({
-      collapseWhitespace: true
+      collapseWhitespace: true,
     }))
     .pipe(require('gulp-rename')({
-      extname: '.html'
+      extname: '.html',
     }))
     .on('error', util.log)
     .pipe(gulp.dest('public'));
@@ -51,7 +51,7 @@ gulp.task('build:html', 'Build ./assets/pages/*.jinja into production HTML files
 
   for (let topic of assetData.topics.topics) {
     util.log(`Generate: '/topics/${util.colors.magenta(topic.id)}/index.html'`);
-    var pageID = 'page--topics--topic page--topics--' + topic.id;
+    let pageID = 'page--topics--topic page--topics--' + topic.id;
     gulp.src(`assets/pages/topics/_topic.jinja`)
       .pipe(data(htmldata.fileData({
         topic,

@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],  
+  "rules": {
+    "comma-dangle": ["error", {
+      "functions": "ignore",
+      "arrays": "always-multiline",
+      "objects": "always-multiline",
+      "imports": "always-multiline",
+      "exports": "always-multiline"
+    }],
+    "global-require": "off",
+    "max-len": ["warn", { "code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true }],
+    "strict": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": "off"
+  }
+}
+

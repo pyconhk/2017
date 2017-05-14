@@ -1,10 +1,11 @@
-//@flow
+// @flow
+
 'use strict';
 
+const path = require('path');
 const gulp = require('gulp-help')(require('gulp'));
 const data = require('gulp-data');
 const util = require('gulp-util');
-const path = require('path');
 const htmldata = require('./includes/html-data');
 const htmlurl = require('./includes/html-url-append');
 const htmltopic = require('./includes/html-topic');
@@ -15,9 +16,9 @@ const requireyml = require('require-yml');
 // base path
 const basepath = path.dirname(__dirname);
 
-function swallowError (error) {
+function swallowError(error) {
   util.log(`Failed on '${util.colors.cyan('dev:html')}': ${error.toString()}`);
-  this.emit('end')
+  this.emit('end');
 }
 
 function swallowTopicRenderError(topic) {
@@ -28,10 +29,10 @@ function swallowTopicRenderError(topic) {
 }
 
 gulp.task('dev:html', 'Build ./assets/pages/*.jinja into HTML files', () => {
-  const {Environment, FileSystemLoader} = require('nunjucks');
+  const { Environment, FileSystemLoader } = require('nunjucks');
   const env = new Environment([
-    new FileSystemLoader('assets/pages', {watch: true}),
-    new FileSystemLoader('assets/layouts', {watch: true})
+    new FileSystemLoader('assets/pages', { watch: true }),
+    new FileSystemLoader('assets/layouts', { watch: true }),
   ]);
   htmlurl.addFilters(env);
   htmltopic.addFilters(env);
