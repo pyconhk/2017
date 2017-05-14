@@ -10,6 +10,9 @@ import store from './store';
 import Timetable from './timetable/containers/Timetable';
 import authSubscribe from './subscribe/auth';
 
+import loadLang from './timetable/fetch/lang';
+import loadSession from './timetable/fetch/sessions';
+
 require('./component/modal');
 
 authSubscribe();
@@ -67,5 +70,6 @@ const mount = document.getElementById('timetable');
 
 // export as global function
 if (typeof window !== 'undefined' && mount) {
-  timetable(mount);
+  Promise.all([loadLang(store), loadSession(store)])
+    .then(() => timetable(mount));
 }

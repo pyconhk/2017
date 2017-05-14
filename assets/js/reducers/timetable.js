@@ -1,9 +1,37 @@
 // @flow
 
-'use strict';
+import {
+  IMPORT_SESSIONS,
+  IMPORT_LANGS,
+} from '../action';
 
-type TimetableState = { sessions: Object, topics: Object, venues: Object };
+type TimetableState = {
+  sessions: Object,
+  topics: Object,
+  venues: Object,
+  langs: Object,
+  speakers: Object,
+  sponsors: Object,
+};
 
-export default function (state: TimetableState = { sessions: {}, topics: {}, venues: {} }) {
-  return state;
+
+export default function (state: TimetableState = { sessions: {}, topics: {}, venues: {}, langs: {}, speakers: {}, sponsors: {} }, action: Object) {
+  switch (action.type) {
+    case IMPORT_LANGS: {
+      const { langs, ...others } = state;
+      return {
+        langs: action.languages,
+        ...others,
+      };
+    }
+    case IMPORT_SESSIONS: {
+      const { sessions, ...others} = state;
+      return {
+        sessions: action.sessions,
+        ...others,
+      };
+    }
+    default:
+      return state;
+  }
 }
