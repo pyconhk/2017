@@ -1,5 +1,5 @@
 .page--schedule {
-  .container {
+  main {
     min-height: 600px;
     min-height: 80vh;
     .loading {
@@ -28,9 +28,9 @@ $day-title-padding: 50px;
 
 .day-grid {
   display: grid;
-  grid-template-columns: 150px repeat(10, auto);
+  grid-template-columns: 150px repeat(10, 1fr);
   //grid-template-rows: minmax(80px,auto) 5rem repeat(20, minmax(80px,auto));
-  grid-template-rows: minmax(80px,auto) repeat(15, minmax(80px,auto));
+  grid-template-rows: minmax(80px,auto) repeat(10, minmax(80px,auto));
   margin: 2rem 0;
 
   .title {
@@ -100,4 +100,8 @@ $day-title-padding: 50px;
 
 .day-1 {
   grid-template-rows: minmax(80px,auto) repeat(13, minmax(80px,auto));
+}
+
+.day-2 {
+  grid-template-rows: minmax(80px,auto) repeat(16, minmax(80px,auto));
 }
