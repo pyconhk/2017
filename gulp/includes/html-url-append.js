@@ -5,17 +5,6 @@ const parseURL = require('url').parse;
 const formatURL = require('url').format;
 
 /**
- * addFilters
- * add functions here as nunjucks filters
- * @param {nunjucks.Environment} env environment object to modify
- */
-function addFilters(env) {
-  env.addFilter('appendURL',  appendURL);
-  env.addFilter('withGA',     withGA);
-  env.addFilter('execAppend', execAppend);
-}
-
-/**
  * appendURL
  * generates a URL modification callback function {doAppendURL~inner}
  * @param {string} urlStr URL string
@@ -28,16 +17,16 @@ function appendURL(urlStr) {
    * @param {object} options NodeJS url.urlObject attributes to override
    * @return {string} URL modification results
    */
-  const doAppendURL = function (query={}, options={}) {
+  const doAppendURL = function (query = {}, options = {}) {
     const urlObject = parseURL(urlStr);
     const combinedQuery = Object.assign(querystring.parse(urlObject.query),
       query);
     const resultURL = Object.assign({}, urlObject, {
       // query: querystring.stringify(combinedQuery), // no need for formatURL
-      search: '?' + querystring.stringify(combinedQuery),
+      search: `?${querystring.stringify(combinedQuery)}`,
     }, options);
     return formatURL(resultURL);
-  }
+  };
   return doAppendURL;
 }
 
@@ -51,15 +40,15 @@ function appendURL(urlStr) {
  * @param {string} [utm_source] Campaign source (i.e. website)
  * @return {doAppendURL~inner} the returned function
  */
-function withGA(doInner, utm_content, utm_campaign, utm_medium='action_button', utm_source='website') {
+// eslint-disable-next-line camelcase
+function withGA(doInner, utm_content, utm_campaign, utm_medium = 'action_button', utm_source = 'website') {
   /**
    * doAppendURL
    * @param {object} query URL query parameters to add / change
    * @param {object} options NodeJS url.urlObject attributes to override
    * @return {string} URL modification results
    */
-  const doAppendURL = function (query={}, options={}) {
-    return doInner(
+  const doAppendURL = (query = {}, options = {}) => doInner(
       Object.assign(
         query,
         {
@@ -71,7 +60,6 @@ function withGA(doInner, utm_content, utm_campaign, utm_medium='action_button', 
       ),
       options
     );
-  }
   return doAppendURL;
 }
 
@@ -85,9 +73,20 @@ function execAppend(callback) {
   return callback();
 }
 
+/**
+ * addFilters
+ * add functions here as nunjucks filters
+ * @param {nunjucks.Environment} env environment object to modify
+ */
+function addFilters(env) {
+  env.addFilter('appendURL', appendURL);
+  env.addFilter('withGA', withGA);
+  env.addFilter('execAppend', execAppend);
+}
+
 module.exports = {
   addFilters,
   appendURL,
   execAppend,
   withGA,
-}
+};
