@@ -41,9 +41,14 @@ function renderSessions(sessions, reserved = 0) {
     }
     return (
       <GridCell col={col} row={session.row} key={`session-${session.name}`} className="session-grid">
-        {session.name}
-        <br />
-        {session.venue && <small><Venue id={session.venue} /></small>}
+        <div className="session-title">
+          {session.name}
+        </div>
+        <div className="session-details">
+          <ul>
+            {session.venue && <Venue id={session.venue} />}
+          </ul>
+        </div>
       </GridCell>
     );
   });
@@ -71,4 +76,3 @@ export default function Day(props: Props) {
     </div>
   );
 }
-

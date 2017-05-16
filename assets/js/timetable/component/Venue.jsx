@@ -7,9 +7,5 @@ type Props = {
 }
 
 export default function Venue(props: Props) {
-  return (
-    <span>
-      {props.name}
-    </span>
-  );
+  return <li className="venue">{props.name}</li>;
 }
