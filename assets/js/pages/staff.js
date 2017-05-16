@@ -1,9 +1,11 @@
+// @flow
+
 'use strict';
 
 const gravatar = require('gravatar');
 const yaml = require('js-yaml');
 
-/* globals fetch */
+/* globals fetch, document */
 
 function getAvatarImage(member) {
   if (!member.email && member.fallback) {
@@ -19,7 +21,7 @@ function getAvatarImage(member) {
   }
 
   if (!member.email && member.twitter) {
-    return `https://twitter.com/${member.twitter}/profile_image?size=bigger`
+    return `https://twitter.com/${member.twitter}/profile_image?size=bigger`;
   }
 
   return gravatar.url(member.email, {
@@ -33,9 +35,8 @@ fetch('/2017/data/staff.yml')
   .then((response) => {
     if (response.status === 200) {
       return response.text();
-    } else {
-      throw new Error(response);
     }
+    throw new Error(response);
   })
   .catch(console.error)
   .then(content => yaml.load(content))
@@ -43,18 +44,21 @@ fetch('/2017/data/staff.yml')
     teams.forEach(({ members, name }) => {
       members.forEach((member) => {
         if (!member.email) {
+          // eslint-disable-next-line no-param-reassign
           member.email = '';
         }
         const memberName = member.name.replace(/([\s]+)/g, '\\$1').replace('.', '');
         const teamName = name.replace(/(\s+)/g, '\\$1');
         const selector = `[data-team=${teamName}][data-name=${memberName}]`;
-        const src = getAvatarImage(member)
+        const src = getAvatarImage(member);
         const image = document.createElement('img');
         image.setAttribute('src', src);
         image.setAttribute('alt', `${member.name} icon`);
         image.classList.add('avatar');
         const root = document.querySelector(selector);
-        root.appendChild(image)
+        if (root) {
+          root.appendChild(image);
+        }
       });
     });
   });

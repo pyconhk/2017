@@ -30,5 +30,6 @@ install:
 script:
   - yarn build
   - yarn test
+  - yarn lint
 after_success:
   - test $AUTO_BUILD == 'true' && bash deploy.sh

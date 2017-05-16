@@ -1,3 +1,5 @@
+// @flow
+
 'use strict';
 
 const gulp = require('gulp-help')(require('gulp'));
@@ -16,9 +18,9 @@ gulp.task('server', 'Start a webpack-dev-server for the project at http://localh
         pathRewrite: {
           '^/2017/js': '',
           '^/2017': '',
-        }
-      }
-    }
+        },
+      },
+    },
   });
 
   server.listen(8080);
