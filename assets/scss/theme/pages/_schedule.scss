@@ -8,16 +8,6 @@
       font-size: 20pt;
     }
   }
-
-  .session-grid, .topic-grid {
-    //background-color: $theme-blue;
-    //color: $theme-yellow;
-
-    small {
-      color: lighten($theme-blue, 20%);
-    }
-  }
-
   .time-grid {
     background-color: rgba(0, 0, 0, 0.1);
   }
@@ -53,7 +43,11 @@ $day-title-padding: 50px;
     }
     .session-details {
       font-size: 75%;
-      color: lighten($theme-blue, 20%);
+      color: rgba(0, 0, 0, 0.4);
+      .speaker {
+        font-weight: bolder;
+        color: lighten($theme-blue, 20%);
+      }
     }
   }
   a.grid-cell {
@@ -115,7 +109,7 @@ $day-title-padding: 50px;
 }
 
 .day-1 {
-  grid-template-rows: minmax(80px,auto) repeat(13, minmax(80px,auto));
+  grid-template-rows: minmax(80px,auto) repeat(12, minmax(80px,auto));
 }
 
 .day-2 {
