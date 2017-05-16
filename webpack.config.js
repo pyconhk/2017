@@ -29,6 +29,11 @@ const base = {
     hammerjs: 'Hammer',
     'node-waves': 'Waves',
     firebase: 'firebase',
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    redux: 'Redux',
+    'react-redux': 'ReactRedux',
+    'moment-timezone': 'moment',
   },
   entry: {
     app: ['./assets/js/app'],
