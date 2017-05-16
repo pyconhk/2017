@@ -22,16 +22,15 @@ export default function TopicCell(props: Props) {
   const topic = props.topic;
   const link = `/2017/topic/${topic.id}/`;
   return (
-    <GridCell col={props.col} row={props.row} className="topic-grid">
-      <a href={link}>
+    <GridCell col={props.col} row={props.row} className="topic-grid" href={link}>
+      <div className="session-title">
         {topic.title}
-      </a>
-      <br />
-      <small>
+      </div>
+      <div className="session-details">
         <Speakers speakers={topic.speaker} />
         &nbsp; / &nbsp;
         <Venue id={topic.venue} />
-      </small>
+      </div>
     </GridCell>
   );
 }
