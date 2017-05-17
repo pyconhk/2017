@@ -18,6 +18,9 @@
    sodipodi:docname="floorplan.svg">
   <defs
      id="defs2">
+	<style type="text/css" id="style1">
+		@import url('https://fonts.googleapis.com/css?family=Roboto');
+	</style>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
