@@ -177,7 +177,8 @@ day-2:
     timeslot: slot-13
     venue: training-room-1
     row: 3
-  - name: 30-min Talk - How OpenStreetMap makes a different in Taiwan and the challenges the project faced in East Asia
+    topic: getting-into-the-virtual-world-with-web-vr
+  - name: 30-min Talk
     timeslot: slot-13
     venue: training-room-2
     topic: open-street-map-taiwan
