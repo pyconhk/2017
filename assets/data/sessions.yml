@@ -22,12 +22,14 @@ day-1:
     timeslot: slot-3
     venue: function-room
     topic: live-dns-new-gTLD
-  - name: 45-min Keynote - TBC (IBM)
+  - name: 45-min Keynote
     timeslot: slot-4
     venue: function-room
-  - name: 30-min Talk - TBC
+    topic: bluemix-cognitive-application
+  - name: 30-min Talk - Better than Free Giveaways - Open Source Business Models with Examples (HKCOTA)
     timeslot: slot-5
     venue: function-room
+    topic: better-than-free-giveaways
   - name: Lunch Networking
     timeslot: slot-6
     venue: sea-view-concourse
@@ -196,9 +198,11 @@ day-2:
   - name: 90-min Workshop - Part 1
     timeslot: slot-13
     venue: training-room-1
-  - name: 30-min Talk - TBC
+    topic: getting-into-the-virtual-world-with-web-vr
+  - name: 30-min Talk
     timeslot: slot-13
     venue: training-room-2
+    topic: open-street-map-taiwan
   - name: 30-min Talk
     timeslot: slot-13
     venue: training-room-3
@@ -213,6 +217,7 @@ day-2:
   - name: 90-min Workshop - Part 2
     timeslot: slot-14
     venue: training-room-1
+    topic: getting-into-the-virtual-world-with-web-vr
   - name: 30-min Talk
     timeslot: slot-14
     venue: training-room-2
@@ -231,6 +236,7 @@ day-2:
   - name: 90-min Workshop - Part 3
     timeslot: slot-15
     venue: training-room-1
+    topic: getting-into-the-virtual-world-with-web-vr
   - name: 30-min Talk
     timeslot: slot-15
     venue: training-room-2
