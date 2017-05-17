@@ -22,7 +22,7 @@ day-1:
     timeslot: slot-3
     venue: function-room
     topic: live-dns-new-gTLD
-  - name: 45-min Keynote - Rapidly build Cognitive applications with Bluemix, a cloud with Open Source at its heart (IBM)
+  - name: 45-min Keynote
     timeslot: slot-4
     venue: function-room
     topic: bluemix-cognitive-application
