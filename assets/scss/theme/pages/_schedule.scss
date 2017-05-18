@@ -1,3 +1,4 @@
+$grid-border: solid 1px #EEE;
 .page--schedule {
   main {
     min-height: 600px;
@@ -11,18 +12,45 @@
   .time-grid {
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  .grid {
+    border-bottom: $grid-border;
+    border-top: $grid-border;
+    padding: 0.5rem;
+  }
+
+  .topic-grid {
+    &:hover {
+      background-color: rgba(253, 214, 17, 0.3);
+    }
+    .session-title {
+    }
+    .session-details {
+      font-size: 75%;
+      color: rgba(0, 0, 0, 0.4);
+      .speaker {
+        font-weight: bolder;
+        color: lighten($theme-blue, 20%);
+      }
+    }
+  }
 }
 
+@media #{$large-and-up} {
+  .page--schedule .grid {
+    border-left: $grid-border;
+    border-right: $grid-border;
+    border-top: none;
+    border-bottom: none;
+  }
+}
 $day-title-height: 1.5em;
 $day-title-padding: 50px;
 
-.day-grid {
-  display: grid;
-  grid-template-columns: 150px repeat(10, 1fr);
-  //grid-template-rows: minmax(80px,auto) 5rem repeat(20, minmax(80px,auto));
-  grid-template-rows: minmax(80px,auto) repeat(10, minmax(80px,auto));
-  margin: 2rem 0;
-
+.day {
+  .row {
+    margin-bottom: 0;
+  }
   .title {
     position: sticky;
     top: 64px;
@@ -35,21 +63,6 @@ $day-title-padding: 50px;
     line-height: 1.2rem;
     height: 1.2rem;
   }
-  .grid-cell {
-    border: solid 1px #EEE;
-    padding: 0.5rem;
-
-    .session-title {
-    }
-    .session-details {
-      font-size: 75%;
-      color: rgba(0, 0, 0, 0.4);
-      .speaker {
-        font-weight: bolder;
-        color: lighten($theme-blue, 20%);
-      }
-    }
-  }
   a.grid-cell {
     transition: all .5s;
     background-color: rgba(255, 255, 200, 0);
@@ -58,53 +71,6 @@ $day-title-padding: 50px;
     &:hover {
       background-color: rgba(255, 255, 200, 0.8);
     }
-  }
-  .grid-header {
-    position: sticky;
-    z-index: 0;
-    top: calc(64px + 3rem);
-    background-color: #FFF;
-    border: 1px solid #EEE;
-    border-width: 0 0 1px 0;
-    line-height: 5rem;
-  }
-  .grid-row {
-    display: grid;
-    grid-template-column: subgrid;
-    grid-column-end: span 5;
-  }
-  .grid-col-2 {
-    grid-column-end: span 2;
-  }
-  .grid-col-3 {
-    grid-column-end: span 3;
-  }
-  .grid-col-4 {
-    grid-column-end: span 4;
-  }
-  .grid-col-5 {
-    grid-column-end: span 5;
-  }
-  .grid-col-6 {
-    grid-column-end: span 6;
-  }
-  .grid-col-7 {
-    grid-column-end: span 7;
-  }
-  .grid-col-8 {
-    grid-column-end: span 8;
-  }
-  .grid-col-9 {
-    grid-column-end: span 9;
-  }
-  .grid-col-10 {
-    grid-column-end: span 10;
-  }
-  .grid-row-2 {
-    grid-row-end: span 2;
-  }
-  .grid-row-3 {
-    grid-row-end: span 3;
   }
 }
 

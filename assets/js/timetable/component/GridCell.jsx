@@ -5,8 +5,7 @@ import classNames from 'classnames';
 
 /* eslint-disable */
 type Props = {
-  col?: number,
-  row?: number,
+  col: number,
   href?: string,
   target?: string,
   children?: React.Element<*>,
@@ -15,17 +14,17 @@ type Props = {
 /* eslint-enable */
 
 export default function GridCell(props: Props) {
-  const classes = classNames(props.className, 'grid-cell', {
-    [`grid-col-${props.col || ''}`]: 'col' in props,
-    [`grid-row-${props.row || ''}`]: props.row && props.row > 0,
-  });
+  const classes = classNames(props.className, 's12', `m${props.col > 2 ? 6 : 12}`, `l${Math.max(Math.floor(10 / props.col), 2)}`, 'col');
   const href = props.href;
-  const target = (typeof props.target === 'string') ? props.target : '_self';
-  return (typeof href === 'string') ? (
-    <a className={classes} href={href} target={target}>
-      {props.children}
-    </a>
-  ) : (
+  if (typeof href === 'string') {
+    const target = (typeof props.target === 'string') ? props.target : '_self';
+    return (
+      <a className={classes} href={href} target={target}>
+        {props.children}
+      </a>
+    );
+  }
+  return (
     <div className={classes}>
       {props.children}
     </div>
