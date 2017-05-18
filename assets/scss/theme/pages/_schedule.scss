@@ -21,19 +21,16 @@ $grid-border: solid 1px #EEE;
     -moz-box-flex: 0;
   }
 
-  .topic-grid {
-    &:hover {
-      background-color: rgba(253, 214, 17, 0.3);
-    }
-    .session-title {
-    }
-    .session-details {
-      font-size: 75%;
-      color: rgba(0, 0, 0, 0.4);
-      .speaker {
-        font-weight: bolder;
-        color: lighten($theme-blue, 20%);
-      }
+  .topic-grid:hover {
+    background-color: rgba(253, 214, 17, 0.3);
+  }
+
+  .session-details {
+    font-size: 75%;
+    color: rgba(0, 0, 0, 0.4);
+    .speaker {
+      font-weight: bolder;
+      color: lighten($theme-blue, 20%);
     }
   }
 }
