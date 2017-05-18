@@ -14,9 +14,11 @@ $grid-border: solid 1px #EEE;
   }
 
   .grid {
-    border-bottom: $grid-border;
-    border-top: $grid-border;
+    border: $grid-border;
     padding: 0.5rem;
+
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
   }
 
   .topic-grid {
@@ -37,11 +39,10 @@ $grid-border: solid 1px #EEE;
 }
 
 @media #{$large-and-up} {
-  .page--schedule .grid {
-    border-left: $grid-border;
-    border-right: $grid-border;
-    border-top: none;
-    border-bottom: none;
+  .page--schedule {
+    .row {
+      display: flex;
+    }
   }
 }
 $day-title-height: 1.5em;
@@ -49,7 +50,7 @@ $day-title-padding: 50px;
 
 .day {
   .row {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
   .title {
     position: sticky;
