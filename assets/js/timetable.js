@@ -2,23 +2,23 @@
 
 'use strict';
 
-import $ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Timetable from './timetable/container/Timetable';
-import authSubscribe from './subscribe/auth';
+import SignInModal from './timetable/container/SignInModal';
 
 import loadData from './timetable/fetch';
 
 require('./component/modal');
 
-authSubscribe();
+const root = document.querySelector('.right > li');
+if (root) {
+  require('./subscribe/auth');
+  ReactDOM.render(<Provider store={store}><SignInModal /></Provider>, root);
+}
 
-store.subscribe(authSubscribe);
-
-$('#signin-modal').modal();
 
 /* globals HTMLElement, window, document */
 
