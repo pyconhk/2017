@@ -1,4 +1,4 @@
-.page--events--global-local-foss {
+.page--events--global-foss {
   .theme-area {
     background-image: url('./images/page-cfp-results-theme.jpg');
     background-size: cover;
@@ -14,7 +14,28 @@
     
     .embed-unconf-sheet {
         max-width: 100%;
-        width: 650px;
+        width: 850px;
+        height: 300px;
+    }
+}
+
+.page--events--local-foss {
+  .theme-area {
+    background-image: url('./images/page-cfp-results-theme.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+    @extend .document-content;
+
+    .iframe-wrapper {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    
+    .embed-unconf-sheet {
+        max-width: 100%;
+        width: 850px;
         height: 300px;
     }
 }
