@@ -13,10 +13,12 @@ import loadData from './timetable/fetch';
 
 require('./component/modal');
 
-const root = document.querySelector('.right > li');
-if (root) {
+const root = document.querySelectorAll('[data-mount=auth]');
+if (root.length > 0) {
   require('./subscribe/auth');
-  ReactDOM.render(<Provider store={store}><SignInModal /></Provider>, root);
+  Array.prototype.slice.call(root).forEach((mount) => {
+    ReactDOM.render(<Provider store={store}><SignInModal position={mount.getAttribute('data-position')} /></Provider>, mount);
+  });
 }
 
 
