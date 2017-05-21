@@ -32,6 +32,7 @@ export default function Timeslot(props: Props) {
               id={session.topic}
               col={props.sessions.length}
               name={session.name}
+              dayslot={`${props.dayslot}`}
             />
           );
         }
