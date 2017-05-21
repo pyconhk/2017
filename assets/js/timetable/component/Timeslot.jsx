@@ -18,6 +18,7 @@ type Props = {
     timeEnd: string,
   },
   slot: string,
+  dayslot: string,
 }
 
 export default function Timeslot(props: Props) {
