@@ -1,7 +1,12 @@
 [ignore]
 .*/node_modules/fbjs/.*
+.*/node_modules/require-yml/.*
+public
+
 [include]
 
 [libs]
 flow/global
+flow-typed/npm
+
 [options]

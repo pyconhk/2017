@@ -1,78 +1,96 @@
 'use strict';
 
+require('dotenv').load();
+
+const webpack = require('webpack');
 const UglifyPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
-const OccurenceOrderPlugin = require('webpack/lib/optimize/OccurrenceOrderPlugin');
-const DedupePlugin = require('webpack/lib/optimize/DedupePlugin');
 const AggressiveMergingPlugin = require('webpack/lib/optimize/AggressiveMergingPlugin');
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
 
 const merge = require('webpack-merge');
 
+const firebaseConfig = {
+  FIREBASE_API_KEY: JSON.stringify(process.env.FIREBASE_API_KEY || '<API_KEY>'),
+  FIREBASE_AUTH_DOMAIN: JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN || '<PROJECT_ID>.firebaseapp.com'),
+  FIREBASE_DATEBASE_URL: JSON.stringify(process.env.FIREBASE_DATEBASE_URL || 'https://<DATABASE_NAME>.firebaseio.com'),
+  FIREBASE_STORAGE_BUCKET: JSON.stringify(process.env.FIREBASE_STORAGE_BUCKET || '<BUCKET>.appspot.com'),
+  FIREBASE_MESSAGING_SENDER_ID: JSON.stringify(process.env.FIREBASE_MESSAGING_SENDER_ID || '<SENDER_ID>'),
+};
+
 const base = {
   plugins: [
-    new OccurenceOrderPlugin(),
-    new DedupePlugin(),
-    new AggressiveMergingPlugin()
+    new AggressiveMergingPlugin(),
+    new webpack.DefinePlugin({
+      'process.env': firebaseConfig,
+    }),
   ],
   externals: {
     jquery: 'jQuery',
     hammerjs: 'Hammer',
-    'node-waves': 'Waves'
+    'node-waves': 'Waves',
+    firebase: 'firebase',
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    redux: 'Redux',
+    'react-redux': 'ReactRedux',
+    'moment-timezone': 'moment',
   },
   entry: {
     app: ['./assets/js/app'],
+    timetable: ['./assets/js/timetable'],
     venue: ['./assets/js/venue'],
+    staff: ['./assets/js/pages/staff'],
   },
   devtool: 'source-map',
   output: {
     path: `${__dirname}/public/js`,
     publicPath: '/2017/js/',
-    filename: '[name].js'
+    filename: '[name].js',
   },
   resolve: {
-    extensions: ['', '.js'],
-    fallback: ['node_modules']
+    extensions: ['.js', '.jsx'],
   },
   module: {
-    loaders: [
-      {test: /\.js$/, loader: 'babel'},
-      {test: /worker\.js$/, loader: 'worker'},
-      {test: /\.jsx$/, loaders: ['babel']}
-    ]
+    rules: [
+      { test: /\.js$/, use: ['babel-loader'] },
+      { test: /\.jsx$/, use: ['babel-loader'] },
+    ],
   },
-  worker: {
-    output: {
-      filename: 'worker.js',
-      chunkFilename: '[id].worker.js'
-    }
-  }
 };
 
 const dev = merge.smart({
   plugins: [
-    new HotModuleReplacementPlugin()
+    new HotModuleReplacementPlugin(),
   ],
   entry: {
     app: [
-      'webpack-dev-server/client?http://localhost:8080/'
+      'webpack-dev-server/client?http://localhost:8080/',
+    ],
+    timetable: [
+      'webpack-dev-server/client?http://localhost:8080/',
     ],
     venue: [
-      'webpack-dev-server/client?http://localhost:8080/'
-    ]
+      'webpack-dev-server/client?http://localhost:8080/',
+    ],
   },
   module: {
     loaders: [
-      {test: /\.jsx$/, loaders: ['react-hot']}
-    ]
-  }
+      { test: /\.jsx$/, use: ['react-hot'] },
+    ],
+  },
 }, base);
 
 const production = merge.smart({
   plugins: [
-    new UglifyPlugin({minimize: true}),
-  ]
+    new UglifyPlugin({
+      minimize: true,
+      sourceMap: true,
+    }),
+  ],
 }, base);
 
 module.exports = {
-  base, dev, production
+  base,
+  dev,
+  production,
 };

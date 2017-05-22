@@ -1,0 +1,122 @@
+.page--topics--topic {
+  .theme-area {
+    background-image: url('./images/page-cfp-results-theme.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    margin-bottom: 1.5em;
+
+    .content {
+      padding-top: 10vh;
+      height: auto;
+
+      .title {
+        color: #DDD;
+        padding-bottom: 1em;
+        h1 {
+          position: relative;
+          top: 0;
+          color: $theme-yellow;
+          margin: 0.2em 0;
+        }
+        p {
+          margin: 0;
+        }
+        @media #{$small-and-down} {
+          font-size: 1em;
+          h1 {
+            font-size: 1.5em;
+          }
+        }
+        @media #{$medium-and-up} {
+          font-size: 1.3em;
+          h1 {
+            font-size: 1.5em;
+          }
+        }
+        @media #{$large-and-up} {
+          font-size: 1.5em;
+          h1 {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+
+  .speakers, .sponsor-wrapper{
+    margin: 2em 0;
+  }
+
+  .sponsor-wrapper {
+    h2 {
+      margin: 0 0 1em;
+    }
+  }
+
+  .topic-details {
+    .fa {
+      margin-right: 0.5em;
+    }
+    .location, .language, .level {
+      margin: 0.5em 0;
+    }
+  }
+
+  .speakers {
+    h2 {
+      margin: 0 0 1em;
+      padding: 0 0.5em;
+    }
+  }
+
+  .speaker {
+    display: block;
+    clear: both;
+    padding: 2em 0;
+    margin: 1em 1em;
+    @extend .card;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+
+      .name {
+        display: block;
+      }
+      .nickname {
+        color: rgba(0, 0, 0, .4);
+        font-size: 0.8em;
+        font-weight: normal;
+        margin-top: 0.3em;
+      }
+    }
+
+    .portrait {
+      padding: 0.5em;
+      text-align: center;
+      img {
+        @extend .responsive-img;
+        @extend .circle;
+        @extend .z-depth-1;
+      }
+    }
+
+    .quick-info {
+      margin: 0.5em 0 0;
+      font-size: 1.5em;
+    }
+
+    &:target {
+      background-color: #FFE;
+      @extend .z-depth-3;
+    }
+  }
+
+  .sponsor {
+    display: block;
+    clear: both;
+    padding: 2em 0;
+    @extend .card;
+  }
+}

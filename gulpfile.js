@@ -1,4 +1,7 @@
 'use strict';
 
+/* eslint-disable import/no-dynamic-require */
+
 require('fs').readdirSync('./gulp')
-  .forEach((file) => require(`./gulp/${file}`));
+  .filter(file => file.match(/^[a-z][\w-]+\.js$/))
+  .forEach(file => require(`./gulp/${file}`));

@@ -1,27 +1,80 @@
-@import "normalize";
+//
+// Materialize CSS
+// ---------------
+//
+// * Copied from materialize.css with custom overrides.
+// * Please do not remove components from this section.
+//   simply comment out the unuseful ones.
+//
 
-@import "font-awesome";
+// Mixins
+// @import "materialize/components/prefixer";
+@import "materialize/components/mixins";
+@import "materialize/components/color";
 
-@import "variables";
-@import "mixin";
+// Variables;
+//@import "materialize/components/variables";
+@import "theme/components/variables";
 
-@import "typo";
-@import "global";
+// Reset
+@import "materialize/components/normalize";
 
-@import "depth";
-@import "navbar";
-@import "sidebar";
-@import "elements/button";
-@import "elements/card";
-@import "elements/parallex";
+// components
+@import "materialize/components/global";
+@import "materialize/components/badges";
+@import "materialize/components/icons-material-design";
+@import "materialize/components/grid";
+@import "materialize/components/navbar";
+@import "materialize/components/typography";
+@import "materialize/components/transitions";
+@import "materialize/components/cards";
+@import "materialize/components/toast";
+@import "materialize/components/tabs";
+@import "materialize/components/tooltip";
+@import "materialize/components/buttons";
+@import "materialize/components/dropdown";
+@import "materialize/components/waves";
+@import "materialize/components/modal";
+@import "materialize/components/collapsible";
+@import "materialize/components/chips";
+@import "materialize/components/materialbox";
+@import "materialize/components/forms/forms";
+@import "materialize/components/table_of_contents";
+//@import "materialize/components/sideNav";
+@import "theme/components/sideNav";
+@import "materialize/components/preloader";
+@import "materialize/components/slider";
+@import "materialize/components/carousel";
+@import "materialize/components/date_picker/default";
+@import "materialize/components/date_picker/default.date";
+@import "materialize/components/date_picker/default.time";
 
-@import "materialize/color";
-@import "materialize/variables";
-@import "materialize/grid";
-@import "materialize/material-icons";
-@import "materialize/footer";
-@import "materialize/navbar";
-@import "materialize/global";
-@import "materialize/sidenav";
-@import "materialize/collapsible";
-@import "materialize/collection";
+
+//
+// HKOSCon 2017 styles
+// ---------------------
+// Theme specific styles
+//
+@import "theme/font-awesome";
+@import "theme/mixin";
+@import "theme/typo";
+@import "theme/helper";
+@import "theme/depth";
+@import "theme/sideNavFix";
+@import "theme/navbarCustom";
+@import "theme/elements/parallex";
+@import "theme/elements/banner";
+@import "theme/elements/document-content";
+@import "theme/elements/google-form";
+@import "theme/elements/sponsorsRegion";
+@import "theme/elements/themeArea";
+@import "theme/elements/footer";
+@import "theme/pages/front";
+@import "theme/pages/about";
+@import "theme/pages/about-coc";
+@import "theme/pages/about-patron-programme";
+@import "theme/pages/schedule";
+@import "theme/pages/staff";
+@import "theme/pages/sponsor";
+@import "theme/pages/cfp";
+@import "theme/pages/topic";

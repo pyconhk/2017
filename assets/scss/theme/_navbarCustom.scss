@@ -1,0 +1,40 @@
+nav {
+  .brand-logo {
+    color: $theme-yellow;
+  }
+  .button-collapse {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+
+#signin-modal {
+  width: 300px;
+  .btn-large {
+    width: 100%;
+
+    &[provider=github] {
+      background-color: #000000;
+    }
+
+    &[provider=twitter] {
+      background-color: #1B95E0;
+    }
+
+    &[provider=facebook] {
+      background-color: #3B5998;
+    }
+
+    &[provider=google] {
+      background-color: #dd4b39;
+    }
+  }
+}
+
+[data-role=auth] {
+  color: #000000;
+}
+
+[data-mount=auth][data-position=sidebar] {
+  text-align: center;
+}

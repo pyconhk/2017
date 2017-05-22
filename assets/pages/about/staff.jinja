@@ -3,74 +3,26 @@
 {% block content %}
     <div class="container">
         <h3>Staff</h3>
-
-        <h5 class="box">Committee Chair - Mr. Sammy Fung</h5>
-        <ul class="collapsible popout" data-collapsible="expandable">
-            <li>
-                <div class="collapsible-header active">Design</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Mr. Nicholas Yau (Team Lead)
-                        </li>
-                    </ul>
+        {% for team in data.staff.teams %}
+            <div class="staff-team">
+                <h4>{{ team.name }}</h4>
+                <div>
+                    {% for member in team.members %}
+                        <div class="staff">
+                            <div data-name="{{ member.name | replace('.', '') }}" data-team="{{ team.name }}" data-role="staff"></div>
+                            <div>
+                                {{ member.name }}
+                                {% if member.teamlead %} * {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Finance</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Dr. Haggen So (Team Lead)
-                        </li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Marketing</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">
-                            Mr. Calvin Tsang (Team Lead)
-                        </li>
-                        <li class="collection-item">Ms. Fiona Lam</li>
-                        <li class="collection-item">Ms. Clara Lin</li>
-                        <li class="collection-item">Mr. Tony Yip</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Operation</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Ms. Connie Leung</li>
-                        <li class="collection-item">Mr. Koala Yeung</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Program Committee</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Mr. Dick Tang (Team lead)</li>
-                    </ul>
-                </div>
-            </li>
-
-            <li>
-                <div class="collapsible-header active">Record</div>
-                <div class="collapsible-body">
-                    <ul class="collection">
-                        <li class="collection-item">Mr. Henry Law (Team Lead)</li>
-                        <li class="collection-item">Mr. Sam Chiuck</li>
-                    </ul>
-                </div>
-            </li>
-
-        </ul>
+            </div>
+        {% endfor %}
+        <small>*Team Lead</small>
     </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{{ data.site.basePath }}/js/staff.js" defer async></script>
 {% endblock %}

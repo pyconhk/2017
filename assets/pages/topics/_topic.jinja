@@ -1,0 +1,100 @@
+{% extends "app.jinja" %}
+
+{% set lang = data.langs[topic.lang] %}
+{% set lang_slide = data.langs[topic.lang_slide] %}
+
+{% block meta_desc %}{{ topic.description | join(' ') | truncate(200, true) }}{% endblock %}
+{% block og_desc %}{{ topic.description | join (' ') | truncate(300, true) }}{% endblock %}
+{% block og_url %}{{ data.site.basePath }}/topics/{{ topic.id }}{% endblock %}
+
+{% block content %}
+
+<div class="theme-area"><div class="content">
+  <div class="container">
+    <div class="title">
+      <div class="title-type">{{ topic.type | capitalize }}</div>
+      <h1>{{ topic.title }}</h1>
+      <div class="title-speakers">
+        <p>{{ topic | concatSpeakerNames(data.speakers) | safe }}</p>
+      </div>
+    </div>
+  </div>
+</div></div><!--/.content--><!--/.theme-area-->
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col m12 topic-details">
+
+      <div class="description">
+        {% for d in topic.description %}
+        <p>{{ d | safe }}</p>
+        {% endfor %}
+      </div><!--/.description-->
+
+      {% if topic.venue %}
+      <div class="location">
+        <i class="fa fa-map-signs" aria-hidden="true"></i>
+        {{ data.venues[topic.venue].name }}
+      </div>
+      {% endif %}
+
+      <div class="language">
+        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+        {{ lang.name }}{% if topic.lang_slide %} ({{ lang_slide.name }} Slides){% endif %}
+      </div>
+
+      {% if topic.level %}
+      <div class="level">
+        {% if topic.level == "Beginners" %}
+          <i class="fa fa-users" aria-hidden="true"></i>
+          For General Public
+        {% elseif topic.level == "Intermediate" %}
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          For Coders and Tech Audiences with General Knowledge and Skills.
+        {% elseif topic.level == "Advanced" %}
+          <i class="fa fa-rocket" aria-hidden="true"></i>
+          For Advanced Coders &amp; Tech Audiences.
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if topic.requirement %}
+      <div class="requirement">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        {{ topic.requirement | truncate(400, true) }}
+      </div>
+      {% endif %}
+
+    </div>
+
+  </div>
+  <div class="row">
+
+    <div class="speakers">
+      <h2>{% if (topic.speaker.length > 1) %}Speakers{% else %}Speaker{% endif %}</h2>
+      {% for speakerid in topic.speaker %}
+        {% set speaker = data.speakers[speakerid] %}
+        {% include 'topics/_speaker.jinja' %}
+      {% endfor %}
+    </div>
+
+    {% if topic.isSponsorTopic and topic.sponsor %}
+    <div class="sponsor-wrapper col m12">
+      <h2>Sponsored by</h2>
+      {% for st in data.sponsor.sponsor_types %}
+        {% for sp in st.sponsors %}
+          {% if sp.id === topic.sponsor %}
+            {% set sponsor = sp %}
+            {% include 'topics/_sponsor.jinja' %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+
+</div><!--/.topic-page-->
+{% endblock %}

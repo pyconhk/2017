@@ -1,64 +1,59 @@
 {% extends "app.jinja" %}
 
-{% block style %}
-    <style>
-        #cfp img {width: 100%;}
-        .row {margin-bottom: 0;}
-        .col {padding: 0 !important;}
-        #content {
-            position: absolute;
-            margin-left: 9%;
-            margin-top: 15%;
-            z-index: 10;
-            text-align: center;
-        }
-        .btn {font-weight: bold}
-        h1 {border-radius: 3px; padding:5px;}
-        @media only screen and (max-width: 600px) {
-            h1 {font-size: 1.2em; margin-bottom: 0;}
-            #content {margin-left: 15%; margin-top: 17%;}
-        }
-        @media only screen and (min-width: 601px) and (max-width: 1200px) {
-            #content {width: 50%;}
-        }
-    </style>
-{% endblock %}
-
 {% block content %}
-    <div id="cfp" class="container box">
-        <div id="content">
-            <h1 class="blue-theme yellow-theme-text">We want you to be our speakers</h1>
-            <a href="https://goo.gl/forms/fmNjTshYMZlaaKo02" target="_blank" class="btn sharp">Submit Your Proposal</a>
-        </div>
-        <div class="row">
-            <div class="col s10 push-s1">
-                <img src="/2017/images/cfp/jserv.jpg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s5 push-s1">
-                <img src="/2017/images/cfp/elastic.jpg">
-            </div>
-            <div class="col s5 push-s1">
-                <img src="/2017/images/cfp/chainsaw.jpg">
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="title">
-                <h1 class="title-text headline">Call For Proposal</h1>
-            </div>
-            <div class="content">
-                <ul class="browser-default">
-                    <li>Deadline: 12 Feb, 2017 (Sat)</li>
-                    <li>
-                        Link:
-                        <a href="https://goo.gl/forms/fmNjTshYMZlaaKo02" target="_blank">
-                            https://goo.gl/forms/fmNjTshYMZlaaKo02
-                        </a>
-                    </li>
-                </ul>
+    <div class="theme-area">
+        <div class="content">
+            <div class="container">
+                <h1>Call For Proposals Results</h1>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="content">
+          <h3>CFP Results are Here!</h3>
+          <p>We are pleased to announce the CFP results. We have received
+            <strong>{{data.topics.num_submissions}}</strong> submissions
+            before our deadline {{data.topics.deadline}}. The volunteers in our
+            Program Committee had a hard time to shortlist them to fit in
+            <span class="link">
+              <a href="/schedule">our agenda.</a>
+            </span>
+          </p>
+          <p>Here is the list of the accepted CFP topics, along with some invited sessions &amp; confirmed sponsor sessions:</p>
+          <ul class="cpf-results">
+            {% for topic in data.topics.topics %}
+              {% if topic.cfp %}
+                <li class="link">
+                  <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
+                    {{ topic.title }}
+                  </a>
+                  ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
+                  {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul> <!-- cpf-results -->
+          <p></p>
+          <p>If your topic is not selected, don't worry. You may still share your topic in our <b>Unconference Session</b> at
+            <span class="link"><a href="/schedule/#day-2"> of Day 2 (Saturday)</a></span>.
+          </p>
+          <p>
+            <a class="waves-effect waves-light z-depth-2 btn"
+            data-ga-category="cfp-page"
+            data-ga-action="click"
+            data-ga-label="ticket"
+            data-ga-value="full ticket"
+            href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'cfp-page-bottom') | execAppend }}"
+            target="_blank">Get your ticket</a>
+          </p>
+          <h2>More Information</h2>
+          <p class="link">We're constantly updating our Facebook. Please subscribe our
+            <a href="https://www.facebook.com/hkoscon/" target="_blank">Facebook Page</a>
+            for more updates.
+          </p>
+          <p class="link">For enquiry/any special requests, please feel free to contact us at
+            <a href="mailto:conference@opensource.hk">conference@opensource.hk</a>
+          </p>
+      </div> <!-- content -->
+    </div> <!-- container -->
 {% endblock %}

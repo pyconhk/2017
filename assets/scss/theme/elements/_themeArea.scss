@@ -1,0 +1,16 @@
+.theme-area {
+  .content {
+    height: 30vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+    h1 {
+      color: #FFF;
+      position: absolute;
+      font-size: 3em;
+      bottom: 0.5em;
+      margin: 0;
+      padding: 0;
+      text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+  }
+}

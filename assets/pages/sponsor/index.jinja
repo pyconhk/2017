@@ -1,0 +1,40 @@
+{% extends "app.jinja" %}
+
+{% block content %}
+    <div class="theme-area">
+        <div class="content">
+            <div class="container">
+                <h1>Sponsor</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+          <p>To cover expenses of conference, we are calling for sponsorships of HKOSCon 2017 and look for potential sponsors.</p>
+          <p>We would like to thank the following sponsors for their support.</p>
+
+          <div class="sponsor-types">
+            {% for types in data.sponsor.sponsor_types %}
+              <h3>{{ types.name }}</h3>
+              {% for sponsor in types.sponsors %}
+                {% if sponsor.grantedPerm %}
+                  {% include "sponsor/partial.jinja" %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+
+            {% if data.sponsor.patrons | length > 0 %}
+              <h3>{{ data.sponsor.patron_name }}</h3>
+              <div class="sponsor-type">
+                <ul>
+                {% for patron in data.sponsor.patrons %}
+                  <li>{{patron.name}}</li>
+                {% endfor %}
+                </ul>
+                </div>
+              {% endif %}
+            </div>
+          </div> <!-- sponsor-types -->
+      </div> <!-- content -->
+    </div> <!-- container -->
+{% endblock %}

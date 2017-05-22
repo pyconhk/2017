@@ -1,4 +1,5 @@
-//@flow
+// @flow
+
 'use strict';
 
 const autoprefixer = require('autoprefixer');
@@ -7,8 +8,8 @@ const mergeLongHands = require('postcss-merge-longhand');
 
 module.exports = [
   autoprefixer({
-    browsers: ['last 5 version']
+    browsers: ['last 5 version'],
   }),
   mergeLongHands(),
-  mergeRules()
+  mergeRules(),
 ];
