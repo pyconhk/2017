@@ -20,8 +20,8 @@ export default class GridCell extends React.Component {
       const dayslot = `${props.dayslot}`;
       const dayslotId = `#${props.dayslot}`;
       return (
-        <div>
-          <a href={dayslotId} className={classes}>
+        <div className={classes}>
+          <a href={dayslotId}>
             {props.children}
             <div id={dayslot} className="modal modal-fixed-footer">
               <div className="modal-content">
