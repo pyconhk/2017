@@ -31,6 +31,10 @@ nav {
   }
 }
 
-#auth {
+[data-role=auth] {
   color: #000000;
+}
+
+[data-mount=auth][data-position=sidebar] {
+  text-align: center;
 }

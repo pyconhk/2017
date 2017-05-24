@@ -63,8 +63,12 @@ day-1:
   - name: "70-min Meeting: Local F/OSS Community Meeting Part 2 (open to public)"
     timeslot: slot-10
     venue: training-theatre
-  - name: End Of Day
+  - name: 30-min Talk
     timeslot: slot-11
+    venue: function-room
+    topic: optimal-financial-planning-through-storytelling
+  - name: End Of Day
+    timeslot: slot-12
 
 
 day-2:
@@ -86,7 +90,7 @@ day-2:
   - name: 30-min Talk
     timeslot: slot-2
     venue: training-room-2
-    topic: why-bash
+    topic: msgchi
   - name: 60-min Workshop Part 1
     timeslot: slot-2
     venue: training-room-3
@@ -130,9 +134,10 @@ day-2:
     timeslot: slot-5
     venue: training-room-2
     topic: free-hong-kong-font
-  - name: Unconference - Part 1
+  - name: 30-min Talk
     timeslot: slot-5
     venue: training-room-3
+    topic: kde-journey-of-a-sok-student-to-gci-organisation-administrator
   - name: 30-min Talk
     timeslot: slot-6
     venue: function-room
@@ -149,7 +154,7 @@ day-2:
     timeslot: slot-6
     venue: training-room-2
     topic: ezgo-for-hk
-  - name: Unconference - Part 2
+  - name: Unconference - Part 1
     timeslot: slot-6
     venue: training-room-3
   - name: 30-min Talk
@@ -168,7 +173,7 @@ day-2:
     timeslot: slot-7
     venue: training-room-2
     topic: libreoffice-impress
-  - name: Unconference - Part 3
+  - name: Unconference - Part 2
     timeslot: slot-7
     venue: training-room-3
   - name: Lunch Networking
@@ -221,8 +226,8 @@ day-2:
   - name: 30-min Talk
     timeslot: slot-14
     venue: training-room-2
-    topic: msgchi
-  - name: Unconference - Part 4
+    topic: why-bash
+  - name: Unconference - Part 3
     timeslot: slot-14
     venue: training-room-3
   - name: 30-min Talk
@@ -241,7 +246,7 @@ day-2:
     timeslot: slot-15
     venue: training-room-2
     topic: aws-cloud-lab
-  - name: Unconference - Part 5
+  - name: Unconference - Part 4
     timeslot: slot-15
     venue: training-room-3
   - name: End of Day

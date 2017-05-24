@@ -2,13 +2,15 @@
 
 import React from 'react';
 import $ from 'jquery';
+import classNames from 'classnames';
 import type { User } from '../../reducers/user';
 import {
   signOut,
 } from '../../auth';
 
 type Props = {
-  user: ?User
+  user: ?User,
+  position: 'navbar' | 'sidebar',
 }
 
 export default class SigninModal extends React.Component {
@@ -25,8 +27,12 @@ export default class SigninModal extends React.Component {
   render() {
     const auth = this.props.user !== null;
     const button = `Sign ${auth ? 'Out' : 'In'}`;
+    const className = classNames('btn', 'waves-effect', 'waves-light', {
+      'hide-on-small-only': this.props.position === 'navbar',
+      'hide-on-med-and-up': this.props.position === 'sidebar',
+    });
     return (
-      <button id="auth" className="btn waves-effect waves-light" onClick={this.handleButtonClick(auth)}>{button}</button>
+      <button data-role="auth" className={className} onClick={this.handleButtonClick(auth)}>{button}</button>
     );
   }
 }

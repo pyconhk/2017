@@ -579,10 +579,10 @@ topics:
       remark:  Taiwan
       description:
         - >
-          Volunteers of MozTW had already running Mozilla Community Space Taipei
-          "摩茲工寮" for 2.5 years. What have we done, how do we manage it, and
-          what we have learned. If you're interesting in running your own
-          hackerspace or makerspace, you're invited to join us exploring a
+          Volunteers of MozTW had been already running Mozilla Community Space Taipei
+          "摩茲工寮" for 2.5 years. We will share what we have done, how do we manage it, and
+          what we have learned. If you're interested in running your own
+          hackerspace or makerspace, welcome to join us to explore an
           open way of community building and management.
       lang:  zh.tw
       lang_slide:  en
@@ -845,7 +845,7 @@ topics:
       lang_slide: en
       type: keynote
       cfp:      false
-      isSponsorTopic: false
+      isSponsorTopic: true
       sponsor: ibm
       level: Intermediate
       requirement: ""
@@ -867,5 +867,40 @@ topics:
       cfp:      false
       isSponsorTopic: false
       level: Beginner
+      requirement: ""
+      venue: function-room
+  -   title: "KDE: Journey of a SoK student to GCI organisation administrator"
+      id:  kde-journey-of-a-sok-student-to-gci-organisation-administrator
+      speaker:
+        -  heena-mahour
+      remark: ""
+      description:
+        - >
+          KDE is an international free software community producing an integrated set of cross-platform applications designed to run on Linux, FreeBSD, Solaris, Microsoft Windows, and OS X systems. 
+          It is known for its Plasma Desktop, a desktop environment provided as the default working environment on many Linux distributions, such as Kubuntu The goal of the community is to provide basic desktop functions and applications for daily needs as well as tools and documentation for developers to write stand-alone applications for the system. 
+          In this regard, the KDE project serves as an umbrella project for many standalone applications and smaller projects that are based on KDE technology. 
+          The talk involves my journey as a SoK student in 2012 where I worked with KDE under kde educational game pairs, then as a Google Summer of Code student in 2013 with plasma team, emerging as a Google Code In 2013 mentor as well as administrator of Season of KDE 2014 as well as Google Code In 2014 for KDE organization. 
+          The talk also involves the changes in plasma from plasma 1 to plasma 5, how the code quality has improved with the upcoming plasma development and how to get involved with open source development.
+      lang:  en
+      lang_slide:  en
+      type:  talk
+      cfp:  false
+      isSponsorTopic: false
+      level: Intermediate
+      requirement: Basic knowledge of Qt, QML, UI design
+      venue: training-room-3
+  -   title: Optimal financial planning through storytelling using narrative visualizations with advanced filtering
+      id:  optimal-financial-planning-through-storytelling
+      speaker:
+        -  heena-mahour
+      remark: ""
+      description: 
+          - >
+      lang:  en
+      lang_slide:  en
+      type:  talk
+      cfp:  false
+      isSponsorTopic: false
+      level: Intermediate
       requirement: ""
       venue: function-room
