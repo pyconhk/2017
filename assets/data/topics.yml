@@ -884,7 +884,7 @@ topics:
       lang:  en
       lang_slide:  en
       type:  talk
-      cfp:  true
+      cfp:  false
       isSponsorTopic: false
       level: Intermediate
       requirement: Basic knowledge of Qt, QML, UI design
