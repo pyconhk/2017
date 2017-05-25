@@ -167,17 +167,10 @@ sponsor_types:
         grantedPerm: true
         description:
           - >
-            Inspired by the tranquility of the Austrian Alps ... Tranquini is a new premium relaxation drink that relieves stress, 
-            reduces anxiety and increases focus - yet does not make you sleepy.
+            Inspired by the tranquility of the Austrian Alps ... Tranquini is a new premium relaxation drink that relieves stress, reduces anxiety and increases focus - yet does not make you sleepy.
           - >
-            Life today is full of stresses that prevent people from feeling or doing their best.
-            So we believe the world would be a better place if more people embraced a more
-            positively relaxed lifestyle.
-          - >
-            Whether it is anxious moments before a key meeting, stress before a big exam, or balancing work and private
-            responsibilities, Tranquini helps you cope with life’s daily challenges in a positively relaxed way.
             Join us in bringing more positive relaxation to the world!
-          - >   
+          - >
             Relax. Be Positive. Good Happens
         logos:
           title:  Tranquini
