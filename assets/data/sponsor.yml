@@ -175,7 +175,7 @@ sponsor_types:
         logos:
           title:  Tranquini
           alt:    Tranquini logo
-          img:    
+          img:    https://file.hkoscon.org/sponsor/tranquini.png
           url:    http://tranquini.com/     
         links:
           text:     Tranquini Website
