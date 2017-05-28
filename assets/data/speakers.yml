@@ -460,12 +460,12 @@ vinnson-lee:
   gender: male
   description:
     - >
-      Senior Software Engineer from China Mobile Hong Kong, DevOps leader,
-      10+ year experience in software development and implementation of open
-      source software
+      DevOps leader and data engineer in fintech industry, worked at China 
+      Mobile HK as Senior Software Engineer, 10+ year experience in software 
+      development and implementation of open source software.
   residence: Hong Kong
   nationality: Hong Kong
-  portrait: 
+  portrait: https://file.hkoscon.org/speakers/2017/vinnson.lee.jpg
   hkoscon-sponsored: false
 
 cyrus-wong:
@@ -626,9 +626,20 @@ haggen-so:
   name: Dr. Haggen So
   gender: male
   description:
+    - >
+      Graduated from the Royal Melbourne Institute of Technology, Dr. Haggen So,
+      has experiences in commercial software development and developed software
+      products for renowned companies such as Kodak. Dr. So also taught in Hong
+      Kong Baptist University as lecturer in the department of Computer Science.
+      Dr. So was the former Project Manager for Creative Commons Hong Kong and
+      currently the president of the Hong Kong Creative Open Technology
+      Association.
   residence: Hong Kong
   nationality: Hong Kong
-  portrait:
+  portrait: https://file.hkoscon.org/speakers/2017/haggen.so.jpg
+  community:
+    name: HKCOTA
+    url: https://www.cota.hk/
   hkoscon-sponsored: false
 
 heena-mahour:
@@ -650,3 +661,33 @@ heena-mahour:
     blog: http://heenamahour.blogspot.in
   hkoscon-sponsered: false
   
+edwin-song:
+  name: Edwin Song
+  gender: male
+  description: 
+    - >
+      Principle PM of Azure Database for MySQL
+  nationality: China
+  portrait: https://file.hkoscon.org/speakers/2017/edwin.song.png
+  hkoscon-sponsered: false
+
+delon-yau:
+  name: Delon Yau
+  gender: male
+  description: 
+    - >
+      Technical Evangelist, DX, Microsoft      
+    - >
+      Delon is currently a Technical Evangelist in the Developer Experience 
+      Group at Microsoft HK, evangelizing developers across HK on artificial 
+      intelligence on cloud, big data analytics and IoT. Prior to Joining 
+      Microsoft HK, he worked for Microsoft UK as a machine learning 
+      developer supporting the data analytics development of a cloud-based 
+      online shopping platform.  
+    - >
+      He holds a Bachelor's degree in Electrical and Electronic Engineering 
+      from Imperial College London and also a Master's degree in Computer 
+      Science from UCL.
+  nationality: Hong Kong
+  portrait: https://file.hkoscon.org/speakers/2017/delon.yau.jpg
+  hkoscon-sponsered: false
