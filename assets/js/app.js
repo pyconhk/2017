@@ -18,3 +18,7 @@ require.ensure(['node-waves'], () => {
   Waves.init();
 });
 
+// $FlowFixMe
+require.ensure(['./notice'], () => {
+  require('./notice');
+});
