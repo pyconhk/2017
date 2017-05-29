@@ -11,6 +11,8 @@ const messaging = firebase.messaging();
 
 messaging.setBackgroundMessageHandler(payload => self.registration.showNotification(payload.notification.title, {
   icon: 'https://hkoscon.org/logo.png',
+  body: payload.notifications.body,
+  vibrate: [500, 100, 500],
 }));
 
 self.addEventListener('notificationclick', (event) => {
