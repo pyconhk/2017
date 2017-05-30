@@ -1,32 +1,41 @@
 // @flow
 
+import $ from 'jquery';
 import React from 'react';
 import classNames from 'classnames';
 
-/* eslint-disable */
-type Props = {
-  col: number,
-  href?: string,
-  target?: string,
-  children?: React.Element<*>,
-  className?: string,
-};
-/* eslint-enable */
+export default class GridCell extends React.Component {
 
-export default function GridCell(props: Props) {
-  const classes = classNames(props.className, 's12', `m${props.col > 2 ? 6 : 12}`, `l${Math.max(Math.floor(10 / props.col), 2)}`, 'col');
-  const href = props.href;
-  if (typeof href === 'string') {
-    const target = (typeof props.target === 'string') ? props.target : '_self';
+  componentDidMount() {
+    const dayslotId = `#${this.props.dayslot}`;
+    $(dayslotId).modal();
+  }
+
+  render() {
+    const props = this.props;
+    const classes = classNames(props.className, 's12', `m${props.col > 2 ? 6 : 12}`,
+      `l${Math.max(Math.floor(10 / props.col), 2)}`, 'col');
+    const href = props.href;
+    if (typeof href === 'string') {
+      const dayslot = `${props.dayslot}`;
+      const dayslotId = `#${props.dayslot}`;
+      return (
+        <div className={classes}>
+          <a href={dayslotId}>
+            {props.children}
+            <div id={dayslot} className="modal modal-fixed-footer">
+              <div className="modal-content">
+                <iframe src={props.href} style={{ width: '100%', height: '100%' }} />
+              </div>
+            </div>
+          </a>
+        </div>
+      );
+    }
     return (
-      <a className={classes} href={href} target={target}>
+      <div className={classes}>
         {props.children}
-      </a>
+      </div>
     );
   }
-  return (
-    <div className={classes}>
-      {props.children}
-    </div>
-  );
 }
