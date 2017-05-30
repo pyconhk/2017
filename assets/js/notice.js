@@ -22,7 +22,15 @@ function subscribeChannel(token, topic) {
 }
 
 function messageCallback(payload) {
-
+  navigator.serviceWorker.getRegistration()
+    .then((registration) => {
+      const { notification } = payload;
+      return registration.showNotification(notification.title, {
+        icon: 'https://hkoscon.org/logo.png',
+        body: payload.notifications.body,
+        vibrate: [500, 100, 500],
+      });
+    });
 }
 
 const messaging = firebase.messaging();
