@@ -72,22 +72,22 @@ export default class ModalProvider extends React.Component {
                   </a>
                 )}
                 {hasSocial && 'project_github' in speaker.social && (
-                  <a className="btn-floating blue-theme" href={`${speaker.social.project_github}`} target="_blank">
+                  <a className="btn-floating blue-theme" href={speaker.social.project_github} target="_blank">
                     <i className="fa fa-github globe" />
                   </a>
                 )}
                 {hasSocial && 'twitter' in speaker.social && (
-                  <a href={speaker.social.twitter} className="btn-floating blue-theme">
+                  <a href={speaker.social.twitter} className="btn-floating blue-theme" target="_blank">
                     <i className="fa fa-twitter" />
                   </a>
                 )}
                 {hasSocial && 'blog' in speaker.social && (
-                  <a href={speaker.social.blog} className="btn-floating blue-theme">
+                  <a href={speaker.social.blog} className="btn-floating blue-theme" target="_blank">
                     <i className="fa fa-globe" />
                   </a>
                 )}
                 {hasSocial && 'facebook' in speaker.social && (
-                  <a href={speaker.social.facebook} className="btn-floating blue-theme">
+                  <a href={speaker.social.facebook} className="btn-floating blue-theme" target="_blank">
                     <i className="fa fa-facebook" />
                   </a>
                 )}
