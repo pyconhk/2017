@@ -53,7 +53,6 @@ export default class ModalProvider extends React.Component {
   modal: HTMLElement;
 
   renderSpeakers(topic: Object) {
-    // $FlowFixMe
     const speakers = topic.speaker.map(id => this.props.speakers[id]);
     return (
       <div className="row">
