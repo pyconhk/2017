@@ -8,6 +8,7 @@ import $ from 'jquery';
 type Props = {
   children: React.Component<*>,
   topics: Array<Object>,
+  speakers: Array<Object>,
 };
 
 export default class ModalProvider extends React.Component {
@@ -51,6 +52,42 @@ export default class ModalProvider extends React.Component {
   props: Props;
   modal: HTMLElement;
 
+  renderSpeakers(topic: Object) {
+    const speakers = topic.speaker.map(id => this.props.speakers[id]);
+    return (
+      <div className="row">
+        {speakers.map((speaker) => {
+          const hasSocial = 'social' in speaker;
+          const icon = 'portrait' in speaker && speaker.portrait ? speaker.portrait : 'https://file.hkoscon.org/speakers/2017/unknown.png';
+          return (
+            <div className="col s12 m6 l4">
+              <div>
+                <img src={icon} className="responsive-img" alt={speaker.name} />
+                {speaker.name}
+              </div>
+              <div>
+                {hasSocial && 'github' in speaker.social && (
+                  <a className="btn-floating blue-theme" href={`https://github.com/${speaker.social.github}`} target="_blank">
+                    <i className="fa fa-github globe" />
+                  </a>
+                )}
+                {hasSocial && 'twitter' in speaker.social && (
+                  <a href={speaker.social.twitter} className="btn-floating blue-theme">
+                    <i className="fa fa-twitter" />
+                  </a>
+                )}
+                {hasSocial && 'blog' in speaker.social && (
+                  <a href={speaker.blog} className="btn-floating blue-theme">
+                    <i className="fa fa-globe" />
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
 
   render() {
     const topic = this.props.topics.find(t => t.id === this.state.topic) || {};
@@ -63,9 +100,11 @@ export default class ModalProvider extends React.Component {
             <div>
               {topic.description ? topic.description[0] : ''}
             </div>
+            <div>{'speaker' in topic && this.renderSpeakers(topic)}</div>
           </div>
           <div className="modal-footer">
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href={`/2017/topics/${this.state.topic || '#'}`} className="modal-action waves-effect waves-green btn-flat">More</a>
           </div>
         </div>
         {this.props.children}
