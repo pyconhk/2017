@@ -162,24 +162,6 @@ sponsor_types:
           url:      https://www.gandi.net/
   - name:     Drink Sponsors
     sponsors:
-      - id:   tranquini
-        name: Tranquini
-        grantedPerm: true
-        description:
-          - >
-            Inspired by the tranquility of the Austrian Alps ... Tranquini is a new premium relaxation drink that relieves stress, reduces anxiety and increases focus - yet does not make you sleepy.
-          - >
-            Join us in bringing more positive relaxation to the world!
-          - >
-            Relax. Be Positive. Good Happens
-        logos:
-          title:  Tranquini
-          alt:    Tranquini logo
-          img:    https://file.hkoscon.org/sponsor/tranquini.png
-          url:    http://tranquini.com/     
-        links:
-          text:     Tranquini Website
-          url:      http://tranquini.com/          
       - id:   bonaqua
         name: Bonaqua
         grantedPerm: true
@@ -199,6 +181,24 @@ sponsor_types:
         links:
           text:     Bonaqua Website
           url:      https://www.bonaqua.com.hk/
+      - id:   tranquini
+        name: Tranquini
+        grantedPerm: true
+        description:
+          - >
+            Inspired by the tranquility of the Austrian Alps ... Tranquini is a new premium relaxation drink that relieves stress, reduces anxiety and increases focus - yet does not make you sleepy.
+          - >
+            Join us in bringing more positive relaxation to the world!
+          - >
+            Relax. Be Positive. Good Happens
+        logos:
+          title:  Tranquini
+          alt:    Tranquini logo
+          img:    https://file.hkoscon.org/sponsor/tranquini.png
+          url:    http://tranquini.com/     
+        links:
+          text:     Tranquini Website
+          url:      http://tranquini.com/          
 
 patron_name: Patrons
 patrons:
