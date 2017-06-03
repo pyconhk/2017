@@ -101,14 +101,19 @@ export default class ModalProvider extends React.Component {
 
   render() {
     const topic = this.props.topics.find(t => t.id === this.state.topic) || {};
-
+    const containHtmlTag = topic.description && topic.description[0].indexOf('</') !== -1;
+    const description = (!containHtmlTag && topic.description && topic.description[0]) || '';
     return (
       <div>
         <div ref={(modal) => { this.modal = modal; }} className="modal modal-fixed-footer">
           <div className="modal-content">
             <h4 data-role="title">{topic.title}</h4>
             <div>
-              {topic.description ? topic.description[0] : ''}
+              { containHtmlTag ?
+                <div dangerouslySetInnerHTML={{ __html: topic.description[0].replace(/(<? *script)/gi, 'illegalscript') }} />
+                :
+                description
+              }
             </div>
             <div>{'speaker' in topic && this.renderSpeakers(topic)}</div>
           </div>
