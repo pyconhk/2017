@@ -92,14 +92,24 @@ export default class ModalProvider extends React.Component {
                     <i className="fa fa-github globe" />
                   </a>
                 )}
+                {hasSocial && 'project_github' in speaker.social && (
+                  <a className="btn-floating blue-theme" href={speaker.social.project_github} target="_blank">
+                    <i className="fa fa-github globe" />
+                  </a>
+                )}
                 {hasSocial && 'twitter' in speaker.social && (
-                  <a href={speaker.social.twitter} className="btn-floating blue-theme">
+                  <a href={speaker.social.twitter} className="btn-floating blue-theme" target="_blank">
                     <i className="fa fa-twitter" />
                   </a>
                 )}
                 {hasSocial && 'blog' in speaker.social && (
-                  <a href={speaker.blog} className="btn-floating blue-theme">
+                  <a href={speaker.social.blog} className="btn-floating blue-theme" target="_blank">
                     <i className="fa fa-globe" />
+                  </a>
+                )}
+                {hasSocial && 'facebook' in speaker.social && (
+                  <a href={speaker.social.facebook} className="btn-floating blue-theme" target="_blank">
+                    <i className="fa fa-facebook" />
                   </a>
                 )}
               </div>
@@ -124,14 +134,19 @@ export default class ModalProvider extends React.Component {
 
   render() {
     const topic = this.props.topics.find(t => t.id === this.state.topic) || {};
-
+    const containHtmlTag = topic.description && topic.description[0].indexOf('</') !== -1;
+    const description = (!containHtmlTag && topic.description && topic.description[0]) || '';
     return (
       <div>
         <div ref={(modal) => { this.modal = modal; }} className="modal modal-fixed-footer">
           <div className="modal-content">
             <h4 data-role="title">{topic.title}</h4>
             <div>
-              {topic.description ? topic.description[0] : ''}
+              { containHtmlTag ?
+                <div dangerouslySetInnerHTML={{ __html: topic.description[0] }} />
+                :
+                description
+              }
             </div>
             <div>
               {'speaker' in topic && this.renderSpeakers(topic)}
