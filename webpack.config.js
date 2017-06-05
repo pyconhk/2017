@@ -54,6 +54,7 @@ const base = {
     redux: 'Redux',
     'react-redux': 'ReactRedux',
     'moment-timezone': 'moment',
+    toastr: 'toastr',
   },
   entry: {
     app: ['./assets/js/app'],

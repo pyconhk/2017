@@ -6031,6 +6031,10 @@ to-fast-properties@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
 
+toastr@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/toastr/-/toastr-2.1.2.tgz#fd69066ae7578a5b3357725fc9c7c335e9b681df"
+
 topo@1.x.x:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/topo/-/topo-1.1.0.tgz#e9d751615d1bb87dc865db182fa1ca0a5ef536d5"
