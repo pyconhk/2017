@@ -25,8 +25,3 @@ require.ensure(['node-waves'], () => {
   const Waves = require('node-waves');
   Waves.init();
 });
-
-// $FlowFixMe
-require.ensure(['./notice'], () => {
-  require('./notice');
-});
