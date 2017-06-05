@@ -9,7 +9,11 @@ function mapStateToProps(state: State, ownProps: Object) {
   return {
     topics: state.timetable.topics.topics,
     speakers: state.timetable.speakers,
+    sponsors: state.timetable.sponsors,
     agenda: state.timetable.agenda,
+    langs: state.timetable.langs,
+    venues: state.timetable.venues,
+    timeslots: state.timetable.timeslots,
     user: state.user,
     ...ownProps,
   };
