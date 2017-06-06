@@ -81,19 +81,61 @@
   }
 
   .modal {
-    .row {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 1rem;
-      .col {
-        padding-bottom: 1rem;
-      }
-      img {
-        width: 100%;
-      }
-    }
     .fixed-action-btn {
       bottom: 3.5rem;
+    }
+    .topic {
+      .topic-type {
+        color: rgba(0,0,0,0.33);
+      }
+      h2 {
+        margin: 0.2em 0 1em;
+      }
+      h3 {
+        margin: 2em 0 1em;
+      }
+      .quick-info {
+        margin-top: 2em;
+        padding: 1em;
+        line-height: 2em;
+        .fa {
+          display: inline-block;
+          margin-right: 1em;
+          text-align: left;
+          width: 1em;
+        }
+        @extend .card;
+      }
+      .speaker {
+        @extend .card;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        .speaker-name {
+          .name {
+            display: block;
+            font-size: 1.2em;
+          }
+          .nickname {
+            display: block;
+            color: rgba(0,0,0,0.33);
+          }
+        }
+        .social {
+          margin: 0.4em 0;
+          font-size: 2em;
+          a {
+            margin-right: 0.5em;
+          }
+          a:hover {
+            color: rgba(0,0,0,0.4);
+          }
+        }
+      }
+      .sponsor {
+        @extend .card;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+      }
     }
   }
 }
