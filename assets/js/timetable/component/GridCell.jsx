@@ -10,6 +10,7 @@ type Props = {
   modal?: string,
   target?: string,
   children?: React.Component<*>,
+  href?: string,
 }
 
 /* eslint-enable */
@@ -25,6 +26,14 @@ export default function GridCell(props: Props, context: {openModal: Function}) {
       </a>
     );
     /* eslint-enable */
+  }
+  if (props.href) {
+    const target = props.target || '_blank';
+    return (
+      <a className={classes} href={props.href} target={target} rel="noopener noreferrer">
+        {props.children}
+      </a>
+    );
   }
   return (
     <div className={classes}>

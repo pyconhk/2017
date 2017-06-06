@@ -12,13 +12,13 @@ type Props = {
     venue: string,
     timeslot: string,
     topic?: string,
+    community?: string,
   }>,
   timeslot: {
     timeStart: string,
     timeEnd: string,
   },
   slot: string,
-  dayslot: string,
 }
 
 export default function Timeslot(props: Props) {
@@ -35,6 +35,26 @@ export default function Timeslot(props: Props) {
               name={session.name}
               dayslot={`${props.dayslot}`}
             />
+          );
+        } else if (session.community) {
+          const communityPageUrl = `/2017/events/${session.community}.html`;
+          return (
+            <GridCell
+              key={`session-${session.name}`}
+              className="grid community-grid"
+              col={props.sessions.length}
+              href={communityPageUrl}
+              target={session.community}
+            >
+              <div className="session-title">
+                {session.name}
+              </div>
+              <div className="session-details">
+                <ul>
+                  {session.venue && <Venue id={session.venue} />}
+                </ul>
+              </div>
+            </GridCell>
           );
         }
         return (

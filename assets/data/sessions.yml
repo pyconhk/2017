@@ -40,6 +40,7 @@ day-1:
   - name: "70-min Meeting: Global F/OSS Community Meeting Part 1 (open to public)"
     timeslot: slot-7
     venue: training-theatre
+    community: global-foss
   - name: 30-min Talk
     timeslot: slot-8
     venue: function-room
@@ -47,6 +48,7 @@ day-1:
   - name: "70-min Meeting: Global F/OSS Community Meeting Part 2 (open to public)"
     timeslot: slot-8
     venue: training-theatre
+    community: global-foss
   - name: Afternoon Networking
     timeslot: slot-tea
     venue: sea-view-concourse
@@ -57,6 +59,7 @@ day-1:
   - name: "70-min Meeting: Local F/OSS Community Meeting Part 1 (open to public)"
     timeslot: slot-9
     venue: training-theatre
+    community: local-foss
   - name: 30-min Talk
     timeslot: slot-10
     venue: function-room
@@ -64,6 +67,7 @@ day-1:
   - name: "70-min Meeting: Local F/OSS Community Meeting Part 2 (open to public)"
     timeslot: slot-10
     venue: training-theatre
+    community: local-foss
   - name: 30-min Talk
     timeslot: slot-11
     venue: function-room
@@ -158,6 +162,7 @@ day-2:
   - name: Unconference - Part 1
     timeslot: slot-6
     venue: training-room-3
+    community: unconference
   - name: 30-min Talk
     timeslot: slot-7
     venue: function-room
@@ -177,6 +182,7 @@ day-2:
   - name: Unconference - Part 2
     timeslot: slot-7
     venue: training-room-3
+    community: unconference
   - name: Lunch Networking
     timeslot: slot-8
     venue: sea-view-concourse
@@ -187,6 +193,7 @@ day-2:
   - name: Lightninig Talks
     timeslot: slot-10
     venue: function-room
+    community: lightning-talk
   - name: Group Photo
     timeslot: slot-11
     venue: function-room
@@ -232,6 +239,7 @@ day-2:
   - name: Unconference - Part 3
     timeslot: slot-14
     venue: training-room-3
+    community: unconference
   - name: 30-min Talk
     timeslot: slot-15
     venue: function-room
@@ -251,5 +259,6 @@ day-2:
   - name: Unconference - Part 4
     timeslot: slot-15
     venue: training-room-3
+    community: unconference
   - name: End of Day
     timeslot: slot-16
