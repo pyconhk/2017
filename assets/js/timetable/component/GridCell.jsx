@@ -11,6 +11,7 @@ type Props = {
   target?: string,
   children?: React.Component<*>,
   href?: string,
+  type?: string,
 }
 
 /* eslint-enable */

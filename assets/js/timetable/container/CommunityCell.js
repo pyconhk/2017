@@ -1,0 +1,26 @@
+// @flow
+import { connect } from 'react-redux';
+import CommunityCell from '../component/CommunityCell';
+import type { State } from '../../reducers';
+
+type Props = {
+  id: string,
+  col: number,
+  row?: number,
+  name: string,
+  dayslot: string,
+}
+
+function mapStateToProps(state: State, ownProps: Props) {
+  const topics = state.timetable.topics.topics;
+  return {
+    topic: topics.find(topic => topic.id === ownProps.id),
+    saved: Object.values(state.timetable.agenda).indexOf(ownProps.id) !== -1,
+    col: ownProps.col,
+    rol: ownProps.row || 0,
+    name: ownProps.name,
+    dayslot: ownProps.dayslot,
+  };
+}
+
+export default connect(mapStateToProps)(CommunityCell);
