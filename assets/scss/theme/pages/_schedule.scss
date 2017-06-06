@@ -25,7 +25,7 @@
     margin-bottom: 0;
   }
 
-  .session-grid, .topic-grid, .title {
+  .session-grid, .topic-grid, .title, .community-grid {
     color: rgba(0, 0, 0, 0.8)
   }
 
@@ -60,7 +60,7 @@
     margin: 0 -1rem;
     padding: 1.8rem 1.5rem 1.5rem;
   }
-  a.topic-grid {
+  a.topic-grid, a.community-grid {
     transition: all 0.5s;
     background-color: rgba(253, 214, 17, 0);
     &:hover {
