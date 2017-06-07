@@ -5,6 +5,7 @@ import TimeCell from './TimeCell';
 import TopicCell from '../container/TopicCell';
 import Venue from '../container/Venue';
 import GridCell from './GridCell';
+import CommunityCell from '../container/CommunityCell';
 
 type Props = {
   sessions: Array<{
@@ -37,24 +38,15 @@ export default function Timeslot(props: Props) {
             />
           );
         } else if (session.community) {
-          const communityPageUrl = `/2017/events/${session.community}.html`;
           return (
-            <GridCell
-              key={`session-${session.name}`}
-              className="grid community-grid"
+            <CommunityCell
+              key={`community-${session.name}`}
+              id={session.community}
+              path={session.path}
               col={props.sessions.length}
-              href={communityPageUrl}
-              target={session.community}
-            >
-              <div className="session-title">
-                {session.name}
-              </div>
-              <div className="session-details">
-                <ul>
-                  {session.venue && <Venue id={session.venue} />}
-                </ul>
-              </div>
-            </GridCell>
+              name={session.name}
+              venue={session.venue}
+            />
           );
         }
         return (

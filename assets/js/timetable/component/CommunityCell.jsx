@@ -8,17 +8,17 @@ import Venue from '../container/Venue';
 type Props = {
   col: number,
   name: string,
-  name: string,
   venue: string,
-  community: string,
+  communityId: string,
+  path: string,
 }
 /* eslint-enable*/
 
 export default function CommunityCell(props: Props) {
   return (
-    <GridCell col={props.col} className="grid community-grid" modal={props.community} type="community">
+    <GridCell col={props.col} className="grid community-grid" modal={props.communityId} path={props.path}>
       <div className="session-title">
-        {name}
+        {props.name}
       </div>
       <div className="session-details">
         <ul>
