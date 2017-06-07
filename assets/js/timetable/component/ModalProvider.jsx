@@ -385,7 +385,6 @@ export default class ModalProvider extends React.Component {
   }
 
   render() {
-    console.log(this.props.sessions);
     if (this.state.type === 'community') {
       return this.renderCommunity();
     }
