@@ -40,6 +40,7 @@ type Props = {
   sponsors: Object,
   user: Object | null,
   agenda: {[key: string]: string},
+  sessions: Object | null,
   addTopic(topic: string): void,
   removeTopic(topic: string): void,
 };
@@ -78,14 +79,15 @@ export default class ModalProvider extends React.Component {
   state: {
     topic: string | null,
     session: string | null,
-    type: 'topic' | 'session',
+    community: string | null,
+    type: 'topic' | 'session' | 'community',
   };
 
 
   getChildContext() {
     return {
-      openModal: (type: 'topic' | 'session', id: string) => {
-        this.setState({ type, [type === 'topic' ? 'topic' : 'session']: id });
+      openModal: (type: 'topic' | 'session' | 'community', id: string) => {
+        this.setState({ type, [type]: id });
         $(this.modal).modal('open');
       },
       closeModal: () => {
@@ -274,7 +276,7 @@ export default class ModalProvider extends React.Component {
         <div className="sponsor row">
           <div className="col m2 logos">
             <p className="logo">
-              <a href={sponsor.logos.url} title={sponsor.logos.title} target="_blank">
+              <a href={sponsor.logos.url} title={sponsor.logos.title} rel="noopener noreferrer" target="_blank">
                 <img className="responsive-img" src={sponsor.logos.img} alt={sponsor.logos.alt} />
               </a>
             </p>
@@ -284,7 +286,7 @@ export default class ModalProvider extends React.Component {
             {sponsor.description.map(paragraph => (<p dangerouslySetInnerHTML={{ __html: paragraph }} />))}
             <div>
               <a
-                className="waves-effect waves-light btn" target="_blank"
+                className="waves-effect waves-light btn" rel="noopener noreferrer" target="_blank"
                 href={sponsor.links.url} role="button"
               >
                 {sponsor.links.text}
@@ -351,7 +353,42 @@ export default class ModalProvider extends React.Component {
     );
   }
 
+  renderCommunity() {
+    const days = Object.keys(this.props.sessions);
+    const community = days.reduce((acc, day) => {
+      const sessions = this.props.sessions[day];
+      const result = sessions.find(s => s.community === this.state.community);
+      if (!result) { return acc; }
+      return result;
+    }, {});
+
+    const href = (community && `${community.path}.html`) || '#';
+
+    return (
+      <div>
+        <div ref={(modal) => { this.modal = modal; }} className="modal modal-fixed-footer">
+          <div className="modal-content topic" key={`community--${this.state.community}`}>
+            <h2 data-role="title">{community.name}</h2>
+          </div>
+          <div className="modal-footer">
+            <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
+              Close
+            </a>
+            <a href={`/2017/events/${href}`} className="modal-action waves-effect waves-green btn-flat">
+              Permlink
+            </a>
+          </div>
+        </div>
+        {this.props.children}
+      </div>
+    );
+  }
+
   render() {
+    console.log(this.props.sessions);
+    if (this.state.type === 'community') {
+      return this.renderCommunity();
+    }
     return this.renderTopic();
   }
 }

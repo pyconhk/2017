@@ -15,6 +15,7 @@ function mapStateToProps(state: State, ownProps: Object) {
     venues: state.timetable.venues,
     timeslots: state.timetable.timeslots,
     user: state.user,
+    sessions: state.timetable.sessions,
     ...ownProps,
   };
 }
