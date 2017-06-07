@@ -360,16 +360,36 @@ export default class ModalProvider extends React.Component {
       const sessions = (day && this.props.sessions && this.props.sessions[day]) || [];
       const result = sessions.find(s => s.community === this.state.community);
       if (!result) { return acc; }
-      return result;
+      const resultWithTime = Object.assign(result,
+        { startTime: `${day}.${result.timeslot}`,
+          lang: 'en',
+          type: 'community',
+        });
+      return resultWithTime;
     }, {});
 
     const href = (community && `${community.path}.html`) || '#';
     const communityKey = (this.state.community && this.state.community) || '';
+    const containHtmlTag = community.description && community.description.indexOf('</') !== -1;
+    const description = (!containHtmlTag && community.description) || '';
     return (
       <div>
         <div ref={(modal) => { this.modal = modal; }} className="modal modal-fixed-footer">
           <div className="modal-content topic" key={`community--${communityKey}`}>
+            <span className="topic-type">{'type' in community && capitalize(community.type)}</span>
             <h2 data-role="title">{community.name}</h2>
+            <div>
+              { containHtmlTag ?
+                <div dangerouslySetInnerHTML={{ __html: community.description }} />
+                :
+                description
+              }
+            </div>
+            <div className="quick-info">
+              {'startTime' in community && this.renderTime(community)}
+              {'venue' in community && this.renderVenue(community)}
+              {this.renderLang(community)}
+            </div>
           </div>
           <div className="modal-footer">
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">

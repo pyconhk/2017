@@ -168,6 +168,7 @@ day-2:
     venue: training-room-3
     community: unconference-1
     path: unconference
+    description: Unconference is a participant-driven activity which you (attendees) create the agenda. At HKOSCon 2017, each unconference session is 30 minutes long, and topics must be related to open source technologies and projects.
   - name: 30-min Talk
     timeslot: slot-7
     venue: function-room
@@ -189,6 +190,7 @@ day-2:
     venue: training-room-3
     community: unconference-2
     path: unconference
+    description: Unconference is a participant-driven activity which you (attendees) create the agenda. At HKOSCon 2017, each unconference session is 30 minutes long, and topics must be related to open source technologies and projects.
   - name: Lunch Networking
     timeslot: slot-8
     venue: sea-view-concourse
@@ -201,6 +203,7 @@ day-2:
     venue: function-room
     community: lightning-talk
     path: lightning-talk
+    description: Lightning talk is a participant-driven activity which you (attendees) create the agenda. At HKOSCon 2017, each lightning talk is 5 minutes long, and topics must be related to open source technologies and projects.
   - name: Group Photo
     timeslot: slot-11
     venue: function-room
@@ -248,6 +251,7 @@ day-2:
     venue: training-room-3
     community: unconference-3
     path: unconference
+    description: Unconference is a participant-driven activity which you (attendees) create the agenda. At HKOSCon 2017, each unconference session is 30 minutes long, and topics must be related to open source technologies and projects.
   - name: 30-min Talk
     timeslot: slot-15
     venue: function-room
@@ -269,5 +273,6 @@ day-2:
     venue: training-room-3
     community: unconference-4
     path: unconference
+    description: Unconference is a participant-driven activity which you (attendees) create the agenda. At HKOSCon 2017, each unconference session is 30 minutes long, and topics must be related to open source technologies and projects.
   - name: End of Day
     timeslot: slot-16
