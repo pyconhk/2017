@@ -71,6 +71,7 @@ export default class ModalProvider extends React.Component {
     this.state = {
       topic: null,
       session: null,
+      community: null,
       type: 'topic',
     };
     this.saved = props.agenda ? Object.values(props.agenda) : [];
@@ -354,20 +355,20 @@ export default class ModalProvider extends React.Component {
   }
 
   renderCommunity() {
-    const days = Object.keys(this.props.sessions);
+    const days = (this.props.sessions && Object.keys(this.props.sessions)) || {};
     const community = days.reduce((acc, day) => {
-      const sessions = this.props.sessions[day];
+      const sessions = (day && this.props.sessions && this.props.sessions[day]) || [];
       const result = sessions.find(s => s.community === this.state.community);
       if (!result) { return acc; }
       return result;
     }, {});
 
     const href = (community && `${community.path}.html`) || '#';
-
+    const communityKey = (this.state.community && this.state.community) || '';
     return (
       <div>
         <div ref={(modal) => { this.modal = modal; }} className="modal modal-fixed-footer">
-          <div className="modal-content topic" key={`community--${this.state.community}`}>
+          <div className="modal-content topic" key={`community--${communityKey}`}>
             <h2 data-role="title">{community.name}</h2>
           </div>
           <div className="modal-footer">

@@ -14,12 +14,14 @@ type Props = {
     timeslot: string,
     topic?: string,
     community?: string,
+    path?: string,
   }>,
   timeslot: {
     timeStart: string,
     timeEnd: string,
   },
   slot: string,
+  dayslot: string,
 }
 
 export default function Timeslot(props: Props) {

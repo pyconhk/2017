@@ -27,7 +27,7 @@ export default function GridCell(props: Props, context: {openModal: Function}) {
     );
     /* eslint-enable */
   }
-  if (props.path) {
+  if (typeof modal === 'string' && props.path) {
     return (
       <a
         className={classes}
