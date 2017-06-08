@@ -8,25 +8,6 @@ class-methods-use-this: warn,
 import React from 'react';
 import $ from 'jquery';
 import moment from 'moment-timezone';
-import toastr from 'toastr';
-
-toastr.options = {
-  closeButton: false,
-  debug: false,
-  newestOnTop: false,
-  progressBar: false,
-  positionClass: 'toast-top-full-width',
-  preventDuplicates: false,
-  onclick: null,
-  showDuration: 300,
-  hideDuration: 1000,
-  timeOut: 5000,
-  extendedTimeOut: 1000,
-  showEasing: 'swing',
-  hideEasing: 'linear',
-  showMethod: 'fadeIn',
-  hideMethod: 'fadeOut',
-};
 
 /* globals HTMLElement */
 
@@ -111,7 +92,6 @@ export default class ModalProvider extends React.Component {
 
   handleClick() {
     if (!this.props.user) {
-      toastr.error('', 'You have to sign in before saving your personal schedule');
       $('#signin-modal').modal('open');
       return;
     }
