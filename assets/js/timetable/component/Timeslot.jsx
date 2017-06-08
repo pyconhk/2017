@@ -5,6 +5,7 @@ import TimeCell from './TimeCell';
 import TopicCell from '../container/TopicCell';
 import Venue from '../container/Venue';
 import GridCell from './GridCell';
+import CommunityCell from '../container/CommunityCell';
 
 type Props = {
   sessions: Array<{
@@ -12,6 +13,8 @@ type Props = {
     venue: string,
     timeslot: string,
     topic?: string,
+    community?: string,
+    path?: string,
   }>,
   timeslot: {
     timeStart: string,
@@ -34,6 +37,17 @@ export default function Timeslot(props: Props) {
               col={props.sessions.length}
               name={session.name}
               dayslot={`${props.dayslot}`}
+            />
+          );
+        } else if (session.community) {
+          return (
+            <CommunityCell
+              key={`community-${session.name}`}
+              id={session.community}
+              path={session.path}
+              col={props.sessions.length}
+              name={session.name}
+              venue={session.venue}
             />
           );
         }
