@@ -8,25 +8,6 @@ class-methods-use-this: warn,
 import React from 'react';
 import $ from 'jquery';
 import moment from 'moment-timezone';
-import toastr from 'toastr';
-
-toastr.options = {
-  closeButton: false,
-  debug: false,
-  newestOnTop: false,
-  progressBar: false,
-  positionClass: 'toast-top-full-width',
-  preventDuplicates: false,
-  onclick: null,
-  showDuration: 300,
-  hideDuration: 1000,
-  timeOut: 5000,
-  extendedTimeOut: 1000,
-  showEasing: 'swing',
-  hideEasing: 'linear',
-  showMethod: 'fadeIn',
-  hideMethod: 'fadeOut',
-};
 
 /* globals HTMLElement */
 
@@ -40,6 +21,7 @@ type Props = {
   sponsors: Object,
   user: Object | null,
   agenda: {[key: string]: string},
+  sessions: Object | null,
   addTopic(topic: string): void,
   removeTopic(topic: string): void,
 };
@@ -70,6 +52,7 @@ export default class ModalProvider extends React.Component {
     this.state = {
       topic: null,
       session: null,
+      community: null,
       type: 'topic',
     };
     this.saved = props.agenda ? Object.values(props.agenda) : [];
@@ -78,14 +61,15 @@ export default class ModalProvider extends React.Component {
   state: {
     topic: string | null,
     session: string | null,
-    type: 'topic' | 'session',
+    community: string | null,
+    type: 'topic' | 'session' | 'community',
   };
 
 
   getChildContext() {
     return {
-      openModal: (type: 'topic' | 'session', id: string) => {
-        this.setState({ type, [type === 'topic' ? 'topic' : 'session']: id });
+      openModal: (type: 'topic' | 'session' | 'community', id: string) => {
+        this.setState({ type, [type]: id });
         $(this.modal).modal('open');
       },
       closeModal: () => {
@@ -108,7 +92,6 @@ export default class ModalProvider extends React.Component {
 
   handleClick() {
     if (!this.props.user) {
-      toastr.error('', 'You have to sign in before saving your personal schedule');
       $('#signin-modal').modal('open');
       return;
     }
@@ -274,7 +257,7 @@ export default class ModalProvider extends React.Component {
         <div className="sponsor row">
           <div className="col m2 logos">
             <p className="logo">
-              <a href={sponsor.logos.url} title={sponsor.logos.title} target="_blank">
+              <a href={sponsor.logos.url} title={sponsor.logos.title} rel="noopener noreferrer" target="_blank">
                 <img className="responsive-img" src={sponsor.logos.img} alt={sponsor.logos.alt} />
               </a>
             </p>
@@ -284,7 +267,7 @@ export default class ModalProvider extends React.Component {
             {sponsor.description.map(paragraph => (<p dangerouslySetInnerHTML={{ __html: paragraph }} />))}
             <div>
               <a
-                className="waves-effect waves-light btn" target="_blank"
+                className="waves-effect waves-light btn" rel="noopener noreferrer" target="_blank"
                 href={sponsor.links.url} role="button"
               >
                 {sponsor.links.text}
@@ -351,7 +334,61 @@ export default class ModalProvider extends React.Component {
     );
   }
 
+  renderCommunity() {
+    const days = (this.props.sessions && Object.keys(this.props.sessions)) || {};
+    const community = days.reduce((acc, day) => {
+      const sessions = (day && this.props.sessions && this.props.sessions[day]) || [];
+      const result = sessions.find(s => s.community === this.state.community);
+      if (!result) { return acc; }
+      const resultWithTime = Object.assign(result,
+        { startTime: `${day}.${result.timeslot}`,
+          lang: 'en',
+          type: 'community',
+        });
+      return resultWithTime;
+    }, {});
+
+    const href = (community && `${community.path}.html`) || '#';
+    const communityKey = (this.state.community && this.state.community) || '';
+    const containHtmlTag = community.description && community.description.indexOf('</') !== -1;
+    const description = (!containHtmlTag && community.description) || '';
+    return (
+      <div>
+        <div ref={(modal) => { this.modal = modal; }} className="modal modal-fixed-footer">
+          <div className="modal-content topic" key={`community--${communityKey}`}>
+            <span className="topic-type">{'type' in community && capitalize(community.type)}</span>
+            <h2 data-role="title">{community.name}</h2>
+            <div>
+              { containHtmlTag ?
+                <div dangerouslySetInnerHTML={{ __html: community.description }} />
+                :
+                description
+              }
+            </div>
+            <div className="quick-info">
+              {'startTime' in community && this.renderTime(community)}
+              {'venue' in community && this.renderVenue(community)}
+              {this.renderLang(community)}
+            </div>
+          </div>
+          <div className="modal-footer">
+            <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
+              Close
+            </a>
+            <a href={`/2017/events/${href}`} className="modal-action waves-effect waves-green btn-flat">
+              Permlink
+            </a>
+          </div>
+        </div>
+        {this.props.children}
+      </div>
+    );
+  }
+
   render() {
+    if (this.state.type === 'community') {
+      return this.renderCommunity();
+    }
     return this.renderTopic();
   }
 }

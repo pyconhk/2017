@@ -76,7 +76,7 @@
       {% if topic.requirement %}
       <div class="requirement">
         <i class="fa fa-star" aria-hidden="true"></i>
-        {{ topic.requirement | truncate(400, true) }}
+        {{ topic.requirement | list | join | striptags(true) | nl2br | urlize | safe }}
       </div>
       {% endif %}
 
