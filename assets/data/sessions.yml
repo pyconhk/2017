@@ -42,6 +42,11 @@ day-1:
     venue: training-theatre
     community: global-foss-1
     path: global-foss
+    description: This is a meeting place where local participants and members of
+                 global f/oss community can cover any aspect of
+                 free or open source software. Anyone interested to give a session
+                 can register and time slot is assigned on the first-come-first-served basis.
+                 Click the Permlink to find the google form in our website.
   - name: 30-min Talk
     timeslot: slot-8
     venue: function-room
@@ -51,6 +56,11 @@ day-1:
     venue: training-theatre
     community: global-foss-2
     path: global-foss
+    description: This is a meeting place where local participants and members of
+                 global f/oss community can cover any aspect of
+                 free or open source software. Anyone interested to give a session
+                 can register and time slot is assigned on the first-come-first-served basis.
+                 Click the Permlink to find the google form in our website.
   - name: Afternoon Networking
     timeslot: slot-tea
     venue: sea-view-concourse
@@ -62,6 +72,11 @@ day-1:
     timeslot: slot-9
     venue: training-theatre
     community: local-foss-1
+    description: This is a meeting place where local participants and members of
+                 Hong Kong f/oss community can cover any aspect of
+                 free or open source software. Anyone interested to give a session
+                 can register and time slot is assigned on the first-come-first-served basis.
+                 Click the Permlink to find the google form in our website.
     path: local-foss
   - name: 30-min Talk
     timeslot: slot-10
@@ -71,6 +86,11 @@ day-1:
     timeslot: slot-10
     venue: training-theatre
     community: local-foss-2
+    description: This is a meeting place where local participants and members of
+                 Hong Kong f/oss community can cover any aspect of
+                 free or open source software. Anyone interested to give a session
+                 can register and time slot is assigned on the first-come-first-served basis.
+                 Click the Permlink to find the google form in our website.
     path: local-foss
   - name: 30-min Talk
     timeslot: slot-11
