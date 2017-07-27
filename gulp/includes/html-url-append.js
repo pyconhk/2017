@@ -49,17 +49,17 @@ function withGA(doInner, utm_content, utm_campaign, utm_medium = 'action_button'
    * @return {string} URL modification results
    */
   const doAppendURL = (query = {}, options = {}) => doInner(
-      Object.assign(
-        query,
-        {
-          utm_source,
-          utm_medium,
-          utm_campaign,
-          utm_content,
-        }
-      ),
-      options
-    );
+    Object.assign(
+      query,
+      {
+        utm_source,
+        utm_medium,
+        utm_campaign,
+        utm_content,
+      }
+    ),
+    options
+  );
   return doAppendURL;
 }
 
