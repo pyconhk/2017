@@ -11,10 +11,10 @@ const postcss = require('gulp-postcss');
 const plugins = require('./postcss');
 
 gulp.task('build:css', 'Build ./assets/scss/*.scss production version into ./public', () => gulp.src('./assets/scss/*.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .on('error', util.log)
-    .pipe(postcss(plugins))
-    .pipe(cleanCss({ level: 2 }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('public')));
+  .pipe(sourcemaps.init())
+  .pipe(sass())
+  .on('error', util.log)
+  .pipe(postcss(plugins))
+  .pipe(cleanCss({ level: 2 }))
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest('public')));
