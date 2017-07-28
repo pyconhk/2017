@@ -4,8 +4,9 @@
 
 const gravatar = require('gravatar');
 const yaml = require('js-yaml');
+const axios = require('axios');
 
-/* globals fetch, document */
+/* globals document */
 
 function getAvatarImage(member) {
   if (!member.email && member.fallback) {
@@ -31,10 +32,10 @@ function getAvatarImage(member) {
   });
 }
 
-fetch('/2017/data/staff.yml')
+axios('/2017/data/staff.yml', { responseType: 'text' })
   .then((response) => {
     if (response.status === 200) {
-      return response.text();
+      return response.data;
     }
     throw new Error(response);
   })
