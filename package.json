@@ -58,6 +58,7 @@
     "webpack-merge": "^4.0.0"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "babel-preset-flow": "^6.23.0",
     "classnames": "^2.2.5",
     "firebase": "^4.1.1",
