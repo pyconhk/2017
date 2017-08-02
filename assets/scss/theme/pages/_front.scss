@@ -10,7 +10,7 @@
     .banner-content {
       height: 100%;
       padding: 10vh 0 0;
-      //background-color: rgba(0,0,0,0.3);
+      background-color: rgba(255,255,255,0.3);
     }
     height: 100vh;
     min-height: 750px;
@@ -22,7 +22,7 @@
       background-position: center top;
     }
     .tagline {
-      color: #FFF;
+      color: darken($primary-color, 5%);
       text-align: center;
       font-size: 4vh;
       .date-location {
@@ -46,7 +46,7 @@
         font-size: 1.2em;
         color: $theme-yellow;
       }
-      text-shadow: 1px 1px 10px rgb(0, 0, 0);
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
     }
     .actions {
       margin-top: 1.5em;
@@ -65,7 +65,7 @@
       }
     }
     .contacts {
-      color: #FFF;
+      color: rgba(255, 255, 255, 1);
       text-align: center;
       font-size: 3vh;
       ul {
@@ -75,11 +75,17 @@
           padding: 0;
           a {
             display: inline-block;
-            margin: .5em;
             transition: color .5s;
-            padding: .5em;
+            margin: 0.5em;
+            width: 2.5em;
+            line-height: 2.5em;
+            border-radius: 50%;
+            color: $primary-color;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
             &:hover{
-              color: $theme-yellow;
+              color: rgba(255, 255, 255, 1);
+              background-color: $primary-color;
             }
           }
         }
@@ -91,8 +97,8 @@
     margin: 5vh auto 0;
     width: 40vh;
     height: 40vh;
-    background-color: #213b46;
-    background-image: url('./images/logo.png');
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('./images/pycon-logo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -110,7 +116,7 @@
     font-size: 1.3em;
     color: #FFF;
     padding: 5vh 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $primary-color;
     p:nth-child(2) {
       color: $theme-yellow;
     }
