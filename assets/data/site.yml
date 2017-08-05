@@ -9,7 +9,7 @@ og:
   image: ""
   url:   "https://pycon.hk/2017/"
   type:  "article"
-  description: ""
+  description: "PyCon HK 2017 will be hosted at City University of Hong Kong on 4-5 November. PyCon HK is a python community conference hosting in Hong Kong."
   themeColor: "#1AB2F3"
 releaseUnconference: false
 releaseLightningTalk: false
