@@ -5,8 +5,8 @@
 const mapDiv = document.getElementById('map');
 google.maps.event.addDomListener(window, 'load', () => {
   if (!mapDiv) return;
-  const lat = 22.337127;
-  const lng = 114.1706013;
+  const lat = 22.3368746;
+  const lng = 114.1723636;
   const center = new google.maps.LatLng(lat, lng);
   const map = new google.maps.Map(mapDiv, {
     zoom: 17,
