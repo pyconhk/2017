@@ -2,12 +2,7 @@
 
 import $ from 'jquery';
 
-/* global location, navigator */
-
-if (location.hostname !== 'localhost' && location.protocol !== 'https:') {
-  // Strict HTTPS
-  location.href = `https:${location.href.substring(location.protocol.length)}`;
-}
+/* global navigator */
 
 if (navigator.serviceWorker) {
   // $FlowFixMe
