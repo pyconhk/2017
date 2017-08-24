@@ -19,6 +19,16 @@ teams:
       - name: Mr. Calvin Tsang
         teamlead: true
       - name: Ms. Fiona Lam
+  - name: Program
+    members:
+      - name: Mr. Sammy Fung
+        teamlead: true
+        email: sammy@sammy.hk
+  - name: Record
+    members:
+      - name: Mr. Henry Law
+        teamlead: true
+        fb: 506551481
   - name: Web
     members:
       - name: Mr. Koala Yeung
