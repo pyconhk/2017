@@ -12,40 +12,16 @@
         <div class="content">
           <h3>CFP Results are Here!</h3>
           <p>We are pleased to announce the CFP results. We have received
-            <strong>{{data.topics.num_submissions}}</strong> submissions
-            before our deadline {{data.topics.deadline}}. The volunteers in our
-            Program Committee had a hard time to shortlist them to fit in
-            <span class="link">
-              <a href="{{ data.site.basePath }}/schedule">our agenda.</a>
-            </span>
+            <strong>26</strong> submissions
+            before our deadline 2017/08/31 23:00 (GMT+8). The volunteers in our
+            Program Committee had a hard time to shortlist them to fit in our agenda.
           </p>
           <p>Here is the list of the accepted CFP topics, along with some invited sessions &amp; confirmed sponsor sessions:</p>
           <ul class="cpf-results">
-            {% for topic in data.topics.topics %}
-              {% if topic.cfp %}
-                <li class="link">
-                  <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
-                    {{ topic.title }}
-                  </a>
-                  ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
-                  {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
-                </li>
-              {% endif %}
-            {% endfor %}
+              <li>Topic 1 (Speaker Name 1) (Remark 1)</li>
+              <li>Topic 2 (Speaker Name 2) (Remark 2)</li>
           </ul> <!-- cpf-results -->
           <p></p>
-          <p>If your topic is not selected, don't worry. You may still share your topic in our <b>Unconference Session</b> at
-            <span class="link"><a href="{{ data.site.basePath }}/schedule/#day-2"> of Day 2 (Saturday)</a></span>.
-          </p>
-          <p>
-            <a class="waves-effect waves-light z-depth-2 btn"
-            data-ga-category="cfp-page"
-            data-ga-action="click"
-            data-ga-label="ticket"
-            data-ga-value="full ticket"
-            href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'cfp-page-bottom') | execAppend }}"
-            target="_blank">Get your ticket</a>
-          </p>
           <h2>More Information</h2>
           <p class="link">We're constantly updating our Facebook. Please subscribe our
             <a href="https://www.facebook.com/pyconhk/" target="_blank">Facebook Page</a>
