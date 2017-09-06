@@ -1,28 +1,43 @@
-num_submissions:  51
-deadline: 2017/02/28 23:00 (GMT+8)
+num_submissions:  36
+deadline: 2017/08/31 23:00 (GMT+8)
 topics:
-  -   title:    Gandi's LiveDNS and new gTLD's
-      id:       live-dns-new-gTLD
+  -   title:    Applying serverless architecture pattern to distributed data processing
+      id:       applying-serverless-architecture-pattern-to-distributed-data-processing
       speaker:
-        - thomas-kuiper
-      remark:   Gandi
+        - denis-makogon
+      remark: 
       description:
         - >
-          LiveDNS is Gandi's new DNS platform which includes an REST API and
-          makes its easy for developers to updates their zones in real time
-          with a few HTTP calls. This talk will give an introduction to the
-          service and also update the audience on recently delegated top level
-          domain names.
+          Serverless architectures refer to applications that significantly depend on "cloud" 
+          services (knows as Backend as a Service) or on custom code that's run in ephemeral runtime 
+          (Function as a Service or "FaaS").
+        - >
+          To application developers "serverless" mean app where some certain logic of it is still 
+          written by the developer but unlike traditional architectures or microservices is run 
+          in stateless compute runtime that are event-triggered, may only last for one invocation, 
+          and fully managed by a cloud.
+          Serverless helps developers to transfer responsibility of  keeping their apps up and 
+          running as well as scaling out their workload capacity without involving devops/ops 
+          as we got used to.
+        - >  
+          In this talk we will go through whole "serverless" thing: from decomposing 
+          app and its logic to microservices and further to smaller bits, i.e. 
+          functions to defining data flow through functions and building their fault-tolerant pipeline. 
+        - >  
+          <h3>Moreover, we will go through demo that highlight key takeaways:</h3>
+          <ul>
+            <li>what is functions, what it could and could not be</li>
+            <li>how design scalable architecture without getting into troubles by hitting concrete bottlenecks</li>
+            <li>how combine multiple programming languages into a single app</li>
+            <li>why Python is one of the best programming languages designed exactly for serverless</li>
+          </ul>
       lang: en
       lang_slide: en
       type: keynote
       cfp:      true
-      isSponsorTopic: true
-      sponsor: gandi
-      level: Beginners
+      isSponsorTopic: false
+      level: Intermediate 
       requirement: ""
-      venue: function-room
-      startTime: day-1.slot-3
   -   title:    The deep dive in-and-out of MySQL Group Replication
       id:       mysql-group-replication
       speaker:
@@ -71,29 +86,30 @@ topics:
       requirement: Basic knowledge of database
       venue: function-room
       startTime: day-1.slot-7
-  -   title:  >-
-                Preparing for the App-ocalypse: The Web in the Age of Physical Computing
-      id:       preparing-for-the-app-ocalypse-the-web-in-the-age-of-physical-computing
+  -   title:  Using Gradient Boosting Machines in Python
+      id:     using-gradient-boosting-machines-in-python
       speaker:
-        - dietrich-ayala
-      remark:   Mozilla
+        - albert-au-yeung
+      remark:
       description:
         - >
-          Ubiquitous physical computing is here, blurring what is digital and
-          real in our daily experience. Join me for an interactive tour of how
-          to create digital+physical experiences on the web with IoT, AR, VR
-          and other emerging technologies.
+          Gradient boosting machines (GBM) and related tree-based algorithms have 
+          been proved to be highly effective and accurate in a wide range of machine 
+          learning tasks. It is also one of the most popular algorithms among 
+          participants in Kaggle competitions. This talk will introduce the basic 
+          concepts of gradient boosting machines, the commonly used libraries in 
+          Python such as XGBoost and LightGBM for performing machine learning 
+          using GBM, and ways to tune the hyper-parameters of a model to avoid
+          over/under-fitting and achieve better results. The audience are expected 
+          to have basic understanding of machine learning. Codes and slides will 
+          be provided on Github after the talk.
       lang: en
       lang_slide: en
-      type: keynote
+      type: talk
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
-      requirement:
-        >-
-          Front-end web technology stack: HTML, CSS and JavaScript.
-      venue: function-room
-      startTime: day-2.slot-9
+      requirement: Basic understanding of machine learning
   -   title:  >-
                 Reproducible builds: Fulfilling the original promise of free software
       id:       reproducible-builds-fulfilling-the-original-promise-of-free-software

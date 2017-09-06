@@ -95,26 +95,24 @@ chris-lamb:
   portrait: https://file.hkoscon.org/speakers/2017/chris.lamb.png
   hkoscon-sponsored: false
 
-dietrich-ayala:
-  name: Dietrich Ayala
+albert-au-yeung:
+  name: Albert Yu Yeung
   gender: male
   description:
     - >
-      Dietrich Ayala has been working for internet freedom for over a decade
-      at Mozilla, the non-profit makers of the Firefox web browser, where's
-      he's shipped open source software to hundreds of millions of people.
-      A developer, writer and speaker, he’s currently traveling Asia helping
-      schools, businesses and governments use the web to make emerging
-      technologies like IoT, AR and VR accessible to everyone.
-  residence:  United States
-  nationality:  United States
+      Albert is currently a machine learning lead engineer at Zwoop. He was the 
+      co-founder and CTO of Axon Labs Limited. He was involved in various projects in 
+      data mining and machine learning while being a research at Huawei’s Noah's Ark Lab, 
+      the Hong Kong Applied Science and Technology Research Institute (ASTRI), and NTT 
+      Communication Science Laboratories in Kyoto, Japan. He has a PhD in Computer 
+      Science from the University of Southampton in the U.K. Albert has been 
+      using Python since 2004.
+  residence:  Hong Kong
+  nationality:  Hong Kong
   social:
-    nickname: Dietrich
-    github: autonome
-  company:
-    name: Mozilla
-    url:  https://www.mozilla.org/
-  portrait: https://file.hkoscon.org/speakers/2017/dietrich.ayala.jpg
+    nickname: Albert Yu Yeung
+    github: albertauyeung
+    blog: http://www.albertauyeung.com/
   hkoscon-sponsored: false
 
 franklin-weng:
@@ -570,30 +568,28 @@ gary-kwong:
   portrait: https://file.hkoscon.org/speakers/2017/gary.kwong.jpg
   hkoscon-sponsored: false
 
-thomas-kuiper:
-  name: Thomas Kuiper
+denis-makogon:
+  name: Denis Makogon
   gender: male
   description:
     - >
-      Thomas Kuiper, the General Manager of the Asia subsidiary of the domain
-      name registrar Gandi is originally from Germany. He worked on embedded
-      systems and content management systems for companies in Taiwan and Europe
-      before he set himself to the task to start Gandi's Asia business unit.
-      Gandi (abbreviation for "Gestion et Attribution des Noms de Domaine sur Internet"
-      in French or "Management and Allocation of Domain Names on the Internet"
-      in English) is a company thatg provides domain name registration and
-      management in addition to Internet hosting infrastructure and related
-      services. The company has its head office in Paris and offices in San
-      Francisco, Luxembourg and Taipei to serve its customers around the clock.
-      Gandi was among the first European domain name registrars to offer ".COM"
-      and ".NET" and now manages over 2 million domain names with accreditation
-      for over 700 different domain name extensions for its customers, placing
-      Gandi among the top domain name registrars worldwide.
-  residence: Taiwan
+      Developer and starting software architect in cloud environments, mainly focused 
+      on developing and designing platform and software as a service applications for clouds. 
+      He's principal software developer in Oracle, concentrating on product development along 
+      with bringing well-designed and production ready integration with clouds solutions, 
+      contributor to various open source projects, cloud-related technologies along having 
+      fun with IoT devices.
+    - >
+      Denis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, 
+      Paris, Barcelona, Boston) and PyCon Hong Kong 2017. co-author of OpenStack 
+      Application development, OpenStack Trove Essentials.
+  nationality: Ukraine
+  residence: Ukraine
   social:
-    nickname: gandi
-    github: Gandi
-  portrait: https://file.hkoscon.org/speakers/2017/thomas.kuiper.jpg
+    nickname: denismakogon
+    github: Denis Makogon
+    twitter: https://twitter.com/denis_makogon
+    blog: https://medium.com/@denismakogon
   hkoscon-sponsored: false
 
 dennis-chen:
