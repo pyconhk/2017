@@ -65,6 +65,8 @@
               {% if speaker.residence and (speaker.residence != speaker.nationality)%}
                 Live In: (lives in {{ speaker.residence }})
               {% endif %}
+          {% elif speaker.residence %}
+            Live In: {{ speaker.residence }}
           {% endif %}
       </div><!--/.nationality-->
 

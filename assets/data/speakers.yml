@@ -52,47 +52,42 @@ ryusuke-kajiyama:
   portrait: https://file.hkoscon.org/speakers/2017/ryusuke.kajiyama.jpg
   hkoscon-sponsored: false
 
-josh-rich:
-  name: Joshua Rich
+kelvin-chu:
+  name: Kelvin Chu
   gender: male
   description:
     - >
-      Joshua came to Elastic from a background in scientific research and
-      high-performance computing and is no stranger to dealing with big data
-      solutions. He now helps our customers get the most out of our products
-      providing passionate and enthusiastic advice and support.
-  residence:  Australia
-  nationality:  Australia
+      IT Consultant, worked at several multinational investment banks and vendors 
+      (BNP Paribas, Bank of America Merrill Lynch, CLSA, EMC)
+  residence:  Hong Kong
+  nationality:  Hong Kong
   social:
-    nickname: Josh
-    github: joshuar
-  company:
-    name: Elastic
-    url:  https://www.elastic.co/
-  portrait: https://file.hkoscon.org/speakers/2017/joshua.rich.jpg
+    nickname: Kelvin
+    github: oxydaemon
+    blog: https://uptick.hk
   hkoscon-sponsored: false
 
-chris-lamb:
-  name: Chris Lamb
+kirill-pavlov:
+  name: Kirill Pavlov
   gender: male
   description:
     - >
-      I am a polyglot freelance computer programmer who is the author of dozens
-      of free projects and contributor to 100s of others. I've been an official
-      Debian Developer since 2008 and am currently highly active in the
-      Reproducible Builds project where I have been awarded a grant from the
-      Core Infrastructure Initiative to fund my work in this area. In my spare
-      time I'm an avid classical musician.
-  residence:  United Kingdom
-  nationality:  United Kingdom
+      Kirill graduated from Moscow Institute of Physics and Technology. He 
+      started his career as a software developer in advertisement department of 
+      Yandex, listed search engine company. After polishing engineering and data 
+      mining skills he moved to Hong Kong and led a development team in Multichannel, 
+      demand side advertisement platform. Then he joined Asia Miles of Cathay 
+      Pacific as Data Scientist and worked with Apache Spark and XGBoost. 
+      Now Kirill is working in Terminal 1, IT and analytics boutique recruitment 
+      firm, bringing data mining into a traditional industry. He is passionate 
+      about studying new things and open source contribution.
+  residence:  Hong Kong
+  nationality:  Russia
   social:
-    nickname: Chris
-    github: lamby
-    blog: https://chris-lamb.co.uk/blog
-  community:
-    name: Debian
-    url: https://www.debian.org/
-  portrait: https://file.hkoscon.org/speakers/2017/chris.lamb.png
+    nickname: Kirill Pavlov
+    github: pavlov99
+    twitter: https://twitter.com/pavlov99
+    blog: http://kirillpavlov.com/
   hkoscon-sponsored: false
 
 albert-au-yeung:
@@ -115,39 +110,27 @@ albert-au-yeung:
     blog: http://www.albertauyeung.com/
   hkoscon-sponsored: false
 
-franklin-weng:
-  name: Franklin Weng
+ho-wa-wong:
+  name: Ho Wa Wong
   gender: male
   description:
     - >
-      <a href="https://about.me/fweng322" target="_blank">https://about.me/fweng322</a>
-  residence:  Taiwan
-  nationality:  Taiwan
+      Python developer, open data advocate
+  residence:  Hong Kong
+  nationality:  Hong Kong
   social:
-    nickname: Franklin
-    github: fweng322
-  community:
-    name: LibreOffice (representation); KDE, ezgo (participating)
-  company:
-    name: Software Liberty Association Taiwan (SLAT)
-    url: http://www.slat.org/
-  portrait: https://file.hkoscon.org/speakers/2017/franklin.weng.jpg
+    nickname: Wong Ho Wa
+    github: howawong
   hkoscon-sponsored: false
 
-pcman:
-  name: PC Man
+michal-szczecinski:
+  name: Michal Szczecinski
   gender: male
   description:
     - >
-      Appier Inc. senior software engineer (現職)
-    - >
-      前台北榮民總醫院 過敏免疫科醫師
-    - >
-      長年參與 open source projects: LXDE/LXQt, PIME 輸入法, 新酷音輸入法, IETab
-      firefox plugin, PCMan BBS client
-  residence:  Taiwan
-  nationality:  Taiwan
-  portrait: https://file.hkoscon.org/speakers/2017/pcman.jpg
+      Head of analytics and data science at GoGovan, before in data teams of Zynga, 
+      NaturalMotion , PwC and data analytics teacher at General Assembly
+  residence:  Hong Kong
   hkoscon-sponsored: false
 
 kingman-leung:
