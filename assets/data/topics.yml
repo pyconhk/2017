@@ -128,3 +128,42 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Beginners
+  -   title:  Matplotlib 2 By Example
+      id: matplotlib-2-by-example
+      speaker:
+        - claire-chung
+      remark: 1 hour workshop
+      description:
+        - >
+          The workshop aims to discuss the methods and best practices in data 
+          visualization by Python + Matplotlib 2, by providing a hands-on experience. 
+          Topics include plots commonly used in scientific communication and finance, 
+          as well as tuning figure aesthetics in the designer's perspective. 
+          Some examples will be taken from the book "Matplotlib 2 By Example", 
+          which the speaker has co-authored.
+      lang: en
+      lang_slide: en
+      type: workshop
+      requirement: Bring personal laptop and your own charger
+      cfp:      true
+      isSponsorTopic: false
+      level: Intermediate
+  -   title:  Python is not Always Slow
+      id: python-is-not-always-slow
+      speaker:
+        - benny
+      description:
+        - >
+          We all know Python is slow. But in many cases it is not. Before blindly 
+          complaining the slowness of Python, we need to know when it is slow. 
+          There are also many cases it's totally OK to be slow, so before optimizing 
+          the code, we need know to when it's worth our time to rewrite our code. I will 
+          talk about Python's performance in different fields such as scientific computing, 
+          machine learning, plotting, network programming...etc. And also mention some 
+          experience about profiling and accelerating the code.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      level: Advanced
