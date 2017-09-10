@@ -1,4 +1,9 @@
-# Hong Kong Open Source Conference 2017
+# PyCon HK 2017
+
+## Tooling Requirements
+1. Node (version >= 6)
+2. yarn
+3. git
 
 ## Development
 
