@@ -38,6 +38,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate 
       requirement: ""
+      startTime: day-1.slot-3
   -   title:  Using Gradient Boosting Machines in Python
       id:     using-gradient-boosting-machines-in-python
       speaker:
@@ -62,6 +63,7 @@ topics:
       isSponsorTopic: false
       level: Intermediate
       requirement: Basic understanding of machine learning
+      startTime: day-1.slot-5
   -   title:  How to reinvent the wheel and build the most popular JSON-RPC library
       id: how-to-reinvent-the-wheel-and-build-the-most-popular-JSON-RPC-library
       speaker:
@@ -82,6 +84,7 @@ topics:
       cfp:  true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-1.slot-5
   -   title:  Python for data analysis
       id: python-for-data-analysis
       speaker:
@@ -96,6 +99,7 @@ topics:
       cfp:  true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-1.slot-8
   -   title:  >-
           Python Blockchain Application in < 24 hrs
       id: python-blockchain-application-in-less-than-24hrs
@@ -113,6 +117,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-1.slot-8
   -   title:  How I battle with Hong Kong Open Data in Python
       id: how-i-battle-with-hong-kong-open-data-in-python
       speaker:
@@ -132,7 +137,8 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      level: Beginners
+      level: Intermediate
+      startTime: day-1.slot-9
   -   title:  Matplotlib 2 By Example
       id: matplotlib-2-by-example
       speaker:
@@ -154,6 +160,8 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-1.slot-11
+      endTime: day-1.slot-12
   -   title:  Python is not Always Slow
       id: python-is-not-always-slow
       speaker:
@@ -174,6 +182,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-1.slot-11
   -   title:  >-
           AI learn to Drive: Introduction to Reinforcement Learning with Python
       id: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
