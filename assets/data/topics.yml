@@ -261,7 +261,7 @@ topics:
       id: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
       speaker:
         - matt
-      remark: 1 hour workshop
+      remark: Reboot.ai
       description:
         - >
           A look at neural networks, specifically recurrent neural networks, and how to 
@@ -279,7 +279,7 @@ topics:
       id: ticketing-chatbot
       speaker:
         - comma
-      remark: Reboot.ai
+      remark: 1 hour workshop
       description:
         - >
           Mayday's Concert Ticket is extremly hot in Asia. Cooperated with HKMayday, one of 
