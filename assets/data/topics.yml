@@ -202,6 +202,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-4
   -   title:  >-
         HA capability with Document Store using MySQL Shell - running Python 
       id: ha-capability-with-document-store-using-mysql-shell-running-python
@@ -219,6 +220,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-4
   -   title: Machine Learning on Energy Consumption Prediction
       id: machine-learning-on-energy-consumption-prediction 
       speaker:
@@ -241,6 +243,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-7
   -   title: Micropython
       id: micropython 
       speaker:
@@ -255,6 +258,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-7
   -   title: Boosting command line data manipulation with Python and AWK
       id: boosting-command-line-data-manipulation-with-python-and-aWK
       speaker:
@@ -274,6 +278,7 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-8
   -   title: >-
           Recurrent Neural Networks in Python: Keras and TensorFlow for Time Series Analysis
       id: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
@@ -293,6 +298,8 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-10
+      endTime: day-2.slot-11
   -   title: >-
           Ticketing x Chatbot
       id: ticketing-chatbot
@@ -319,3 +326,5 @@ topics:
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
+      startTime: day-2.slot-10
+      endTime: day-2.slot-11
