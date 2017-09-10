@@ -3,18 +3,17 @@ ivan-ma:
   gender: male
   description:
     - >
-      Ivan Ma is the MySQL User Group Lead in Hong Kong. He has over 20+ years
-      of experience in enterprise system infrastructure and software technologies.
-      He has certification on MySQL DBA 5.6, MySQL Developer 5.1 and MySQL
+      Ivan Ma is the MySQL User Group Lead in Hong Kong. He has over 20+ years 
+      of experience in enterprise system infrastructure and software technologies. 
+      He has certification on MySQL DBA 5.6, MySQL Developer 5.1 and MySQL 
       Cluster 5.1 DBA.
     - >
-      He joined MySQL, is currently MySQL Principal Sales Consultant, Asia
-      Pacific with Oracle, responsible for pre-sales consulting, technical
+      He Joined MySQL, is currently MySQL Principal Sales Consultant, Asia 
+      Pacific with Oracle, responsible for pre-sales consulting, technical 
       education, and product promotions.
-
     - >
-      Prior to joining MySQL team, he joined Oracle in System Team from Sun
-      Mircosystems acquisition. Prior to Sun Microsystems, he was Principal
+      Prior to joining MySQL team, he joined Oracle in System Team from Sun 
+      Mircosystems acquisition. Prior to Sun Microsystems, he was Principal 
       Solution Architect with Sybase APAC covering APAC regions.
   residence:  Hong Kong
   nationality: Hong Kong
@@ -26,7 +25,6 @@ ivan-ma:
   company:
     name: MySQL
     url: https://www.mysql.com/
-  portrait:
   hkoscon-sponsored: false
 
 ryusuke-kajiyama:
@@ -178,23 +176,20 @@ benny:
     blog: http://asdfghjbenny.info/intro/index.html
   hkoscon-sponsored: false
 
-lushi-chen:
-  name: Lushi Chen
-  gender: female
+holman-tai:
+  name: Holman Tai
+  gender: male
   description:
     - >
-      I'm a psychologist researches on social media data and user’s
-      psychological traits. During the past two years, I have proactively
-      engaged with social media data and worked towards using a machine learning
-      approach to model user's mental health and psychological traits. Besides
-      using R and Python to conduct data analysis on my studies,  I’m also a
-      junior mobile/web app developer with some experience in JavaScript and
-      Meteor Platform.
+      Holman Tai is currently a researcher at Sensetime, a AI company startup provide 
+      computer vision products and solutions. He is passionate in reinforcement 
+      learning and deep learning. 
   residence: Hong Kong
   nationality: Hong Kong
   social:
-    github: luciasalar
-  portrait: https://file.hkoscon.org/speakers/2017/lushi.chen.jpg
+    nickname: Holman Tai
+    github: hmtai6
+    blog: http://holmantai.net
   hkoscon-sponsored: false
 
 chris-van-tuin:
@@ -222,27 +217,14 @@ chris-van-tuin:
   portrait: https://file.hkoscon.org/speakers/2017/chris.van.tuin.jpg
   hkoscon-sponsored: false
 
-andy-li:
-  name: Andy Li
+patrick-tsoi:
+  name: Patrick Tsoi
   gender: male
   description:
     - >
-      Andy Li is a member of the Haxe Foundation. He obtained his PhD in the
-      School of Creative Media, City University of Hong Kong. He is interested
-      in programming language theories as well as mobile user interface,
-      interactivity, installation art and generative graphics.
-
-    - >
-      He works in TCL Research (HK) as a senior researcher, in which he works
-      with the Virtual Reality team that develops new motion tracking systems,
-      VR development tools, and custom VR contents.
+      Micropython.HK  webmaster and  CityU part time Tutor
   residence:  Hong Kong
   nationality:  Hong Kong
-  social:
-    nickname: Andy
-    github:  andyli
-    blog: https://blog.onthewings.net/
-  portrait: https://file.hkoscon.org/speakers/2017/andy.li.png
   hkoscon-sponsored: false
 
 kevin-leung:

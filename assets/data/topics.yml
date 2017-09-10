@@ -166,4 +166,72 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      level: Advanced
+      level: Intermediate
+  -   title:  >-
+          AI learn to Drive: Introduction to Reinforcement Learning with Python
+      id: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
+      speaker:
+        - holman-tai
+      description:
+        - >
+          Introduction of universe and Gym, frameworks by openAI  
+        - >
+          Provide overview for reinforcement learning and provide Jupyter Notebook to train a agent in game. 
+        - >
+          Give a walk though of using Tensorflow to train  an agent interactive with the environment
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      level: Intermediate
+  -   title:  >-
+        HA capability with Document Store using MySQL Shell - running Python 
+      id: ha-capability-with-document-store-using-mysql-shell-running-python
+      speaker:
+        - ivan-ma
+      description:
+        - >
+          With MySQL Shell (mysqlsh), you can script in python to work with MySQL.  
+          Creating MySQL HA architecture and working with Document Store.  In the session, 
+          we will explore the Document Store with Python. 
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      level: Intermediate
+  -   title: Machine Learning on Energy Consumption Prediction
+      id: machine-learning-on-energy-consumption-prediction 
+      speaker:
+        - benny
+      description:
+        - >
+          The project is in HKU deep learning lab. We analyze a large set of energy 
+          consumption data and build real time application based on the prediction. 
+          The topic involves different machine learning approaches and comparison. 
+          Since the machine learning is often discussed, I will also talk about the 
+          often ignored skill in data science. How to handle huge data and optimize 
+          the processing code, how to effectively build useful tools and make the life 
+          of data scientist easier, and how to correctly interpret the predicting result 
+          to enhance the project level from merely "machine learning" to real 
+          "data-driven application"
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      level: Intermediate
+  - title: Micropython
+    id: micropython 
+    speaker:
+      - patrick-tsoi
+    description:
+      - >
+        Putting Python in micro devices
+    lang: en
+    lang_slide: en
+    type: talk
+    cfp:      true
+    isSponsorTopic: false
+    level: Intermediate
