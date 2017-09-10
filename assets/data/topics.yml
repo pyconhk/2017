@@ -5,7 +5,7 @@ topics:
       id:       applying-serverless-architecture-pattern-to-distributed-data-processing
       speaker:
         - denis-makogon
-      remark: 
+      venue: lecture-hall
       description:
         - >
           Serverless architectures refer to applications that significantly depend on "cloud" 
@@ -42,7 +42,7 @@ topics:
       id:     using-gradient-boosting-machines-in-python
       speaker:
         - albert-au-yeung
-      remark:
+      venue: lecture-hall
       description:
         - >
           Gradient boosting machines (GBM) and related tree-based algorithms have 
@@ -66,6 +66,7 @@ topics:
       id: how-to-reinvent-the-wheel-and-build-the-most-popular-JSON-RPC-library
       speaker:
         - kirill-pavlov
+      venue: p-4701
       description:
         - >
           This topic covers 4 years journey of JSON-RPC library implementation. While 
@@ -85,6 +86,7 @@ topics:
       id: python-for-data-analysis
       speaker:
         - michal-szczecinski
+      venue: lecture-hall
       description:
         - >
           Showing use cases of pragmatic data analysis in python
@@ -99,7 +101,7 @@ topics:
       id: python-blockchain-application-in-less-than-24hrs
       speaker:
         - kelvin-chu
-      remark:
+      venue: p-4701 
       description:
         - >
           My Hackathon Experience hacking a python blockchain application in less than 
@@ -115,7 +117,7 @@ topics:
       id: how-i-battle-with-hong-kong-open-data-in-python
       speaker:
         - ho-wa-wong
-      remark:
+      venue: lecture-hall
       description:
         - >
           <h3>Topics</h3>
@@ -136,6 +138,7 @@ topics:
       speaker:
         - claire-chung
       remark: 1 hour workshop
+      venue: lecture-hall
       description:
         - >
           The workshop aims to discuss the methods and best practices in data 
@@ -155,6 +158,7 @@ topics:
       id: python-is-not-always-slow
       speaker:
         - benny
+      venue: p-4701
       description:
         - >
           We all know Python is slow. But in many cases it is not. Before blindly 
@@ -175,6 +179,7 @@ topics:
       id: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
       speaker:
         - holman-tai
+      venue: lecture-hall
       description:
         - >
           Introduction of universe and Gym, frameworks by openAI  
@@ -193,6 +198,7 @@ topics:
       id: ha-capability-with-document-store-using-mysql-shell-running-python
       speaker:
         - ivan-ma
+      venue: p-4701
       description:
         - >
           With MySQL Shell (mysqlsh), you can script in python to work with MySQL.  
@@ -208,6 +214,7 @@ topics:
       id: machine-learning-on-energy-consumption-prediction 
       speaker:
         - benny
+      venue: lecture-hall
       description:
         - >
           The project is in HKU deep learning lab. We analyze a large set of energy 
@@ -229,6 +236,7 @@ topics:
       id: micropython 
       speaker:
         - patrick-tsoi
+      venue: p-4701
       description:
         - >
           Putting Python in micro devices
@@ -242,6 +250,7 @@ topics:
       id: boosting-command-line-data-manipulation-with-python-and-aWK
       speaker:
         - kirill-pavlov
+      venue: lecture-hall
       description:
         - >
           It is often required to manipulate the data as fast as possible, be it 
@@ -262,6 +271,7 @@ topics:
       speaker:
         - matt
       remark: Reboot.ai
+      venue: lecture-hall    
       description:
         - >
           A look at neural networks, specifically recurrent neural networks, and how to 
@@ -280,6 +290,7 @@ topics:
       speaker:
         - comma
       remark: 1 hour workshop
+      venue: p-4701
       description:
         - >
           Mayday's Concert Ticket is extremly hot in Asia. Cooperated with HKMayday, one of 

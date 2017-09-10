@@ -28,3 +28,18 @@ training-room-2:
 
 training-room-3:
   name: "Training Room 3"
+
+expo-area:
+  name: "Expo Area"
+
+lecture-hall:
+  name: "AC1 LT-16"
+
+p-4701:
+  name: "AC1 P4701"
+
+p-4703:
+  name: "AC1 P4703"
+
+p-4704:
+  name: "AC1 P4704"
