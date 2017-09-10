@@ -118,10 +118,13 @@ topics:
       remark:
       description:
         - >
-          1. the very brief background of g0vhk.io and open data problem in HK
-          2. pdfminer demonstration and real life example
-          3. web scraping and running scraper in morph.io
-          4. haystack & django
+          <h3>Topics</h3>
+          <ol>
+            <li>the very brief background of g0vhk.io and open data problem in HK</li>
+            <li>pdfminer demonstration and real life example</li>
+            <li>web scraping and running scraper in morph.io</li>
+            <li>haystack & django</li>
+          </ol>
       lang: zh.yue
       lang_slide: en
       type: talk
@@ -250,6 +253,49 @@ topics:
       lang: en
       lang_slide: en
       type: talk
+      cfp:      true
+      isSponsorTopic: false
+      level: Intermediate
+  -   title: >-
+          Recurrent Neural Networks in Python: Keras and TensorFlow for Time Series Analysis
+      id: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
+      speaker:
+        - matt
+      remark: 1 hour workshop
+      description:
+        - >
+          A look at neural networks, specifically recurrent neural networks, and how to 
+          implement them in Python for various applications including time series (stock prediction) 
+          analysis, using popular machine learning libraries Keras and TensorFlow
+      lang: en
+      lang_slide: en
+      type: workshop
+      requirement: Bring personal laptop and your own charger.
+      cfp:      true
+      isSponsorTopic: false
+      level: Intermediate
+  -   title: >-
+          Ticketing x Chatbot
+      id: ticketing-chatbot
+      speaker:
+        - comma
+      remark: Reboot.ai
+      description:
+        - >
+          Mayday's Concert Ticket is extremly hot in Asia. Cooperated with HKMayday, one of 
+          the largest Hong Kong Mayday Fans Club, Life.UnLtd HK, a telegram chatbot,is built 
+          for handling the complicated problem in exchanging / selling ticket within the fans. 
+        - >
+          This topic will share with you about
+        - >
+          <ol>
+            <li>How to build the telegram chatbot via Python</li>
+            <li>What I faced during develop this chatbot</li>
+          </ol>
+      lang: en
+      lang_slide: en
+      type: workshop
+      requirement: Bring personal laptop and your own charger.
       cfp:      true
       isSponsorTopic: false
       level: Intermediate
