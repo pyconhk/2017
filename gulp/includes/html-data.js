@@ -41,6 +41,10 @@ function getPagePath(filePath) {
  * @return {Object} object of template data
  */
 function fileData(extraData = {}) {
+  const siteOverride = {}
+  if (typeof process.env.BASE_PATH === 'string') {
+    siteOverride.basePath = process.env.BASE_PATH;
+  }
   return (file) => {
     const pagePath = getPagePath(file.path);
     const pageID = genPageID(pagePath);
@@ -52,6 +56,11 @@ function fileData(extraData = {}) {
         pageID,
       },
       extraData
+    );
+    output.data.site = Object.assign(
+      {},
+      output.data.site,
+      siteOverride
     );
     util.log(`Working on '${util.colors.cyan('dev:html')}':`, {
       pageID: output.pageID,
