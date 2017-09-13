@@ -29,6 +29,7 @@ export default function Timeslot(props: Props) {
     <div className="row time-slot-grid">
       <TimeCell start={props.timeslot.timeStart} end={props.timeslot.timeEnd} key={`time-${props.slot}`} />
       {props.sessions.map((session) => {
+        console.log(session);
         if (session.topic) {
           return (
             <TopicCell

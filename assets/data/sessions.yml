@@ -119,3 +119,102 @@ day-1:
     venue: lecture-hall
   - name: End Of Day
     timeslot: slot-15
+day-2:
+  - name: Reception
+    timeslot: slot-1
+    venue: reception
+  - name: Organiser Announcement
+    timeslot: slot-2
+    venue: lecture-hall
+  - name: 30-min Talk
+    timeslot: slot-3
+    venue: lecture-hall
+  - name: 30-min Talk - Bronze Sponsor
+    timeslot: slot-3
+    venue: p-4701
+  - name: Workshop 5 Part 1 - Silver Sponsor
+    timeslot: slot-3
+    venue: p-4703
+  - name: Development Sprint Part 1
+    timeslot: slot-3
+    venue: p-4704
+  - name: 30-min Talk
+    timeslot: slot-4
+    venue: lecture-hall
+    topic: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
+  - name: 30-min Talk
+    timeslot: slot-4
+    venue: p-4701
+    topic: ha-capability-with-document-store-using-mysql-shell-running-python
+  - name: Workshop 5 Part 2 - Silver Sponsor
+    timeslot: slot-4
+    venue: p-4703
+  - name: Development Sprint Part 2
+    timeslot: slot-4
+    venue: p-4704
+  - name: Lunch Networking
+    timeslot: slot-5
+    venue: expo-area
+  - name: Organiser Announcement
+    timeslot: slot-6
+    venue: lecture-hall
+  - name: 30-min Talk
+    timeslot: slot-7
+    venue: lecture-hall
+    topic: machine-learning-on-energy-consumption-prediction
+  - name: 30-min Talk
+    timeslot: slot-7
+    venue: p-4701
+    topic: micropython
+  - name: Workshop 7 Part 1 - Gold Sponsor
+    timeslot: slot-7
+    venue: p-4703
+  - name: Development Sprint Part 3
+    timeslot: slot-7
+    venue: p-4704
+  - name: 30-min Talk
+    timeslot: slot-8
+    venue: lecture-hall
+    topic: boosting-command-line-data-manipulation-with-python-and-awk
+  - name: 30-min Talk - Bronze Sponsor
+    timeslot: slot-8
+    venue: p-4701
+  - name: Workshop 7 Part 2 - Gold Sponsor
+    timeslot: slot-8
+    venue: p-4703
+  - name: Development Sprint Part 4
+    timeslot: slot-8
+    venue: p-4704
+  - name: Refreshment
+    timeslot: slot-9
+    venue: expo-area
+  - name: 60-min Workshop Part 1
+    timeslot: slot-10
+    venue: lecture-hall
+    title: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
+  - name: 60-min Workshop Part 1
+    timeslot: slot-10
+    venue: p-4701
+    topic: ticketing-chatbot
+  - name: Workshop 7 Part 3 - Gold Sponsor
+    timeslot: slot-10
+    venue: p-4703
+  - name: Development Sprint Part 5
+    timeslot: slot-10
+    venue: p-4704
+  - name: 60-min Workshop Part 2
+    timeslot: slot-11
+    venue: lecture-hall
+    title: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
+  - name: 60-min Workshop Part 2
+    timeslot: slot-11
+    venue: p-4701
+    topic: ticketing-chatbot
+  - name: Workshop 7 Part 4 - Gold Sponsor
+    timeslot: slot-11
+    venue: p-4703
+  - name: Presentation of Development Sprint
+    timeslot: slot-11
+    venue: p-4704
+  - name: End of Day
+    timeslot: slot-12

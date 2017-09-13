@@ -248,7 +248,7 @@ topics:
       isSponsorTopic: false
       startTime: day-2.slot-7
   -   title: Boosting command line data manipulation with Python and AWK
-      id: boosting-command-line-data-manipulation-with-python-and-aWK
+      id: boosting-command-line-data-manipulation-with-python-and-awk
       speaker:
         - kirill-pavlov
       venue: lecture-hall
