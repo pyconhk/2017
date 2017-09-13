@@ -12,26 +12,26 @@
         <div class="content">
           <h3>CFP Results are Here!</h3>
           <p>We are pleased to announce the CFP results. We have received
-            <strong>{{data.topics.num_submissions}}</strong> submissions 
-            before our deadline {{data.topics.deadline}}. The volunteers in our 
-            Program Committee had a hard time to shortlist them to fit in 
-            <!--span class="link"--> 
-              <!--a href="{{ data.site.basePath }}/schedule"-->our agenda.<!--/a--> 
-            <!--/span-->             
+            <strong>{{data.topics.num_submissions}}</strong> submissions
+            before our deadline {{data.topics.deadline}}. The volunteers in our
+            Program Committee had a hard time to shortlist them to fit in
+            <span class="link">
+              <a href="{{ data.site.basePath }}/schedule">our agenda.</a>
+            </span>
           </p>
           <p>Here is the list of the accepted CFP topics, along with some invited sessions &amp; confirmed sponsor sessions:</p>
           <ul class="cpf-results">
-              {% for topic in data.topics.topics %} 
-                {% if topic.cfp %} 
-                  <li class="link"> 
-                    <a href="{{data.site.basePath}}/topics/{{topic.id}}/"> 
-                      {{ topic.title }} 
-                    </a> 
-                    ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %}) 
-                    {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %} 
-                  </li> 
-                {% endif %} 
-              {% endfor %} 
+              {% for topic in data.topics.topics %}
+                {% if topic.cfp %}
+                  <li class="link">
+                    <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
+                      {{ topic.title }}
+                    </a>
+                    ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
+                    {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                  </li>
+                {% endif %}
+              {% endfor %}
           </ul> <!-- cpf-results -->
           <p></p>
           <h2>More Information</h2>
