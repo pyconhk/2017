@@ -32,7 +32,7 @@ function getAvatarImage(member) {
   });
 }
 
-axios('/2017/data/staff.yml', { responseType: 'text' })
+axios(BASE_PATH + '/data/staff.yml', { responseType: 'text' })
   .then((response) => {
     if (response.status === 200) {
       return response.data;
