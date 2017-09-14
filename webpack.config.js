@@ -26,7 +26,7 @@ const envConfig = {};
 Object.keys(firebaseConfig).forEach((key) => {
   envConfig[`process.env.${key}`] = firebaseConfig[key];
 });
-envConfig['BASE_PATH'] = JSON.stringify(basePath);
+envConfig.BASE_PATH = JSON.stringify(basePath);
 
 const base = {
   plugins: [

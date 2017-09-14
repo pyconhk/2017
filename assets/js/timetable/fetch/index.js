@@ -21,5 +21,5 @@ const urls = {
 };
 
 export default function loadData(store) {
-  return Promise.all(Object.keys(urls).map(url => fetchData(store, `${BASE_URL}/data/${url}.yml`, urls[url])));
+  return Promise.all(Object.keys(urls).map(url => fetchData(store, `${BASE_PATH}/data/${url}.yml`, urls[url])));
 }

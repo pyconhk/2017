@@ -1,6 +1,6 @@
 /* globals navigator */
 
-navigator.serviceWorker.register(BASE_PATH + '/sw.js').then((reg) => {
+navigator.serviceWorker.register(`${BASE_PATH}/sw.js`).then((reg) => {
   // updatefound is fired if service-worker.js changes.
   // eslint-disable-next-line
   reg.onupdatefound = () => {

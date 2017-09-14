@@ -41,7 +41,7 @@ function getPagePath(filePath) {
  * @return {Object} object of template data
  */
 function fileData(extraData = {}) {
-  const siteOverride = {}
+  const siteOverride = {};
   if (typeof process.env.BASE_PATH === 'string') {
     siteOverride.basePath = process.env.BASE_PATH;
   }
