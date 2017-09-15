@@ -8,10 +8,9 @@ ivan-ma:
       He has certification on MySQL DBA 5.6, MySQL Developer 5.1 and MySQL
       Cluster 5.1 DBA.
     - >
-      He joined MySQL, is currently MySQL Principal Sales Consultant, Asia
+      He Joined MySQL, is currently MySQL Principal Sales Consultant, Asia
       Pacific with Oracle, responsible for pre-sales consulting, technical
       education, and product promotions.
-
     - >
       Prior to joining MySQL team, he joined Oracle in System Team from Sun
       Mircosystems acquisition. Prior to Sun Microsystems, he was Principal
@@ -26,706 +25,265 @@ ivan-ma:
   company:
     name: MySQL
     url: https://www.mysql.com/
-  portrait:
   hkoscon-sponsored: false
 
-ryusuke-kajiyama:
-  name: Ryusuke Kajiyama
+kelvin-chu:
+  name: Kelvin Chu
   gender: male
+  description:
+    - >
+      IT Consultant, worked at several multinational investment banks and vendors
+      (BNP Paribas, Bank of America Merrill Lynch, CLSA, EMC)
+  residence:  Hong Kong
+  nationality:  Hong Kong
   social:
-      nickname: RKajiyama
-      twitter: https://twitter.com/rkajiyama
-  description:
-    - >
-      Ryusuke Kajiyama(梶山隆輔) is Open Source Specialist with 10+ years of
-      experience of systems design using MySQL and open source solutions. He
-      originally joined MySQL AB, and is currently managing MySQL Sales
-      Consultant team of Asia Pacific region at Oracle.
-  residence:  Japan
-  nationality: Japan
-  community:
-    name: MySQL
-    url:  https://www.mysql.com/
-  company:
-    name: MySQL
-    url: https://www.mysql.com/
-  portrait: https://file.hkoscon.org/speakers/2017/ryusuke.kajiyama.jpg
+    nickname: Kelvin
+    github: oxydaemon
+    blog: https://uptick.hk
   hkoscon-sponsored: false
 
-josh-rich:
-  name: Joshua Rich
+kirill-pavlov:
+  name: Kirill Pavlov
   gender: male
   description:
     - >
-      Joshua came to Elastic from a background in scientific research and
-      high-performance computing and is no stranger to dealing with big data
-      solutions. He now helps our customers get the most out of our products
-      providing passionate and enthusiastic advice and support.
-  residence:  Australia
-  nationality:  Australia
+      Kirill graduated from Moscow Institute of Physics and Technology. He
+      started his career as a software developer in advertisement department of
+      Yandex, listed search engine company. After polishing engineering and data
+      mining skills he moved to Hong Kong and led a development team in Multichannel,
+      demand side advertisement platform. Then he joined Asia Miles of Cathay
+      Pacific as Data Scientist and worked with Apache Spark and XGBoost.
+      Now Kirill is working in Terminal 1, IT and analytics boutique recruitment
+      firm, bringing data mining into a traditional industry. He is passionate
+      about studying new things and open source contribution.
+  residence:  Hong Kong
+  nationality:  Russia
   social:
-    nickname: Josh
-    github: joshuar
-  company:
-    name: Elastic
-    url:  https://www.elastic.co/
-  portrait: https://file.hkoscon.org/speakers/2017/joshua.rich.jpg
+    nickname: Kirill Pavlov
+    github: pavlov99
+    twitter: https://twitter.com/pavlov99
+    blog: http://kirillpavlov.com/
   hkoscon-sponsored: false
 
-chris-lamb:
-  name: Chris Lamb
+albert-au-yeung:
+  name: Albert Yu Yeung
   gender: male
   description:
     - >
-      I am a polyglot freelance computer programmer who is the author of dozens
-      of free projects and contributor to 100s of others. I've been an official
-      Debian Developer since 2008 and am currently highly active in the
-      Reproducible Builds project where I have been awarded a grant from the
-      Core Infrastructure Initiative to fund my work in this area. In my spare
-      time I'm an avid classical musician.
-  residence:  United Kingdom
-  nationality:  United Kingdom
+      Albert is currently a machine learning lead engineer at Zwoop. He was the
+      co-founder and CTO of Axon Labs Limited. He was involved in various projects in
+      data mining and machine learning while being a research at Huawei’s Noah's Ark Lab,
+      the Hong Kong Applied Science and Technology Research Institute (ASTRI), and NTT
+      Communication Science Laboratories in Kyoto, Japan. He has a PhD in Computer
+      Science from the University of Southampton in the U.K. Albert has been
+      using Python since 2004.
+  residence:  Hong Kong
+  nationality:  Hong Kong
   social:
-    nickname: Chris
-    github: lamby
-    blog: https://chris-lamb.co.uk/blog
-  community:
-    name: Debian
-    url: https://www.debian.org/
-  portrait: https://file.hkoscon.org/speakers/2017/chris.lamb.png
+    nickname: Albert Yu Yeung
+    github: albertauyeung
+    blog: http://www.albertauyeung.com/
   hkoscon-sponsored: false
 
-dietrich-ayala:
-  name: Dietrich Ayala
+ho-wa-wong:
+  name: Ho Wa Wong
   gender: male
   description:
     - >
-      Dietrich Ayala has been working for internet freedom for over a decade
-      at Mozilla, the non-profit makers of the Firefox web browser, where's
-      he's shipped open source software to hundreds of millions of people.
-      A developer, writer and speaker, he’s currently traveling Asia helping
-      schools, businesses and governments use the web to make emerging
-      technologies like IoT, AR and VR accessible to everyone.
-  residence:  United States
-  nationality:  United States
+      Python developer, open data advocate
+  residence:  Hong Kong
+  nationality:  Hong Kong
   social:
-    nickname: Dietrich
-    github: autonome
-  company:
-    name: Mozilla
-    url:  https://www.mozilla.org/
-  portrait: https://file.hkoscon.org/speakers/2017/dietrich.ayala.jpg
+    nickname: Wong Ho Wa
+    github: howawong
   hkoscon-sponsored: false
 
-franklin-weng:
-  name: Franklin Weng
+aditthya-ramakrishnan:
+  name: Aditthya Ramakrishnan
   gender: male
   description:
     - >
-      <a href="https://about.me/fweng322" target="_blank">https://about.me/fweng322</a>
-  residence:  Taiwan
-  nationality:  Taiwan
+      I have recently finished my bachelors degree at SRM University, India.
+      I have previously spent a semester studying at the Massachusetts Institute
+      of Technology, interned at the MIT Media Lab, CMU-ISR and Wolfram Research.
+      I have also started a student-run research lab at my university, mentoring
+      and leading over 100 members working in fields like AI, AR/VR, IoT etc.
+  nationality: India
   social:
-    nickname: Franklin
-    github: fweng322
-  community:
-    name: LibreOffice (representation); KDE, ezgo (participating)
-  company:
-    name: Software Liberty Association Taiwan (SLAT)
-    url: http://www.slat.org/
-  portrait: https://file.hkoscon.org/speakers/2017/franklin.weng.jpg
+    twitter: https://twitter.com/ad137hya
+    blog: http://linkedin.com/in/aditthya
   hkoscon-sponsored: false
 
-pcman:
-  name: PC Man
+michal-szczecinski:
+  name: Michal Szczecinski
   gender: male
   description:
     - >
-      Appier Inc. senior software engineer (現職)
-    - >
-      前台北榮民總醫院 過敏免疫科醫師
-    - >
-      長年參與 open source projects: LXDE/LXQt, PIME 輸入法, 新酷音輸入法, IETab
-      firefox plugin, PCMan BBS client
-  residence:  Taiwan
-  nationality:  Taiwan
-  portrait: https://file.hkoscon.org/speakers/2017/pcman.jpg
+      Head of analytics and data science at GoGovan, before in data teams of Zynga,
+      NaturalMotion , PwC and data analytics teacher at General Assembly
+  residence:  Hong Kong
   hkoscon-sponsored: false
 
-kingman-leung:
-  name: Kingman Leung
-  gender: male
+claire-chung:
+  name: Claire Chung
+  gender: female
   description:
     - >
-      香港註冊社工，主職長者服務，2000年帶領長者開發開放源碼「筆順五碼」中文輸入法，再於近年帶長者開發開放授權的「自由香港字型」計劃
+      Claire Yik Lok Chung is now a PhD student at the Chinese University of Hong Kong
+      working on Bioinformatics, after receiving her BSc degree in Cell and Molecular Biology.
+      She is a co-author of the book "Matplotlib 2 by Example" that discusses the methods
+      and best practices in professional data visualization.
+    - >
+      With her passion for scientific research, she joined three labs during her college study,
+      including the synthetic biology lab at the University of Edinburgh. Her current projects
+      include soybean genomic analysis using optical mapping and next-generation sequencing data.
+      Claire started programming 10 years ago, and uses Python and Matplotlib daily to tackle
+      Bioinformatics problems and to bring convenience to life. Being interested in information
+      technology in general, she leads the Campus Network Support Team in college and is
+      constantly keeping up with the latest technological trends such as by participating in PyCon.
+      She is motivated to acquire new skills through self-learning and is keen to share her
+      knowledge and experience. In addition to science, she has developed skills in multilingual
+      translation and graphic design, and found these transferable skills useful at work.
   residence: Hong Kong
   nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/kingman.leung.jpg
   hkoscon-sponsored: false
 
-hkrug:
-  name: Hong Kong R User Group
+benny:
+  name: Benny
   gender: NA
   description:
     - >
-      Hong Kong R User Group
+      Hi! I am Benny.
+      I am 20 year-old and now studying at the University of Hong Kong.
+      I love coding and I enjoy coding in Python.
+    - >
+      I am currently a year-2 student who would like to learn not only how to
+      code, but also why the code works and how to make the code better.
+      Hence I choose a major that would give me more understanding on hardware
+      and lower level implementation. And of course, more fun!
   residence:  Hong Kong
-  nationality: Hong Kong
-  social:
-    nickname: hkrug
-    github: hkrusers
-  community:
-    name: Hong Kong R User Group
-    url: https://www.facebook.com/groups/hkrusers/
-  portrait: https://file.hkoscon.org/speakers/2017/hkrug.png
-  hkoscon-sponsored: false
-
-lushi-chen:
-  name: Lushi Chen
-  gender: female
-  description:
-    - >
-      I'm a psychologist researches on social media data and user’s
-      psychological traits. During the past two years, I have proactively
-      engaged with social media data and worked towards using a machine learning
-      approach to model user's mental health and psychological traits. Besides
-      using R and Python to conduct data analysis on my studies,  I’m also a
-      junior mobile/web app developer with some experience in JavaScript and
-      Meteor Platform.
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    github: luciasalar
-  portrait: https://file.hkoscon.org/speakers/2017/lushi.chen.jpg
-  hkoscon-sponsored: false
-
-chris-van-tuin:
-  name: Chris Van Tuin
-  gender: male
-  description:
-    - >
-      Chris Van Tuin, Chief Technologist at Red Hat, has over 20 years of
-      experience in IT and Software.   Since joining Red Hat in 2005, Chris has
-      been architecting solutions for strategic customers and partners with a
-      focus on emerging technologies including IaaS, PaaS, and DevOps and is
-      frequent speaker on DevOps, Security, and Containers.  He started his
-      career at Intel in IT and Managed Hosting followed by leadership roles in
-      services and sales engineering at Loudcloud and Linux startups. Chris
-      holds a Bachelors of Electrical Engineering from Georgia Institute
-      of Technology.
-  residence:  United States
-  nationality:  United States
-  social:
-    nickname: Chris
-    github: cvantuin
-  company:
-    name: Red hat
-    url:  https://www.redhat.com/
-  portrait: https://file.hkoscon.org/speakers/2017/chris.van.tuin.jpg
-  hkoscon-sponsored: false
-
-andy-li:
-  name: Andy Li
-  gender: male
-  description:
-    - >
-      Andy Li is a member of the Haxe Foundation. He obtained his PhD in the
-      School of Creative Media, City University of Hong Kong. He is interested
-      in programming language theories as well as mobile user interface,
-      interactivity, installation art and generative graphics.
-
-    - >
-      He works in TCL Research (HK) as a senior researcher, in which he works
-      with the Virtual Reality team that develops new motion tracking systems,
-      VR development tools, and custom VR contents.
-  residence:  Hong Kong
-  nationality:  Hong Kong
-  social:
-    nickname: Andy
-    github:  andyli
-    blog: https://blog.onthewings.net/
-  portrait: https://file.hkoscon.org/speakers/2017/andy.li.png
-  hkoscon-sponsored: false
-
-kevin-leung:
-  name: Kevin Leung
-  gender: male
-  description:
-    - >
-      Kevin Leung has been working in the actuarial field when he finds out
-      his real interest to be programming. From GW Basic on a 80286 to Haxe on
-      a Mac, Kevin is enthusiastic in learning new technology and always wishes
-      to create something interesting in the beauty of code. He is now a
-      full-stack developer in a startup company.
-  residence:  Hong Kong
-  nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/kevin.leung.jpg
-  hkoscon-sponsored: false
-
-parvani-ng:
-  name: Parvani Ng
-  gender: female
-  description:
-    - >
-      Parvani is a UX Designer in VR team at TCL Research (HK), mainly focuses
-      on content creation and multimedia production. Previously, Parvani worked
-      as a front-end web developer for a Hong Kong startup company. She
-      graduated with honors from City University of Hong Kong with a degree in
-      Creative Media.
-  residence: Hong Kong
-  nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/parvani.ng.jpg
-  hkoscon-sponsored: false
-
-karl-lam:
-  name: Karl Lam
-  gender: male
-  description:
-    - >
-      A Vegan, Free software enthusiast, DevOps engineer from bare metal to cloud.
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    nickname: Karl
-    github: karlvlam
-  portrait: https://file.hkoscon.org/speakers/2017/karl.lam.png
-  hkoscon-sponsored: false
-
-wei-tang:
-  name: Wei Tang
-  gender: male
-  description:
-    - >
-      Wei Tang is currently a university student and active open source
-      contributor to Rux, NixOS, Julia and others.
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    nickname: Wei Tang
-    github: sorpaas
-    blog: https://that.world/en/
-  portrait: https://file.hkoscon.org/speakers/2017/wei.tang.jpg
-  hkoscon-sponsored: false
-
-david-ng:
-  name: David Ng
-  gender: male
-  description:
-    - >
-      David is a Product Manager at Skygear.io, an open source backend for
-      mobile apps and web apps. He joined Oursky as a full stack developer in
-      2012. He's interested in software product design and development.
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    project_name: SkygearIO
-    project_github: https://github.com/skygeario
-    blog_name: OurSky
-    blog: https://code.oursky.com/
-  company:
-    name: OurSky
-    url:  http://blog.oursky.com/
-  portrait: https://file.hkoscon.org/speakers/2017/david.ng.jpg
-  hkoscon-sponsored: false
-irvin-chen:
-  name: Irvin Chen
-  gender: male
-  description:
-    - >
-      Community liaison of MozTW, Mozilla Taiwan Community.
-      Long time Mozilla contributor, Mozilla Rep Mentor.
-      I have been contributing to Mozilla on community building, recruiting volunteers,
-      organising event and speaking for Mozilla's Mission and open culture.
-
-    - >
-      In the meantime, I'm a front-end developer of womany.net.
-  residence: Taiwan
   nationality: Taiwan
   social:
-    nickname: Irvin
-    github: irvin
-  community:
-    name: MozTW
-    url:  https://moztw.org
-  company:
-    name: 女人迷 womany.net
-    url:  https://womany.net
-  portrait: https://file.hkoscon.org/speakers/2017/irvin.chen.jpg
+    nickname: Huang Wei Chen
+    github: asdfghjBennyHuang
+    blog: http://asdfghjbenny.info/intro/index.html
   hkoscon-sponsored: false
 
-kazuhiko-inaba:
-  name: Kazuhiko Inaba
+ayush-singh:
+  name: Ayush Singh
   gender: male
   description:
     - >
-      As a system engineer, mainly creating infrastructure about 10 years
-  residence:  Japan
-  nationality:  Japan
-  social:
-    nickname: Kaz
-    facebook: https://www.facebook.com/inaba.kazuhiko.94
-  portrait: https://file.hkoscon.org/speakers/2017/kazuhiko.inaba.jpg
-  hkoscon-sponsored: false
-anny-leung:
-  name: Ann/y Leung
-  gender: female
-  description:
-    - >
-      Ann/y Leung is the founder of "Open Source MultiMedia, Hong Kong" and we
-      advocate Open Learning and use of Open Source Software in MultiMedia
-      production & co-creation. We also deliver free workshops and an Open
-      Learning platform for everyone to learn FOSS, Open Design and Personal
-      Fabrication.
-  residence: Hong Kong
-  nationality:  Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/ann.leung.png
-  community:
-    name: OSMM OPEN LEARNING NETWORK
-    url: http://osmmhk.weebly.com/
-  hkoscon-sponsored: false
-
-bluebat:
-  name: 趙惟倫
-  gender: male
-  description:
-    - >
-      趙惟倫曾以開發小組主管或專案經理的身分，在開放原始碼相關業務的公司任職多年，主要負責
-      套件打包與系統整合的工作。他也熱衷於自由軟體的本地化，長期參與 GNU 翻譯計畫，並製作
-      一些漢語相關的國際化套件。
-  residence: Taiwan
-  nationality: Taiwan
-  social:
-    nickname: 趙惟倫
-    github: bluebat
-  portrait: https://file.hkoscon.org/speakers/2017/bluebat.png
-  hkoscon-sponsored: false
-
-rick-mak:
-  name: Rick Mak
-  gender: male
-  description:
-    - >
-      Father of two kids. Programmer writes js, python, go and brew coffee.
-      Like to read codes in different languages.
-    - >
-      Working at <a href="http://oursky.com/" target="_blank">http://oursky.com/</a>
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    nickname: Rick
-    github: rickmak
-  company:
-    name: Oursky
-    url:  http://oursky.com/
-  portrait: https://file.hkoscon.org/speakers/2017/rick.mak.jpg
-  hkoscon-sponsored: false
-
-hayden-chung:
-  name: Hayden Chung
-  gender: male
-  description:
-    - >
-      Hayden Chung, a freelance system administrator, describes himself as
-      an information security fanatics which loves to try out new technology.
-      Former guest speaker in OSHK starting from 2014. A community member
-      of Mozilla Hong Kong.
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    nickname: fhoshino
-    github: fhoshino
-    blog: https://about.me/fubukihoshino
-  portrait: https://file.hkoscon.org/speakers/2017/hayden.chung.jpg
-  hkoscon-sponsored: false
-
-amanda-lam:
-  name: Amanda Lam
-  gender: female
-  description:
-    - >
-      Product Owner @ SEEK Asia (jobsDB + JobStreet) | Diversity Advocate |
-      HKPUG Podcaster | Youtuber | Jolla & Sailfish OS fans
-    - >
-      <a href="http://about.me/amandalam" target="_blank">http://about.me/amandalam</a>
-  residence: Hong Kong
-  nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/amanda.lam.jpg
-  social:
-    nickname: Amanda
-    github: amandalam
-    blog: http://dadablog.net/
-
-vinnson-lee:
-  name: Vinnson Lee
-  gender: male
-  description:
-    - >
-      DevOps leader and data engineer in fintech industry, worked at China
-      Mobile HK as Senior Software Engineer, 10+ year experience in software
-      development and implementation of open source software.
-  residence: Hong Kong
-  nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/vinnson.lee.jpg
-  hkoscon-sponsored: false
-
-cyrus-wong:
-  name: Cyrus Wong
-  gender: male
-  description:
-    - >
-      Mr. Cyrus Wong the first AWS All 5 Certified and AWS Community Hero of
-      Hong Kong, and he is the Data Scientist of Cloud Innovation Centre in
-      IVE (Lee Wai Lee) . Winner of 3 Hong Kong ICT Awards.
-    - >
-      <a href="https://hk.linkedin.com/in/cyruswong" target="_blank">
-        https://hk.linkedin.com/in/cyruswong
-      </a>
-    - >
-      <a href="https://aws.amazon.com/heroes/asia-pacific/cyrus-wong/" target="_blank">
-        https://aws.amazon.com/heroes/asia-pacific/cyrus-wong/
-      </a>
-  residence: Hong Kong
-  nationality: Hong Kong
-  social:
-    nickname: Cyrus
-    github: wongcyrus
-  portrait: https://file.hkoscon.org/speakers/2017/cyrus.wong.jpg
-  hkoscon-sponsored: false
-
-daniel-chcouri:
-  name: Daniel Chcouri
-  gender: male
-  description:
-    - >
-      Full-Stack web developer. Founder and manager of MeteorSpark, a Hong Kong
-      based MeteorJS consultancy
-  residence: Hong Kong
-  nationality: Israel
-  social:
-    nickname: Daniel
-    github: theosp
-  company:
-    name: MeteorSpark
-    url: http://www.meteorspark.com/
-  portrait: https://file.hkoscon.org/speakers/2017/daniel.chcouri.jpg
-  hkoscon-sponsored: false
-
-vigneshwer-dhinakaran:
-  name: Vigneshwer Dhinakaran
-  gender: male
-  description:
-    - >
-      Vigneshwer is an innovative data scientist with an artistic perception of
-      technology and business, having 3+ years of experience in various domains
-      such as IOT, DevOps, Computer Vision & Deep Learning and is working as a
-      research analyst crunching real-time data and implementing state of art
-      AI algorithms in the Innovation and development lab of the world’s
-      largest decision science company in Bengaluru, India.
+      Ayush is a Computer Science Undergrad from India currenly working as a Research Intern
+       @Swarath lab,IIITD on Self Driving Cars.He is passionate about learning new stuff
+       and mentoring people.He has an ardent interest in Machine Learning,Data Science
+       and Deep Learning and has been working on some interesting real world problems
+       in these domains and is also a part of Stanford's Scholar program. He is a
+       FOSS enthusiast and also mentor at his college's FOSS and Development Society.
+       He frequently gives open talks in his college and other community meetups on
+       DataScience,ML and many other stuff.He is a Hackathon lover too.
   residence: India
   nationality: India
   social:
-    nickname: Vigneshwer
-    github: dvigneshwer
-    blog: https://dvigneshwer.wordpress.com/
-  portrait: https://file.hkoscon.org/speakers/2017/vigneshwer.dhinakaran.jpg
+    nickname: Ayush Singh
+    github: ayush1997
+    twitter: https://twitter.com/ayush0016
+    blog: http://ayush1997.github.io/
+    project_name: Youtube Like Predicator
+    project_github: https://github.com/ayush1997/YouTube-Like-predictor
   hkoscon-sponsored: false
 
-vaishali-thakkar:
-  name: Vaishali Thakkar
-  gender: female
-  description:
-    - >
-      Vaishali Thakkar is working as a Linux Kernel engineer at Oracle. She
-      works on various parts of the Linux Kernel like memory management,
-      security and debugging tools [mainly Coccinelle]. She has previously
-      worked as a Linux kernel intern in Outreachy program. She is also
-      associated with various open source internship programs and groups
-      [Outreachy, GSoC, GCI, Bangalore kernel meetup, LinuxChix India etc]
-      as a mentor, co-organizer or volunteer. Her area of interest includes
-      embedded systems, operating systems, security and computer architecture.
-  residence: India
-  nationality: India
-  social:
-    project_name: Linux Kernel
-    project_github: https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?qt=grep&q=vaishali
-    blog: http://vaishalithakkar.in/
-  portrait: https://file.hkoscon.org/speakers/2017/vaishali.thakkar.jpg
-  hkoscon-sponsored: false
-
-gary-kwong:
-  name: Gary Kwong
+holman-tai:
+  name: Holman Tai
   gender: male
   description:
     - >
-      Gary Kwong is a senior security engineer at Mozilla and a long-time member
-      of its community. He specialises in running JavaScript fuzzers that
-      rigorously test SpiderMonkey - the JavaScript engine of the Gecko
-      platform on which Mozilla Firefox is based. Gary is passionate about human
-      languages and breaking things in general.
-  residence: United States
-  nationality: Singapore
-  social:
-    nickname: gkw
-    github: nth10sd
-  portrait: https://file.hkoscon.org/speakers/2017/gary.kwong.jpg
-  hkoscon-sponsored: false
-
-thomas-kuiper:
-  name: Thomas Kuiper
-  gender: male
-  description:
-    - >
-      Thomas Kuiper, the General Manager of the Asia subsidiary of the domain
-      name registrar Gandi is originally from Germany. He worked on embedded
-      systems and content management systems for companies in Taiwan and Europe
-      before he set himself to the task to start Gandi's Asia business unit.
-      Gandi (abbreviation for "Gestion et Attribution des Noms de Domaine sur Internet"
-      in French or "Management and Allocation of Domain Names on the Internet"
-      in English) is a company thatg provides domain name registration and
-      management in addition to Internet hosting infrastructure and related
-      services. The company has its head office in Paris and offices in San
-      Francisco, Luxembourg and Taipei to serve its customers around the clock.
-      Gandi was among the first European domain name registrars to offer ".COM"
-      and ".NET" and now manages over 2 million domain names with accreditation
-      for over 700 different domain name extensions for its customers, placing
-      Gandi among the top domain name registrars worldwide.
-  residence: Taiwan
-  social:
-    nickname: gandi
-    github: Gandi
-  portrait: https://file.hkoscon.org/speakers/2017/thomas.kuiper.jpg
-  hkoscon-sponsored: false
-
-dennis-chen:
-  name: Dennis Raylin Chen
-  gender: male
-  description:
-    - >
-      Dennis Raylin Chen is a member of Wikipedia Taiwan, and is a active
-      OpenStreetMap community member, doing stuff like translating OpenStreetMap
-      related software interface, training material, and holding meetup in
-      Taipei. His day job is a tech editor in TechNews.tw, covering issue of
-      Software and Web, sometimes writing about Open Culture movement.
-  residence: Taiwan
-  nationality: Taiwan
-  social:
-    nickname: Supaplextw
-    github: Supaplextw
-  portrait: https://file.hkoscon.org/speakers/2017/dennis.chen.jpg
-  hkoscon-sponsored: false
-
-vidyasagar-machupalli:
-  name: Vidyasagar S Machupalli
-  gender: male
-  description:
-    - >
-      Vidyasagar MSC aka Vidyasagar Machupalli is a Polyglot and Pragmatic
-      programmer, who loves technologies changing lives. He is a well-known
-      blogger and speaker in various technical communities. He currently works
-      for IBM as an Offering Manager for Developer Productivity promoting the
-      use of IBM Cloud through talks, articles, blogging, user demonstrations,
-      recorded demonstrations, or by the creation of sample projects. He has
-      been awarded as Microsoft MVP, Intel Software Innovator, and DZone MVB. He
-      is passionate about game development and works in his free time developing
-      games and Mobile apps.
-
-    - >
-      Vidyasagar has 9+ years of industry experience and a broad set of skills in
-      software developVidyasagarMSCment and design. He started as a .Net Developer in early 2007
-      and continued to hone his skills from that point on. He is a tech addict
-      and a technology enthusiast.
-
-    - >
-      Also a Mentor | Explorer | Xbox Fan | Living in (Virtual + Augmented)
-      Reality |  Always on Cloud | an Assimilator | Geek | Freak | Music Lover | Movie Buff
-
-    - >
-      Core member and Organiser of BlueCoders Meetup Group.
-  nationality: India
-  social:
-    github: VidyasagarMSC
-    blog: http://vidyasagarmsc.com/
-  portrait: https://file.hkoscon.org/speakers/2017/vidyasagar.machupalli.jpg
-  hkoscon-sponsored: false
-
-haggen-so:
-  name: Dr. Haggen So
-  gender: male
-  description:
-    - >
-      Graduated from the Royal Melbourne Institute of Technology, Dr. Haggen So,
-      has experiences in commercial software development and developed software
-      products for renowned companies such as Kodak. Dr. So also taught in Hong
-      Kong Baptist University as lecturer in the department of Computer Science.
-      Dr. So was the former Project Manager for Creative Commons Hong Kong and
-      currently the president of the Hong Kong Creative Open Technology
-      Association.
+      Holman Tai is currently a researcher at Sensetime, a AI company startup provide
+      computer vision products and solutions. He is passionate in reinforcement
+      learning and deep learning.
   residence: Hong Kong
   nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/haggen.so.jpg
-  community:
-    name: HKCOTA
-    url: https://www.cota.hk/
+  social:
+    nickname: Holman Tai
+    github: hmtai6
+    blog: http://holmantai.net
   hkoscon-sponsored: false
 
-heena-mahour:
-  name: Heena Mahour
-  gender: female
+matt:
+  name: Matt O'Connor
+  gender: male
   description:
     - >
-      I am a Season of KDE 2012 student(kde-edu game pairs), Google summer of code 2013 student under KDE where I worked with plasma team, Google Code In 2013 mentor where I provided tasks under KDE for plasma, co-administrator & mentor of Season of KDE 2014 and organization co-administrator & mentor of KDE for Google Code In 2014 as well.
-    - >
-      I am also the co-founder, organizer and director of Women Who Code Delhi, India.
-      I also organized a GSoC meetup at Delhi recently which got featured at Google open source blog.
-      I also was one of the speakers at GSoC Symposium, Delhi where I presented a talk on the plasma development.
-    - >
-      Currently, I am working as a software engineer with a financial firm, Indus Valley Partners, India
-  nationality: India
-  portrait: https://file.hkoscon.org/speakers/2017/heena.mahour.jpg
+      Matt is a full stack developer, professional Scrum Master, and co-founder of
+      Reboot.ai, Hong Kong's premier machine learning and artificial intelligence
+      training provider. Reboot doesn't just teach ML, they use it in classrooms
+      to refine curricula, predict industry trends, and teach more effectively.
+      Prior to Reboot he has overseen algorithmic trading for the world’s largest
+      hedge fund with $157 billion USD AUM, built numerous data driven apps and chatbots,
+      given talks on development and data science to crowds of hundreds, and been published
+      both in print and online for a variety of publications, most notably The New York Times.
+  residence:  Hong Kong
+  nationality: United States
   social:
-    github: fallacy321
-    blog: http://heenamahour.blogspot.in
-  hkoscon-sponsered: false
+    nickname: Matt
+    github: mattroconnor
+    twitter: https://twitter.com/mattroconnor
+    blog: http://www.mattroconnor.com/
+  company:
+    name: Reboot.ai
+    url:  http://Reboot.ai
+  hkoscon-sponsored: false
 
-edwin-song:
-  name: Edwin Song
+patrick-tsoi:
+  name: Patrick Tsoi
   gender: male
   description:
     - >
-      Principle PM of Azure Database for MySQL
-  nationality: China
-  portrait: https://file.hkoscon.org/speakers/2017/edwin.song.png
-  hkoscon-sponsered: false
+      Micropython.HK  webmaster and  CityU part time Tutor
+  residence:  Hong Kong
+  nationality:  Hong Kong
+  hkoscon-sponsored: false
 
-delon-yau:
-  name: Delon Yau
+denis-makogon:
+  name: Denis Makogon
   gender: male
   description:
     - >
-      Technical Evangelist, DX, Microsoft
+      Developer and starting software architect in cloud environments, mainly focused
+      on developing and designing platform and software as a service applications for clouds.
+      He's principal software developer in Oracle, concentrating on product development along
+      with bringing well-designed and production ready integration with clouds solutions,
+      contributor to various open source projects, cloud-related technologies along having
+      fun with IoT devices.
     - >
-      Delon is currently a Technical Evangelist in the Developer Experience
-      Group at Microsoft HK, evangelizing developers across HK on artificial
-      intelligence on cloud, big data analytics and IoT. Prior to Joining
-      Microsoft HK, he worked for Microsoft UK as a machine learning
-      developer supporting the data analytics development of a cloud-based
-      online shopping platform.
+      Denis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin,
+      Paris, Barcelona, Boston) and PyCon Hong Kong 2017. co-author of OpenStack
+      Application development, OpenStack Trove Essentials.
+  nationality: Ukraine
+  residence: Ukraine
+  social:
+    nickname: Denis Makogon
+    github: denismakogon
+    twitter: https://twitter.com/denis_makogon
+    blog: https://medium.com/@denismakogon
+  hkoscon-sponsored: false
+
+
+comma:
+  name: Payton Chan
+  gender: male
+  description:
     - >
-      He holds a Bachelor's degree in Electrical and Electronic Engineering
-      from Imperial College London and also a Master's degree in Computer
-      Science from UCL.
+      A crazy fans of Mayday and Fish Leong. Loves to use programming to kill the daily
+      stuff in my life.
+    - >
+      Now is working at KKBOX Taiwan as Research Engineer in Data Pipeline and Machine Learning.
+  residence: Taiwan
   nationality: Hong Kong
-  portrait: https://file.hkoscon.org/speakers/2017/delon.yau.jpg
-  hkoscon-sponsered: false
-
-harris-hui:
-  name: Harris Hui
-  gender: male
-  description:
-    - >
-      Harris has over 10 years of experiences in IT infrastructure and
-      Security architecture. He currently serves as an Infrastructure
-      Security Architect in IBM Bluemix PaaS Platform and lead the IBM
-      Bluemix deployment in China.
-  nationality: Hong Kong
-  hkoscon-sponsered: false
+  social:
+    nickname: >-
+      @comma
+    github: Cooomma
+    project_name: HK Mayday Ticket Bot
+    project_github: https://github.com/Cooomma/PyConHK-Mayday-Project
+  hkoscon-sponsored: false
