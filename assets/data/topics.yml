@@ -226,7 +226,16 @@ topics:
       venue: lecture-hall
       description:
         - >
-          xxxx
+          Ever thought of "How to approach a Machine Learning Problem ?".
+          This talk will guide you through pipeline for approaching a Machine Learning problem(Supervised)
+          by taking up a real world problem which will make it easy for the audience to relate with.The
+          task would be “Predicting like counts for a given YouTube video” and I would be taking you
+          through the very first step of Data Collection to Model Evaluation,discussing various essential
+          steps like Data analysis,Feature engineering,feature selection and many more along the way.Every
+          step would be accompanied by some code snippets in Python using various scientific and ML libraries
+          like Sklearn,Numpy etc.
+        - >
+          The problem to be discussed : https://github.com/ayush1997/YouTube-Like-predictor
       lang: en
       lang_slide: en
       type: talk
