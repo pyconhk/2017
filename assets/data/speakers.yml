@@ -3,17 +3,17 @@ ivan-ma:
   gender: male
   description:
     - >
-      Ivan Ma is the MySQL User Group Lead in Hong Kong. He has over 20+ years 
-      of experience in enterprise system infrastructure and software technologies. 
-      He has certification on MySQL DBA 5.6, MySQL Developer 5.1 and MySQL 
+      Ivan Ma is the MySQL User Group Lead in Hong Kong. He has over 20+ years
+      of experience in enterprise system infrastructure and software technologies.
+      He has certification on MySQL DBA 5.6, MySQL Developer 5.1 and MySQL
       Cluster 5.1 DBA.
     - >
-      He Joined MySQL, is currently MySQL Principal Sales Consultant, Asia 
-      Pacific with Oracle, responsible for pre-sales consulting, technical 
+      He Joined MySQL, is currently MySQL Principal Sales Consultant, Asia
+      Pacific with Oracle, responsible for pre-sales consulting, technical
       education, and product promotions.
     - >
-      Prior to joining MySQL team, he joined Oracle in System Team from Sun 
-      Mircosystems acquisition. Prior to Sun Microsystems, he was Principal 
+      Prior to joining MySQL team, he joined Oracle in System Team from Sun
+      Mircosystems acquisition. Prior to Sun Microsystems, he was Principal
       Solution Architect with Sybase APAC covering APAC regions.
   residence:  Hong Kong
   nationality: Hong Kong
@@ -32,7 +32,7 @@ kelvin-chu:
   gender: male
   description:
     - >
-      IT Consultant, worked at several multinational investment banks and vendors 
+      IT Consultant, worked at several multinational investment banks and vendors
       (BNP Paribas, Bank of America Merrill Lynch, CLSA, EMC)
   residence:  Hong Kong
   nationality:  Hong Kong
@@ -47,14 +47,14 @@ kirill-pavlov:
   gender: male
   description:
     - >
-      Kirill graduated from Moscow Institute of Physics and Technology. He 
-      started his career as a software developer in advertisement department of 
-      Yandex, listed search engine company. After polishing engineering and data 
-      mining skills he moved to Hong Kong and led a development team in Multichannel, 
-      demand side advertisement platform. Then he joined Asia Miles of Cathay 
-      Pacific as Data Scientist and worked with Apache Spark and XGBoost. 
-      Now Kirill is working in Terminal 1, IT and analytics boutique recruitment 
-      firm, bringing data mining into a traditional industry. He is passionate 
+      Kirill graduated from Moscow Institute of Physics and Technology. He
+      started his career as a software developer in advertisement department of
+      Yandex, listed search engine company. After polishing engineering and data
+      mining skills he moved to Hong Kong and led a development team in Multichannel,
+      demand side advertisement platform. Then he joined Asia Miles of Cathay
+      Pacific as Data Scientist and worked with Apache Spark and XGBoost.
+      Now Kirill is working in Terminal 1, IT and analytics boutique recruitment
+      firm, bringing data mining into a traditional industry. He is passionate
       about studying new things and open source contribution.
   residence:  Hong Kong
   nationality:  Russia
@@ -70,12 +70,12 @@ albert-au-yeung:
   gender: male
   description:
     - >
-      Albert is currently a machine learning lead engineer at Zwoop. He was the 
-      co-founder and CTO of Axon Labs Limited. He was involved in various projects in 
-      data mining and machine learning while being a research at Huawei’s Noah's Ark Lab, 
-      the Hong Kong Applied Science and Technology Research Institute (ASTRI), and NTT 
-      Communication Science Laboratories in Kyoto, Japan. He has a PhD in Computer 
-      Science from the University of Southampton in the U.K. Albert has been 
+      Albert is currently a machine learning lead engineer at Zwoop. He was the
+      co-founder and CTO of Axon Labs Limited. He was involved in various projects in
+      data mining and machine learning while being a research at Huawei’s Noah's Ark Lab,
+      the Hong Kong Applied Science and Technology Research Institute (ASTRI), and NTT
+      Communication Science Laboratories in Kyoto, Japan. He has a PhD in Computer
+      Science from the University of Southampton in the U.K. Albert has been
       using Python since 2004.
   residence:  Hong Kong
   nationality:  Hong Kong
@@ -98,12 +98,28 @@ ho-wa-wong:
     github: howawong
   hkoscon-sponsored: false
 
+aditthya-ramakrishnan:
+  name: Aditthya Ramakrishnan
+  gender: male
+  description:
+    - >
+      I have recently finished my bachelors degree at SRM University, India.
+      I have previously spent a semester studying at the Massachusetts Institute
+      of Technology, interned at the MIT Media Lab, CMU-ISR and Wolfram Research.
+      I have also started a student-run research lab at my university, mentoring
+      and leading over 100 members working in fields like AI, AR/VR, IoT etc.
+  nationality: India
+  social:
+    twitter: https://twitter.com/ad137hya
+    blog: http://linkedin.com/in/aditthya
+  hkoscon-sponsored: false
+
 michal-szczecinski:
   name: Michal Szczecinski
   gender: male
   description:
     - >
-      Head of analytics and data science at GoGovan, before in data teams of Zynga, 
+      Head of analytics and data science at GoGovan, before in data teams of Zynga,
       NaturalMotion , PwC and data analytics teacher at General Assembly
   residence:  Hong Kong
   hkoscon-sponsored: false
@@ -113,20 +129,20 @@ claire-chung:
   gender: female
   description:
     - >
-      Claire Yik Lok Chung is now a PhD student at the Chinese University of Hong Kong 
-      working on Bioinformatics, after receiving her BSc degree in Cell and Molecular Biology. 
-      She is a co-author of the book "Matplotlib 2 by Example" that discusses the methods 
+      Claire Yik Lok Chung is now a PhD student at the Chinese University of Hong Kong
+      working on Bioinformatics, after receiving her BSc degree in Cell and Molecular Biology.
+      She is a co-author of the book "Matplotlib 2 by Example" that discusses the methods
       and best practices in professional data visualization.
     - >
-      With her passion for scientific research, she joined three labs during her college study, 
-      including the synthetic biology lab at the University of Edinburgh. Her current projects 
-      include soybean genomic analysis using optical mapping and next-generation sequencing data. 
-      Claire started programming 10 years ago, and uses Python and Matplotlib daily to tackle 
-      Bioinformatics problems and to bring convenience to life. Being interested in information 
-      technology in general, she leads the Campus Network Support Team in college and is 
+      With her passion for scientific research, she joined three labs during her college study,
+      including the synthetic biology lab at the University of Edinburgh. Her current projects
+      include soybean genomic analysis using optical mapping and next-generation sequencing data.
+      Claire started programming 10 years ago, and uses Python and Matplotlib daily to tackle
+      Bioinformatics problems and to bring convenience to life. Being interested in information
+      technology in general, she leads the Campus Network Support Team in college and is
       constantly keeping up with the latest technological trends such as by participating in PyCon.
-      She is motivated to acquire new skills through self-learning and is keen to share her 
-      knowledge and experience. In addition to science, she has developed skills in multilingual 
+      She is motivated to acquire new skills through self-learning and is keen to share her
+      knowledge and experience. In addition to science, she has developed skills in multilingual
       translation and graphic design, and found these transferable skills useful at work.
   residence: Hong Kong
   nationality: Hong Kong
@@ -141,9 +157,9 @@ benny:
       I am 20 year-old and now studying at the University of Hong Kong.
       I love coding and I enjoy coding in Python.
     - >
-      I am currently a year-2 student who would like to learn not only how to 
-      code, but also why the code works and how to make the code better. 
-      Hence I choose a major that would give me more understanding on hardware 
+      I am currently a year-2 student who would like to learn not only how to
+      code, but also why the code works and how to make the code better.
+      Hence I choose a major that would give me more understanding on hardware
       and lower level implementation. And of course, more fun!
   residence:  Hong Kong
   nationality: Taiwan
@@ -153,14 +169,36 @@ benny:
     blog: http://asdfghjbenny.info/intro/index.html
   hkoscon-sponsored: false
 
+ayush-singh:
+  name: Ayush Singh
+  gender: male
+  description:
+    - >
+      Ayush is a Computer Science Undergrad from India currenly working as a Research Intern
+       @Swarath lab,IIITD on Self Driving Cars.He is passionate about learning new stuff
+       and mentoring people.He has an ardent interest in Machine Learning,Data Science
+       and Deep Learning and has been working on some interesting real world problems
+       in these domains and is also a part of Stanford's Scholar program. He is a
+       FOSS enthusiast and also mentor at his college's FOSS and Development Society.
+       He frequently gives open talks in his college and other community meetups on
+       DataScience,ML and many other stuff.He is a Hackathon lover too.
+  residence: India
+  nationality: India
+  social:
+    nickname: Ayush Singh
+    github: ayush1997
+    twitter: https://twitter.com/ayush0016
+    blog: http://ayush1997.github.io/
+  hkoscon-sponsored: false
+
 holman-tai:
   name: Holman Tai
   gender: male
   description:
     - >
-      Holman Tai is currently a researcher at Sensetime, a AI company startup provide 
-      computer vision products and solutions. He is passionate in reinforcement 
-      learning and deep learning. 
+      Holman Tai is currently a researcher at Sensetime, a AI company startup provide
+      computer vision products and solutions. He is passionate in reinforcement
+      learning and deep learning.
   residence: Hong Kong
   nationality: Hong Kong
   social:
@@ -174,13 +212,13 @@ matt:
   gender: male
   description:
     - >
-      Matt is a full stack developer, professional Scrum Master, and co-founder of 
-      Reboot.ai, Hong Kong's premier machine learning and artificial intelligence 
-      training provider. Reboot doesn't just teach ML, they use it in classrooms 
-      to refine curricula, predict industry trends, and teach more effectively. 
-      Prior to Reboot he has overseen algorithmic trading for the world’s largest 
-      hedge fund with $157 billion USD AUM, built numerous data driven apps and chatbots, 
-      given talks on development and data science to crowds of hundreds, and been published 
+      Matt is a full stack developer, professional Scrum Master, and co-founder of
+      Reboot.ai, Hong Kong's premier machine learning and artificial intelligence
+      training provider. Reboot doesn't just teach ML, they use it in classrooms
+      to refine curricula, predict industry trends, and teach more effectively.
+      Prior to Reboot he has overseen algorithmic trading for the world’s largest
+      hedge fund with $157 billion USD AUM, built numerous data driven apps and chatbots,
+      given talks on development and data science to crowds of hundreds, and been published
       both in print and online for a variety of publications, most notably The New York Times.
   residence:  Hong Kong
   nationality: United States
@@ -209,15 +247,15 @@ denis-makogon:
   gender: male
   description:
     - >
-      Developer and starting software architect in cloud environments, mainly focused 
-      on developing and designing platform and software as a service applications for clouds. 
-      He's principal software developer in Oracle, concentrating on product development along 
-      with bringing well-designed and production ready integration with clouds solutions, 
-      contributor to various open source projects, cloud-related technologies along having 
+      Developer and starting software architect in cloud environments, mainly focused
+      on developing and designing platform and software as a service applications for clouds.
+      He's principal software developer in Oracle, concentrating on product development along
+      with bringing well-designed and production ready integration with clouds solutions,
+      contributor to various open source projects, cloud-related technologies along having
       fun with IoT devices.
     - >
-      Denis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, 
-      Paris, Barcelona, Boston) and PyCon Hong Kong 2017. co-author of OpenStack 
+      Denis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin,
+      Paris, Barcelona, Boston) and PyCon Hong Kong 2017. co-author of OpenStack
       Application development, OpenStack Trove Essentials.
   nationality: Ukraine
   residence: Ukraine
@@ -234,14 +272,14 @@ comma:
   gender: male
   description:
     - >
-      A crazy fans of Mayday and Fish Leong. Loves to use programming to kill the daily 
+      A crazy fans of Mayday and Fish Leong. Loves to use programming to kill the daily
       stuff in my life.
     - >
       Now is working at KKBOX Taiwan as Research Engineer in Data Pipeline and Machine Learning.
   residence: Taiwan
   nationality: Hong Kong
   social:
-    nickname: >- 
+    nickname: >-
       @comma
     github: Cooomma
     project_name: HK Mayday Ticket Bot

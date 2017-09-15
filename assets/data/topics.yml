@@ -82,6 +82,49 @@ topics:
       cfp:  true
       isSponsorTopic: false
       startTime: day-1.slot-5
+  -   title:  Resurrecting the dead with deep learning
+      id: resurrecting-the-dead-with-deep-learning
+      speaker:
+        - aditthya-ramakrishnan
+      venue: lecture-hall
+      description:
+        - >
+          Recently, results of projects like twitter.com/deepdrumpf and
+          twitter.com/deeplearnbern have shown how neural networks can generate
+          remarkable text by being trained on corpora of literature, MIDI files,
+          tweets etc.
+        - >
+          In this talk, we will dive deep into character-level modelling based on recurrent
+          neural networks using Keras with a TensorFlow backend. We will build multi-layer
+          LSTMs and train it over a corpus of text to generate remarkable results. We will
+          cover basic theory of neural networks, backpropagation, RNN/LSTMs, dataset
+          preparation and training. I will explain how the network models a probability
+          distribution to generate text character by character and also discuss hyper-parameter
+          tuning (especially Softmax temperature) to control the output.
+        - >
+          People have used these techniques to -
+          <ol>
+            <li>Generate literature in the style of dead writers and poets like Nietzsche,
+                Shakespeare and Robert Frost.</li>
+            <li>Generate beautiful AI composed music inspired by the likes of Mozart, Beethoven and Bach.</li>
+            <li>Generate lyrics and rap by training on Lennon-McCartney & Hamilton songs respectively.</li>
+          </ol>
+        - >
+          Sometimes when given a prompt, these networks can also effectively hallucinate text that
+          the author of the input corpus might have said when given the same prompt.
+          There will be live examples of the above and a few more interesting uses of this technique.
+          Prior knowledge of linear algebra and a basic overview of machine learning is helpful but
+          not necessary.
+          I will also provide a Github repo with the code from the talk and provide links to trained
+          models of the live examples for attendees to experiment with and build upon.
+      requirement: Prior knowledge of linear algebra and a basic overview of machine learning is
+                   helpful but not necessary.
+      lang:  en
+      lang_slide: en
+      type: talk
+      cfp:  true
+      isSponsorTopic: false
+      startTime: day-1.slot-6
   -   title:  Python for data analysis
       id: python-for-data-analysis
       speaker:
@@ -175,6 +218,22 @@ topics:
       cfp:      true
       isSponsorTopic: false
       startTime: day-1.slot-11
+  -   title:  >-
+          How to approach a Machine Learning Problem with Python ?: YouTube Like Count Prediction
+      id: how-to-approach-a-machine-learning-problem-with-python-youtube-like-count-prediction
+      speaker:
+        - ayush-singh
+      venue: lecture-hall
+      description:
+        - >
+          xxxx
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-3
+
   -   title:  >-
           AI learn to Drive: Introduction to Reinforcement Learning with Python
       id: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
