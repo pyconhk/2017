@@ -21,31 +21,19 @@
           </p>
           <p>Here is the list of the accepted CFP topics, along with some invited sessions &amp; confirmed sponsor sessions:</p>
           <ul class="cpf-results">
-            {% for topic in data.topics.topics %}
-              {% if topic.cfp %}
-                <li class="link">
-                  <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
-                    {{ topic.title }}
-                  </a>
-                  ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
-                  {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
-                </li>
-              {% endif %}
-            {% endfor %}
+              {% for topic in data.topics.topics %}
+                {% if topic.cfp %}
+                  <li class="link">
+                    <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
+                      {{ topic.title }}
+                    </a>
+                    ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
+                    {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                  </li>
+                {% endif %}
+              {% endfor %}
           </ul> <!-- cpf-results -->
           <p></p>
-          <p>If your topic is not selected, don't worry. You may still share your topic in our <b>Unconference Session</b> at
-            <span class="link"><a href="{{ data.site.basePath }}/schedule/#day-2"> of Day 2 (Saturday)</a></span>.
-          </p>
-          <p>
-            <a class="waves-effect waves-light z-depth-2 btn"
-            data-ga-category="cfp-page"
-            data-ga-action="click"
-            data-ga-label="ticket"
-            data-ga-value="full ticket"
-            href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'cfp-page-bottom') | execAppend }}"
-            target="_blank">Get your ticket</a>
-          </p>
           <h2>More Information</h2>
           <p class="link">We're constantly updating our Facebook. Please subscribe our
             <a href="https://www.facebook.com/pyconhk/" target="_blank">Facebook Page</a>

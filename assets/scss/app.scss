@@ -55,6 +55,7 @@
 // ---------------------
 // Theme specific styles
 //
+@import "theme/components/grid";
 @import "theme/font-awesome";
 @import "theme/mixin";
 @import "theme/typo";
@@ -79,7 +80,3 @@
 @import "theme/pages/sponsor";
 @import "theme/pages/cfp";
 @import "theme/pages/topic";
-@import "theme/pages/unconference";
-@import "theme/pages/foss";
-@import "theme/pages/lightningtalk";
-@import "theme/pages/financial-assistance";
