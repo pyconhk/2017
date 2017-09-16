@@ -21,10 +21,12 @@ const firebaseConfig = {
   FIREBASE_MESSAGE_SERVER_KEY: JSON.stringify(process.env.FIREBASE_MESSAGE_SERVER_KEY || '<SENDER_KEY>'),
 };
 
+const basePath = process.env.BASE_PATH || '/2017';
 const envConfig = {};
 Object.keys(firebaseConfig).forEach((key) => {
   envConfig[`process.env.${key}`] = firebaseConfig[key];
 });
+envConfig.BASE_PATH = JSON.stringify(basePath);
 
 const base = {
   plugins: [
@@ -36,10 +38,10 @@ const base = {
       filename: 'sw.js',
       handleFetch: true,
       runtimeCaching: [{
-        urlPattern: /2017/,
+        urlPattern: new RegExp(basePath.slice(1)),
         handler: 'fastest',
       }],
-      staticFileGlobs: manifest.web_accessible_resources.map(path => path.replace('/2017', 'public')),
+      staticFileGlobs: manifest.web_accessible_resources.map(path => path.replace(basePath, 'public')),
       stripPrefix: 'public',
       verbose: true,
     }),
@@ -65,7 +67,7 @@ const base = {
   devtool: 'source-map',
   output: {
     path: `${__dirname}/public`,
-    publicPath: '/2017/',
+    publicPath: `${basePath}/`,
     filename: '[name].js',
   },
   resolve: {
