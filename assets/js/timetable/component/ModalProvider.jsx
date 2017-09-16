@@ -324,7 +324,7 @@ export default class ModalProvider extends React.Component {
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
               Close
             </a>
-            <a href={`/2017/topics/${this.state.topic || '#'}`} className="modal-action waves-effect waves-green btn-flat">
+            <a href={`${BASE_PATH}/topics/${this.state.topic || '#'}`} className="modal-action waves-effect waves-green btn-flat">
               Permlink
             </a>
           </div>
@@ -375,7 +375,7 @@ export default class ModalProvider extends React.Component {
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
               Close
             </a>
-            <a href={`/2017/events/${href}`} className="modal-action waves-effect waves-green btn-flat">
+            <a href={`${BASE_PATH}/events/${href}`} className="modal-action waves-effect waves-green btn-flat">
               Permlink
             </a>
           </div>
