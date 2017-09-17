@@ -197,18 +197,6 @@ export default class ModalProvider extends React.Component {
     ) : null;
   }
 
-  renderLevel(topic: Object) {
-    // level
-    let level = (<span><i className="fa fa-users" aria-hidden="true" /> For General Public</span>);
-    if (topic.level === 'Intermediate') level = (<span><i className="fa fa-graduation-cap" aria-hidden="true" /> For Coders and Tech Audiences with General Knowledge and Skills.</span>);
-    if (topic.level === 'Advanced') level = (<span><i className="fa fa-rocket" aria-hidden="true" /> For Advanced Coders &amp; Tech Audiences.</span>);
-    return (
-      <div className="level">
-        {level}
-      </div>
-    );
-  }
-
   renderTime(topic: Object) {
     const { timeslots } = this.props;
     const topicTime = topic.startTime.split('.');
@@ -313,7 +301,6 @@ export default class ModalProvider extends React.Component {
               {'startTime' in topic && this.renderTime(topic)}
               {'venue' in topic && this.renderVenue(topic)}
               {this.renderLang(topic)}
-              {this.renderLevel(topic)}
               {'requirement' in topic && this.renderReq(topic)}
             </div>
             {'speaker' in topic && this.renderSpeakers(topic)}
@@ -324,7 +311,7 @@ export default class ModalProvider extends React.Component {
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
               Close
             </a>
-            <a href={`/2017/topics/${this.state.topic || '#'}`} className="modal-action waves-effect waves-green btn-flat">
+            <a href={`${BASE_PATH}/topics/${this.state.topic || '#'}`} className="modal-action waves-effect waves-green btn-flat">
               Permlink
             </a>
           </div>
@@ -375,7 +362,7 @@ export default class ModalProvider extends React.Component {
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
               Close
             </a>
-            <a href={`/2017/events/${href}`} className="modal-action waves-effect waves-green btn-flat">
+            <a href={`${BASE_PATH}/events/${href}`} className="modal-action waves-effect waves-green btn-flat">
               Permlink
             </a>
           </div>

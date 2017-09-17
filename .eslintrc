@@ -6,6 +6,9 @@
   "plugins": [
     "flowtype"
   ],
+  "globals": {
+    "BASE_PATH": true
+  },
   "rules": {
     "comma-dangle": ["error", {
       "functions": "ignore",

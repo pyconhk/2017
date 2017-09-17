@@ -11,20 +11,17 @@
 reception:
   name: "Reception"
 
-sea-view-concourse:
-  name: "Sea View Concourse"
+expo-area:
+  name: "Expo Area"
 
-function-room:
-  name: "Function Room 1 and 2"
+lecture-hall:
+  name: "AC1 Lecture Hall LT-16"
 
-training-theatre:
-  name: "Training Theatre"
+p-4701:
+  name: "AC1 Classroom P4701"
 
-training-room-1:
-  name: "Training Room 1"
+p-4703:
+  name: "AC1 Classroom P4703"
 
-training-room-2:
-  name: "Training Room 2"
-
-training-room-3:
-  name: "Training Room 3"
+p-4704:
+  name: "AC1 Classroom P4704"
