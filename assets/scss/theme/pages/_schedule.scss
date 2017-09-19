@@ -8,6 +8,14 @@
       font-size: 20pt;
     }
   }
+
+  .preloader-wrapper {
+    display: block;
+    position: relative;
+    top: calc(40vh - 32px);
+    margin: auto;
+  }
+
   .time-grid {
     background-color: rgba(0, 0, 0, 0.1);
   }
