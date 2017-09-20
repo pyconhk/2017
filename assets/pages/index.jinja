@@ -72,8 +72,7 @@
       </div>
     </div>
 
-    {#
-
+{#}
     <div id="days-details"><div class="content-wrapper">
       <div class="container">
           <div class="days-details-slogan">
@@ -127,29 +126,81 @@
               <a class="btn black-text" href="{{ data.site.basePath }}/schedule">Check the talk now</a>
           </div>
       </div>
-    </div></div>
+      </div>
+    </div>
+#}
 
     <div id="ticketing"><div class="content-wrapper">
-
         <div class="title">
             <h2>Tickets</h2>
             <p>Act today to secure your seat</p>
         </div>
         <div class="ticket-types">
           <div class="ticket-type highlight">
-            <h3>Full Ticket</h3>
+            <h3>Patron Ticket</h3>
+            <div class="price">
+              <span class="currency">HK$</span><span class="amount">900</span>
+            </div>
+            <div class="check-list">
+              <ul>
+                <li>Admission on Day 1 and Day 2</li>
+                <li>Evening Networking Event</li>
+                <li>T-Shirt</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>Sales end on November 4</p>
+            </div>
+            <div class="action">
+              <a class="btn btn-default"
+                data-ga-category="front-outbound"
+                data-ga-action="click"
+                data-ga-label="ticket"
+                data-ga-value="patron ticket"
+                href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'frontpage_tickets') | execAppend }}"
+                target="_blank">Buy Now</a>
+            </div>
+          </div>
+          <div class="separator"></div>
+
+          <div class="ticket-type">
+            <h3>Donation Ticket</h3>
             <div class="price">
               <span class="currency">HK$</span><span class="amount">300</span>
             </div>
             <div class="check-list">
               <ul>
                 <li>Admission on Day 1 and Day 2</li>
-                <li>Chance to Register Workshop</li>
                 <li>T-Shirt</li>
               </ul>
             </div>
             <div class="description">
-              <p></p>
+              <p>Sales end on November 4</p>
+            </div>
+            <div class="action">
+              <a class="btn btn-default"
+                data-ga-category="front-outbound"
+                data-ga-action="click"
+                data-ga-label="ticket"
+                data-ga-value="donation ticket"
+                href="{{ data.site.ticketURL | appendURL | withGA('donation_ticket', 'frontpage_tickets') | execAppend }}"
+                target="_blank">Buy Now</a>
+            </div>
+          </div>
+          <div class="separator"></div>
+
+          <div class="ticket-type">
+            <h3>Full Ticket</h3>
+            <div class="price">
+              <span class="amount">Free</span>
+            </div>
+            <div class="check-list">
+              <ul>
+                <li>Admission on Day 1 and Day 2</li>
+              </ul>
+            </div>
+            <div class="description">
+              <p>Sales end on October 8</p>
             </div>
             <div class="action">
               <a class="btn btn-default"
@@ -161,65 +212,11 @@
                 target="_blank">Buy Now</a>
             </div>
           </div>
-          <div class="separator"></div>
-
-          <div class="ticket-type">
-            <h3>Weekend Ticket</h3>
-            <div class="price">
-              <span class="currency">HK$</span><span class="amount">200</span>
-            </div>
-            <div class="check-list">
-              <ul>
-                <li>Admission on Day 2</li>
-                <li>Chance to Register Workshop</li>
-                <li>T-Shirt</li>
-              </ul>
-            </div>
-            <div class="description">
-              <!-- TODO: write me -->
-            </div>
-            <div class="action">
-              <a class="btn btn-default"
-                data-ga-category="front-outbound"
-                data-ga-action="click"
-                data-ga-label="ticket"
-                data-ga-value="weekend ticket"
-                href="{{ data.site.ticketURL | appendURL | withGA('weekend_ticket', 'frontpage_tickets') | execAppend }}"
-                target="_blank">Buy Now</a>
-            </div>
-          </div>
-          <div class="separator"></div>
-
-          <div class="ticket-type">
-            <h3>Student Ticket</h3>
-            <div class="price">
-              <span class="currency">HK$</span><span class="amount">100</span>
-            </div>
-            <div class="check-list">
-              <ul>
-                <li>Admission on Day 1 and Day 2</li>
-                <li>Chance to Register Workshop</li>
-                <li>T-Shirt</li>
-              </ul>
-            </div>
-            <div class="description">
-              <p>For full time students only.</p>
-              <p>Requires student ID and proofs during admission.</p>
-            </div>
-            <div class="action">
-              <a class="btn btn-default"
-                data-ga-category="front-outbound"
-                data-ga-action="click"
-                data-ga-label="ticket"
-                data-ga-value="student ticket"
-                href="{{ data.site.ticketURL | appendURL | withGA('student_ticket', 'frontpage_tickets') | execAppend }}"
-                target="_blank">Buy Now</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
+{#
     <div id="patron-programme">
         <div class="title">
             <h2>Patrons Programme</h2>
@@ -310,8 +307,7 @@
 
         </div>
     </div>
-
-    #}
+#}
 
     <div id="follow-us">
         <div class="title">
