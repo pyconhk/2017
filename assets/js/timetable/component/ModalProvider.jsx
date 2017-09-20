@@ -267,18 +267,6 @@ export default class ModalProvider extends React.Component {
     );
   }
 
-  renderSave() {
-    return (
-      <div className="fixed-action-btn">
-        <button className="btn-floating btn-large" onClick={() => this.handleClick()}>
-          <i className="material-icons">
-            {this.saved.indexOf(this.state.topic) !== -1 ? 'delete' : 'bookmark' }
-          </i>
-        </button>
-      </div>
-    );
-  }
-
   renderTopic() {
     const topic = this.props.topics.find(t => t.id === this.state.topic) || {};
     const containHtmlTag = topic.description && topic.description[0].indexOf('</') !== -1;
@@ -305,7 +293,6 @@ export default class ModalProvider extends React.Component {
             </div>
             {'speaker' in topic && this.renderSpeakers(topic)}
             {this.renderSponsor(topic)}
-            {this.renderSave()}
           </div>
           <div className="modal-footer">
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">
