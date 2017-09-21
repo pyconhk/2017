@@ -33,7 +33,19 @@
                 {% endif %}
               {% endfor %}
           </ul> <!-- cpf-results -->
-          <p></p>
+          <p>
+            <a
+              class="waves-effect waves-light z-depth-2 btn cpf-get-ticket-button"
+              data-ga-category="cfp-page"
+              data-ga-action="click"
+              data-ga-label="ticket"
+              data-ga-value="full ticket"
+              href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'cfp-page-bottom') | execAppend }}"
+              target="_blank"
+            >
+              Get your ticket
+            </a>
+          </p>
           <h2>More Information</h2>
           <p class="link">We're constantly updating our Facebook. Please subscribe our
             <a href="https://www.facebook.com/pyconhk/" target="_blank">Facebook Page</a>
