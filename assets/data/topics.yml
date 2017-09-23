@@ -202,7 +202,6 @@ topics:
       id: python-is-not-always-slow
       speaker:
         - benny
-      venue: p-4701
       description:
         - >
           We all know Python is slow. But in many cases it is not. Before blindly
@@ -217,7 +216,8 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      startTime: day-1.slot-11
+      remark: Speaker withdrew
+      withdrew: true
   -   title:  >-
           How to approach a Machine Learning Problem with Python ?: YouTube Like Count Prediction
       id: how-to-approach-a-machine-learning-problem-with-python-youtube-like-count-prediction
