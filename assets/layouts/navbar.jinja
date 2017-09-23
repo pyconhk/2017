@@ -7,7 +7,6 @@
                 </a>
             </li>
         </ul>
-        <!--
         <div class="nav-wrapper container">
             <a href="{{ data.site.basePath }}/" class="brand-logo">PyCon HK 2017</a>
             <ul class="right">
@@ -16,14 +15,12 @@
                        data-ga-category="navbar"
                        data-ga-action="click"
                        data-ga-label="ticket"
-                       data-ga-value="full ticket"
-                       href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'navbar') | execAppend }}"
+                       data-ga-value="patron ticket"
+                       href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'navbar') | execAppend }}"
                        target="_blank">Get Ticket</a>
                 </li>
-                <li data-mount="auth" data-position="navbar" class="hide-on-small-and-down"></li>
             </ul>
         </div>
-      -->
     </nav>
 </div>
 
@@ -33,17 +30,15 @@
             <img src="{{ data.site.basePath }}/images/favicon.png" alt="HKOSCon">
         </a>
     </li>
-    <!--
     <li class="hide-on-med-and-up" data-role="ticket">
         <a class="waves-effect waves-light z-depth-2 btn"
            data-ga-category="sidebar"
            data-ga-action="click"
            data-ga-label="ticket"
-           data-ga-value="full ticket"
+           data-ga-value="patron ticket"
            href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'sidebar') | execAppend }}"
            target="_blank">Get Ticket</a>
     </li>
-    -->
     <li data-mount="auth" data-position="sidebar" class="hide-on-med-and-up"></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
