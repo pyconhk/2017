@@ -22,14 +22,22 @@
           <p>Here is the list of the accepted CFP topics, along with some invited sessions &amp; confirmed sponsor sessions:</p>
           <ul class="cpf-results">
               {% for topic in data.topics.topics %}
-                {% if topic.cfp %}
-                  <li class="link">
-                    <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
-                      {{ topic.title }}
-                    </a>
-                    ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
-                    {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
-                  </li>
+                {% if topic.cfp%}
+                  {% if not topic.withdrew %}
+                    <li class="link">
+                      <a href="{{data.site.basePath}}/topics/{{topic.id}}/">
+                        {{ topic.title }}
+                      </a>
+                      ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
+                      {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                    </li>
+                  {% else %}
+                    <li>
+                      <span class="withdrew">{{ topic.title }}</span>
+                      ({% for s in topic.speaker %}{% set speaker = data.speakers[s] %}{{data.speakers[s].name}}{% if loop.index != loop.length %}, {% endif %}{% endfor %})
+                      {% if topic.type === 'workshop' %} (Workshop) {% endif %} {% if topic.remark %} ({{ topic.remark }}) {% endif %}
+                    </li>
+                  {% endif %}
                 {% endif %}
               {% endfor %}
           </ul> <!-- cpf-results -->
