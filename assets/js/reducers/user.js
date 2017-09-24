@@ -1,5 +1,5 @@
 // @flow
-/*
+
 import { USER_NOT_AUTH, USER_SIGN_IN } from '../action';
 
 export type User = {
@@ -16,4 +16,3 @@ export default function (state: ?User = null, action: Object) {
       return state;
   }
 }
-*/
