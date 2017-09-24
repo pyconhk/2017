@@ -28,6 +28,7 @@
     ,"/2017/images/*.png"
     ,"/2017/images/*.ico"
     ,"/2017/images/*.jpg"
+    ,"/2017/images/og/*.png"
     ,"/2017/venue/*.html"
     ,"/2017/app.css"
     ,"/2017/app.css.map"
