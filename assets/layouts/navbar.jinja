@@ -39,7 +39,6 @@
            href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'sidebar') | execAppend }}"
            target="_blank">Get Ticket</a>
     </li>
-    <li data-mount="auth" data-position="sidebar" class="hide-on-med-and-up"></li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
           <li>
@@ -71,33 +70,3 @@
         </ul>
     </li>
 </ul>
-
-<div id="signin-modal" class="modal">
-    <div class="modal-content">
-        <h2 class="signin-title">Sign In</h2>
-        <div class="description">
-          <p>Sign In to Bookmark in <a href="{{ data.site.basePath }}/schedule/">PyCon HK 2017 schedule</a>.</p>
-        </div>
-        <div class="buttons">
-            <button class="waves-effect waves-light btn-large" provider="facebook">
-                <i class="fa fa-facebook left"></i>
-                Facebook
-            </button>
-
-            <button class="waves-effect waves-light btn-large" provider="twitter">
-                <i class="fa fa-twitter left"></i>
-                Twitter
-            </button>
-
-            <button class="waves-effect waves-light btn-large" provider="google">
-                <i class="fa fa-google left"></i>
-                Google
-            </button>
-
-            <button class="waves-effect waves-light btn-large" provider="github">
-                <i class="fa fa-github left"></i>
-                Github
-            </button>
-        </div>
-    </div>
-</div>

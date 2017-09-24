@@ -1,4 +1,5 @@
 // @flow
+/*
 import firebase from './firebase';
 import { loadAgenda, pushAddAgenda, pushRemoveAgenda } from './action';
 import store from './store';
@@ -45,3 +46,4 @@ export function addAgenda(topic: string) {
 export function removeAgenda(key: string) {
   return database.ref(`/agenda/${uid}/${key}`).remove();
 }
+*/

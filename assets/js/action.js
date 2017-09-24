@@ -2,6 +2,7 @@
 
 import type { User } from './reducers/user';
 
+/*
 export const USER_SIGN_IN = 'USER_SIGN_IN';
 
 export function userSignIn(user: User) {
@@ -15,6 +16,7 @@ export const USER_NOT_AUTH = 'USER_NOT_AUTH';
 export function userNotAuth() {
   return { type: USER_NOT_AUTH };
 }
+*/
 
 export const IMPORT_LANGS = 'IMPORT_LANGS';
 export function importLangs(languages: Object) {
@@ -72,6 +74,7 @@ export function importTimeslots(timeslots: Object) {
   };
 }
 
+/*
 export const LOAD_AGENDA = 'LOAD_AGENDA';
 export function loadAgenda(agenda: Object) {
   return {
@@ -112,3 +115,4 @@ export function removeAgenda(topic: string) {
     type: REMOVE_AGENDA,
   };
 }
+*/
