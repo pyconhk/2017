@@ -2,7 +2,6 @@
 /*
 import { twitterAuth, facebookAuth, googleAuth, githubAuth } from '../auth';
 */
-/* globals document */
 
 /*
 const google = document.querySelector('[provider=google]');
