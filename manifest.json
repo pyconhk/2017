@@ -9,13 +9,13 @@
   "description": "PyCon Hong Kong is a community conference intended for networking and collaboration in the developer and user community.",
   "icons": [
     {
-      "src": "http://pycon.hk/2017/images/pycon-logo.png",
+      "src": "http://pycon.hk/2017/images/pycon-logo-v2.png",
       "size": "48x48",
       "type": "image/png"
     }
   ],
   "gcm_sender_id": "103953800507",
-  "author": "Open Source Hong Kong",
+  "author": "PyCon HK",
   "short_name": "PyCon HK 2017",
   "homepage_url": "http://pycon.hk/2017/",
   "orientation": "landscape",
@@ -28,6 +28,7 @@
     ,"/2017/images/*.png"
     ,"/2017/images/*.ico"
     ,"/2017/images/*.jpg"
+    ,"/2017/images/og/*.png"
     ,"/2017/venue/*.html"
     ,"/2017/app.css"
     ,"/2017/app.css.map"
@@ -43,7 +44,6 @@
     ,"/2017/topics/python-blockchain-application-in-less-than-24hrs/index.html"
     ,"/2017/topics/how-i-battle-with-hong-kong-open-data-in-python/index.html"
     ,"/2017/topics/matplotlib-2-by-example/index.html"
-    ,"/2017/topics/python-is-not-always-slow/index.html"
     ,"/2017/topics/how-to-approach-a-machine-learning-problem-with-python-youtube-like-count-prediction/index.html"
     ,"/2017/topics/ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python/index.html"
     ,"/2017/topics/ha-capability-with-document-store-using-mysql-shell-running-python/index.html"

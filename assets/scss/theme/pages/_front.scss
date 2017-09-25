@@ -19,7 +19,7 @@
       background-position: center top;
     }
     .tagline {
-      color: darken($primary-color, 5%);
+      color: darken(#fff, 5%);
       text-align: center;
       font-size: 4vh;
       .date-location {
@@ -53,7 +53,7 @@
         li {
           margin: 0.5em;
           .btn {
-            color: #000;
+            color: $theme-blue;
             font-size: 2vh;
             line-height: 4vh;
             height: 4vh;
@@ -95,7 +95,7 @@
     width: 40vh;
     height: 40vh;
     background-color: rgba(255, 255, 255, 1);
-    background-image: url('./images/pycon-logo.png');
+    background-image: url('./images/pycon-logo-v2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
