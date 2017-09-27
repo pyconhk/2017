@@ -41,6 +41,7 @@ kelvin-chu:
     github: oxydaemon
     blog: https://uptick.hk
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/kelvinchu.jpg
 
 kirill-pavlov:
   name: Kirill Pavlov
@@ -64,6 +65,7 @@ kirill-pavlov:
     twitter: https://twitter.com/pavlov99
     blog: http://kirillpavlov.com/
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Kirill_Pavlov.jpg
 
 albert-au-yeung:
   name: Albert Yu Yeung
@@ -84,6 +86,7 @@ albert-au-yeung:
     github: albertauyeung
     blog: http://www.albertauyeung.com/
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Albert_AuYeung.jpg
 
 ho-wa-wong:
   name: Ho Wa Wong
@@ -97,6 +100,7 @@ ho-wa-wong:
     nickname: Wong Ho Wa
     github: howawong
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Ho_Wa_Wong.jpg
 
 aditthya-ramakrishnan:
   name: Aditthya Ramakrishnan
@@ -113,6 +117,7 @@ aditthya-ramakrishnan:
     twitter: https://twitter.com/ad137hya
     blog: http://linkedin.com/in/aditthya
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Aditthya_Ramakrishnan.jpg
 
 michal-szczecinski:
   name: Michal Szczecinski
@@ -123,6 +128,7 @@ michal-szczecinski:
       NaturalMotion , PwC and data analytics teacher at General Assembly
   residence:  Hong Kong
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Michal_Szczecinski.jpg
 
 claire-chung:
   name: Claire Chung
@@ -147,9 +153,10 @@ claire-chung:
   residence: Hong Kong
   nationality: Hong Kong
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Claire_Chung.jpg
 
 benny:
-  name: Benny
+  name: Benny Huang
   gender: NA
   description:
     - >
@@ -192,6 +199,7 @@ ayush-singh:
     project_name: Youtube Like Predicator
     project_github: https://github.com/ayush1997/YouTube-Like-predictor
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Ayush_Singh.jpeg
 
 holman-tai:
   name: Holman Tai
@@ -208,6 +216,7 @@ holman-tai:
     github: hmtai6
     blog: http://holmantai.net
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Holman_Tai.jpeg
 
 matt:
   name: Matt O'Connor
@@ -233,6 +242,7 @@ matt:
     name: Reboot.ai
     url:  http://Reboot.ai
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Matt_OConnor.jpg
 
 patrick-tsoi:
   name: Patrick Tsoi
@@ -267,7 +277,7 @@ denis-makogon:
     twitter: https://twitter.com/denis_makogon
     blog: https://medium.com/@denismakogon
   hkoscon-sponsored: false
-
+  portrait: https://file.pycon.hk/portraits/Denis_Makogon.jpg
 
 comma:
   name: Payton Chan
@@ -287,3 +297,4 @@ comma:
     project_name: HK Mayday Ticket Bot
     project_github: https://github.com/Cooomma/PyConHK-Mayday-Project
   hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Comma.jpg
