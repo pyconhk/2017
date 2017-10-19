@@ -81,7 +81,7 @@ topics:
       type: talk
       cfp:  true
       isSponsorTopic: false
-      startTime: day-1.slot-5
+      startTime: day-1.slot-9
   -   title:  Resurrecting the dead with deep learning
       id: resurrecting-the-dead-with-deep-learning
       speaker:
@@ -278,7 +278,7 @@ topics:
       type: talk
       cfp:      true
       isSponsorTopic: false
-      startTime: day-2.slot-4
+      startTime: day-1.slot-11
   -   title: Machine Learning on Energy Consumption Prediction
       id: machine-learning-on-energy-consumption-prediction
       speaker:
