@@ -7,20 +7,10 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import Timetable from './timetable/container/Timetable';
-import SignInModal from './timetable/container/SignInModal';
 
 import loadData from './timetable/fetch';
 
 require('./component/modal');
-
-const root = document.querySelectorAll('[data-mount=auth]');
-if (root.length > 0) {
-  require('./subscribe/auth');
-  Array.prototype.slice.call(root).forEach((mount) => {
-    ReactDOM.render(<Provider store={store}><SignInModal position={mount.getAttribute('data-position')} /></Provider>, mount);
-  });
-}
-
 
 /* globals HTMLElement, window, document */
 
