@@ -1,5 +1,5 @@
 sponsor_types:
-  - name:     Silver Sponsors
+  - name:     Silver Sponsor
     sponsors:
       - id:   psf
         name: Python Software Foundation
@@ -19,7 +19,7 @@ sponsor_types:
         links:
           text:     Python Software Foundation Website
           url:      https://www.python.org/psf/
-  - name:     General Sponsor
+  - name:     General Sponsors
     sponsors:
       - id:   alvanon
         name: Alvanon
