@@ -1,9 +1,9 @@
 // @flow
-
+/*
 import { twitterAuth, facebookAuth, googleAuth, githubAuth } from '../auth';
+*/
 
-/* globals document */
-
+/*
 const google = document.querySelector('[provider=google]');
 const facebook = document.querySelector('[provider=facebook]');
 const github = document.querySelector('[provider=github]');
@@ -21,4 +21,4 @@ if (github !== null) {
 if (twitter !== null) {
   twitter.addEventListener('click', twitterAuth);
 }
-
+*/
