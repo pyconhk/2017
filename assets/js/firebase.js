@@ -1,5 +1,5 @@
 // @flow
-
+/*
 import firebase from 'firebase';
 
 const config = {
@@ -16,3 +16,4 @@ try {
 }
 
 export default firebase;
+*/
