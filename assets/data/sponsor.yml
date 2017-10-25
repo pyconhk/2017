@@ -1,104 +1,46 @@
 sponsor_types:
-  - name:     Platinum Sponsor
+  - name:     Silver Sponsor
     sponsors:
-      - id:   cyberport
-        name: Cyberport
+      - id:   psf
+        name: Python Software Foundation
         grantedPerm: true
         description:
           - >
-            Cyberport is a creative digital cluster with over 700 community
-            members. With a vision to build a legacy of entrepreneurial
-            excellence that establishes Cyberport as a leading global innovation
-            and technology hub, Cyberport is committed to facilitating the local
-            economy by nurturing digital industry start-ups and entrepreneurs,
-            driving collaboration to pool resources and create business
-            opportunities, and accelerating digital adoption through strategic
-            initiatives and partnerships.
+            The Python Software Foundation (PSF) is the non-profit legal entity that holds
+            and protects the intellectual property rights behind Python, keeping it free and
+            open for all to use. The PSF also contributes to the Python community by
+            underwriting or sponsoring conferences, funding grants and special projects, and
+            leading volunteer efforts.
         logos:
-          title:  Cyberport
-          alt:    Cyberport logo
-          img:    https://file.hkoscon.org/sponsor/cyberport.jpg
-          url:    https://www.cyberport.hk/en/
+          title:
+          alt:    Python Software Foundation logo
+          img:    https://file.pycon.hk/2017/logos/psf.png
+          url:    https://www.python.org/psf/
         links:
-          text:     Cyberport Website
-          url:      https://www.cyberport.hk/en/
-  - name:     Gold Sponsors
+          text:     Python Software Foundation Website
+          url:      https://www.python.org/psf/
+  - name:     General Sponsors
     sponsors:
-      - id:   gandi
-        name: Gandi.net
+      - id:   alvanon
+        name: Alvanon
         grantedPerm: true
         description:
           - >
-            Gandi is the No Bullshit™ domain name registrar and hosting
-            provider. Created in France in 1999, Gandi is now present in 3
-            continents,with offices in Paris, San Francisco, Luxembourg, and
-            Taipei. We position ourselves as the next port of call for those
-            who want to create an online presence, right after Internet
-            access providers, since domain names are the firststep in
-            creating your own piece of the Internet.
+            Alvanon is a global consulting firm specializing in the apparel, retail and fashion sectors.
+            We use data-driven solutions to equip top retailers, brands,
+            designers and manufacturers with the knowledge, skills, advice and training necessary
+            for them to achieve their business objectives. Specific areas of expertise include:
+            sizing & fit strategy and execution; product development process & speed to market
+            strategies; technical design and supply chain; product execution; and professional development
+            training. Founded in 2001, Alvanon has earned recognition as the trusted fit expert in the industry.
         logos:
-          title:  Gandi.net
-          alt:    Gandi.net logo
-          img:    https://file.hkoscon.org/sponsor/gandi.jpg
-          url:    https://www.gandi.net/
+          title:  Alvanon
+          alt:    Alvanon logo
+          img:    https://file.pycon.hk/2017/logos/alvanon.png
+          url:    http://alvanon.com/
         links:
-          text:     Gandi.net Website
-          url:      https://www.gandi.net/
-      - id:   ibm
-        name: IBM
-        grantedPerm: true
-        description:
-          - >
-            IBM is an innovation and technology company headquartered in New 
-            York with operations in over 175 countries. It delivers innovative 
-            solutions, software and infrastructures to improve client outcomes, 
-            create new value and solve business problems through integrated 
-            solutions that leverage IT and deep knowledge in business processes. 
-            These solutions draw from an industry leading portfolio of business 
-            and technology consulting, delivery and implementation services, 
-            as well as enterprise software, systems and financing.
-          - >  
-            IBM opened for business in Hong Kong in 1957, and has since played 
-            a pivotal role in Hong Kong’s development and transformation. 
-            For more information, visit 
-            <a href="https://www.ibm.com/hk-en/" class="company-link" target="_blank">www.ibm.com/hk</a>
-        logos:
-          title:  IBM
-          alt:    IBM
-          img:    https://file.hkoscon.org/sponsor/ibm.jpg
-          url:    https://www.ibm.com/hk-en/
-        links:
-          text:     IBM Website
-          url:      https://www.ibm.com/hk-en/
-  - name:     Silver Sponsors
-    sponsors:
-      - id:   microsoft
-        name: Microsoft
-        grantedPerm: true
-        description:
-          - >
-            Since its founding in 1975, Microsoft has been a leader in this
-            transformation. As a reflection of that role - and to help the
-            company to focus on the opportunities that lie ahead - Microsoft
-            has established and embraced a new corporate mission: To empower
-            every person and every organization on the planet to achieve more.
-            The company offers a wide range of products and services designed,
-            to empower people through great software – any time, any place and
-            on any device. These include operating systems for personal
-            computers and networks, server applications for client/server
-            environments, business and consumer productivity applications,
-            interactive media programs and Internet platform and development
-            tools. Microsoft also offers online services and entertainment and
-            hardware devices.
-
-        logos:
-          title:  Microsfot
-          alt:    Microsoft logo
-          img:    https://file.hkoscon.org/sponsor/mircosoft.jpg
-          url:    https://www.microsoft.com/
-        links:
-          text:     Microsoft Website
-          url:      https://www.microsoft.com/
+          text:     Alvanon Website
+          url:      http://alvanon.com/
       - id:   MySQL
         name: MySQL
         grantedPerm: true
@@ -133,78 +75,28 @@ sponsor_types:
         logos:
           title:  MySQL
           alt:    MySQL logo
-          img:    https://file.hkoscon.org/sponsor/mysql.png
+          img:    https://file.pycon.hk/2017/logos/mysql.png
           url:    https://www.mysql.com/
         links:
           text:     MySQL Website
           url:      https://www.mysql.com/
-  - name:     Prize Sponsor
+  - name:     Venue Sponsor
     sponsors:
-      - id:   jetbrains
-        name: JetBrains
+      - id:   cityu
+        name: City University
         grantedPerm: true
         description:
           - >
-            JetBrains PyCharm is the intelligent Python IDE for
-            Professional Developers providing a complete set of tools for
-            productive Python, Web and Scientific development. PyCharm comes
-            in two editions. The free and open-source PyCharm Community
-            Edition is perfect for pure Python and scientific development.
-            PyCharm Professional Edition is designed for professional Python
-            and Web developers.
+            Vision: City University of Hong Kong aspires to become a leading global
+            university, excelling in research and professional education.
+          - >
+            Mission: To nurture and develop the talents of students and to create applicable
+            knowledge in order to support social and economic advancement.
         logos:
-          title:  JetBrains
-          alt:    JetBrains logo
-          img:    https://file.hkoscon.org/sponsor/jetbrains.jpg
-          url:    https://www.jetbrains.com/
+          title:  City University
+          alt:    City University logo
+          img:    https://file.pycon.hk/2017/logos/CityU_Logo_Standard_Signature.png
+          url:    http://www.cityu.edu.hk/
         links:
-          text:     JetBrains Website
-          url:      https://www.gandi.net/
-  - name:     Drink Sponsors
-    sponsors:
-      - id:   glaceau
-        name: Glaceau vitaminwater
-        grantedPerm: true
-        description:
-          - >
-            Glacéau vitaminwater has always been a simple idea. start with water. 
-            and then add bold, fruity flavors and just the right amount of sugar 
-            to make it delicious. finally, top it off with a little extra 
-            nutrition. genius. and it never would’ve happened if someone hadn't 
-            looked at a plain bottle of water and said, "what if this was a little better?"
-            making things a little better is what makes Glacéau vitaminwater great.
-        logos:
-          title:  Glaceau vitaminwater
-          alt:    Glaceau vitaminwater logo
-          img:    https://file.hkoscon.org/sponsor/glaceau.jpg
-          url:    https://www.coca-colacompany.com/brands/glaceau-vitaminwater     
-        links:
-          text:     Glaceau vitaminwater Website
-          url:      https://www.coca-colacompany.com/brands/glaceau-vitaminwater
-      - id:   tranquini
-        name: Tranquini
-        grantedPerm: true
-        description:
-          - >
-            Inspired by the tranquility of the Austrian Alps ... Tranquini is a new premium relaxation drink that relieves stress, reduces anxiety and increases focus - yet does not make you sleepy.
-          - >
-            Join us in bringing more positive relaxation to the world!
-          - >
-            Relax. Be Positive. Good Happens
-        logos:
-          title:  Tranquini
-          alt:    Tranquini logo
-          img:    https://file.hkoscon.org/sponsor/tranquini.png
-          url:    http://tranquini.com/     
-        links:
-          text:     Tranquini Website
-          url:      http://tranquini.com/          
-
-patron_name: Patrons
-patrons:
-  - name:
-      - Mr. Benny Wan
-  - name:
-      - Ms. Connie Leung
-  - name:
-      - Mr. Henry Law
+          text:     City University Website
+          url:      http://www.cityu.edu.hk/
