@@ -32,10 +32,7 @@ day-1:
   - name: 30-min talk
     timeslot: slot-5
     venue: p-4701
-  - name: Workshop 1 Part 1
-    timeslot: slot-5
-    venue: p-4703
-  - name: Workshop 2 Part 1
+  - name: Development Sprint Part 1
     timeslot: slot-5
     venue: p-4704
   - name: 30-min talk
@@ -45,10 +42,7 @@ day-1:
   - name: 30-min Talk
     timeslot: slot-6
     venue: p-4701
-  - name: Workshop 1 Part 2
-    timeslot: slot-6
-    venue: p-4703
-  - name: Workshop 2 Part 2
+  - name: Development Sprint Part 2
     timeslot: slot-6
     venue: p-4704
   - name: Lunch Networking
@@ -62,10 +56,7 @@ day-1:
     timeslot: slot-8
     venue: p-4701
     topic: python-blockchain-application-in-less-than-24hrs
-  - name: Workshop 3 Part 1
-    timeslot: slot-8
-    venue: p-4703
-  - name: Workshop 4 Part 1
+  - name: Development Sprint Part 3
     timeslot: slot-8
     venue: p-4704
   - name: 30-min Talk
@@ -76,10 +67,7 @@ day-1:
     timeslot: slot-9
     venue: p-4701
     topic: how-to-reinvent-the-wheel-and-build-the-most-popular-JSON-RPC-library
-  - name: Workshop 3 Part 2
-    timeslot: slot-9
-    venue: p-4703
-  - name: Workshop 4 Part 2
+  - name: Development Sprint Part 4
     timeslot: slot-9
     venue: p-4704
   - name: Refreshment
@@ -93,10 +81,7 @@ day-1:
     timeslot: slot-11
     venue: p-4701
     topic: ha-capability-with-document-store-using-mysql-shell-running-python
-  - name: Workshop 3 Part 3
-    timeslot: slot-11
-    venue: p-4703
-  - name: Workshop 4 Part 3
+  - name: Development Sprint Part 5
     timeslot: slot-11
     venue: p-4704
   - name: 60-min Workshop Part 2
@@ -106,10 +91,7 @@ day-1:
   - name: 5-min Lightning Talks
     timeslot: slot-12
     venue: p-4701
-  - name: Workshop 3 Part 4
-    timeslot: slot-12
-    venue: p-4703
-  - name: Workshop 4 Part 4
+  - name: Development Sprint Part 6
     timeslot: slot-12
     venue: p-4704
   - name: Short Break
@@ -134,9 +116,6 @@ day-2:
   - name: 30-min Talk
     timeslot: slot-3
     venue: p-4701
-  - name: Workshop 5 Part 1
-    timeslot: slot-3
-    venue: p-4703
   - name: Development Sprint Part 1
     timeslot: slot-3
     venue: p-4704
@@ -147,9 +126,6 @@ day-2:
   - name: 30-min Talk
     timeslot: slot-4
     venue: p-4701
-  - name: Workshop 5 Part 2
-    timeslot: slot-4
-    venue: p-4703
   - name: Development Sprint Part 2
     timeslot: slot-4
     venue: p-4704
@@ -167,9 +143,6 @@ day-2:
     timeslot: slot-7
     venue: p-4701
     topic: micropython
-  - name: Workshop 7 Part 1
-    timeslot: slot-7
-    venue: p-4703
   - name: Development Sprint Part 3
     timeslot: slot-7
     venue: p-4704
@@ -180,9 +153,6 @@ day-2:
   - name: 30-min Talk
     timeslot: slot-8
     venue: p-4701
-  - name: Workshop 7 Part 2
-    timeslot: slot-8
-    venue: p-4703
   - name: Development Sprint Part 4
     timeslot: slot-8
     venue: p-4704
@@ -197,9 +167,6 @@ day-2:
     timeslot: slot-10
     venue: p-4701
     topic: ticketing-chatbot
-  - name: Workshop 7 Part 3
-    timeslot: slot-10
-    venue: p-4703
   - name: Development Sprint Part 5
     timeslot: slot-10
     venue: p-4704
@@ -211,9 +178,6 @@ day-2:
     timeslot: slot-11
     venue: p-4701
     topic: ticketing-chatbot
-  - name: Workshop 7 Part 4
-    timeslot: slot-11
-    venue: p-4703
   - name: Presentation of Development Sprint
     timeslot: slot-11
     venue: p-4704
