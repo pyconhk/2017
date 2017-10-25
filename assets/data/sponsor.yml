@@ -75,28 +75,8 @@ sponsor_types:
         logos:
           title:  MySQL
           alt:    MySQL logo
-          img:    https://file.pycon.hk/2017/logos/mysql.png
+          img:    https://file.pycon.hk/2017/logos/mysql-clr.png
           url:    https://www.mysql.com/
         links:
           text:     MySQL Website
           url:      https://www.mysql.com/
-  - name:     Venue Sponsor
-    sponsors:
-      - id:   cityu
-        name: City University
-        grantedPerm: true
-        description:
-          - >
-            Vision: City University of Hong Kong aspires to become a leading global
-            university, excelling in research and professional education.
-          - >
-            Mission: To nurture and develop the talents of students and to create applicable
-            knowledge in order to support social and economic advancement.
-        logos:
-          title:  City University
-          alt:    City University logo
-          img:    https://file.pycon.hk/2017/logos/CityU_Logo_Standard_Signature.png
-          url:    http://www.cityu.edu.hk/
-        links:
-          text:     City University Website
-          url:      http://www.cityu.edu.hk/
