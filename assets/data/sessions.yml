@@ -150,7 +150,7 @@ day-2:
     timeslot: slot-8
     venue: lecture-hall
     topic: boosting-command-line-data-manipulation-with-python-and-awk
-  - name: 30-min Talk
+  - name: 5-min Lightning Talks
     timeslot: slot-8
     venue: p-4701
   - name: Development Sprint Part 4
