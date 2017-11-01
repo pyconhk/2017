@@ -330,4 +330,5 @@ $progress-bar-color: $secondary-color !default;
 $english-font: 'Roboto';
 $chinese-font: "Noto Sans CJK TC Regular", "Source Han Sans TWHK", "Microsoft JhengHei";
 
-$button-hover-color: #ffffff !important;
+$button-color: #ffffff;
+$button-hover-color: $theme-yellow;
