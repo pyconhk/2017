@@ -298,3 +298,17 @@ comma:
     project_github: https://github.com/Cooomma/PyConHK-Mayday-Project
   hkoscon-sponsored: false
   portrait: https://file.pycon.hk/2017/portraits/Comma.jpg
+
+mengchi-jia:
+  name: Mengchi Jia
+  gender: male
+  description:
+    - >
+      4+ years in python development on large systems. Life is short, you need python!
+  residence: Hong Kong
+  nationality: China
+  social:
+    nickname: Mengchi Jia
+    github: MagnumJia
+  hkoscon-sponsored: false
+  portrait: https://file.pycon.hk/2017/portraits/Mengchi_Jia.jpg

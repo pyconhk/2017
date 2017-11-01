@@ -36,7 +36,7 @@ topics:
       type: keynote
       cfp:      true
       isSponsorTopic: false
-      requirement: ""
+      requirement: "At least basic background in OpenCV and TensorFlow, Python object serialization, Golang"
       startTime: day-1.slot-3
   -   title:  Using Gradient Boosting Machines in Python
       id:     using-gradient-boosting-machines-in-python
@@ -381,3 +381,22 @@ topics:
       isSponsorTopic: false
       startTime: day-2.slot-10
       endTime: day-2.slot-11
+
+  -   title: >-
+          Python Logging in Production
+      id: python-logging-in-production
+      speaker:
+        - mengchi-jia
+      venue: p-4701
+      description:
+        - >
+          Logging is very important for production services. The topic will cover logging
+          basics in python: handlers, formatters and filters. Moreover, logging can be
+          useful on debugging(especially with the help of Sentry), tracking and reporting.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-8
+      endTime: day-2.slot-8
