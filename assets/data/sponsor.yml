@@ -80,3 +80,11 @@ sponsor_types:
         links:
           text:     MySQL Website
           url:      https://www.mysql.com/
+patron_name: Patrons
+patrons:
+  - Dick Tang
+  - Henry Law
+  - Gregi Griffin
+  - Lawrenece Law
+  - Leon Chiu
+  - Rossetti Huang.
