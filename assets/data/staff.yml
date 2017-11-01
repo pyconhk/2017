@@ -24,11 +24,18 @@ teams:
       - name: Mr. Sammy Fung
         teamlead: true
         email: sammy@sammy.hk
-  - name: Record
+  - name: Photo
     members:
       - name: Mr. Henry Law
         teamlead: true
         fb: 506551481
+  - name: Video
+    members:
+      - name: Mr. Sam Chiuck
+        teamlead: true
+        fb: 1656859074
+      - name: Mr. Joe Chan
+        fb: 541717939
   - name: Web
     members:
       - name: Mr. Koala Yeung

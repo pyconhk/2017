@@ -17,8 +17,9 @@ type Props = {
 
 export default function GridCell(props: Props, context: {openModal: Function}) {
   let lclass = `l${Math.max(Math.floor(10 / props.col), 2)}`;
-  if (props.col === 4) lclass = `${lclass} l25`;
-  const classes = classNames(props.className, 's12', `m${props.col > 2 ? 3 : 12}`, lclass, 'col');
+  console.log(props.col);
+  if (props.col === 3) lclass = `${lclass} l33`;
+  const classes = classNames(props.className, 's12', `m${props.col > 2 ? 4 : 12}`, lclass, 'col');
   const modal = props.modal;
   if (typeof modal === 'string' && !props.path) {
     /* eslint-disable */
