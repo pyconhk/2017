@@ -53,7 +53,6 @@
         li {
           margin: 0.5em;
           .btn {
-            color: $theme-blue;
             font-size: 2vh;
             line-height: 4vh;
             height: 4vh;
@@ -300,9 +299,6 @@
           margin-right: .5em;
           color: #0A0;
         }
-      }
-      .btn {
-        color: $theme-blue;
       }
     }
     .highlight {
