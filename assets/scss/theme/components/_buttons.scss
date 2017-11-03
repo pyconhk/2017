@@ -1,0 +1,7 @@
+// Raised Button
+.btn {
+  color: $button-color;
+  &:hover {
+    color: $button-hover-color;
+  }
+}
