@@ -41,6 +41,20 @@ sponsor_types:
         links:
           text:     Alvanon Website
           url:      http://alvanon.com/
+      - id:   axa
+        name: AXA Investment Managers
+        grantedPerm: true
+        description:
+          - >
+            TBD
+        logos:
+          title:  AXA-IM
+          alt:    AXA-IM logo
+          img:    https://file.pycon.hk/2017/logos/axa-im.png
+          url:    https://www.axa-im.com.hk/en/
+        links:
+          text:     AXA Investment Managers Website
+          url:      https://www.axa-im.com.hk/en/
       - id:   MySQL
         name: MySQL
         grantedPerm: true
