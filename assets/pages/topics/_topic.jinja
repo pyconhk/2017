@@ -82,13 +82,8 @@
 
       <div class="ticket">
         {% set gaLabel = 'ticket-' + 'topic-page--' + topic.id %}
-        <a class="waves-effect waves-light z-depth-2 btn"
-        data-ga-category="topic-page"
-        data-ga-action="click"
-        data-ga-label="{{gaLabel}}"
-        data-ga-value="patron-ticket"
-        href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'topic-details') | execAppend }}"
-        target="_blank">Get your ticket</a>
+        <button class="waves-effect waves-light z-depth-2 btn"
+        disabled>Full</button>
       </div>
     </div>
 
