@@ -25,13 +25,8 @@
             <div class="actions">
               <ul>
                 <li>
-                  <a class="waves-effect waves-light z-depth-2 btn"
-                  data-ga-category="front-top-outbound"
-                  data-ga-action="click"
-                  data-ga-label="ticket"
-                  data-ga-value="patron ticket"
-                  href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'frontpage_top') | execAppend }}"
-                  target="_blank">Get Ticket</a>
+                  <button class="waves-effect waves-light z-depth-2 btn"
+                  disabled>Full</button>
                 </li>
                 <li>
                   <a class="waves-effect waves-light z-depth-2 btn" href="{{ data.site.basePath }}/schedule">Check out timetable</a>
@@ -150,13 +145,8 @@
               <p>Sales end on November 1</p>
             </div>
             <div class="action">
-              <a class="btn btn-default"
-                data-ga-category="front-outbound"
-                data-ga-action="click"
-                data-ga-label="ticket"
-                data-ga-value="patron ticket"
-                href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'frontpage_tickets') | execAppend }}"
-                target="_blank">Buy Now</a>
+              <button class="btn btn-default"
+              disabled>Full</button>
             </div>
           </div>
           <div class="separator"></div>
@@ -176,13 +166,8 @@
               <p>Sales end on November 1</p>
             </div>
             <div class="action">
-              <a class="btn btn-default"
-                data-ga-category="front-outbound"
-                data-ga-action="click"
-                data-ga-label="ticket"
-                data-ga-value="donation ticket"
-                href="{{ data.site.ticketURL | appendURL | withGA('donation_ticket', 'frontpage_tickets') | execAppend }}"
-                target="_blank">Buy Now</a>
+              <button class="btn btn-default"
+                disabled>Full</button>
             </div>
           </div>
           <div class="separator"></div>
@@ -201,13 +186,7 @@
               <p>Sales end on November 1</p>
             </div>
             <div class="action">
-              <a class="btn btn-default"
-                data-ga-category="front-outbound"
-                data-ga-action="click"
-                data-ga-label="ticket"
-                data-ga-value="patron ticket"
-                href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'frontpage_tickets') | execAppend }}"
-                target="_blank">Buy Now</a>
+              <button class="btn btn-default" disabled>Full</button>
             </div>
           </div>
         </div>
