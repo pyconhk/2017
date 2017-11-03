@@ -11,13 +11,8 @@
             <a href="{{ data.site.basePath }}/" class="brand-logo">PyCon HK 2017</a>
             <ul class="right">
                 <li data-role="ticket" class="hide-on-small-and-down">
-                    <a class="waves-effect waves-light z-depth-2 btn"
-                       data-ga-category="navbar"
-                       data-ga-action="click"
-                       data-ga-label="ticket"
-                       data-ga-value="patron ticket"
-                       href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'navbar') | execAppend }}"
-                       target="_blank">Get Ticket</a>
+                    <button class="waves-effect waves-light z-depth-2 btn" disabled
+                       >Full</button>
                 </li>
             </ul>
         </div>
@@ -31,13 +26,8 @@
         </a>
     </li>
     <li class="hide-on-med-and-up" data-role="ticket">
-        <a class="waves-effect waves-light z-depth-2 btn"
-           data-ga-category="sidebar"
-           data-ga-action="click"
-           data-ga-label="ticket"
-           data-ga-value="patron ticket"
-           href="{{ data.site.ticketURL | appendURL | withGA('full_ticket', 'sidebar') | execAppend }}"
-           target="_blank">Get Ticket</a>
+        <button class="waves-effect waves-light z-depth-2 btn"
+           disabled>Full</button>
     </li>
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">

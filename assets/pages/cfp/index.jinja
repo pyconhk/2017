@@ -42,17 +42,10 @@
               {% endfor %}
           </ul> <!-- cpf-results -->
           <p>
-            <a
-              class="waves-effect waves-light z-depth-2 btn cpf-get-ticket-button"
-              data-ga-category="cfp-page"
-              data-ga-action="click"
-              data-ga-label="ticket"
-              data-ga-value="patron ticket"
-              href="{{ data.site.ticketURL | appendURL | withGA('patron_ticket', 'cfp-page-bottom') | execAppend }}"
-              target="_blank"
-            >
-              Get your ticket
-            </a>
+            <button
+              class="waves-effect waves-light z-depth-2 btn cpf-get-ticket-button" disabled>
+              Full
+            </button>
           </p>
           <h2>More Information</h2>
           <p class="link">We're constantly updating our Facebook. Please subscribe our
