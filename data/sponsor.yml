@@ -1,0 +1,104 @@
+sponsor_types:
+  - name:     Silver Sponsor
+    sponsors:
+      - id:   psf
+        name: Python Software Foundation
+        grantedPerm: true
+        description:
+          - >
+            The Python Software Foundation (PSF) is the non-profit legal entity that holds
+            and protects the intellectual property rights behind Python, keeping it free and
+            open for all to use. The PSF also contributes to the Python community by
+            underwriting or sponsoring conferences, funding grants and special projects, and
+            leading volunteer efforts.
+        logos:
+          title:
+          alt:    Python Software Foundation logo
+          img:    https://file.pycon.hk/2017/logos/psf.png
+          url:    https://www.python.org/psf/
+        links:
+          text:     Python Software Foundation Website
+          url:      https://www.python.org/psf/
+  - name:     General Sponsors
+    sponsors:
+      - id:   alvanon
+        name: Alvanon
+        grantedPerm: true
+        description:
+          - >
+            Alvanon is a global consulting firm specializing in the apparel, retail and fashion sectors.
+            We use data-driven solutions to equip top retailers, brands,
+            designers and manufacturers with the knowledge, skills, advice and training necessary
+            for them to achieve their business objectives. Specific areas of expertise include:
+            sizing & fit strategy and execution; product development process & speed to market
+            strategies; technical design and supply chain; product execution; and professional development
+            training. Founded in 2001, Alvanon has earned recognition as the trusted fit expert in the industry.
+        logos:
+          title:  Alvanon
+          alt:    Alvanon logo
+          img:    https://file.pycon.hk/2017/logos/alvanon.png
+          url:    http://alvanon.com/
+        links:
+          text:     Alvanon Website
+          url:      http://alvanon.com/
+      - id:   axa
+        name: AXA Investment Managers
+        grantedPerm: true
+        description:
+          - >
+            TBD
+        logos:
+          title:  AXA-IM
+          alt:    AXA-IM logo
+          img:    https://file.pycon.hk/2017/logos/axa-im.png
+          url:    https://www.axa-im.com.hk/en/
+        links:
+          text:     AXA Investment Managers Website
+          url:      https://www.axa-im.com.hk/en/
+      - id:   MySQL
+        name: MySQL
+        grantedPerm: true
+        description:
+          - >
+            MySQL is the world's most popular OS database. With its proven
+            performance, reliability and ease-of-use, MySQL has become the
+            leading database choice for web-based applications, used by high
+            profile web properties including Facebook, Twitter, YouTube, Yahoo!
+            and many more. Additionally, it is an extremely popular choice as
+            embedded database, distributed by over 3,000 ISVs & OEMs. To
+            organizations in need of an open source, ACID-compliant transactional
+            database delivering real-time in-memory performance and 99.999 percent
+            availability, Oracle offers MySQL Cluster.
+          - >
+            MySQL Enterprise Edition is a commercial offering comprised of the
+            MySQL database with security, encryption, auditing, high availability
+            and scalability extensions, online backup, monitoring, management,
+            and visual database design and SQL development tools. MySQL Enterprise
+            Edition is backed by Oracle Premier support for organizations
+            delivering highly available, business critical applications and services.
+            Oracle MySQL Cloud Service delivers a secure, cost-effective and
+            enterprise-grade MySQL database service. Built on MySQL Enterprise
+            Edition and powered by the Oracle Cloud, it provides a simple,
+            automated, integrated and enterprise ready MySQL cloud service,
+            enabling organizations to increase business agility and reduce costs.
+          - >
+            Oracle drives MySQL innovation, constantly improving MySQL solutions
+            and delivering new capabilities to power next generation web, cloud,
+            mobile and embedded applications.
+
+        logos:
+          title:  MySQL
+          alt:    MySQL logo
+          img:    https://file.pycon.hk/2017/logos/mysql-clr.png
+          url:    https://www.mysql.com/
+        links:
+          text:     MySQL Website
+          url:      https://www.mysql.com/
+patron_name: Patrons
+patrons:
+  - Dick Tang
+  - Henry Law
+  - Greg Griffin
+  - Lawrence Law
+  - Leon Chiu
+  - Rossetti Huang

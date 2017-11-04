@@ -1,0 +1,406 @@
+num_submissions:  36
+deadline: 2017/08/31 23:00 (GMT+8)
+topics:
+  -   title:    Applying serverless architecture pattern to distributed data processing
+      id:       applying-serverless-architecture-pattern-to-distributed-data-processing
+      speaker:
+        - denis-makogon
+      venue: lecture-hall
+      description:
+        - >
+          Serverless architectures refer to applications that significantly depend on "cloud"
+          services (knows as Backend as a Service) or on custom code that's run in ephemeral runtime
+          (Function as a Service or "FaaS").
+        - >
+          To application developers "serverless" mean app where some certain logic of it is still
+          written by the developer but unlike traditional architectures or microservices is run
+          in stateless compute runtime that are event-triggered, may only last for one invocation,
+          and fully managed by a cloud.
+          Serverless helps developers to transfer responsibility of  keeping their apps up and
+          running as well as scaling out their workload capacity without involving devops/ops
+          as we got used to.
+        - >
+          In this talk we will go through whole "serverless" thing: from decomposing
+          app and its logic to microservices and further to smaller bits, i.e.
+          functions to defining data flow through functions and building their fault-tolerant pipeline.
+        - >
+          <h3>Moreover, we will go through demo that highlight key takeaways:</h3>
+          <ul>
+            <li>what is functions, what it could and could not be</li>
+            <li>how design scalable architecture without getting into troubles by hitting concrete bottlenecks</li>
+            <li>how combine multiple programming languages into a single app</li>
+            <li>why Python is one of the best programming languages designed exactly for serverless</li>
+          </ul>
+      lang: en
+      lang_slide: en
+      type: keynote
+      cfp:      true
+      isSponsorTopic: false
+      requirement: "At least basic background in OpenCV and TensorFlow, Python object serialization, Golang"
+      startTime: day-1.slot-3
+  -   title:  Using Gradient Boosting Machines in Python
+      id:     using-gradient-boosting-machines-in-python
+      speaker:
+        - albert-au-yeung
+      venue: lecture-hall
+      description:
+        - >
+          Gradient boosting machines (GBM) and related tree-based algorithms have
+          been proved to be highly effective and accurate in a wide range of machine
+          learning tasks. It is also one of the most popular algorithms among
+          participants in Kaggle competitions. This talk will introduce the basic
+          concepts of gradient boosting machines, the commonly used libraries in
+          Python such as XGBoost and LightGBM for performing machine learning
+          using GBM, and ways to tune the hyper-parameters of a model to avoid
+          over/under-fitting and achieve better results. The audience are expected
+          to have basic understanding of machine learning. Codes and slides will
+          be provided on Github after the talk.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      requirement: Basic understanding of machine learning
+      startTime: day-1.slot-5
+  -   title:  How to reinvent the wheel and build the most popular JSON-RPC library
+      id: how-to-reinvent-the-wheel-and-build-the-most-popular-JSON-RPC-library
+      speaker:
+        - kirill-pavlov
+      venue: p-4701
+      description:
+        - >
+          This topic covers 4 years journey of JSON-RPC library implementation. While
+          there were several similar projects, the author decided to write another one.
+          Why reinvent the wheel?
+        - >
+          Now the library is the most popular Python implementation of JSON-RPC protocol.
+          Kirill wants to share his ideas behind package architecture, positioning,
+          and promotion.
+      lang:  en
+      lang_slide: en
+      type: talk
+      cfp:  true
+      isSponsorTopic: false
+      startTime: day-1.slot-9
+  -   title:  Resurrecting the dead with deep learning
+      id: resurrecting-the-dead-with-deep-learning
+      speaker:
+        - aditthya-ramakrishnan
+      venue: lecture-hall
+      description:
+        - >
+          Recently, results of projects like twitter.com/deepdrumpf and
+          twitter.com/deeplearnbern have shown how neural networks can generate
+          remarkable text by being trained on corpora of literature, MIDI files,
+          tweets etc.
+        - >
+          In this talk, we will dive deep into character-level modelling based on recurrent
+          neural networks using Keras with a TensorFlow backend. We will build multi-layer
+          LSTMs and train it over a corpus of text to generate remarkable results. We will
+          cover basic theory of neural networks, backpropagation, RNN/LSTMs, dataset
+          preparation and training. I will explain how the network models a probability
+          distribution to generate text character by character and also discuss hyper-parameter
+          tuning (especially Softmax temperature) to control the output.
+        - >
+          People have used these techniques to -
+          <ol>
+            <li>Generate literature in the style of dead writers and poets like Nietzsche,
+                Shakespeare and Robert Frost.</li>
+            <li>Generate beautiful AI composed music inspired by the likes of Mozart, Beethoven and Bach.</li>
+            <li>Generate lyrics and rap by training on Lennon-McCartney & Hamilton songs respectively.</li>
+          </ol>
+        - >
+          Sometimes when given a prompt, these networks can also effectively hallucinate text that
+          the author of the input corpus might have said when given the same prompt.
+          There will be live examples of the above and a few more interesting uses of this technique.
+          Prior knowledge of linear algebra and a basic overview of machine learning is helpful but
+          not necessary.
+          I will also provide a Github repo with the code from the talk and provide links to trained
+          models of the live examples for attendees to experiment with and build upon.
+      requirement: Prior knowledge of linear algebra and a basic overview of machine learning is
+                   helpful but not necessary.
+      lang:  en
+      lang_slide: en
+      type: talk
+      cfp:  true
+      isSponsorTopic: false
+      startTime: day-1.slot-6
+  -   title:  Python for data analysis
+      id: python-for-data-analysis
+      speaker:
+        - michal-szczecinski
+      venue: lecture-hall
+      description:
+        - >
+          Showing use cases of pragmatic data analysis in python
+      lang:  en
+      lang_slide: en
+      type: talk
+      cfp:  true
+      isSponsorTopic: false
+      startTime: day-1.slot-8
+  -   title:  >-
+          Python Blockchain Application in < 24 hrs
+      id: python-blockchain-application-in-less-than-24hrs
+      speaker:
+        - kelvin-chu
+      venue: p-4701
+      description:
+        - >
+          My Hackathon Experience hacking a python blockchain application in less than
+          24 hours. Also some basics on what a blockchain is, and the current
+          blockchain ecosystem.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-1.slot-8
+  -   title:  How I battle with Hong Kong Open Data in Python
+      id: how-i-battle-with-hong-kong-open-data-in-python
+      speaker:
+        - ho-wa-wong
+      venue: lecture-hall
+      description:
+        - >
+          <h3>Topics</h3>
+          <ol>
+            <li>the very brief background of g0vhk.io and open data problem in HK</li>
+            <li>pdfminer demonstration and real life example</li>
+            <li>web scraping and running scraper in morph.io</li>
+            <li>haystack & django</li>
+          </ol>
+      lang: zh.yue
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-1.slot-9
+  -   title:  Matplotlib 2 By Example
+      id: matplotlib-2-by-example
+      speaker:
+        - claire-chung
+      remark: 1 hour workshop
+      venue: lecture-hall
+      description:
+        - >
+          The workshop aims to discuss the methods and best practices in data
+          visualization by Python + Matplotlib 2, by providing a hands-on experience.
+          Topics include plots commonly used in scientific communication and finance,
+          as well as tuning figure aesthetics in the designer's perspective.
+          Some examples will be taken from the book "Matplotlib 2 By Example",
+          which the speaker has co-authored.
+      lang: en
+      lang_slide: en
+      type: workshop
+      requirement: Bring personal laptop and your own charger
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-1.slot-11
+      endTime: day-1.slot-12
+  -   title:  Python is not Always Slow
+      id: python-is-not-always-slow
+      speaker:
+        - benny
+      description:
+        - >
+          We all know Python is slow. But in many cases it is not. Before blindly
+          complaining the slowness of Python, we need to know when it is slow.
+          There are also many cases it's totally OK to be slow, so before optimizing
+          the code, we need know to when it's worth our time to rewrite our code. I will
+          talk about Python's performance in different fields such as scientific computing,
+          machine learning, plotting, network programming...etc. And also mention some
+          experience about profiling and accelerating the code.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      remark: Speaker withdrew
+      withdrew: true
+  -   title:  >-
+          How to approach a Machine Learning Problem with Python ?: YouTube Like Count Prediction
+      id: how-to-approach-a-machine-learning-problem-with-python-youtube-like-count-prediction
+      speaker:
+        - ayush-singh
+      venue: lecture-hall
+      description:
+        - >
+          Ever thought of "How to approach a Machine Learning Problem ?".
+          This talk will guide you through pipeline for approaching a Machine Learning problem(Supervised)
+          by taking up a real world problem which will make it easy for the audience to relate with.The
+          task would be “Predicting like counts for a given YouTube video” and I would be taking you
+          through the very first step of Data Collection to Model Evaluation,discussing various essential
+          steps like Data analysis,Feature engineering,feature selection and many more along the way.Every
+          step would be accompanied by some code snippets in Python using various scientific and ML libraries
+          like Sklearn,Numpy etc.
+        - >
+          The problem to be discussed : https://github.com/ayush1997/YouTube-Like-predictor
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-3
+
+  -   title:  >-
+          AI learn to Drive: Introduction to Reinforcement Learning with Python
+      id: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
+      speaker:
+        - holman-tai
+      venue: lecture-hall
+      description:
+        - >
+          Introduction of universe and Gym, frameworks by openAI
+        - >
+          Provide overview for reinforcement learning and provide Jupyter Notebook to train a agent in game.
+        - >
+          Give a walk though of using Tensorflow to train  an agent interactive with the environment
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-4
+  -   title:  >-
+        HA capability with Document Store using MySQL Shell - running Python
+      id: ha-capability-with-document-store-using-mysql-shell-running-python
+      speaker:
+        - ivan-ma
+      venue: p-4701
+      description:
+        - >
+          With MySQL Shell (mysqlsh), you can script in python to work with MySQL.
+          Creating MySQL HA architecture and working with Document Store.  In the session,
+          we will explore the Document Store with Python.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-1.slot-11
+  -   title: Machine Learning on Energy Consumption Prediction
+      id: machine-learning-on-energy-consumption-prediction
+      speaker:
+        - benny
+      venue: lecture-hall
+      description:
+        - >
+          The project is in HKU deep learning lab. We analyze a large set of energy
+          consumption data and build real time application based on the prediction.
+          The topic involves different machine learning approaches and comparison.
+          Since the machine learning is often discussed, I will also talk about the
+          often ignored skill in data science. How to handle huge data and optimize
+          the processing code, how to effectively build useful tools and make the life
+          of data scientist easier, and how to correctly interpret the predicting result
+          to enhance the project level from merely "machine learning" to real
+          "data-driven application"
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-7
+  -   title: Micropython
+      id: micropython
+      speaker:
+        - patrick-tsoi
+      venue: p-4701
+      description:
+        - >
+          Putting Python in micro devices
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-7
+  -   title: Boosting command line data manipulation with Python and AWK
+      id: boosting-command-line-data-manipulation-with-python-and-awk
+      speaker:
+        - kirill-pavlov
+      venue: lecture-hall
+      description:
+        - >
+          It is often required to manipulate the data as fast as possible, be it
+          either column average calculation or simple join and filtering. Servers
+          often do not have convenient tools, such as Python (numpy/pandas) of R,
+          moreover, the data might not fit into memory. This talk shows how to
+          make fast but inconvenient command line tools great again. This is based
+          on work done in Yandex and allows to process Gbs of data with one-liner commands.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-8
+  -   title: >-
+          Recurrent Neural Networks in Python: Keras and TensorFlow for Time Series Analysis
+      id: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
+      speaker:
+        - matt
+      remark: Reboot.ai
+      venue: lecture-hall
+      description:
+        - >
+          A look at neural networks, specifically recurrent neural networks, and how to
+          implement them in Python for various applications including time series (stock prediction)
+          analysis, using popular machine learning libraries Keras and TensorFlow
+      lang: en
+      lang_slide: en
+      type: workshop
+      requirement: Bring personal laptop and your own charger.
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-10
+      endTime: day-2.slot-11
+  -   title: >-
+          Ticketing x Chatbot
+      id: ticketing-chatbot
+      speaker:
+        - comma
+      remark: 1 hour workshop
+      venue: p-4701
+      description:
+        - >
+          Mayday's Concert Ticket is extremly hot in Asia. Cooperated with HKMayday, one of
+          the largest Hong Kong Mayday Fans Club, I have built a ticketing platform for handling
+          the complicated problem in exchanging / selling ticket within the fans.
+        - >
+          This topic will share with you about
+        - >
+          <ol>
+            <li>How to build the telegram chatbot via Python</li>
+            <li>What I faced during develop this chatbot</li>
+          </ol>
+      lang: en
+      lang_slide: en
+      type: workshop
+      requirement: 
+        - >
+          Bring personal laptop and your own charger.
+          Checkout the code from https://github.com/Cooomma/PyConHK2017-Chatbot-Tutorial
+          Install the requirement from requirement.txt
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-10
+      endTime: day-2.slot-11
+
+  -   title: >-
+          Python Logging in Production
+      id: python-logging-in-production
+      speaker:
+        - mengchi-jia
+      venue: p-4701
+      description:
+        - >
+          Logging is very important for production services. The topic will cover logging
+          basics in python: handlers, formatters and filters. Moreover, logging can be
+          useful on debugging(especially with the help of Sentry), tracking and reporting.
+      lang: en
+      lang_slide: en
+      type: talk
+      cfp:      true
+      isSponsorTopic: false
+      startTime: day-2.slot-8
+      endTime: day-2.slot-8

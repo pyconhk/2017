@@ -1,0 +1,56 @@
+{
+  "background_color": "#1AB2F3",
+  "theme_color": "#F3CB02",
+  "manifest_version": 2,
+  "name": "PyCon HK 2017",
+  "version": "1.0",
+  "version_name": "v1.0",
+  "default_locale": "en",
+  "description": "PyCon Hong Kong is a community conference intended for networking and collaboration in the developer and user community.",
+  "icons": [
+    {
+      "src": "http://pycon.hk/2017/images/pycon-logo-v2.png",
+      "size": "48x48",
+      "type": "image/png"
+    }
+  ],
+  "gcm_sender_id": "103953800507",
+  "author": "PyCon HK",
+  "short_name": "PyCon HK 2017",
+  "homepage_url": "http://pycon.hk/2017/",
+  "orientation": "landscape",
+  "display": "standalone",
+  "start_url": "/2017/",
+  "scope": "/2017/",
+  "lang": "en-GB",
+  "web_accessible_resources": [
+     "/2017/about/*.html"
+    ,"/2017/images/*.png"
+    ,"/2017/images/*.ico"
+    ,"/2017/images/*.jpg"
+    ,"/2017/images/og/*.png"
+    ,"/2017/venue/*.html"
+    ,"/2017/app.css"
+    ,"/2017/app.css.map"
+    ,"/2017/index.html"
+    ,"/2017/cfp/index.html"
+    ,"/2017/schedule/index.html"
+    ,"/2017/sponsor/index.html"
+    ,"/2017/topics/applying-serverless-architecture-pattern-to-distributed-data-processing/index.html"
+    ,"/2017/topics/using-gradient-boosting-machines-in-python/index.html"
+    ,"/2017/topics/how-to-reinvent-the-wheel-and-build-the-most-popular-JSON-RPC-library/index.html"
+    ,"/2017/topics/resurrecting-the-dead-with-deep-learning/index.html"
+    ,"/2017/topics/python-for-data-analysis/index.html"
+    ,"/2017/topics/python-blockchain-application-in-less-than-24hrs/index.html"
+    ,"/2017/topics/how-i-battle-with-hong-kong-open-data-in-python/index.html"
+    ,"/2017/topics/matplotlib-2-by-example/index.html"
+    ,"/2017/topics/how-to-approach-a-machine-learning-problem-with-python-youtube-like-count-prediction/index.html"
+    ,"/2017/topics/ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python/index.html"
+    ,"/2017/topics/ha-capability-with-document-store-using-mysql-shell-running-python/index.html"
+    ,"/2017/topics/machine-learning-on-energy-consumption-prediction/index.html"
+    ,"/2017/topics/micropython/index.html"
+    ,"/2017/topics/boosting-command-line-data-manipulation-with-python-and-awk/index.html"
+    ,"/2017/topics/recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis/index.html"
+    ,"/2017/topics/ticketing-chatbot/index.html"
+  ]
+}

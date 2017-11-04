@@ -1,0 +1,27 @@
+#
+# @file venues.yml
+#
+# format
+# ------
+#
+# venue-key:
+#   name: "venue name"
+#
+
+reception:
+  name: "Reception"
+
+expo-area:
+  name: "Public Area"
+
+lecture-hall:
+  name: "AC1 Lecture Hall LT-16"
+
+p-4701:
+  name: "AC1 Classroom P4701"
+
+p-4703:
+  name: "AC1 Classroom P4703"
+
+p-4704:
+  name: "AC1 Classroom P4704"

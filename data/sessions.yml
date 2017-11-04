@@ -1,0 +1,186 @@
+#
+# @file sessions.yml
+#
+# format
+# ------
+#
+# day-key:
+#   -
+#     name:      "session name"
+#     timeStart: "time of session start, in RFC2822"
+#     timeEnd:   "time of session end, in RFC2822"
+#     venue:     "venue key, in venues.yml"
+
+day-1:
+  - name: Reception
+    timeslot: slot-1
+    venue: reception
+  - name: Opening
+    timeslot: slot-2
+    venue: lecture-hall
+  - name: 30-min Keynote
+    timeslot: slot-3
+    venue: lecture-hall
+    topic: applying-serverless-architecture-pattern-to-distributed-data-processing
+  - name: Break
+    timeslot: slot-4
+    venue: expo-area
+  - name: 30-min Talk
+    timeslot: slot-5
+    venue: lecture-hall
+    topic: using-gradient-boosting-machines-in-python
+  - name: Video Streaming from LT-16
+    timeslot: slot-5
+    venue: p-4701
+  - name: Development Sprint Part 1
+    timeslot: slot-5
+    venue: p-4704
+  - name: 30-min talk
+    timeslot: slot-6
+    venue: lecture-hall
+    topic: resurrecting-the-dead-with-deep-learning
+  - name: Video Streaming from LT-16
+    timeslot: slot-6
+    venue: p-4701
+  - name: Development Sprint Part 2
+    timeslot: slot-6
+    venue: p-4704
+  - name: Lunch Networking
+    timeslot: slot-7
+    venue: expo-area
+  - name: 30-min talk
+    timeslot: slot-8
+    venue: lecture-hall
+    topic: python-for-data-analysis
+  - name: 30-min Talk
+    timeslot: slot-8
+    venue: p-4701
+    topic: python-blockchain-application-in-less-than-24hrs
+  - name: Development Sprint Part 3
+    timeslot: slot-8
+    venue: p-4704
+  - name: 30-min Talk
+    timeslot: slot-9
+    venue: lecture-hall
+    topic: how-i-battle-with-hong-kong-open-data-in-python
+  - name: 30-min Talk
+    timeslot: slot-9
+    venue: p-4701
+    topic: how-to-reinvent-the-wheel-and-build-the-most-popular-JSON-RPC-library
+  - name: Development Sprint Part 4
+    timeslot: slot-9
+    venue: p-4704
+  - name: Break
+    timeslot: slot-10
+    venue: expo-area
+  - name: 60-min Workshop Part 1
+    timeslot: slot-11
+    venue: lecture-hall
+    topic: matplotlib-2-by-example
+  - name: 30-min Talk
+    timeslot: slot-11
+    venue: p-4701
+    topic: ha-capability-with-document-store-using-mysql-shell-running-python
+  - name: Development Sprint Part 5
+    timeslot: slot-11
+    venue: p-4704
+  - name: 60-min Workshop Part 2
+    timeslot: slot-12
+    venue: lecture-hall
+    topic: matplotlib-2-by-example
+  - name: 5-min Lightning Talks
+    timeslot: slot-12
+    venue: p-4701
+  - name: Development Sprint Part 6
+    timeslot: slot-12
+    venue: p-4704
+  - name: Short Break
+    timeslot: slot-13
+    venue: expo-area
+  - name: 5-min Lightning Talks
+    timeslot: slot-14
+    venue: lecture-hall
+  - name: End Of Day
+    timeslot: slot-15
+day-2:
+  - name: Reception
+    timeslot: slot-1
+    venue: reception
+  - name: Organiser Announcement
+    timeslot: slot-2
+    venue: lecture-hall
+  - name: 30-min Talk
+    timeslot: slot-3
+    venue: lecture-hall
+    topic: how-to-approach-a-machine-learning-problem-with-python-youtube-like-count-prediction
+  - name: Video Streaming from LT-16
+    timeslot: slot-3
+    venue: p-4701
+  - name: Development Sprint Part 1
+    timeslot: slot-3
+    venue: p-4704
+  - name: 30-min Talk
+    timeslot: slot-4
+    venue: lecture-hall
+    topic: ai-learn-to-Drive-introduction-to-reinforcement-learning-with-python
+  - name: Video Streaming from LT-16
+    timeslot: slot-4
+    venue: p-4701
+  - name: Development Sprint Part 2
+    timeslot: slot-4
+    venue: p-4704
+  - name: Lunch Networking
+    timeslot: slot-5
+    venue: expo-area
+  - name: Organiser Announcement
+    timeslot: slot-6
+    venue: lecture-hall
+  - name: 30-min Talk
+    timeslot: slot-7
+    venue: lecture-hall
+    topic: machine-learning-on-energy-consumption-prediction
+  - name: 30-min Talk
+    timeslot: slot-7
+    venue: p-4701
+    topic: micropython
+  - name: Development Sprint Part 3
+    timeslot: slot-7
+    venue: p-4704
+  - name: 30-min Talk
+    timeslot: slot-8
+    venue: lecture-hall
+    topic: boosting-command-line-data-manipulation-with-python-and-awk
+  - name: 30-min talk
+    timeslot: slot-8
+    venue: p-4701
+    topic: python-logging-in-production
+  - name: Development Sprint Part 4
+    timeslot: slot-8
+    venue: p-4704
+  - name: Break
+    timeslot: slot-9
+    venue: expo-area
+  - name: 60-min Workshop Part 1
+    timeslot: slot-10
+    venue: lecture-hall
+    topic: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
+  - name: 60-min Workshop Part 1
+    timeslot: slot-10
+    venue: p-4701
+    topic: ticketing-chatbot
+  - name: Development Sprint Part 5
+    timeslot: slot-10
+    venue: p-4704
+  - name: 60-min Workshop Part 2
+    timeslot: slot-11
+    venue: lecture-hall
+    topic: recurrent-neural-networks-in-python-keras-and-tensorFlow-for-time-series-analysis
+  - name: 60-min Workshop Part 2
+    timeslot: slot-11
+    venue: p-4701
+    topic: ticketing-chatbot
+  - name: Presentation of Development Sprint
+    timeslot: slot-11
+    venue: p-4704
+  - name: End of Day
+    timeslot: slot-12

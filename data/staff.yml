@@ -1,0 +1,46 @@
+teams:
+  - name: Conference Chairman
+    members:
+      - name: Mr. Sammy Fung
+        email: sammy@sammy.hk
+  - name: Design
+    members:
+      - name: Ms. Claire Wong
+        fallback: https://file.hkoscon.org/staff/claire.wong.jpg
+        teamlead: true
+      - name: Mr. Ronald Hung
+  - name: Finance
+    members:
+      - name: Dr. Haggen So
+        teamlead: true
+        github: lbrabbit
+  - name: Marketing
+    members:
+      - name: Mr. Calvin Tsang
+        teamlead: true
+      - name: Ms. Fiona Lam
+  - name: Program
+    members:
+      - name: Mr. Sammy Fung
+        teamlead: true
+        email: sammy@sammy.hk
+  - name: Photo
+    members:
+      - name: Mr. Henry Law
+        teamlead: true
+        fb: 506551481
+  - name: Video
+    members:
+      - name: Mr. Sam Chiuck
+        teamlead: true
+        fb: 1656859074
+      - name: Mr. Joe Chan
+        fb: 541717939
+  - name: Web
+    members:
+      - name: Mr. Koala Yeung
+        github: yookoala
+      - name: Mr. Sunday Ku
+        github: 199911
+      - name: Ms. Connie Leung
+        email: cleung334@gmail.com
