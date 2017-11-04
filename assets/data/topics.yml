@@ -364,8 +364,8 @@ topics:
       description:
         - >
           Mayday's Concert Ticket is extremly hot in Asia. Cooperated with HKMayday, one of
-          the largest Hong Kong Mayday Fans Club, Life.UnLtd HK, a telegram chatbot,is built
-          for handling the complicated problem in exchanging / selling ticket within the fans.
+          the largest Hong Kong Mayday Fans Club, I have built a ticketing platform for handling
+          the complicated problem in exchanging / selling ticket within the fans.
         - >
           This topic will share with you about
         - >
@@ -376,7 +376,11 @@ topics:
       lang: en
       lang_slide: en
       type: workshop
-      requirement: Bring personal laptop and your own charger.
+      requirement: 
+        - >
+          Bring personal laptop and your own charger.
+          Checkout the code from https://github.com/Cooomma/PyConHK2017-Chatbot-Tutorial
+          Install the requirement from requirement.txt
       cfp:      true
       isSponsorTopic: false
       startTime: day-2.slot-10
